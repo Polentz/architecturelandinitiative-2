@@ -1,0 +1,22 @@
+name: Section block
+icon: grid-full
+fields:
+  title:
+    placeholder: Title …
+    type: text
+  subtitle:
+    type: text  
+    width: 1/4
+    placeholder: Subtitle …
+  copy:
+    type: writer
+    width: 3/4
+    placeholder: Text …
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false

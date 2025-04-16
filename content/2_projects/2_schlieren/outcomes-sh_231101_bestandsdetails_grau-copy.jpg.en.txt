@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - Details Existing and Renovation ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: 
+
+----
+
+Uuid: JDvFXAukOMnD9Tzg
+
+----
+
+Template: media

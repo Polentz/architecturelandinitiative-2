@@ -1,0 +1,29 @@
+Caption: <p>Projekt für eine Obst-Dörranlage der Stadt Zürich in Gaswerk Erdgeschoss, Schlieren, 5 Jul. 1918, Scale: 1/100 ©Archivplan Gemeinde Schlieren</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: Archive material
+
+----
+
+Uuid: BhPmLVymAwH20Evj
+
+----
+
+Template: media

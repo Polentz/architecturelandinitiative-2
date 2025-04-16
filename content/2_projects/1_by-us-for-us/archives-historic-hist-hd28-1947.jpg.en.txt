@@ -1,0 +1,29 @@
+Caption: Historic Maps of Hong Kong - Kowloon Peninsula in 1947; Scale: 8 inches to 1 mile (1:7,920); Surveyed by the Crown Lands and Survey Office, Hong Kong
+
+----
+
+Alt: 
+
+----
+
+Info: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Map
+
+----
+
+Filter: Archive material
+
+----
+
+Uuid: wY73TDIZBuwH6icP
+
+----
+
+Template: media

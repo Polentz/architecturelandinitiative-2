@@ -1,0 +1,106 @@
+name: Timeline item
+wysiwyg: true
+fields:
+  date:
+    label: Sort by date
+    type: date
+    width: 1/2
+    display: DD.MM.YYYY 
+    required: true
+  gap1:
+    type: gap
+    width: 1/2
+  dateinfo: 
+    label: false
+    type: info
+    width: 1/2
+    text: "Tip: add the last day of the event here."
+  gap2:
+    type: gap
+    width: 1/2
+  line:
+    type: line
+  title:
+    label: Title
+    type: text
+    required: true
+  subtitle:
+    label: Subtitle
+    type: text
+  eventdate:
+    label: Event date
+    type: text
+    width: 1/2
+    required: true
+  typology:
+    label: Filter by event type
+    type: select 
+    width: 1/2 
+    required: true
+    options:
+      type: query
+      query: site.timelineFilters.toStructure
+      text: "{{ item.filter }}"
+      value: "{{ item.filter }}"   
+  where:
+    label: Where
+    type: text
+    width: 1/2
+  project:
+    label: Related project
+    type: select
+    width: 1/2
+    options:
+      type: query
+      query: site.grandchildren.template("project")
+      text: "{{ page.title }}"
+      value: "{{ page.title }}"
+  image:
+    label: Image
+    type: files
+    width: 1/2
+    layout: cards
+    size: big
+    multiple: false 
+    uploads:
+      template: cover     
+  gap3:
+    type: gap
+    width: 1/2
+  imagecaption:
+    label: Image caption
+    type: text
+    width: 1/2
+  body:
+    label: Text
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false
+  credits:
+    label: Credits
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false
+  info:
+    label: External links
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false

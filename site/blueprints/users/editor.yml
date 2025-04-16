@@ -1,0 +1,65 @@
+title: Editor
+
+sections:
+  contact:
+    type: fields
+    fields:
+      contact:
+        label: Email
+        type: email
+        width: 1/4
+      phone:
+        label: Telefono
+        type: tel
+        width: 1/4
+
+permissions:
+  access:
+    panel: true
+    site: true
+    languages: true
+    system: false
+    users: true
+  files:
+    create: true
+    changeName: true
+    delete: true
+    read: true
+    replace: true
+    update: true
+  languages:
+    create: false
+    delete: false
+    default: English
+  pages:
+    changeSlug: true
+    changeStatus: true
+    changeTemplate: true
+    changeTitle: true
+    create: true
+    delete: true
+    duplicate: true
+    preview: true
+    read: true
+    sort: true
+    update: true
+  site:
+    changeTitle: false
+    update: true
+  user:
+    changeEmail: true
+    changeLanguage: true
+    changeName: true
+    changePassword: true
+    changeRole: false
+    delete: false
+    update: true
+  users:
+    changeEmail: true
+    changeLanguage: true
+    changeName: true
+    changePassword: true
+    changeRole: false
+    create: true
+    delete: false
+    update: true

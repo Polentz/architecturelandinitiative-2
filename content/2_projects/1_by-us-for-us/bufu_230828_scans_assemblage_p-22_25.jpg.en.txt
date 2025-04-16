@@ -1,0 +1,29 @@
+Caption: <p>By Us for Us, Atlas; <em>Streets And Alleys</em>, pages 22-25, 2023 ©Architecture Land Initiative </p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: Atlas
+
+----
+
+Mediatype: Printed matter
+
+----
+
+Filter: 
+
+----
+
+Uuid: cEk7YFWtYhHXXmJ3
+
+----
+
+Template: media

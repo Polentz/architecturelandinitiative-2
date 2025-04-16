@@ -1,0 +1,50 @@
+.k-block-type-sectiontitle input {
+    border: none;
+    font: inherit;
+    font-size: 3rem;
+}
+
+.k-block-type-sectiontitle input:focus {
+    outline: 0;
+    border-color: black;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.block-text {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--small-margin);
+}
+
+.text-label {
+    flex: 1 1 15%;
+}
+
+.text {
+    flex: 1 1 75%;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.k-block-container-type-timelineblock,
+.k-block-container-type-platformblock {
+    padding: 0;
+}
+
+.k-item-content,
+.k-input-icon {
+    display: none;
+}
+
+.input-title {
+    font-weight: 600;
+}

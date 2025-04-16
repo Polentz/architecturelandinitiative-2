@@ -1,0 +1,26 @@
+title: Home
+
+sections:
+  content:
+    type: fields
+    fields:
+      intro:
+        label: Introduction text
+        type: writer
+        marks:
+          - bold
+          - italic
+          - underline
+          - link
+          - email
+          - clear
+        nodes: false
+  # items:
+  #   label: false
+  #   type: pages
+  #   layout: list
+  #   info: false
+  #   template:
+  #     - project
+  #   image: false
+  #   sortable: true

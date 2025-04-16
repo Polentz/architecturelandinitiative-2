@@ -1,0 +1,14 @@
+name: Contact block
+icon: false
+fields:
+  copy:
+    type: writer
+    placeholder: Content …
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false

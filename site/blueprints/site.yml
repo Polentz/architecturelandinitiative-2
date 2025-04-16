@@ -1,0 +1,150 @@
+title: Site
+
+tabs:
+  page:
+    label: Website pages
+    icon: angle-right
+    sections:
+      allpages:
+        label: Website main pages
+        type: pages
+        image: false
+        template:
+          - home
+          - projects
+          - tools
+          - themes
+          - timeline
+        sortable: false
+  about:
+    label: Cooperative
+    icon: angle-right
+    columns:
+      main:
+        width: 2/3
+        sections:
+          copy:
+            type: fields
+            fields:
+              blocks:
+                label: Text
+                type: blocks
+                fieldsets:
+                  - sectionblock
+      sidebar:
+        width: 1/3
+        sections:
+          aboutNavLabel:
+            type: fields
+            fields:
+              aboutNavLabel:
+                label: Menu label
+                type: text
+  contact:
+    label: Contact
+    icon: angle-right
+    columns:
+      main:
+        width: 2/3
+        sections:
+          contact:
+            type: fields
+            fields:
+              contactblocks:
+                label: Contact items
+                type: blocks
+                fieldsets:
+                  - contactblock
+      sidebar:
+        width: 1/3
+        sections:
+          instagram:
+            type: fields
+            fields:
+              contactNavLabel:
+                label: Menu label
+                type: text
+              instagram:
+                label: Instagram
+                type: url
+  filters:
+    label: Filters collection
+    icon: angle-right
+    sections:
+      filter:
+        type: fields
+        fields:
+          mediaFilters:
+            label: "Category: media"
+            type: structure
+            fields:
+              filter:
+                type: text
+                label: Filter
+          processFilters:
+            label: "Category: process stage"
+            type: structure
+            fields:
+              filter:
+                type: text
+                label: Filter
+          timelineFilters:
+            label: "Category: events"
+            type: structure
+            fields:
+              filter:
+                type: text
+                label: Filter
+          platformFilters:
+            label: "Category: platform"
+            type: structure
+            fields:
+              filter:
+                type: text
+                label: Filter      
+          membersFilters:
+            label: "Category: members"
+            type: structure
+            fields:
+              filter:
+                type: text
+                label: Filter                    
+  seo:
+    label: Website metadata
+    icon: angle-right
+    columns:
+      main:
+        width: 1/2
+        sections:
+          seocontent:
+            type: fields
+            fields:
+              description:
+                label: Description
+                type: textarea
+                buttons: false
+              keywords:
+                label: Keywords
+                type: tags         
+      image:
+        width: 1/2
+        sections:
+          image:
+            type: fields
+            fields:
+              ogimage:
+                label: OG Image
+                type: files
+                template: image
+                uploads: image
+                layout: cards
+                size: huge
+                multiple: false
+                image:
+                  back: "#000"
+                  icon: false
+                  ratio: 6/3
+                  cover: true
+
+
+

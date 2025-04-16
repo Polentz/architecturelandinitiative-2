@@ -1,0 +1,41 @@
+Title: Timeline
+
+----
+
+Blocks: [{"content":{"date":"2023-11-30","typology":"Exhibition","project":"By Us for Us","topbar":[{"category":"Location","text":"Berlin"},{"category":"Hosted by","text":"Someone"}],"title":"Event long title","subtitle":"Event subtitle","image":["file://SUrxnHhDr807dp7L"],"body":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","credits":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p><a href=\"https://www.iampolenta.com/\" target=\"_blank\" rel=\"noreferrer\">How to partecipate</a></p>"},"id":"19659d2d-3bb8-44e0-9c20-7e3f04b92037","isHidden":false,"type":"timelineblock"},{"content":{"date":"2023-11-12","typology":"","project":"","topbar":[{"category":"Location","text":"Berlin"},{"category":"Hosted by","text":"Someone"}],"title":"Another event title","subtitle":"Event subtitle","image":["file://SUrxnHhDr807dp7L"],"body":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","credits":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"93800437-6d7b-471c-9078-4833375334e1","isHidden":false,"type":"timelineblock"},{"content":{"date":"2023-11-01","typology":"","project":"","topbar":[{"category":"Location","text":"Berlin"},{"category":"Hosted by","text":"Someone"}],"title":"Lorem ipsum","subtitle":"event subtitle","image":[],"body":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","credits":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"6c8e54a2-07d2-4797-895b-2eb68026229c","isHidden":false,"type":"timelineblock"},{"content":{"date":"2023-11-01","typology":"","project":"","topbar":[{"category":"Location","text":"Berlin"},{"category":"Hosted by","text":"Someone"}],"title":"Event title","subtitle":"Event subtitle","image":["file://SUrxnHhDr807dp7L"],"body":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","credits":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"6fc3cc45-2d98-4797-85bf-f24729886137","isHidden":false,"type":"timelineblock"},{"content":{"date":"2023-11-01","typology":"","project":"","topbar":[{"category":"Location","text":"Berlin"},{"category":"Hosted by","text":"Someone"}],"title":"This is an event!","subtitle":"Event subtitle","image":["file://SUrxnHhDr807dp7L"],"body":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","credits":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"f7e65722-ac21-4e7c-93ff-5983d0243f5b","isHidden":false,"type":"timelineblock"},{"content":{"date":"2023-11-01","typology":"","project":"","topbar":[{"category":"Location","text":"Berlin"},{"category":"Hosted by","text":"Someone"}],"title":"Title","subtitle":"Event subtitle","image":["file://SUrxnHhDr807dp7L"],"body":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","credits":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"a763daa2-ee93-4b76-b1b7-6a18a19c41e5","isHidden":false,"type":"timelineblock"}]
+
+----
+
+Typename: 
+
+----
+
+Types: Public Event, Workshop, Forum, Exhibition, Performance, Talk
+
+----
+
+Filtername: 
+
+----
+
+Filters: 
+
+----
+
+Filtersetatitle: 
+
+----
+
+Filterseta: 
+
+----
+
+Filtersetbtitle: 
+
+----
+
+Filtersetb: 
+
+----
+
+Text: 

@@ -1,0 +1,109 @@
+name: Platform item
+wysiwyg: true
+fields:
+  date:
+    label: Sort by date
+    type: date
+    width: 1/2
+    display: DD.MM.YYYY
+    required: true
+  gap1:
+    type: gap
+    width: 1/2
+  dateinfo: 
+    label: false
+    type: info
+    width: 1/2
+    text: "Tip: add the last day of the event here."
+  gap2:
+    type: gap
+    width: 1/2
+  line:
+    type: line
+  title:
+    label: Title
+    type: text
+    required: true
+  typology:
+    label: Filter by platform type
+    type: select 
+    width: 1/2 
+    required: true
+    options:
+      type: query
+      query: site.platformFilters.toStructure
+      text: "{{ item.filter }}"
+      value: "{{ item.filter }}"  
+  members:
+    label: Filter by members
+    type: multiselect 
+    width: 1/2 
+    min: 1
+    options:
+      type: query
+      query: site.membersFilters.toStructure
+      text: "{{ item.filter }}"
+      value: "{{ item.filter }}" 
+  topbar:
+    label: "Add elements to the summary preview (max: 2)"
+    type: structure
+    max: 2
+    columns:
+      category:
+        width: 1/2
+      text:
+        width: 1/2
+    fields:
+      category:
+        type: text
+      text:
+        type: text 
+  image:
+    label: Image
+    type: files
+    width: 1/2
+    layout: cards
+    size: big
+    multiple: false 
+    uploads:
+      template: cover    
+  gap3:
+    type: gap
+    width: 1/2
+  imagecaption:
+    label: Image caption
+    type: text
+    width: 1/2
+  credits:
+    label: Summary
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false
+  info:
+    label: External links
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false
+  body:
+    label: Excerpt / Description
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false

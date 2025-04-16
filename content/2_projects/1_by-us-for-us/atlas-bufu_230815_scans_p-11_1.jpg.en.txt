@@ -1,0 +1,29 @@
+Caption: <p><em>Hong Kong Housing Co-operatives: 1954 Development Model; </em>The Map indicates the constellation of housing co-operatives that were built over the course of the development. 2023 ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: Atlas
+
+----
+
+Mediatype: Drawing
+
+----
+
+Filter: 
+
+----
+
+Uuid: wMwcNVCLvP7nzA58
+
+----
+
+Template: media

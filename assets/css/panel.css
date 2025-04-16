@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "GT Cinetype";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/GT-Cinetype-Regular.woff2") format("woff2"),
+        url("../fonts/GT-Cinetype-Regular.woff") format("woff");
+}
+
+:root {
+    --rounded: 0rem;
+    --shadow: 0;
+}
+
+html {
+    font-family: "GT America";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.k-box[data-theme] {
+    --box-color-back: #ffffff;
+    border: solid 1px #4862f985;
+    padding: 1rem;
+}
+
+.k-tag {
+    background-color: #4862f985;
+    color: initial;
+}
+
+.k-label-text {
+    font-weight: 600;
+}
+
+.k-line-field {
+    height: 1rem;
+}

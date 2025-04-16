@@ -1,0 +1,14 @@
+title: Default
+
+sections:
+  contact:
+    type: fields
+    fields:
+      contact:
+        label: Email
+        type: email
+        width: 1/4
+      phone:
+        label: Telefono
+        type: tel
+        width: 1/4

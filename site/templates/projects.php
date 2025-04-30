@@ -9,27 +9,25 @@
         <?= $page->blocks()->toBlocks() ?>
     </section>
 
-    <section class="scroll-layout scroll-y">
-        <div class="scroll-container">
-            <div class="scroll-items column-direction">
-                <?php foreach ($projects->listed() as $project) : ?> 
-                    <?php if ($project) : ?>
-                        <div class="item scroll-item" <?php if ($cover = $project->background()->toFile()) : ?>style="background-image: url('<?= $cover->url() ?>');"<?php endif ?>>
-                            <h2 class="item-title"><a data-name="<?= $project->title() ?>" href="<?= $project->url() ?>"></a></h2>
+    <?php if ($page->children()->count() > 1) : ?>
+        <section class="scroll-layout scroll-y">
+            <div class="scroll-container">
+                <div class="scroll-items column-direction">
+                    <?php foreach ($page->children()->listed() as $child) : ?> 
+                        <div class="item scroll-item" <?php if ($cover = $child->background()->toFile()) : ?>style="background-image: url('<?= $cover->url() ?>');"<?php endif ?>>
+                            <h2 class="item-title"><a data-name="<?= $child->title() ?>" href="<?= $child->url() ?>"></a></h2>
                         </div>
-                    <?php endif ?>
-                <?php endforeach ?>
-                <?php foreach ($projects->unlisted() as $project) : ?> 
-                    <?php if ($project) : ?>
+                    <?php endforeach ?>
+                    <?php foreach ($page->children()->unlisted() as $child) : ?> 
                         <div class="item scroll-item">
                             <span class="item-title-label text-label">What's next:</span>
-                            <h2 class="item-title"><p data-name="<?= $project->title() ?>"></p></h2>
+                            <h2 class="item-title"><p data-name="<?= $child->title() ?>"></p></h2>
                         </div>
-                    <?php endif ?>
-                <?php endforeach ?>
+                    <?php endforeach ?>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif ?>
 </main>
 
 <?= snippet('slider') ?>

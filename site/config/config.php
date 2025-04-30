@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'debug'  => false,
+    'debug'  => true,
     'languages' => true,
     'smartypants' => true,
     'panel' => [

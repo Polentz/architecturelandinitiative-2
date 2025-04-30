@@ -1,6 +1,6 @@
 <?php
 
-return function ($kirby) {
+return function ($kirby, $page) {
     if ($kirby->language()->code() == 'en') {
         $lang = 'en';
         $langCode = 'en_US';
@@ -31,9 +31,6 @@ return function ($kirby) {
     $hrefFr = 'fr';
     $hrefDe = 'de';
 
-    $projects = $kirby->collection('projects');
-    $tools = $kirby->collection('tools'); 
-    $themes = $kirby->collection('themes'); 
     $allmedia = $kirby->collection('allmedia'); 
 
     return [
@@ -49,9 +46,6 @@ return function ($kirby) {
         'hrefEn' => $hrefEn,
         'hrefFr' => $hrefFr,
         'hrefDe' => $hrefDe,
-        'projects' => $projects,
-        'tools' => $tools,
-        'themes' => $themes,
         'allmedia' => $allmedia,
     ];
 };

@@ -9,19 +9,21 @@
         <?= $page->blocks()->toBlocks() ?>
     </section>
 
-    <section class="scroll-layout scroll-x">
-        <div class="scroll-container">
-            <div class="scroll-items row-direction">
-                <?php foreach ($tools->listed() as $tool) : ?> 
-                    <?php if ($tool) : ?>
-                        <div class="item scroll-item" <?php if ($cover = $tool->background()->toFile()) : ?>style="background-image: url('<?= $cover->url() ?>');"<?php endif ?>>
-                            <h2 class="item-title"><a data-name="<?= $tool->title() ?>" href="<?= $tool->url() ?>"></a></h2>
-                        </div>
-                    <?php endif ?>
-                <?php endforeach ?>
+    <?php if ($page->children()->count() > 1) : ?>
+        <section class="scroll-layout scroll-x">
+            <div class="scroll-container">
+                <div class="scroll-items row-direction">
+                    <?php foreach ($page->children()->listed() as $child) : ?> 
+                        <?php if ($child) : ?>
+                            <div class="item scroll-item" <?php if ($cover = $child->background()->toFile()) : ?>style="background-image: url('<?= $cover->url() ?>');"<?php endif ?>>
+                                <h2 class="item-title"><a data-name="<?= $child->title() ?>" href="<?= $child->url() ?>"></a></h2>
+                            </div>
+                        <?php endif ?>
+                    <?php endforeach ?>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    <?php endif ?>
 </main>
 
 <?= snippet('slider') ?>

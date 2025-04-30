@@ -560,7 +560,7 @@ const handleGallery = () => {
                 const offsetPosition = itemPosition + window.scrollY - paddingOffset;
                 window.scrollTo({
                     top: offsetPosition,
-                    behavior: "smooth",
+                    // behavior: "smooth",
                 });
 
                 gsap.to(".box-container", {
@@ -631,7 +631,7 @@ const accordion = () => {
                 const offsetPosition = itemPosition + window.scrollY - paddingOffset;
                 window.scrollTo({
                     top: offsetPosition,
-                    behavior: "smooth",
+                    // behavior: "smooth",
                 });
                 gsap.from(elements, {
                     duration: 0.5,
@@ -897,7 +897,7 @@ const handleTopButton = () => {
     target.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
-            behavior: "smooth"
+            // behavior: "smooth",
         });
     });
 };

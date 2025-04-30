@@ -39,7 +39,6 @@ html {
 :root {
     --doc-height: 100%;
     --doc-width: 100%;
-    --inner-box-width:  calc(100dvw / 3);
     --black: #1d1d1b;
     --white: #ffffff;
     --main-color: ;
@@ -61,8 +60,9 @@ html {
     --half-margin: 2.5rem;
     --double-margin: 10rem;
     --small-margin: 1rem;
-    --nav-height: 3rem;
+    --footer-height: 3rem;
     --button-size: 2.5rem;
+    --inner-box-width:  calc(100dvw / 3);
     --border-black: solid 1px var(--black);
     --border-white: solid 1px var(--white);
     --border-color: solid 1px var(--main-color);
@@ -229,10 +229,16 @@ body {
 
 .button svg {
     height: 100%;
+    width: 100%;
 }
 
 .button a::before {
     content: none;
+}
+.button svg path {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset .75s linear;
 }
 
 .grid {
@@ -350,16 +356,6 @@ body {
     backdrop-filter: blur(2rem);
 }
 
-.header-nav-button svg {
-    width: var(--button-size);
-}
-
-.header-nav-button svg path {
-    stroke-dasharray: 0;
-    stroke-dashoffset: 0;
-    transition: stroke-dashoffset .75s linear;
-}
-
 .footer {
     width: 100%;
     height: auto;
@@ -372,7 +368,7 @@ body {
 
 .footer-nav {
     width: 100%;
-    height: var(--nav-height);
+    height: var(--footer-height);
     font-family: var(--label-text-font);
     font-size: var(--label-text-size);
     display: grid;
@@ -572,7 +568,7 @@ body {
     gap: var(--half-margin);
     padding-top: var(--main-margin);
     padding-right: var(--main-margin);
-    padding-bottom: calc(var(--main-margin) + var(--nav-height));
+    padding-bottom: calc(var(--main-margin) + var(--footer-height));
     padding-left: var(--main-margin);
     background: var(--shade-color);
     -webkit-backdrop-filter: blur(2rem);
@@ -679,7 +675,7 @@ body {
 .list-layout {
     padding-left: var(--main-margin);
     padding-right: var(--main-margin);
-    padding-bottom: calc(var(--main-margin) + var(--nav-height));
+    padding-bottom: calc(var(--main-margin) + var(--footer-height));
 }
 
 .scroll-layout {
@@ -705,7 +701,7 @@ body {
 
 .column-direction {
     flex-direction: column;
-    margin-bottom: var(--nav-height);
+    margin-bottom: var(--footer-height);
 }
 
 .row-direction {
@@ -1105,7 +1101,7 @@ input.seek-slider::-moz-range-thumb {
 
 .filters {
     position: fixed;
-    bottom: calc(var(--nav-height) + var(--main-margin));
+    bottom: calc(var(--footer-height) + var(--main-margin));
     right: var(--main-margin);
     display: flex;
     flex-direction: column;
@@ -1337,11 +1333,19 @@ input.seek-slider::-moz-range-thumb {
     grid-template-columns: repeat(5, 1fr);
     gap: var(--small-margin);
     border-top: var(--border-black);
-    padding: .5rem 0;
+    padding: .5rem;
+}
+
+.accordion-labels {
+    background: var(--main-color);
 }
 
 .accordion-opener {
     cursor: pointer;
+}
+
+.accordion.--open .accordion-opener {
+    background: var(--main-color);
 }
 
 .accordion:last-of-type .accordion-topbar {
@@ -1477,10 +1481,13 @@ input.seek-slider::-moz-range-thumb {
 
 @media screen and (max-width: 720px) {
     :root {
-        --inner-box-width: calc(100dvw / 2);
+        --secondary-text-size: .8rem;
+        --label-text-size: .8rem;
+        --button-size: 2rem;
         --main-margin: 2.5rem;
         --half-margin: 1.5rem;
         --double-margin: 8rem;
+        --inner-box-width: calc(100dvw / 2);
     }
 
     .grid {
@@ -1516,14 +1523,11 @@ input.seek-slider::-moz-range-thumb {
 
 @media screen and (max-width: 600px) {
     :root {
-        --inner-box-width: calc(100vw - var(--half-margin) - var(--half-margin));
         --big-title-size: 3.5rem;
-        --secondary-text-size: .8rem;
-        --label-text-size: .8rem;
         --main-margin: 1rem;
         --half-margin: 1rem;
         --double-margin: 6rem;
-        --button-size: 2rem;
+        --inner-box-width: calc(100vw - var(--half-margin) - var(--half-margin));
     }
 
     .header-headline {

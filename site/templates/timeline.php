@@ -10,7 +10,7 @@
     </section>
     
     <section class="list-layout">
-        <ul class="accordion-topbar">
+        <ul class="accordion-topbar accordion-labels">
             <li class="accordion-topbar-item text-label">
                 <span>TITLE</span>
             </li>

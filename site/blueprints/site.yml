@@ -22,8 +22,14 @@ tabs:
             template:
               - projects
               - tools
-              - themes
               - timeline
+          oldTemplate:
+            label: Old template (Platform)
+            type: pages
+            image: false
+            max: 1
+            template:
+              - themes          
           infos:
             label: false
             type: fields
@@ -61,7 +67,7 @@ tabs:
                 type: info
                 text: "By activating the button above, the languages switcher will be displayed on the site footer."
   about:
-    label: Cooperative
+    label: About
     icon: angle-right
     columns:
       main:
@@ -78,7 +84,7 @@ tabs:
       sidebar:
         width: 1/3
         sections:
-          aboutNavLabel:
+          aboutButtons:
             type: fields
             fields:
               aboutNavLabel:
@@ -102,7 +108,7 @@ tabs:
       sidebar:
         width: 1/3
         sections:
-          instagram:
+          contactButtons:
             type: fields
             fields:
               contactNavLabel:

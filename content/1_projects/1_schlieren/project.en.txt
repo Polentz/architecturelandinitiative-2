@@ -2,35 +2,15 @@ Title: Schlieren
 
 ----
 
-Summary:
-
-- 
-  category: Date
-  text: "2022"
+Background: - file://Y5pqlORST2Ys9CWp
 
 ----
 
-Excerpt: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et. Consectetur a erat nam at. Dolor sit amet consectetur adipiscing elit ut aliquam. Amet luctus venenatis lectus magna fringilla urna porttitor. Ornare quam viverra orci sagittis. Sed augue lacus viverra vitae congue. Senectus et netus et malesuada fames ac. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+Intro: <p>The well-known experimental factory Stahl-&amp;Traumfabrik AG, with its carpentry, locksmith workshop, and craft <em>know-how</em> pool, has been an established venue in Zurich since the 1990s. In its early days in Zurich-Altstetten, readings, concerts, cultural events of all kinds, and lively celebrations took place among film sets, furniture designs, construction experiments, sculptures, and material archives.</p><p>Since 2020, production has taken place in the protected former drying plant in Schlieren at Bernstrasse 29, with the desire to drive this culture here. In collaboration with Pfeffermint AG and Architecture Land Initiative, a project was initiated to open this space to other companies, practices, creative workers, craftswo.men, and production facilities. The aim is to develop a place in synergy with its productive environment that simultaneously resonates with the rapid transformation of its surroundings.</p>
 
 ----
 
-Blocks: [{"content":{"title":"Schlieren","subtitle":"","copy":""},"id":"0ffb189a-41af-4f75-a4b2-5b932427558e","isHidden":false,"type":"sectionblock"},{"content":{"title":"","subtitle":"","copy":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et. Consectetur a erat nam at. Dolor sit amet consectetur adipiscing elit ut aliquam. Amet luctus venenatis lectus magna fringilla urna porttitor. Ornare quam viverra orci sagittis. Sed augue lacus viverra vitae congue. Senectus et netus et malesuada fames ac. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p><p>Commodo ullamcorper a lacus vestibulum sed arcu. Feugiat nisl pretium fusce id velit ut. A cras semper auctor neque vitae tempus. Dui nunc mattis enim ut tellus elementum. Et netus et malesuada fames ac turpis. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Ac placerat vestibulum lectus mauris ultrices eros. Sagittis eu volutpat odio facilisis. Lorem donec massa sapien faucibus et molestie ac. Dolor sit amet consectetur adipiscing elit. Ornare lectus sit amet est placerat in egestas. Enim nec dui nunc mattis enim ut tellus. Elit at imperdiet dui accumsan sit amet nulla facilisi. Sed felis eget velit aliquet sagittis id consectetur purus. Et molestie ac feugiat sed lectus vestibulum. Libero nunc consequat interdum varius.</p>"},"id":"d71670d0-f108-415c-ae06-2924ebc19078","isHidden":false,"type":"sectionblock"},{"content":{"title":"","subtitle":"","copy":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et. Consectetur a erat nam at. Dolor sit amet consectetur adipiscing elit ut aliquam. Amet luctus venenatis lectus magna fringilla urna porttitor. Ornare quam viverra orci sagittis. Sed augue lacus viverra vitae congue. Senectus et netus et malesuada fames ac. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p><p>Commodo ullamcorper a lacus vestibulum sed arcu. Feugiat nisl pretium fusce id velit ut. A cras semper auctor neque vitae tempus. Dui nunc mattis enim ut tellus elementum. Et netus et malesuada fames ac turpis. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Ac placerat vestibulum lectus mauris ultrices eros. Sagittis eu volutpat odio facilisis. Lorem donec massa sapien faucibus et molestie ac. Dolor sit amet consectetur adipiscing elit. Ornare lectus sit amet est placerat in egestas. Enim nec dui nunc mattis enim ut tellus. Elit at imperdiet dui accumsan sit amet nulla facilisi. Sed felis eget velit aliquet sagittis id consectetur purus. Et molestie ac feugiat sed lectus vestibulum. Libero nunc consequat interdum varius.</p>"},"id":"4e773e91-6d2d-4213-b824-b3f117455a66","isHidden":false,"type":"sectionblock"}]
-
-----
-
-Typename: Media type
-
-----
-
-Types: Image, Plan, Video, Drawing, Printed matter, Audio
-
-----
-
-Filtername: Process stage
-
-----
-
-Filters: Archive material, Site visit, Outcome
+Blocks: 
 
 ----
 
@@ -94,6 +74,34 @@ Gallery:
 - file://HE2YkCSjhqpkFLtG
 - file://8mN6xzhzvvXR9mT2
 - file://vPuget4Q6f9hkeQs
+
+----
+
+Typename: Media type
+
+----
+
+Types: Image, Plan, Video, Drawing, Printed matter, Audio
+
+----
+
+Filtername: Process stage
+
+----
+
+Filters: Archive material, Site visit, Outcome
+
+----
+
+Summary:
+
+- 
+  category: Date
+  text: "2022"
+
+----
+
+Excerpt: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et. Consectetur a erat nam at. Dolor sit amet consectetur adipiscing elit ut aliquam. Amet luctus venenatis lectus magna fringilla urna porttitor. Ornare quam viverra orci sagittis. Sed augue lacus viverra vitae congue. Senectus et netus et malesuada fames ac. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
 
 ----
 

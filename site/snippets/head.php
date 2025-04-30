@@ -37,3 +37,5 @@
     ]) ?>
 </head>
 <body>
+<div class="loader"></div>
+<div class="cursor-wrapper"></div>

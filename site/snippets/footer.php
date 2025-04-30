@@ -1,5 +1,3 @@
-<div class="loader"></div>
-<div class="cursor-wrapper"></div>
 <footer class="footer">
     <div class="footer-nav">
         <?php if ($site->toggleLang()->isTrue()) : ?>

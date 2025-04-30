@@ -1,9 +1,0 @@
-Title: Home
-
-----
-
-Intro: <p>Architecture Land Initiative brings together design, research, and strategic thinking to address the necessity for a shift towards a less destructive, 'non-extractive' architecture. Multidisciplinary in nature, our initiatives support community-led solutions, acknowledge lived experiences and provide blueprints for direct action.</p>
-
-----
-
-Uuid: U0KJKzjr3f3reTcO

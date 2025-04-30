@@ -1,0 +1,6 @@
+title: Files
+focus: false
+preview: false
+accept: 
+  extension: jpg, png, jpeg, pdf
+  type: image, document

@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - A communal area for small businesses. ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: 
+
+----
+
+Uuid: jXwaeL1dQpj9FIMi
+
+----
+
+Template: media

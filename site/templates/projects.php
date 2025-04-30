@@ -1,29 +1,28 @@
-<?php snippet('header', slots: true) ?>
-    <?php slot('pathsHeader') ?>
-    <?php endslot() ?>
-<?php endsnippet() ?>
-
+<?= snippet('head') ?>
+<?= snippet('header') ?>
 
 <main class="main">
-    <section class="page-intro">    
-        <div class="text-intro">
-            <h3><?= $page->intro() ?></h3>
+    <section class="page-intro"> 
+        <div class="intro-text">
+            <?= $page->intro()->kt() ?>
         </div>
+        <?= $page->blocks()->toBlocks() ?>
     </section>
-    <section class="grid-layout scroll-x">
+
+    <section class="scroll-layout scroll-y">
         <div class="scroll-container">
-            <div class="scroll-items">
+            <div class="scroll-items column-direction">
                 <?php foreach ($projects->listed() as $project) : ?> 
                     <?php if ($project) : ?>
-                        <div class="grid-layout-item scroll-item">
+                        <div class="item scroll-item" <?php if ($cover = $project->background()->toFile()) : ?>style="background-image: url('<?= $cover->url() ?>');"<?php endif ?>>
                             <h2 class="item-title"><a data-name="<?= $project->title() ?>" href="<?= $project->url() ?>"></a></h2>
                         </div>
                     <?php endif ?>
                 <?php endforeach ?>
                 <?php foreach ($projects->unlisted() as $project) : ?> 
                     <?php if ($project) : ?>
-                        <div class="grid-layout-item scroll-item">
-                            <span class="item-title-label text-label">What's next</span>
+                        <div class="item scroll-item">
+                            <span class="item-title-label text-label">What's next:</span>
                             <h2 class="item-title"><p data-name="<?= $project->title() ?>"></p></h2>
                         </div>
                     <?php endif ?>
@@ -35,3 +34,4 @@
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>
+<?= snippet('foot') ?>

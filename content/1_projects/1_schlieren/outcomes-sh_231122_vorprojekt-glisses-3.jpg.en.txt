@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - Grundriss 3.OG, A2 / 1:50, Nov. 21, 2023. ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: Outcome
+
+----
+
+Uuid: 3epZZn5YoRaRzvgz
+
+----
+
+Template: media

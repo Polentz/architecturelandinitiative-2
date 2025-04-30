@@ -1,0 +1,29 @@
+Caption: <p>This is an amazing pdf!</p>
+
+----
+
+Info: <p>Click the icon to open it up in your browser, YOLO!</p>
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Document
+
+----
+
+Filter: Outcome
+
+----
+
+Uuid: YY8Yc4rQ0Ia1jmSi
+
+----
+
+Template: media

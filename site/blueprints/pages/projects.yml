@@ -1,4 +1,4 @@
-title: Projects
+title: Row-grid layout (Projects)
 
 sections:
   content:
@@ -15,6 +15,11 @@ sections:
           - email
           - clear
         nodes: false
+      blocks:
+        label: Text
+        type: blocks
+        fieldsets:
+          - textblock
   items:
     label: false
     type: pages
@@ -23,4 +28,3 @@ sections:
     template:
       - project
     image: false
-    sortable: true

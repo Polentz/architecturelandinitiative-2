@@ -1,0 +1,29 @@
+Caption: <p>Broschüre November 2023: Brochure copy. Photo ©Dominik Bachmann; ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Image
+
+----
+
+Filter: 
+
+----
+
+Uuid: jx84URuv669QRsoH
+
+----
+
+Template: media

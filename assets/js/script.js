@@ -1,8 +1,8 @@
 gsap.registerPlugin(ScrollTrigger, Flip);
 
 const footer = document.querySelector(".footer");
-const nav = footer.querySelector(".nav");
-const navElement = document.querySelectorAll(".menu-element, .button");
+const nav = footer.querySelector(".footer-nav");
+const navElement = document.querySelectorAll(".footer-nav-button, .button");
 const main = document.querySelector(".main");
 const header = document.querySelector(".header");
 const logo = document.querySelector(".logo");
@@ -22,9 +22,26 @@ const loader = () => {
     gsap.to(document.querySelector(".loader"), {
         autoAlpha: 0,
         duration: 1,
-        onComplete: () => {
-            document.querySelector(".loader").remove();
-        },
+    });
+};
+
+const animatePaths = () => {
+    const buttons = document.querySelectorAll(".header-nav-button");
+    buttons.forEach(button => {
+        const paths = button.querySelectorAll("path");
+        paths.forEach((path, i) => {
+            const length = path.getTotalLength();
+            path.style.strokeDasharray = length;
+            path.style.transitionDelay = `${i * .1}s`;
+
+            button.addEventListener('mouseenter', () => {
+                path.style.strokeDashoffset = length;
+            });
+
+            button.addEventListener('mouseleave', () => {
+                path.style.strokeDashoffset = 0;
+            });
+        });
     });
 };
 
@@ -64,7 +81,7 @@ const cursor = () => {
                 });
             });
 
-            const anchorTags = document.querySelectorAll("a, .menu-element, button, .filter, .deselect-filters");
+            const anchorTags = document.querySelectorAll("a, .footer-nav-button, button, .filter, .deselect-filters");
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -353,7 +370,6 @@ const sliderOpener = () => {
 
         navElement.forEach(element => {
             element.addEventListener("click", () => {
-                console.log("clicked")
                 if (element.id.includes(slider.id)) {
                     element.classList.add("--target");
                     addClasses();
@@ -379,25 +395,28 @@ const bannerOpener = () => {
     const addClasses = () => {
         nav.classList.add("--hide");
         banner.classList.add("--display");
-        const tl = gsap.timeline();
         gsap.set(bannerelements, {
             opacity: 0
         });
+        const tl = gsap.timeline();
         tl.to(bodyElements, {
+            duration: 0,
             y: `-${bannerContent.clientHeight}`,
         });
         tl.to(bannerelements, {
             duration: 0.5,
             opacity: 1,
-        }, "-=75%");
+        });
         tl.from(".contact-block", {
             y: 20,
+            duration: 0.25,
             stagger: 0.1,
-        }, "<");
+        }, "-=75%");
     };
 
     const removeClasses = () => {
         gsap.to(bodyElements, {
+            duration: 0,
             y: 0,
         });
         banner.classList.remove("--display");
@@ -416,149 +435,47 @@ const bannerOpener = () => {
     });
 };
 
-const handleBoxElements = () => {
-    const boxes = document.querySelectorAll(".box");
-    boxes.forEach(box => {
-        const openButton = box.querySelector(".button");
-        const innerBox = box.querySelector(".inner-box");
-        const innerBoxItems = box.querySelectorAll(".inner-box-column, .inner-box-header, .inner-box-content");
-        const closeButton = box.querySelector(".x-button");
-        const deselecter = document.querySelector(".deselect-filters");
+const handleFiltersBox = () => {
+    const openButton = document.querySelector(".filter-button");
+    const innerBox = document.querySelector(".inner-box");
+    const innerBoxItems = document.querySelectorAll(".inner-box-column, .inner-box-header, .inner-box-content");
+    const closeButton = document.querySelector(".x-button");
+    const deselecter = document.querySelector(".deselect-filters");
 
-        const addClasses = () => {
-            innerBox.classList.add("--scale-in");
-            openButton.classList.add("--scale-out");
-            setTimeout(() => {
-                innerBoxItems.forEach(content => {
-                    content.classList.add("--opacity");
-                });
-                closeButton.classList.add("--opacity");
-            }, 500);
-        };
-
-        const removeClasses = () => {
+    const addClasses = () => {
+        innerBox.classList.add("--scale-in");
+        openButton.classList.add("--scale-out");
+        setTimeout(() => {
             innerBoxItems.forEach(content => {
-                content.classList.remove("--opacity");
+                content.classList.add("--opacity");
             });
-            setTimeout(() => {
-                closeButton.classList.remove("--opacity");
-                innerBox.classList.remove("--scale-in");
-                openButton.classList.remove("--scale-out");
-            }, 250);
-        };
-
-        openButton.addEventListener("click", () => {
-            addClasses();
-        });
-
-        closeButton.addEventListener("click", () => {
-            removeClasses();
-        });
-
-        deselecter.addEventListener("click", () => {
-            removeClasses();
-        });
-    });
-};
-
-const handleProjectInfo = () => {
-    const gallery = document.querySelector(".gallery");
-    const slider = document.querySelector(".info-slider");
-    const sliderButton = slider.querySelector(".slider-button");
-    const sliderContent = slider.querySelector(".slider-content");
-    const infoButton = document.querySelector(".i-button");
-    const innerBox = document.querySelectorAll(".inner-box");
-    const readMoreButton = document.querySelector(".read-more-button");
-    let tl = gsap.timeline();
-
-    sliderButton.addEventListener("click", () => {
-        const state = Flip.getState(".gallery, .gallery-item");
-        gallery.classList.add("--width");
-        infoButton.classList.remove("--scale-out");
-
-        tl.to(slider, {
-            duration: 0.5,
-            xPercent: 100,
-            ease: "power1.out",
-        });
-
-        tl.to(slider, {
-            display: "none",
-            onUpdate: () => sliderContent.scrollTo(0, 0),
-        });
-
-        Flip.from(state, {
-            absolute: true,
-            duration: 0.75,
-            stagger: {
-                from: "start",
-                axis: "x",
-                amount: 0.25,
-            },
-            ease: "power1.out",
-        });
-
-        gsap.to(infoButton, {
-            duration: 0.5,
-            delay: 1,
-            opacity: 1,
-            pointerEvents: "all",
-            ease: "power1.out",
-        });
-    });
-
-    const openInfoSlider = () => {
-        const state = Flip.getState(".gallery, .gallery-item");
-        gallery.classList.remove("--width");
-        innerBox.forEach(box => {
-            if (box.classList.contains("--scale-in")) {
-                box.classList.remove("--scale-in");
-            };
-        });
-
-        gsap.to(infoButton, {
-            duration: 0.5,
-            opacity: 0,
-            pointerEvents: "none",
-            ease: "power1.out",
-        });
-
-        tl.to(slider, {
-            duration: 0.15,
-            display: "flex",
-        });
-
-        tl.to(slider, {
-            duration: 0.5,
-            xPercent: 0,
-            ease: "power1.out",
-        });
-
-        Flip.from(state, {
-            absolute: true,
-            duration: 0.5,
-            stagger: {
-                from: "start",
-                axis: "x",
-                amount: 0,
-            },
-            ease: "power1.out",
-        });
+            closeButton.classList.add("--opacity");
+        }, 500);
     };
 
-    const handleMediaQuery = (e) => {
-        if (e.matches) {
-            gallery.classList.add("--width");
-            infoButton.addEventListener("click", () => {
-                openInfoSlider();
-            });
-        } else {
-            readMoreButton.addEventListener("click", () => {
-                openInfoSlider();
-            });
-        };
+    const removeClasses = () => {
+        innerBoxItems.forEach(content => {
+            content.classList.remove("--opacity");
+        });
+        setTimeout(() => {
+            closeButton.classList.remove("--opacity");
+            innerBox.classList.remove("--scale-in");
+            openButton.classList.remove("--scale-out");
+        }, 250);
     };
-    handleMediaQuery(mediaQuery);
+
+    openButton.addEventListener("click", () => {
+        addClasses();
+    });
+
+    closeButton.addEventListener("click", () => {
+        removeClasses();
+    });
+
+    deselecter.addEventListener("click", () => {
+        removeClasses();
+    });
+
 };
 
 const handleFilters = () => {
@@ -622,54 +539,6 @@ const handleFilters = () => {
         removeFilters();
     });
 };
-
-const zoomer = () => {
-    const imageItems = document.querySelectorAll(".image-item");
-    const zoomedContainer = document.querySelector(".zoomed-container");
-    const zoomedButton = zoomedContainer.querySelector(".zoomed-button");
-
-    imageItems.forEach(item => {
-        const imageElement = item.querySelector(".image");
-        imageElement.addEventListener("click", () => {
-            if (item.classList.contains("--zoom-in")) {
-                if (imageElement.naturalHeight * 2 > imageElement.naturalWidth) {
-                    zoomedContainer.classList.add("--portrait");
-                } else {
-                    zoomedContainer.classList.add("--landscape");
-                };
-                zoomedContainer.style.display = "block";
-
-                const clonedImage = imageElement.cloneNode(true);
-                zoomedContainer.appendChild(clonedImage);
-                setTimeout(() => {
-                    zoomedButton.classList.add("--opacity");
-                }, 500);
-
-                if (zoomedContainer.classList.contains("--landscape")) {
-                    zoomedContainer.addEventListener("wheel", (event) => {
-                        event.preventDefault();
-                        zoomedContainer.scrollLeft += event.deltaY;
-                    });
-                } else {
-                    zoomedContainer.addEventListener("wheel", (event) => {
-                        event.preventDefault();
-                        zoomedContainer.scrollTop += event.deltaY;
-                    });
-                };
-            };
-        });
-    });
-
-    zoomedButton.addEventListener("click", () => {
-        zoomedButton.classList.remove("--opacity");
-        zoomedContainer.classList.remove("--portrait");
-        zoomedContainer.classList.remove("--landscape");
-        zoomedContainer.scrollTo(0, 0);
-        zoomedContainer.style.display = "none";
-        const zoomedImage = zoomedContainer.querySelector(".image");
-        zoomedImage.remove();
-    });
-}
 
 const handleGallery = () => {
     const handleMediaQuery = (e) => {
@@ -773,33 +642,104 @@ const accordion = () => {
     });
 };
 
+const sortAccordion = () => {  
+    const sortButtons = document.querySelectorAll('.accordion-topbar-item[data-item]');
+    const container = document.querySelector(".accordion-list");
+
+    let currentSort = {
+        key: null,
+        ascending: true
+    };
+
+    sortButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const sortKey = button.dataset.item;
+            const svg = button.querySelector("svg");
+
+            // Check if clicked the same key
+            const isSameKey = currentSort.key === sortKey;
+
+            currentSort.key = sortKey;
+            currentSort.ascending = isSameKey ? !currentSort.ascending : true;
+
+            // Reset all arrows
+            sortButtons.forEach(btn => {
+                const arrow = btn.querySelector("svg");
+                if (arrow) {
+                    arrow.classList.remove("--asc", "--desc");
+                };
+            });
+
+            // Set arrow direction
+            if (svg) {
+                svg.classList.add(currentSort.ascending ? "--asc" : "--desc");
+            };
+
+            // Sort elements
+            const items = Array.from(document.querySelectorAll(".accordion"));
+
+            items.sort((a, b) => {
+                let aValue = a.dataset[sortKey] || "";
+                let bValue = b.dataset[sortKey] || "";
+
+                // Normalize values for string comparisons (case insensitive)
+                aValue = sortKey === "type" ? aValue.toLowerCase() : aValue;
+                bValue = sortKey === "type" ? bValue.toLowerCase() : bValue;
+
+                // If sorting by date, convert to timestamp
+                if (sortKey === "date") {
+                    aValue = new Date(aValue).getTime();
+                    bValue = new Date(bValue).getTime();
+                }
+
+                // Perform the sorting based on ascending/descending
+                if (aValue < bValue) return currentSort.ascending ? -1 : 1;
+                if (aValue > bValue) return currentSort.ascending ? 1 : -1;
+                return 0;
+            });
+
+            items.forEach(item => container.appendChild(item));
+        });
+    });
+};
+
 const handleMenuOnMobile = () => {
-    const menuButton = document.querySelector(".mobile-menu-button");
-    const menuElements = document.querySelectorAll(".menu-element");
+    const banner = document.querySelector(".banner");
+    const menuButton = document.querySelector(".header-nav-button-mobile");
+    const headerNavEButtons = document.querySelectorAll(".header-nav-button");
+    const menuElements = document.querySelectorAll(".contact-block, .header-nav-button");
     const handleMediaQuery = (e) => {
         if (e.matches) {
             menuButton.addEventListener("click", () => {
-                nav.classList.toggle("--show");
+                menuButton.classList.toggle("--open");
+                footer.classList.toggle("--show");
+                headerNavEButtons.forEach(btn => {
+                    btn.classList.toggle("--show");
+                });
+                banner.classList.toggle("--display");
+                main.classList.toggle("--blur");
                 const tl = gsap.timeline();
                 tl.from(menuElements, {
                     duration: 0.5,
                     opacity: 0,
                 },);
                 tl.from(menuElements, {
-                    y: 20,
+                    y: 40,
                     stagger: 0.1,
                 }, "-=75%");
             });
-            menuElements.forEach(element => {
-                element.addEventListener("click", () => {
-                    if (nav.classList.contains("--show")) {
-                        nav.classList.remove("--show");
-                    };
+            headerNavEButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                menuButton.classList.remove("--open");
+                footer.classList.remove("--show");
+                headerNavEButtons.forEach(btn => {
+                    btn.classList.remove("--show");
                 });
-            });
-        } else {
-            menuButton.remove();
-        };
+                banner.classList.remove("--display");
+                main.classList.remove("--blur");
+                })
+            })
+        }
     };
     handleMediaQuery(mediaQuery);
 };
@@ -943,10 +883,30 @@ const audioPlayer = () => {
     });
 };
 
+const handleTopButton = () => {
+    const target = document.querySelector(".top-button");
+    const scrollThreshold = window.innerHeight / 2;
+    const scrolled = window.scrollY || window.pageYOffset;
+
+    if (document.documentElement.scrollHeight > window.innerHeight && scrolled > scrollThreshold) {
+        target.classList.add("--show");
+    } else {
+        target.classList.remove("--show");
+    };
+    
+    target.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+};
+
 window.addEventListener("load", () => {
     history.scrollRestoration = "manual";
     documentHeight();
     documentWidth();
+    animatePaths();
     loader();
     cursor();
     animateAll();
@@ -960,7 +920,4 @@ window.addEventListener("resize", () => {
     documentHeight();
     documentWidth();
 });
-
-
-
 

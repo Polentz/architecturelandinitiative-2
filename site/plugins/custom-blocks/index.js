@@ -39,6 +39,33 @@ panel.plugin("architecturelandinitiative/blocks", {
         </div>
       `
     },
+    textblock: {
+      template: `
+        <div class="block">
+          <div v-if="content.copy" class="block-text">
+              <div v-if="content.subtitle" class="text-label">
+                <p>
+                  <k-writer
+                    v-bind="field('subtitle')"
+                    :inline="true"
+                    :marks="false"
+                    :nodes="false"
+                    :value="content.subtitle"
+                    @input="update({ subtitle: $event })">
+                  </k-writer>
+                </p>
+              </div>
+              <div class="text">
+                <k-writer
+                  v-bind="field('copy')"
+                  :value="content.copy"
+                  @input="update({ copy: $event })">
+                </k-writer>
+              </div>
+          </div>
+        </div>
+      `
+    },
     contactblock: {
       template: `
       <k-writer

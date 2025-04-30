@@ -1,5 +1,15 @@
 window.addEventListener("load", () => {
-    handleBoxElements();
+    handleFiltersBox();
     handleFilters();
     accordion();
+    sortAccordion();
+    handleTopButton();
+});
+
+window.addEventListener("resize", () => {
+    handleTopButton();
+});
+
+window.addEventListener("scroll", () => {
+    handleTopButton();
 });

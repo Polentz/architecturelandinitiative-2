@@ -4,114 +4,99 @@ options:
     status: all
     template: project
 
-tabs:
-  page:
-    label: Page Content
-    icon: page
-    columns:
-      main:
-        width: 2/3
-        sections:
-          content:
-            type: fields
-            fields:
-              contentHeadline:
-                type: headline
-                label: Content
-                numbered: false
-              summary:
-                label: Summary
-                type: structure
-                columns:
-                  category:
-                    width: 1/2
-                  text:
-                    width: 1/2
-                fields:
-                  category:
-                    type: text
-                  text:
-                    type: text
-              excerpt:
-                label: Excerpt
-                type: writer
-                marks:
-                  - bold
-                  - italic
-                  - underline
-                  - link
-                  - email
-                  - clear
-                nodes: false
-              infoSummury:
-                label: false
-                type: info
-                text: | 
-                  The summary and the excerpt fields will appear in the Info [ i ] black box. 
-                  In excerpt, copy/paste a full sentence. It will be automatically cut to 300 characters.
-              divider:
-                type: line
-              blocks:
-                label: Text
-                type: blocks
-                fieldsets:
-                  - sectionblock
-      sidebar:
-        width: 1/3
-        sections:
-          filter:
-            type: fields
-            fields:   
-              filtersHeadline:
-                type: headline
-                label: Filter Settings
-                numbered: false
-              typeName:
-                label: Filter by    
-                type: text
-                width: 1/2 
-              types: 
-                type: multiselect
-                label: "Available filters (category: media)"
-                layout: list  
-                options:
-                  type: query
-                  query: site.mediaFilters.toStructure
-                  text: "{{ item.filter }}"
-                  value: "{{ item.filter }}"
-              filterName:
-                label: Filter by    
-                type: text
-                width: 1/2
-              filters:
-                type: multiselect
-                label: "Available filters (category: process stage)"  
-                layout: list
-                options:
-                  type: query
-                  query: site.processFilters.toStructure
-                  text: "{{ item.filter }}"
-                  value: "{{ item.filter }}"
-  media:
-    label: Page Media
-    icon: page
+columns:
+  main:
+    width: 2/3
     sections:
-      media:
+      content:
         type: fields
         fields:
-          mediaHeadline:
+          previewHeadline:
             type: headline
-            label: Media
+            label: "{{page.parent.title}} list preview" 
             numbered: false
+          background:
+            type: files
+            label: Background image
+            uploads:
+              template: media 
+            query: page.files
+            layout: list
+            size: small
+            multiple: false
+            image:
+              back: "#000"
+              icon: false
+              ratio: 1/1
+              cover: true
+          contentHeadline:
+            type: headline
+            label: "{{page.title}} page"
+            numbered: false
+          intro:
+            label: Introduction text
+            type: writer
+            marks:
+              - bold
+              - italic
+              - underline
+              - link
+              - email
+              - clear
+            nodes: false
+          blocks:
+            label: Text
+            type: blocks
+            fieldsets:
+              - sectionblock
+              - textblock
           gallery:
             type: files
             label: Gallery
-            uploads:
-              template: media         
-            layout: list
+            uploads: media
+            template: media         
+            layout: cards
             multiple: true
+            link: true
+            size: small
             image:
               icon: true
               ratio: 4/3
               back: white
               cover: true 
+  sidebar:
+    width: 1/3
+    sections:
+      filter:
+        type: fields
+        fields:   
+          filtersHeadline:
+            type: headline
+            label: Filter Settings
+            numbered: false
+          typeName:
+            label: Filter by    
+            type: text
+            width: 1/2 
+          types: 
+            type: multiselect
+            label: "Available filters (category: media)"
+            layout: list  
+            options:
+              type: query
+              query: site.mediaFilters.toStructure
+              text: "{{ item.filter }}"
+              value: "{{ item.filter }}"
+          filterName:
+            label: Filter by    
+            type: text
+            width: 1/2
+          filters:
+            type: multiselect
+            label: "Available filters (category: process stage)"  
+            layout: list
+            options:
+              type: query
+              query: site.processFilters.toStructure
+              text: "{{ item.filter }}"
+              value: "{{ item.filter }}"

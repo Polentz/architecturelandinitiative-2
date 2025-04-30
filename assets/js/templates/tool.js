@@ -1,8 +1,16 @@
 window.addEventListener("load", () => {
     lazyloading();
-    handleBoxElements();
+    handleFiltersBox();
     handleFilters();
-    zoomer();
     handleGallery();
     audioPlayer();
+    handleTopButton();
+});
+
+window.addEventListener("resize", () => {
+    handleTopButton();
+});
+
+window.addEventListener("scroll", () => {
+    handleTopButton();
 });

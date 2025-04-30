@@ -40,11 +40,6 @@
     padding: 0;
 }
 
-.k-item-content,
-.k-input-icon {
-    display: none;
-}
-
 .input-title {
     font-weight: 600;
 }

@@ -1,0 +1,29 @@
+Caption: <p>By Us for Us, Atlas; <em>Development model 1954</em>, pages 10-13, 2023 ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: Atlas
+
+----
+
+Mediatype: Printed matter
+
+----
+
+Filter: 
+
+----
+
+Uuid: x0x4aMiqiXt6t78w
+
+----
+
+Template: media

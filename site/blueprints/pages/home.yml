@@ -15,12 +15,19 @@ sections:
           - email
           - clear
         nodes: false
-  # items:
-  #   label: false
-  #   type: pages
-  #   layout: list
-  #   info: false
-  #   template:
-  #     - project
-  #   image: false
-  #   sortable: true
+      blocks:
+        label: Text
+        type: blocks
+        fieldsets:
+          - textblock
+      gallery:
+        type: files
+        label: Video gallery
+        uploads: video
+        template: video
+        link: false
+        image:
+          icon: true
+          ratio: 4/3
+          back: white
+          cover: true 

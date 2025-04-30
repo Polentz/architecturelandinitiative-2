@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - Interior rendering of the new construction; ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Image
+
+----
+
+Filter: Outcome
+
+----
+
+Uuid: knofdjFeQbG91s4D
+
+----
+
+Template: media

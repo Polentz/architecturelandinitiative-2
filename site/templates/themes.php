@@ -1,11 +1,9 @@
-<?php snippet('header', slots: true) ?>
-    <?php slot('pathsHeader') ?>
-    <?php endslot() ?>
-<?php endsnippet() ?>
+<?= snippet('head') ?>
+<?= snippet('header') ?>
 
 <main class="main">
     <section class="page-intro"> 
-        <div class="text-intro">
+        <div class="intro-text">
             <h3><?= $page->intro() ?></h3>        
         </div>
     </section>
@@ -33,3 +31,4 @@
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>
+<?= snippet('foot') ?>

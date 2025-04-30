@@ -1,0 +1,39 @@
+Title: Shared Landscapes
+
+----
+
+Summary: 
+
+----
+
+Blocks: [{"content":{"title":"Shared Landscapes","subtitle":"About the project","copy":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"4527e7ba-5b5d-47b2-b440-8051c76f4d0e","isHidden":false,"type":"sectionblock"}]
+
+----
+
+Gallery:
+
+- file://15LXf2jCNTOW9Rgu
+- file://mX0mgLWy68R10K7q
+- file://ItQAlwdR3LZEuq61
+- file://CFyfnvVYeavdqKE6
+- file://mnHLkbY4YIlRVbkQ
+
+----
+
+Typename: Media type
+
+----
+
+Types: 
+
+----
+
+Filtername: Process stage
+
+----
+
+Filters: 
+
+----
+
+Uuid: TJCn9GpAXkRTAdnc

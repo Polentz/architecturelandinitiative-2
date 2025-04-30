@@ -1,0 +1,19 @@
+name: Text block
+icon: text
+fields:
+  subtitle:
+    type: text  
+    width: 1/4
+    placeholder: Subtitle …
+  copy:
+    type: writer
+    width: 3/4
+    placeholder: Text …
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+      - email
+      - clear
+    nodes: false

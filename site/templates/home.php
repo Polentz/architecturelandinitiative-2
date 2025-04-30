@@ -1,18 +1,21 @@
-<?php snippet('header', slots: true) ?>
-    <?php slot('pathsHeader') ?>
-    <?php endslot() ?>
-<?php endsnippet() ?>
+<?= snippet('head') ?>
+<?= snippet('header') ?>
 
 <main class="main">
-    <section class="page-intro"> 
-        <div class="text-intro --blend">
-            <h3><?= $page->intro() ?></h3>        
+    <section class="page-intro --blend"> 
+        <div class="intro-text">
+            <?= $page->intro()->kt() ?>
         </div>
+        <?= $page->blocks()->toBlocks() ?>
     </section>
+    
     <section class="hero-layout">
-        <video src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov" autoplay loop playsinline muted></video>
+        <?php foreach ($page->gallery()->toFiles()->shuffle()->limit(1) as $video) : ?>
+            <video src="<?= $video->url() ?>" autoplay loop playsinline muted></video>
+        <?php endforeach ?>
     </section>
 </main>
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>
+<?= snippet('foot') ?>

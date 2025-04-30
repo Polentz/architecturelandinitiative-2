@@ -1,0 +1,21 @@
+Title: Home
+
+----
+
+Intro: <p>Architecture Land Initiative brings together design, research, and strategic thinking to address the necessity for a shift towards a less destructive, 'non-extractive' architecture. Multidisciplinary in nature, our initiatives support community-led solutions, acknowledge lived experiences and provide blueprints for direct action.</p>
+
+----
+
+Blocks: [{"content":{"subtitle":"News","copy":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"},"id":"e9a8a0b6-30fb-4970-952a-347715b97315","isHidden":false,"type":"textblock"}]
+
+----
+
+Gallery:
+
+- file://qXBtskoyC0qeGlbR
+- file://wNHjaaRNrVHCeZMp
+- file://WSmUOEVQLehGEmDm
+
+----
+
+Uuid: U0KJKzjr3f3reTcO

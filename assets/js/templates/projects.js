@@ -3,8 +3,19 @@ document.querySelectorAll(".item-title a, .item-title p").forEach(title => {
     splitTitle(title, thisContent);
 });
 
+const handleMediaQuery = (event) => {
+    if (event.matches) {
+        animateTitle(110, "none", 0.1);
+    } else {
+        animateTitle("none", -110, 0.1);
+    };
+};
+
 window.addEventListener("load", () => {
-    horizontalScroll();
-    animateTitle(110, "none", 0.1);
+    handleMediaQuery(mediaQuery);
     handleTitleHover();
+});
+
+window.addEventListener("resize", () => {
+    handleMediaQuery(mediaQuery);
 });

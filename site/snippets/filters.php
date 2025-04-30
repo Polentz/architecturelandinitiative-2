@@ -1,4 +1,10 @@
-<div id="filters"  class="box">
+<div id="filters" class="filters">
+    <button class="button top-button" type="button">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="39" height="39" fill="#1d1d1b"/>
+            <path d="M20 8L30 19.25M20 8L10 19.25M20 8L20 32" stroke="#ffffff"/>
+        </svg>
+    </button>
     <button class="button filter-button" type="button">
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="39" height="39" fill="#1d1d1b"/>

@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    handleBoxElements();
+    handleFiltersBox();
     handleFilters();
     accordion();
 });

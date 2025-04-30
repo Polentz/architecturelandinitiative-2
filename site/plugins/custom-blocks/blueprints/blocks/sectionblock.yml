@@ -1,9 +1,6 @@
 name: Section block
 icon: grid-full
 fields:
-  title:
-    placeholder: Title …
-    type: text
   subtitle:
     type: text  
     width: 1/4
@@ -11,6 +8,7 @@ fields:
   copy:
     type: writer
     width: 3/4
+    label: Text
     placeholder: Text …
     marks:
       - bold
@@ -20,3 +18,20 @@ fields:
       - email
       - clear
     nodes: false
+  gap:
+    type: gap
+    width: 1/4
+  thumbnail:
+    type: files
+    width: 3/4
+    uploads: files
+    template: files
+    layout: cards
+    size: small
+    text: false
+    multiple: false
+    image:
+      back: "#000"
+      icon: false
+      ratio: 1/1
+      cover: true

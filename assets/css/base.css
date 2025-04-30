@@ -197,6 +197,24 @@ input {
     outline: 0;
 }
 
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+hr {
+    border-top: var(--border-black);
+    border-bottom: none;
+}
+
 img::-moz-selection {
     background-color: transparent;
 }

@@ -1,0 +1,29 @@
+Caption: <p>Gaswerk der Stadt Zürich; <em>Kanalisation zur Dörranlage</em>, Längenprofil<em> </em>Schlieren, 22 Jan. 1919, Scale: 1/500 ©Archivplan Gemeinde Schlieren</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: Archive material
+
+----
+
+Uuid: a6YqpFYM5rQkzrON
+
+----
+
+Template: media

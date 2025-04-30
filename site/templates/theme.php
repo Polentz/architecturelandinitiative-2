@@ -1,12 +1,10 @@
-<?php snippet('header', slots: true) ?>
-    <?php slot('defaultHeader') ?>
-    <?php endslot() ?>
-<?php endsnippet() ?>
+<?= snippet('head') ?>
+<?= snippet('header') ?>
 
 <main class="main">
     <?php if ($page->intro()->isNotEmpty()) : ?>
         <section class="intro">
-            <div class="text-intro">
+            <div class="intro-text">
                 <h3><?= $page->intro() ?></h3>
             </div>
         </section>
@@ -23,5 +21,6 @@
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>
+<?= snippet('foot') ?>
 
 

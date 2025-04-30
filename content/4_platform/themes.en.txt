@@ -1,9 +1,0 @@
-Title: Platform
-
-----
-
-Intro: The platform/practice is a space for learning by doing, where we conduct experiments to shape new initiatives and help develop new models for architectural practice. The platform/practice allows us to define relevant areas of focus, reveal opportunities for action, test informed hypotheses, and share original learning. In doing so, we aim to grow new networks for collaboration and scale the resonance of our work.
-
-----
-
-Uuid: E3BspL994sov4yIx

@@ -1098,7 +1098,6 @@ input.seek-slider::-moz-range-thumb {
     object-fit: contain;
     cursor: -webkit-zoom-out;
     cursor: zoom-out;
-    pointer-events: all;
 }
 
 .gallery-item.--zoom-in video {
@@ -1111,12 +1110,6 @@ input.seek-slider::-moz-range-thumb {
     cursor: zoom-out;
 }
 
-.gallery-item.--opacity,
-.gallery-item.--opacity,
-.gallery-item.--opacity {
-    opacity: .25;
-}
-
 .gallery-item.--zoom-in .media-info {
     display: block;
 }
@@ -1125,6 +1118,10 @@ input.seek-slider::-moz-range-thumb {
     position: sticky;
     top: var(--double-margin);
     cursor: none;
+}
+
+.gallery-item.--opacity {
+    opacity: .25;
 }
 
 .gallery-item.--unfiltered {

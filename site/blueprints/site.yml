@@ -7,37 +7,27 @@ tabs:
     columns:
       main:
         width: 2/3
-        sections:
-          home:
-            label: Homepage
+        sections:       
+          allpages:
+            label: Website pages
             type: pages
             image: false
             template:
               - home
-            max: 1          
-          allpages:
-            label: Main pages
-            type: pages
-            image: false
-            template:
               - projects
               - tools
-              - timeline
+              - timeline      
+          infos:
+            label: false
+            type: info
+            text: "The pages above are linked to the site header navigation menu."
           oldTemplate:
-            label: Old template (Platform)
+            label: "Temporary area: old template (Platform)"
             type: pages
             image: false
             max: 1
             template:
-              - themes          
-          infos:
-            label: false
-            type: fields
-            fields:
-              allpagesInfo:
-                label: false
-                type: info
-                text: "The pages above are linked to the site header navigation menu."
+              - themes    
       sidebar:
         width: 1/3
         sections:
@@ -48,9 +38,11 @@ tabs:
               attachments:
                 label: File attachments     
                 type: files 
-                template: files
-                uploads: files
+                template: pdf
+                uploads: pdf
+                query: site.files.template("pdf")
                 multiple: true
+                link: false
                 translate: false
                 image:
                   icon: true

@@ -24,11 +24,12 @@ fields:
   thumbnail:
     type: files
     width: 3/4
-    uploads: files
-    template: files
+    uploads: thumbnail
+    template: thumbnail
+    query: site.files.template("thumbnail")
     layout: cards
     size: small
-    text: false
+    link: false
     multiple: false
     image:
       back: "#000"

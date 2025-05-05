@@ -9,7 +9,7 @@
         <?= $page->blocks()->toBlocks() ?>
     </section>
 
-    <section class="gallery grid">
+    <section class="gallery grid items-container">
         <?php foreach ($page->gallery()->toFiles()->shuffle() as $media) : ?>
             <?= snippet('gallery', ['media' => $media]) ?>
         <?php endforeach ?> 

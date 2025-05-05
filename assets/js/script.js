@@ -21,7 +21,7 @@ const documentWidth = () => {
 const loader = () => {
     gsap.to(document.querySelector(".loader"), {
         autoAlpha: 0,
-        duration: 1,
+        duration: 0.25,
     });
 };
 
@@ -480,11 +480,17 @@ const handleFiltersBox = () => {
 
 const handleFilters = () => {
     const filters = document.querySelectorAll(".filter");
+    const itemsContainer = document.querySelector(".items-container");
     const items = document.querySelectorAll(".gallery-item, .accordion");
     const filterClear = document.querySelector(".deselect-filters");
 
     const applyFilters = (filter) => {
-        window.scrollTo(0, 0);
+        const paddingOffset = 160;
+        const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
+        window.scrollTo({ 
+            top: offsetPosition, 
+            // behavior: "smooth",
+        });
         const filterId = filter.id;
 
         items.forEach(item => {
@@ -556,7 +562,10 @@ const handleGallery = () => {
             };
         });
         const offsetPosition = item.getBoundingClientRect().top + window.scrollY - paddingOffset;
-        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+        window.scrollTo({ 
+            top: offsetPosition, 
+            // behavior: "smooth",
+        });
         const video = item.querySelector("video");
         if (video) video.controls = true;
 

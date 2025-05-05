@@ -9,7 +9,7 @@
         <?= $page->blocks()->toBlocks() ?>
     </section>
 
-    <section class="gallery grid">
+    <section class="gallery grid items-container">
         <?php foreach ($allmedia->filterBy('tools', '*=', $page->title())->shuffle() as $media) : ?>
             <?php snippet('gallery', ['media' => $media], slots: true) ?>
                 <?php slot('showProject') ?>

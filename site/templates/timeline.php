@@ -9,7 +9,7 @@
         <?= $page->textblocks()->toBlocks() ?>
     </section>
     
-    <section class="list-layout">
+    <section class="list-layout items-container">
         <ul class="accordion-topbar accordion-labels">
             <li class="accordion-topbar-item text-label">
                 <span>TITLE</span>

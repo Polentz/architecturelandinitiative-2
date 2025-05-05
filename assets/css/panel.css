@@ -37,3 +37,11 @@ html {
 .k-line-field {
     height: 1rem;
 }
+
+.k-section-name-infos {
+    margin-top: var(--spacing-8) !important;
+}
+
+.k-section-name-infos .k-section-header {
+    display: none;
+}

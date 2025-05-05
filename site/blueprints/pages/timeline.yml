@@ -13,8 +13,20 @@ columns:
             numbered: false
           intro:
             label: Introduction text
-            type: textarea
-            buttons: false
+            type: writer
+            marks:
+              - bold
+              - italic
+              - underline
+              - link
+              - email
+              - clear
+            nodes: false
+          textblocks:
+            label: Text
+            type: blocks
+            fieldsets:
+              - textblock
           blocks:
             label: Items
             type: blocks

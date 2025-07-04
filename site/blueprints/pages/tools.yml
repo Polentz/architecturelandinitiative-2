@@ -19,6 +19,7 @@ sections:
         label: Text
         type: blocks
         fieldsets:
+          - sectionblock
           - textblock
   items:
     label: false

@@ -73,6 +73,7 @@ tabs:
                 type: blocks
                 fieldsets:
                   - sectionblock
+                  - textblock
       sidebar:
         width: 1/3
         sections:

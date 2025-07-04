@@ -5,35 +5,35 @@ panel.plugin("architecturelandinitiative/blocks", {
         <div class="block">
           <div v-if="content.title" class="block-title">
               <h2>
-                <k-writer
+                <k-writer-input
                     v-bind="field('title')"
                     :inline="true"
                     :marks="false"
                     :nodes="false"
                     :value="content.title"
                     @input="update({ title: $event })">
-                </k-writer>
+                </k-writer-input>
               </h2>
           </div>
           <div v-if="content.copy" class="block-text">
               <div v-if="content.subtitle" class="text-label">
                 <p>
-                  <k-writer
+                  <k-writer-input
                     v-bind="field('subtitle')"
                     :inline="true"
                     :marks="false"
                     :nodes="false"
                     :value="content.subtitle"
                     @input="update({ subtitle: $event })">
-                  </k-writer>
+                  </k-writer-input>
                 </p>
               </div>
               <div class="text">
-                <k-writer
+                <k-writer-input
                   v-bind="field('copy')"
                   :value="content.copy"
                   @input="update({ copy: $event })">
-                </k-writer>
+                </k-writer-input>
               </div>
           </div>
         </div>
@@ -45,22 +45,22 @@ panel.plugin("architecturelandinitiative/blocks", {
           <div v-if="content.copy" class="block-text">
               <div v-if="content.subtitle" class="text-label">
                 <p>
-                  <k-writer
+                  <k-writer-input
                     v-bind="field('subtitle')"
                     :inline="true"
                     :marks="false"
                     :nodes="false"
                     :value="content.subtitle"
                     @input="update({ subtitle: $event })">
-                  </k-writer>
+                  </k-writer-input>
                 </p>
               </div>
               <div class="text">
-                <k-writer
+                <k-writer-input
                   v-bind="field('copy')"
                   :value="content.copy"
                   @input="update({ copy: $event })">
-                </k-writer>
+                </k-writer-input>
               </div>
           </div>
         </div>
@@ -68,11 +68,11 @@ panel.plugin("architecturelandinitiative/blocks", {
     },
     contactblock: {
       template: `
-      <k-writer
+      <k-writer-input
         v-bind="field('copy')"
         :value="content.copy"
         @input="update({ copy: $event })">
-      </k-writer>
+      </k-writer-input>
       `
     },
     timelineblock: {

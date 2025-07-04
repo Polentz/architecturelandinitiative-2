@@ -1,0 +1,108 @@
+Title: Schlieren
+
+----
+
+Background: - file://aHIGKKMHduny1S2L
+
+----
+
+Intro: <p>The well-known experimental factory Stahl-&amp;Traumfabrik AG, with its carpentry, locksmith workshop, and craft <em>know-how</em> pool, has been an established venue in Zurich since the 1990s. In its early days in Zurich-Altstetten, readings, concerts, cultural events of all kinds, and lively celebrations took place among film sets, furniture designs, construction experiments, sculptures, and material archives.</p><p>Since 2020, production has taken place in the protected former drying plant in Schlieren at Bernstrasse 29, with the desire to drive this culture here. In collaboration with Pfeffermint AG and Architecture Land Initiative, a project was initiated to open this space to other companies, practices, creative workers, craftswo.men, and production facilities. The aim is to develop a place in synergy with its productive environment that simultaneously resonates with the rapid transformation of its surroundings.</p>
+
+----
+
+Blocks: 
+
+----
+
+Gallery:
+
+- file://0gNktDw25eeNj9T4
+- file://UkqG9xQAzww11Pac
+- file://a6YqpFYM5rQkzrON
+- file://MtOxbGJOMatICLfx
+- file://QiDJpkPbkMeosdad
+- file://BhPmLVymAwH20Evj
+- file://bylCj9igeybq3kvg
+- file://gBZ3sRGXHr5sm1z4
+- file://5o5Z0cPE4NfFvmUN
+- file://xyTq03PCpv5YbXsQ
+- file://ttmSxN4Gb1wZmTJd
+- file://YjRU1WTPoNUzWyvS
+- file://0vAgoHCI1uuwb1kz
+- file://h7CLfR6e7n4Im1Fn
+- file://7cBiqM5T8DZjZi2Z
+- file://Y5pqlORST2Ys9CWp
+- file://tHFvsoJYivladyeE
+- file://jx84URuv669QRsoH
+- file://P7lmvGxnGkwkj2xN
+- file://lEl8UzxvpoVrE2nE
+- file://L89PMVSfZxPS9IZl
+- file://wjwNzbkkVYRYJXy2
+- file://wNHdKu9DowLmBQSD
+- file://Wjk2jAhYUXLdf2u2
+- file://qlDE5kibqoYbZ8qo
+- file://CU2vP1KDp9inJH6z
+- file://jXwaeL1dQpj9FIMi
+- file://F1S7k4acO5hzrtKY
+- file://JDvFXAukOMnD9Tzg
+- file://knofdjFeQbG91s4D
+- file://xP30e5eWlg0IHmlj
+- file://YHCqlxWvoI4qR28N
+- file://3epZZn5YoRaRzvgz
+- file://YSdRB4fHFtM7j0hs
+- file://FCM14byLWZ7blaBx
+- file://b20f2OmCqeMY4Hg2
+- file://BKPERwkvyTwdB9b9
+- file://W0AjvhCmYqjX5JHd
+- file://Y2wSbIeMHDT1iiJ0
+- file://iSRBJJRvmDT8UYBM
+- file://8HDTNjJaL15CV9Rq
+- file://Vwpcbh9I2es04daI
+- file://aHIGKKMHduny1S2L
+- file://k02zeWeEZIFjH7NS
+- file://6SigbN1ryJzPdcYM
+- file://bYWKF715zmrt9y2y
+- file://lO8madERIHzTZF9d
+- file://2u1ywqoOnIYFa4N7
+- file://HLCFjitoAAPd4ISm
+- file://atZDV0k1NI9nZg2e
+- file://HpHEP1KPcWRcIUK0
+- file://zxYqdFjWohMl7kcR
+- file://Wy2rFYJOpd2BtseL
+- file://UZ73LmlKAUAd3BTB
+- file://5On31t1oiFt1ajDB
+- file://HE2YkCSjhqpkFLtG
+- file://8mN6xzhzvvXR9mT2
+- file://vPuget4Q6f9hkeQs
+
+----
+
+Typename: Media type
+
+----
+
+Types: Image, Plan, Video, Drawing, Printed matter, Audio
+
+----
+
+Filtername: Process stage
+
+----
+
+Filters: Archive material, Site visit, Outcome
+
+----
+
+Summary:
+
+- 
+  category: Date
+  text: "2022"
+
+----
+
+Excerpt: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et. Consectetur a erat nam at. Dolor sit amet consectetur adipiscing elit ut aliquam. Amet luctus venenatis lectus magna fringilla urna porttitor. Ornare quam viverra orci sagittis. Sed augue lacus viverra vitae congue. Senectus et netus et malesuada fames ac. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+
+----
+
+Uuid: OW9IEQcLZECxmmk8

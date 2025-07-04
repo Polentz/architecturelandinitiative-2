@@ -47,7 +47,8 @@ class Db
 			'password' => Config::get('db.password', ''),
 			'database' => Config::get('db.database', ''),
 			'prefix'   => Config::get('db.prefix', ''),
-			'port'     => Config::get('db.port', '')
+			'port'     => Config::get('db.port', ''),
+			'charset'  => Config::get('db.charset')
 		];
 
 		return static::$connection = new Database($params);
@@ -111,7 +112,9 @@ class Db
 			return call_user_func_array([static::$connection, $method], $arguments);
 		}
 
-		throw new InvalidArgumentException('Invalid static Db method: ' . $method);
+		throw new InvalidArgumentException(
+			message: 'Invalid static Db method: ' . $method
+		);
 	}
 }
 

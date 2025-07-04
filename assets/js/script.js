@@ -1,10 +1,10 @@
 gsap.registerPlugin(ScrollTrigger, Flip);
 
+const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
 const nav = footer.querySelector(".footer-nav");
-const navElement = document.querySelectorAll(".footer-nav-button, .button");
+const buttons = document.querySelectorAll(".button");
 const main = document.querySelector(".main");
-const header = document.querySelector(".header");
 const logo = document.querySelector(".logo");
 const mediaQuery = window.matchMedia("(max-width: 600px)");
 
@@ -13,9 +13,14 @@ const documentHeight = () => {
     doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
 };
 
-const documentWidth = () => {
+const headerHeight = () => {
     const doc = document.documentElement;
-    doc.style.setProperty("--doc-width", `${window.innerWidth}px`);
+    doc.style.setProperty("--header-height", `${header.offsetHeight}px`);
+};
+
+const footerHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty("--footer-height", `${footer.offsetHeight}px`);
 };
 
 const loader = () => {
@@ -26,7 +31,7 @@ const loader = () => {
 };
 
 const animatePaths = () => {
-    const buttons = document.querySelectorAll(".header-nav-button");
+    const buttons = document.querySelectorAll(".header .button, .footer .button");
     buttons.forEach(button => {
         const paths = button.querySelectorAll("path");
         paths.forEach((path, i) => {
@@ -81,7 +86,7 @@ const cursor = () => {
                 });
             });
 
-            const anchorTags = document.querySelectorAll("a, .footer-nav-button, button, .filter, .deselect-filters");
+            const anchorTags = document.querySelectorAll("a, .button, .filter, .deselect-filters");
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -262,7 +267,7 @@ const animateTitle = (x, y, stagger) => {
             stagger: stagger,
         });
         tl.to(word, {
-            clipPath: "none"
+            clipPath: "none",
         });
         labels.forEach(label => {
             if (label) {
@@ -276,7 +281,8 @@ const animateTitle = (x, y, stagger) => {
 };
 
 const handleTitleHover = () => {
-    document.querySelectorAll(".item-title a").forEach(title => {
+    const titles = document.querySelectorAll(".item-title a");
+    titles.forEach(title => {
         title.addEventListener("mouseenter", () => {
             const letters = title.querySelectorAll(".word .letter");
             gsap.to(letters, {
@@ -342,6 +348,7 @@ const horizontalScroll = () => {
 
 const sliderOpener = () => {
     const sliderContainer = document.querySelectorAll(".slider");
+    const blurredElements = document.querySelectorAll(".header, section:not(.slider):not(.page-intro)");
     sliderContainer.forEach(slider => {
         const sliderWrapper = slider.querySelector(".slider-wrapper");
         const sliderButton = sliderWrapper.querySelector(".slider-button");
@@ -351,7 +358,10 @@ const sliderOpener = () => {
             slider.classList.add("--display");
             setTimeout(() => {
                 sliderWrapper.classList.add("--translateX");
-                main.classList.add("--blur");
+                blurredElements.forEach(element => {
+                    element.classList.add("--blur");
+                });
+                document.querySelector(".page-intro").style.width = `calc(100% - ${sliderContent.clientWidth}px)`;
             }, 200);
             setTimeout(() => {
                 sliderButton.classList.add("--opacity");
@@ -360,7 +370,10 @@ const sliderOpener = () => {
 
         const removeClasses = () => {
             sliderWrapper.classList.remove("--translateX");
-            main.classList.remove("--blur");
+            document.querySelector(".page-intro").style.width = "100%";
+            blurredElements.forEach(element => {
+                element.classList.remove("--blur");
+            });
             sliderButton.classList.remove("--opacity");
             setTimeout(() => {
                 sliderContent.scrollTo(0, 0);
@@ -368,16 +381,18 @@ const sliderOpener = () => {
             }, 500);
         };
 
-        navElement.forEach(element => {
+        buttons.forEach(element => {
             element.addEventListener("click", () => {
                 if (element.id.includes(slider.id)) {
-                    element.classList.add("--target");
                     addClasses();
+                    setTimeout(() => {
+                        element.classList.add("--target");
+                    }, 200);
                 };
             });
         });
         sliderButton.addEventListener("click", () => {
-            navElement.forEach(element => {
+            buttons.forEach(element => {
                 element.classList.remove("--target");
             });
             removeClasses();
@@ -423,7 +438,7 @@ const bannerOpener = () => {
         nav.classList.remove("--hide");
     };
 
-    navElement.forEach(element => {
+    buttons.forEach(element => {
         element.addEventListener("click", () => {
             if (element.id.includes(banner.id)) {
                 addClasses();
@@ -487,8 +502,8 @@ const handleFilters = () => {
     const applyFilters = (filter) => {
         const paddingOffset = 160;
         const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
-        window.scrollTo({ 
-            top: offsetPosition, 
+        window.scrollTo({
+            top: offsetPosition,
             // behavior: "smooth",
         });
         const filterId = filter.id;
@@ -562,8 +577,8 @@ const handleGallery = () => {
             };
         });
         const offsetPosition = item.getBoundingClientRect().top + window.scrollY - paddingOffset;
-        window.scrollTo({ 
-            top: offsetPosition, 
+        window.scrollTo({
+            top: offsetPosition,
             // behavior: "smooth",
         });
         const video = item.querySelector("video");
@@ -640,7 +655,7 @@ const accordion = () => {
     });
 };
 
-const sortAccordion = () => {  
+const sortAccordion = () => {
     const sortButtons = document.querySelectorAll('.accordion-topbar-item[data-item]');
     const container = document.querySelector(".accordion-list");
 
@@ -703,9 +718,10 @@ const sortAccordion = () => {
 
 const handleMenuOnMobile = () => {
     const banner = document.querySelector(".banner");
-    const menuButton = document.querySelector(".header-nav-button-mobile");
-    const headerNavEButtons = document.querySelectorAll(".header-nav-button");
-    const menuElements = document.querySelectorAll(".contact-block, .header-nav-button");
+    const menuButton = document.querySelector(".nav-mobile-opener");
+    const headerNavEButtons = document.querySelectorAll(".header .button");
+    const menuElements = document.querySelectorAll(".contact-block, .header .button");
+    const blurredElements = document.querySelectorAll("section:not(.slider)");
     const handleMediaQuery = (e) => {
         if (e.matches) {
             menuButton.addEventListener("click", () => {
@@ -715,7 +731,9 @@ const handleMenuOnMobile = () => {
                     btn.classList.toggle("--show");
                 });
                 banner.classList.toggle("--display");
-                main.classList.toggle("--blur");
+                blurredElements.forEach(element => {
+                    element.classList.toggle("--blur");
+                });
                 const tl = gsap.timeline();
                 tl.from(menuElements, {
                     duration: 0.5,
@@ -728,13 +746,15 @@ const handleMenuOnMobile = () => {
             });
             headerNavEButtons.forEach(button => {
                 button.addEventListener("click", () => {
-                menuButton.classList.remove("--open");
-                footer.classList.remove("--show");
-                headerNavEButtons.forEach(btn => {
-                    btn.classList.remove("--show");
-                });
-                banner.classList.remove("--display");
-                main.classList.remove("--blur");
+                    menuButton.classList.remove("--open");
+                    footer.classList.remove("--show");
+                    headerNavEButtons.forEach(btn => {
+                        btn.classList.remove("--show");
+                    });
+                    banner.classList.remove("--display");
+                    blurredElements.forEach(element => {
+                        element.classList.remove("--blur");
+                    });
                 })
             })
         }
@@ -891,7 +911,7 @@ const handleTopButton = () => {
     } else {
         target.classList.remove("--show");
     };
-    
+
     target.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
@@ -900,12 +920,14 @@ const handleTopButton = () => {
     });
 };
 
+loader();
+
 window.addEventListener("load", () => {
     history.scrollRestoration = "manual";
     documentHeight();
-    documentWidth();
+    headerHeight();
+    footerHeight();
     animatePaths();
-    loader();
     cursor();
     animateAll();
     sliderOpener();
@@ -916,6 +938,7 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
     documentHeight();
-    documentWidth();
+    headerHeight();
+    footerHeight();
 });
 

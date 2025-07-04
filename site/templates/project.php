@@ -2,22 +2,23 @@
 <?= snippet('header') ?>
 
 <main class="main">
-    <section class="page-intro"> 
-        <div class="intro-text">
-            <?= $page->intro()->kt() ?>
-        </div>
-        <?= $page->blocks()->toBlocks() ?>
+    <?= snippet('intro') ?>
+
+    <section class="cover items-container">
+        <?php foreach ($page->cover()->toFiles() as $media) : ?>
+            <?= snippet('cover', ['media' => $media]) ?>
+        <?php endforeach ?>
     </section>
 
     <section class="gallery grid items-container">
-        <?php foreach ($page->gallery()->toFiles()->shuffle() as $media) : ?>
+        <?php foreach ($page->gallery()->toFiles() as $media) : ?>
             <?= snippet('gallery', ['media' => $media]) ?>
-        <?php endforeach ?> 
+        <?php endforeach ?>
     </section>
 
     <?= snippet('filters') ?>
 </main>
 
-<?= snippet('slider') ?>
+<?= snippet('slider') ?>s
 <?= snippet('footer') ?>
 <?= snippet('foot') ?>

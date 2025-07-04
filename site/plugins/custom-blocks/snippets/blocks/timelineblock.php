@@ -15,13 +15,13 @@
         <?php endif ?>
     </ul>
     <ul class="accordion-items">
-        <li class="accordion-content">    
+        <li class="accordion-content">
             <div class="accordion-text">
-                <div class="accordion-title">            
-                    <h3><?= $block->title() ?></h3>
-                    <?php if ( $block->subtitle()->isNotEmpty()) : ?>
+                <div class="accordion-title">
+                    <h3 class="title"><?= $block->title() ?></h3>
+                    <?php if ($block->subtitle()->isNotEmpty()) : ?>
                         <p class="text"><?= $block->subtitle() ?></p>
-                    <?php endif ?>  
+                    <?php endif ?>
                 </div>
                 <?php if ($block->body()->isNotEmpty()) : ?>
                     <div class="accordion-text--block text">
@@ -52,6 +52,3 @@
         <?php endif ?>
     </ul>
 </div>
-
-
-

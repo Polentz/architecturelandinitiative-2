@@ -112,7 +112,7 @@ class Environment
 
 	/**
 	 * Returns the server's IP address
-	 * @see ::ip
+	 * @see self::ip()
 	 */
 	public function address(): string|null
 	{
@@ -153,16 +153,16 @@ class Environment
 	 * @param array|null $info Optional override for `$_SERVER`
 	 */
 	public function detect(
-		array $options = null,
-		array $info = null
+		array|null $options = null,
+		array|null $info = null
 	): array {
-		$defaults = [
+		$options = [
 			'cli'     => null,
-			'allowed' => null
+			'allowed' => null,
+			...$options ?? []
 		];
 
-		$info  ??= $_SERVER;
-		$options = array_merge($defaults, $options ?? []);
+		$info ??= $_SERVER;
 
 		$this->info          = static::sanitize($info);
 		$this->cli           = $this->detectCli($options['cli']);
@@ -211,7 +211,9 @@ class Environment
 			$baseUrl = A::first($allowed);
 
 			if (is_string($baseUrl) === false) {
-				throw new InvalidArgumentException('Invalid allow list setup for base URLs');
+				throw new InvalidArgumentException(
+					message: 'Invalid allow list setup for base URLs'
+				);
 			}
 
 			$uri = new Uri($baseUrl, ['slash' => false]);
@@ -248,7 +250,9 @@ class Environment
 			}
 		}
 
-		throw new InvalidArgumentException('The environment is not allowed');
+		throw new InvalidArgumentException(
+			message: 'The environment is not allowed'
+		);
 	}
 
 	/**
@@ -322,10 +326,15 @@ class Environment
 		}
 
 		// @codeCoverageIgnoreStart
+		$sapi = php_sapi_name();
+		if ($sapi === 'cli') {
+			return true;
+		}
+
 		$term = getenv('TERM');
 
 		if (
-			substr(PHP_SAPI, 0, 3) === 'cgi' &&
+			str_starts_with($sapi, 'cgi') === true &&
 			$term &&
 			$term !== 'unknown'
 		) {
@@ -524,7 +533,7 @@ class Environment
 
 		$protocols = ['https', 'https, http'];
 
-		return in_array(strtolower($protocol), $protocols) === true;
+		return in_array(strtolower($protocol), $protocols, true) === true;
 	}
 
 	/**
@@ -597,13 +606,7 @@ class Environment
 	 */
 	protected function detectRequestUri(string|null $requestUri = null): Uri
 	{
-		// make sure the URL parser works properly when there's a
-		// colon in the request URI but the URI is relative
-		if (Url::isAbsolute($requestUri) === false) {
-			$requestUri = 'https://getkirby.com' . $requestUri;
-		}
-
-		$uri = new Uri($requestUri);
+		$uri = new Uri($requestUri ?? '');
 
 		// create the URI object as a combination of base uri parts
 		// and the parts from REQUEST_URI
@@ -635,13 +638,13 @@ class Environment
 	/**
 	 * Gets a value from the server environment array
 	 *
-	 * <code>
-	 * $server->get('document_root');
+	 * ```php
 	 * // sample output: /var/www/kirby
+	 * $server->get('document_root');
 	 *
-	 * $server->get();
 	 * // returns the whole server array
-	 * </code>
+	 * $server->get();
+	 * ```
 	 *
 	 * @param string|false|null $key The key to look for. Pass `false` or `null`
 	 *                               to return the entire server array.
@@ -753,6 +756,10 @@ class Environment
 			return true;
 		}
 
+		if (Str::endsWith($host, '.ddev.site') === true) {
+			return true;
+		}
+
 		// collect all possible visitor ips
 		$ips = [
 			$this->get('REMOTE_ADDR'),
@@ -768,13 +775,13 @@ class Environment
 		$ips = array_unique(array_filter($ips));
 
 		// no known ip? Better not assume it's local
-		if (empty($ips) === true) {
+		if ($ips === []) {
 			return false;
 		}
 
 		// stop as soon as a non-local ip is found
 		foreach ($ips as $ip) {
-			if (in_array($ip, ['::1', '127.0.0.1']) === false) {
+			if (in_array($ip, ['::1', '127.0.0.1'], true) === false) {
 				return false;
 			}
 		}
@@ -807,18 +814,24 @@ class Environment
 		}
 
 		// load the config for the host
-		if (empty($host) === false) {
+		if (
+			empty($host) === false &&
+			F::exists($path = $root . '/config.' . $host . '.php', $root) === true
+		) {
 			$configHost = F::load(
-				file: $root . '/config.' . $host . '.php',
+				file: $path,
 				fallback: [],
 				allowOutput: false
 			);
 		}
 
 		// load the config for the server IP
-		if (empty($addr) === false) {
+		if (
+			empty($addr) === false &&
+			F::exists($path = $root . '/config.' . $addr . '.php', $root) === true
+		) {
 			$configAddr = F::load(
-				file: $root . '/config.' . $addr . '.php',
+				file: $path,
 				fallback: [],
 				allowOutput: false
 			);

@@ -26,7 +26,7 @@ class Darkroom
 	public function __construct(
 		protected array $settings = []
 	) {
-		$this->settings = array_merge($this->defaults(), $settings);
+		$this->settings = [...$this->defaults(), ...$settings];
 	}
 
 	/**
@@ -38,7 +38,7 @@ class Darkroom
 	public static function factory(string $type, array $settings = []): object
 	{
 		if (isset(static::$types[$type]) === false) {
-			throw new Exception('Invalid Darkroom type');
+			throw new Exception(message: 'Invalid Darkroom type');
 		}
 
 		$class = static::$types[$type];
@@ -51,7 +51,6 @@ class Darkroom
 	protected function defaults(): array
 	{
 		return [
-			'autoOrient'  => true,
 			'blur'        => false,
 			'crop'        => false,
 			'format'      => null,
@@ -60,6 +59,7 @@ class Darkroom
 			'quality'     => 90,
 			'scaleHeight' => null,
 			'scaleWidth'  => null,
+			'sharpen'     => null,
 			'width'       => null,
 		];
 	}
@@ -69,7 +69,7 @@ class Darkroom
 	 */
 	protected function options(array $options = []): array
 	{
-		$options = array_merge($this->settings, $options);
+		$options = [...$this->settings, ...$options];
 
 		// normalize the crop option
 		if ($options['crop'] === true) {
@@ -91,6 +91,11 @@ class Darkroom
 		if (isset($options['bw']) === true) {
 			$options['grayscale'] = $options['bw'];
 			unset($options['bw']);
+		}
+
+		// normalize the sharpen option
+		if ($options['sharpen'] === true) {
+			$options['sharpen'] = 50;
 		}
 
 		$options['quality'] ??= $this->settings['quality'];

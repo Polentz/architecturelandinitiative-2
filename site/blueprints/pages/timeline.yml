@@ -26,6 +26,7 @@ columns:
             label: Text
             type: blocks
             fieldsets:
+              - sectionblock
               - textblock
           blocks:
             label: Items

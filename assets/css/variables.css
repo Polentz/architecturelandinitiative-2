@@ -1,0 +1,68 @@
+:root {
+    --doc-height: 100%;
+    --footer-height: ;
+
+    --black: #1d1d1b;
+    --white: #ffffff;
+    --main-color: ;
+    --acc-color: ;
+    --background: #ffffff;
+    --shade-color: #f0eceb50;
+    --body-text-font: "GT America";
+    --body-text-size: 1.25rem;
+    --secondary-text-font: "GT Cinetype";
+    --secondary-text-size: 1rem;
+    --title-font: "GT America";
+    --title-size: calc(1.5rem + 1vw);
+    --big-title-font: "GT America";
+    --big-title-size: calc(1rem + 6.5vw);
+    /* --big-title-size: 6rem; */
+    --label-text-font: "Pitch Sans";
+    --label-text-size: .9rem;
+    --header-text-font: "GT Cinetype";
+    /* --main-margin: 4rem;
+    --half-margin: 2.5rem;
+    --double-margin: 12rem;
+    --small-margin: 1rem; */
+
+    --main-margin: 6rem;
+    --half-margin: 3rem;
+    --double-margin: 12rem;
+    --inner-margin: 2rem;
+    --small-margin: 1rem;
+
+
+    --button-size: 2.2rem;
+    --inner-box-width: calc(100dvw / 3);
+    --border-black: solid 1px var(--black);
+    --border-white: solid 1px var(--white);
+    --border-color: solid 1px var(--main-color);
+}
+
+@media screen and (min-width: 1500px) {
+    :root {
+        --main-margin: 16rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    :root {
+        --secondary-text-size: .8rem;
+        --label-text-size: .8rem;
+        --button-size: 2rem;
+        --main-margin: 2.5rem;
+        --half-margin: 1.5rem;
+        --double-margin: 8rem;
+        --inner-box-width: calc(100dvw / 2);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --big-title-size: 3.5rem;
+        --main-margin: 1rem;
+        --half-margin: 1rem;
+        --double-margin: 6rem;
+        --inner-box-width: calc(100vw - var(--half-margin) - var(--half-margin));
+    }
+}

@@ -242,6 +242,7 @@ video {
     background: var(--main-color);
     -webkit-backdrop-filter: blur(0rem);
     backdrop-filter: blur(0rem);
+    pointer-events: all;
 }
 
 .button.--current:hover {
@@ -367,7 +368,7 @@ video {
 }
 
 .header-nav {
-    width: 100%;
+    /* width: 100%; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -462,22 +463,9 @@ video {
     background: var(--main-color);
 }
 
-/* .banner-content {
-    background: var(--background);
-} */
-
 .contact-block p:not(:last-child) {
     margin-bottom: var(--small-margin);
 }
-
-/* .social-button {
-    background: var(--shade-color);
-    -webkit-backdrop-filter: blur(2rem);
-    backdrop-filter: blur(2rem);
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-} */
 
 .slider {
     /* width: calc(100% / 3 * 2 + var(--button-size)); */

@@ -4,7 +4,7 @@
 <main class="main">
     <?= snippet('intro') ?>
 
-    <section class="cover items-container">
+    <section class="cover">
         <?php foreach ($page->cover()->toFiles() as $media) : ?>
             <?= snippet('cover', ['media' => $media]) ?>
         <?php endforeach ?>

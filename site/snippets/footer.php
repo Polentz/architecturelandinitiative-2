@@ -1,7 +1,7 @@
 <footer class="footer">
     <div class="footer-nav">
         <div class="footer-nav-wrapper">
-            <h1 class="header-headline">
+            <h1 class="headline">
                 <a class="logo" href="<?= $site->page('home')->url() ?>">
                     <span class="logo-word-1">Architecture</span>
                     <span class="logo-word-2">Land</span>
@@ -34,7 +34,7 @@
         <div class="banner-content">
             <?= $site->contactblocks()->toBlocks() ?>
         </div>
-        <button class="button banner-button" type="button">
+        <button class="ui-button x-button" type="button">
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 8L20 20M20 20L32 32M20 20L32 8M20 20L8 32" stroke="#1d1d1b" />
             </svg>

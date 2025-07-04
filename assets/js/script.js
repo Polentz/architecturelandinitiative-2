@@ -24,9 +24,14 @@ const footerHeight = () => {
 };
 
 const loader = () => {
+
+    const removeLoader = () => {
+        document.querySelector(".loader").remove()
+    };
     gsap.to(document.querySelector(".loader"), {
         autoAlpha: 0,
         duration: 0.25,
+        onComplete: removeLoader
     });
 };
 
@@ -351,7 +356,7 @@ const sliderOpener = () => {
     const blurredElements = document.querySelectorAll(".header, section:not(.slider):not(.page-intro)");
     sliderContainer.forEach(slider => {
         const sliderWrapper = slider.querySelector(".slider-wrapper");
-        const sliderButton = sliderWrapper.querySelector(".slider-button");
+        const sliderButton = sliderWrapper.querySelector(".x-button");
         const sliderContent = sliderWrapper.querySelector(".slider-content");
 
         const addClasses = () => {
@@ -403,8 +408,8 @@ const sliderOpener = () => {
 const bannerOpener = () => {
     const banner = document.querySelector(".banner");
     const bannerContent = document.querySelector(".banner-content");
-    const bannerButton = banner.querySelector(".banner-button");
-    const bodyElements = gsap.utils.toArray(".main, .box-container, .info-slider, .slider");
+    const bannerButton = banner.querySelector(".x-button");
+    const bodyElements = gsap.utils.toArray(".main, .filters, .slider");
     const bannerelements = gsap.utils.toArray(bannerContent, bannerButton);
 
     const addClasses = () => {
@@ -451,10 +456,11 @@ const bannerOpener = () => {
 };
 
 const handleFiltersBox = () => {
-    const openButton = document.querySelector(".filter-button");
+    const container = document.querySelector(".filters");
+    const openButton = container.querySelector(".filter-button");
     const innerBox = document.querySelector(".inner-box");
     const innerBoxItems = document.querySelectorAll(".inner-box-column, .inner-box-header, .inner-box-content");
-    const closeButton = document.querySelector(".x-button");
+    const closeButton = container.querySelector(".x-button");
     const deselecter = document.querySelector(".deselect-filters");
 
     const addClasses = () => {
@@ -920,9 +926,8 @@ const handleTopButton = () => {
     });
 };
 
-loader();
-
 window.addEventListener("load", () => {
+    loader();
     history.scrollRestoration = "manual";
     documentHeight();
     headerHeight();

@@ -15,10 +15,9 @@
             <?= snippet('gallery', ['media' => $media]) ?>
         <?php endforeach ?>
     </section>
-
-    <?= snippet('filters') ?>
 </main>
 
-<?= snippet('slider') ?>s
+<?= snippet('filters') ?>
+<?= snippet('slider') ?>
 <?= snippet('footer') ?>
 <?= snippet('foot') ?>

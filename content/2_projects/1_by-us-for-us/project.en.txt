@@ -127,6 +127,10 @@ Background: - file://JtUeZuFd4cXPvtRp
 
 ----
 
+Selectfilters: mediatype, filter
+
+----
+
 Typename: Media type
 
 ----

@@ -84,33 +84,43 @@ columns:
               icon: false
               ratio: 1/1
               cover: true
-          filtersHeadline:
+          newFiltersHeadline:
             type: headline
-            label: Filter Settings
-            numbered: false
-          typeName:
-            label: Filter by    
-            type: text
-            width: 1/2 
-          types: 
-            type: multiselect
-            label: "Available filters (category: media)"
-            layout: list  
+            label: Filter Settings (NEW)
+            numbered: false    
+          selectFilters:
+            label: Filter by
+            type: checkboxes
             options:
-              type: query
-              query: site.mediaFilters.toStructure
-              text: "{{ item.filter }}"
-              value: "{{ item.filter }}"
-          filterName:
-            label: Filter by    
-            type: text
-            width: 1/2
-          filters:
-            type: multiselect
-            label: "Available filters (category: process stage)"  
-            layout: list
-            options:
-              type: query
-              query: site.processFilters.toStructure
-              text: "{{ item.filter }}"
-              value: "{{ item.filter }}"
+              mediatype: Media type
+              filter: Process stage
+          # filtersHeadline:
+          #   type: headline
+          #   label: Filter Settings
+          #   numbered: false
+          # typeName:
+          #   label: Filter by    
+          #   type: text
+          #   width: 1/2 
+          # types: 
+          #   type: multiselect
+          #   label: "Available filters (category: media)"
+          #   layout: list  
+          #   options:
+          #     type: query
+          #     query: site.mediaFilters.toStructure
+          #     text: "{{ item.filter }}"
+          #     value: "{{ item.filter }}"
+          # filterName:
+          #   label: Filter by    
+          #   type: text
+          #   width: 1/2
+          # filters:
+          #   type: multiselect
+          #   label: "Available filters (category: process stage)"  
+          #   layout: list
+          #   options:
+          #     type: query
+          #     query: site.processFilters.toStructure
+          #     text: "{{ item.filter }}"
+          #     value: "{{ item.filter }}"

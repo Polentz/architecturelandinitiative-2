@@ -91,7 +91,7 @@ const cursor = () => {
                 });
             });
 
-            const anchorTags = document.querySelectorAll("a, .button, .filter, .deselect-filters");
+            const anchorTags = document.querySelectorAll("a, .button, .filter, .filter-deselect");
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -119,7 +119,7 @@ const cursor = () => {
                 });
             });
 
-            const blackBox = document.querySelectorAll(".inner-box, .pdf, .audio-player");
+            const blackBox = document.querySelectorAll(".filters-wrapper, .pdf, .audio-player");
             blackBox.forEach(box => {
                 box.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -458,10 +458,10 @@ const bannerOpener = () => {
 const handleFiltersBox = () => {
     const container = document.querySelector(".filters");
     const openButton = container.querySelector(".filter-button");
-    const innerBox = document.querySelector(".inner-box");
-    const innerBoxItems = document.querySelectorAll(".inner-box-column, .inner-box-header, .inner-box-content");
+    const innerBox = document.querySelector(".filters-wrapper");
+    const innerBoxItems = document.querySelectorAll(".filters-wrapper-column, .filters-wrapper-header, .filters-wrapper-content");
     const closeButton = container.querySelector(".x-button");
-    const deselecter = document.querySelector(".deselect-filters");
+    const deselecter = document.querySelector(".filter-deselect");
 
     const addClasses = () => {
         innerBox.classList.add("--scale-in");
@@ -503,7 +503,8 @@ const handleFilters = () => {
     const filters = document.querySelectorAll(".filter");
     const itemsContainer = document.querySelector(".items-container");
     const items = document.querySelectorAll(".gallery-item, .accordion");
-    const filterClear = document.querySelector(".deselect-filters");
+    const filterClear = document.querySelector(".filter-deselect");
+    const counter = document.querySelector(".filter-button-counter");
 
     const applyFilters = (filter) => {
         const paddingOffset = 160;
@@ -514,26 +515,27 @@ const handleFilters = () => {
         });
         const filterId = filter.id;
 
+        const applyFilter = (item) => {
+            item.classList.remove("--unfiltered");
+            item.classList.add("--filtered");
+            counter.style.display = "block";
+        };
+
         items.forEach(item => {
             const itemType = item.dataset.type;
             const itemCategory = item.dataset.category;
             const itemProject = item.dataset.project;
             const itemMembers = item.dataset.members;
             if (itemType === filterId) {
-                item.classList.remove("--unfiltered");
-                item.classList.add("--filtered");
+                applyFilter(item);
             } else if (itemCategory === filterId) {
-                item.classList.remove("--unfiltered");
-                item.classList.add("--filtered");
+                applyFilter(item);
             } else if (itemProject === filterId) {
-                item.classList.remove("--unfiltered");
-                item.classList.add("--filtered");
+                applyFilter(item);
             } else if (itemMembers && itemMembers.includes(filter.textContent)) {
-                item.classList.remove("--unfiltered");
-                item.classList.add("--filtered");
+                applyFilter(item);
             } else {
-                item.classList.add("--unfiltered");
-                item.classList.remove("--filtered");
+                applyFilter(item);
             };
         });
     };
@@ -548,7 +550,8 @@ const handleFilters = () => {
             item.classList.remove("--unfiltered");
             item.classList.remove("--filtered");
         });
-    }
+        counter.style.display = "none";
+    };
 
     filters.forEach(filter => {
         filter.addEventListener("click", () => {

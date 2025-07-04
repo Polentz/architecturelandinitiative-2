@@ -146,6 +146,31 @@ Membersfilters:
 
 ----
 
+filtersCollection:
+
+- 
+  category: Media
+  filter:
+    - Image
+    - Map
+    - Plan
+    - Audio
+    - Video
+    - Document
+    - Drawing
+    - Printed matter
+- 
+  category: Process stage
+  filter:
+    - Archive material
+    - Research
+    - Event
+    - Outcome
+    - Site visit
+    - Process
+
+----
+
 Description: Architecture Land Initiative (ALIN) is a cooperative based in Geneva and Zurich. ALIN is a non-profit common-benefit platform
 
 ----

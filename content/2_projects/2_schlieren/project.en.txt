@@ -2,15 +2,15 @@ Title: Schlieren
 
 ----
 
-Background: - file://aHIGKKMHduny1S2L
-
-----
-
 Intro: <p>The well-known experimental factory Stahl-&amp;Traumfabrik AG, with its carpentry, locksmith workshop, and craft <em>know-how</em> pool, has been an established venue in Zurich since the 1990s. In its early days in Zurich-Altstetten, readings, concerts, cultural events of all kinds, and lively celebrations took place among film sets, furniture designs, construction experiments, sculptures, and material archives.</p><p>Since 2020, production has taken place in the protected former drying plant in Schlieren at Bernstrasse 29, with the desire to drive this culture here. In collaboration with Pfeffermint AG and Architecture Land Initiative, a project was initiated to open this space to other companies, practices, creative workers, craftswo.men, and production facilities. The aim is to develop a place in synergy with its productive environment that simultaneously resonates with the rapid transformation of its surroundings.</p>
 
 ----
 
 Blocks: 
+
+----
+
+Cover: 
 
 ----
 
@@ -74,6 +74,14 @@ Gallery:
 - file://HE2YkCSjhqpkFLtG
 - file://8mN6xzhzvvXR9mT2
 - file://vPuget4Q6f9hkeQs
+
+----
+
+Background: - file://aHIGKKMHduny1S2L
+
+----
+
+Selectfilters: mediatype, filter
 
 ----
 

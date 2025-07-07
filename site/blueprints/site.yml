@@ -16,7 +16,9 @@ tabs:
               - home
               - projects
               - tools
-              - timeline      
+              - platform      
+              - timeline
+              - about
           infos:
             label: false
             type: info
@@ -72,7 +74,7 @@ tabs:
                 label: Text
                 type: blocks
                 fieldsets:
-                  - sectionblock
+                  - sliderblock
                   - textblock
       sidebar:
         width: 1/3

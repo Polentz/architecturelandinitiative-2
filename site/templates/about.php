@@ -2,12 +2,10 @@
 <?= snippet('header') ?>
 
 <main class="main">
-    <section class="page-intro">
-        <div class="text">
-            <?= $page->intro()->kt() ?>
-        </div>
-        <?= $site->blocks()->toBlocks() ?>
-    </section>
+    <?php snippet('intro', slots: true) ?>
+    <?= slot('aboutPage') ?>
+    <?php endslot() ?>
+    <?php endsnippet() ?>
 </main>
 
 <?= snippet('footer') ?>

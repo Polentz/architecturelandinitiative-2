@@ -15,12 +15,6 @@ sections:
           - email
           - clear
         nodes: false
-      textblocks:
-        label: Additional text
-        type: blocks
-        fieldsets:
-          - sectionblock
-          - textblock
       gallery:
         type: files
         label: Video gallery

@@ -15,18 +15,31 @@
     gap: 2rem;
 }
 
-.block-text {
+.slider-block {
     display: flex;
     justify-content: space-between;
     gap: var(--small-margin);
 }
 
-.text-label {
+.slider-block .text-label {
     flex: 1 1 15%;
 }
 
-.text {
+.slider-block .text {
     flex: 1 1 75%;
+}
+
+.text-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    gap: var(--inner-margin);
+}
+
+.text-block .text {
+    grid-column: 2 / 5;
 }
 
 .input-wrapper {

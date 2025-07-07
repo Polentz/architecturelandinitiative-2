@@ -1,21 +1,9 @@
 panel.plugin("architecturelandinitiative/blocks", {
   blocks: {
-    sectionblock: {
+    sliderblock: {
       template: `
         <div class="block">
-          <div v-if="content.title" class="block-title">
-              <h2>
-                <k-writer-input
-                    v-bind="field('title')"
-                    :inline="true"
-                    :marks="false"
-                    :nodes="false"
-                    :value="content.title"
-                    @input="update({ title: $event })">
-                </k-writer-input>
-              </h2>
-          </div>
-          <div v-if="content.copy" class="block-text">
+          <div v-if="content.copy" class="slider-block">
               <div v-if="content.subtitle" class="text-label">
                 <p>
                   <k-writer-input
@@ -42,7 +30,7 @@ panel.plugin("architecturelandinitiative/blocks", {
     textblock: {
       template: `
         <div class="block">
-          <div v-if="content.copy" class="block-text">
+          <div v-if="content.copy" class="text-block">
               <div v-if="content.subtitle" class="text-label">
                 <p>
                   <k-writer-input

@@ -19,7 +19,7 @@ sections:
         label: Additional text
         type: blocks
         fieldsets:
-          - sectionblock
+          - sliderblock
           - textblock
   items:
     label: false

@@ -6,7 +6,7 @@ Intro: Architecture Land Initiative brings together design, research, and strate
 
 ----
 
-Textblocks: [{"content":{"subtitle":"info","copy":"<p>Lorem ipsum</p>","thumbnail":[]},"id":"617a843d-a09e-4a7b-aa53-cae1c7d314ac","isHidden":false,"type":"sectionblock"}]
+Textblocks: 
 
 ----
 

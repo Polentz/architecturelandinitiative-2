@@ -14,6 +14,5 @@
     </section>
 </main>
 
-<?= snippet('slider') ?>
 <?= snippet('footer') ?>
 <?= snippet('foot') ?>

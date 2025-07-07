@@ -30,7 +30,7 @@ columns:
             label: Text
             type: blocks
             fieldsets:
-              - sectionblock
+              - sliderblock
               - textblock
           cover:
             type: files

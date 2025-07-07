@@ -17,3 +17,21 @@ fields:
       - email
       - clear
     nodes: false
+  gap:
+    type: gap
+    width: 1/4
+  thumbnail:
+    type: files
+    width: 3/4
+    uploads: thumbnail
+    template: thumbnail
+    query: site.files.template("thumbnail")
+    layout: cards
+    size: small
+    link: false
+    multiple: false
+    image:
+      back: "#000"
+      icon: false
+      ratio: 1/1
+      cover: true

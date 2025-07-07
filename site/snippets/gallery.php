@@ -1,8 +1,7 @@
 <?php if ($media->type() == 'image') : ?>
     <figure class="gallery-item image-item" data-type="<?= $media->mediatype()->slug() ?>" data-category="<?= $media->filter()->slug() ?>" data-project="<?= $media->parent()->slug() ?>">
         <img class="image lazy" src="" data-src="<?= $media->resize(1200, null)->url() ?>" alt="<?= $media->alt() ?>" />
-        <?php snippet('caption', ['media' => $media], slots: true) ?>
-        <?php endsnippet() ?>
+        <?= snippet('caption', ['media' => $media]) ?>
     </figure>
 <?php endif ?>
 

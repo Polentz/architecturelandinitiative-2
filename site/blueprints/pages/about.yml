@@ -1,11 +1,11 @@
-title: Row-grid layout (Projects)
+title: About
 
 sections:
   content:
     type: fields
     fields:
       intro:
-        label: Introduction text
+        label: Headline text
         type: writer
         marks:
           - bold
@@ -15,17 +15,20 @@ sections:
           - email
           - clear
         nodes: false
+      text:
+        label: Introduction text
+        type: writer
+        marks:
+          - bold
+          - italic
+          - underline
+          - link
+          - email
+          - clear
+        nodes: false 
       textblocks:
         label: Additional text
         type: blocks
         fieldsets:
           - sliderblock
           - textblock
-  items:
-    label: false
-    type: pages
-    layout: list
-    info: false
-    template:
-      - project
-    image: false

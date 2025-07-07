@@ -19,7 +19,8 @@
     /* --big-title-size: 6rem; */
     --label-text-font: "Pitch Sans";
     --label-text-size: .9rem;
-    --header-text-font: "GT Cinetype";
+    --logo-text-font: "Pitch Sans";
+    --logo-text-size: 1rem;
     /* --main-margin: 4rem;
     --half-margin: 2.5rem;
     --double-margin: 12rem;
@@ -54,7 +55,7 @@
         --main-margin: 2.5rem;
         --half-margin: 1.5rem;
         --double-margin: 8rem;
-        --filters-wrapper-width: calc(100dvw / 2);
+        --filters-wrapper-width: calc(100vw / 2);
     }
 }
 

@@ -33,8 +33,12 @@
             <?= $page->blocks()->toBlocks()->sortBy('date', 'desc') ?>
         </div>
     </section>
-    <?= snippet('filters') ?>
 </main>
+
+<?php snippet('filters', slots: true) ?>
+<?= slot('timelineFilters') ?>
+<?php endslot() ?>
+<?php endsnippet() ?>
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>

@@ -3,6 +3,14 @@
 use Kirby\Toolkit\Str;
 
 $selectFiltersOptions = $page->blueprint()->field('selectFilters')['options'] ?? [];
+
+$filteredMedia = $allmedia->filterBy('tools', '*=', $page->title());
+$parentTitles = [];
+foreach ($filteredMedia as $media) {
+    $parentTitle = $media->parent()->title()->value();
+    $parentTitles[] = $parentTitle;
+};
+$uniqueTitles = array_unique($parentTitles);
 ?>
 
 <div id="filters" class="filters">
@@ -29,16 +37,53 @@ $selectFiltersOptions = $page->blueprint()->field('selectFilters')['options'] ??
     </div>
 
     <div class="filters-wrapper">
-        <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-            <div class="filter-header text">
-                <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
-            </div>
-            <div class="filter-list text-label">
-                <?php foreach ($page->gallery()->toFiles()->pluck($filter, ',', true) as $type) : ?>
-                    <li id="<?= Str::slug($type) ?>" class="filter" data-type="<?= Str::slug($type) ?>"><?= $type ?></li>
-                <?php endforeach ?>
-            </div>
-        <?php endforeach ?>
+        <?php if ($slots->projectFilters()) : ?>
+            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+                <div class="filter-header text">
+                    <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
+                </div>
+                <div class="filter-list text-label">
+                    <?php foreach ($page->gallery()->toFiles()->pluck($filter, ',', true) as $type) : ?>
+                        <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                    <?php endforeach ?>
+                </div>
+            <?php endforeach ?>
+        <?php endif ?>
+
+        <?php if ($slots->toolFilters()) : ?>
+            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+                <div class="filter-header text">
+                    <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
+                </div>
+                <?php if ($filter === 'mediatype') : ?>
+                    <div class="filter-list text-label">
+                        <?php foreach ($filteredMedia->pluck($filter, ',', true) as $type) : ?>
+                            <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php endforeach ?>
+                    </div>
+                <?php elseif ($filter === 'project') : ?>
+                    <div class="filter-list text-label">
+                        <?php foreach ($uniqueTitles as $title): ?>
+                            <li id="<?= Str::slug($title) ?>" class="filter"><?= $title ?></li>
+                        <?php endforeach ?>
+                    </div>
+                <?php endif ?>
+            <?php endforeach ?>
+        <?php endif ?>
+
+        <?php if ($slots->timelineFilters()) : ?>
+            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+                <div class="filter-header text">
+                    <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
+                </div>
+                <div class="filter-list text-label">
+                    <?php foreach ($page->blocks()->toBlocks()->pluck($filter, ',', true) as $type) : ?>
+                        <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                    <?php endforeach ?>
+                </div>
+            <?php endforeach ?>
+        <?php endif ?>
+
         <div class="filter-deselect text-label">
             <span>All</span>
         </div>

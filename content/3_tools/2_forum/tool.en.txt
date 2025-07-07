@@ -2,11 +2,19 @@ Title: Forum
 
 ----
 
+Background: - file://nM0o3GtueIU54SbY
+
+----
+
 Intro: The forum is the space-time necessary for any shared initiative. It is the prerequisite for a situated approach, based on the sharing of knowledge, but also of affects, power relations, tensions and desires. Drawing on the perspective of the undercommons, we structure the forums with the aim of learning to share our incompleteness, and of taking seriously the power of shared practice itself, and the circulation of embodied knowledge that arises in the exchange of stories and gestures. During these days of collective work, the cartographic and archivistic material we're researching and producing is put at the service of such efforts of collective (re)tellings and imaginings.
 
 ----
 
-Background: - file://nM0o3GtueIU54SbY
+Blocks: 
+
+----
+
+Selectfilters: mediatype, project
 
 ----
 

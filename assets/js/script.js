@@ -24,7 +24,6 @@ const footerHeight = () => {
 };
 
 const loader = () => {
-
     const removeLoader = () => {
         document.querySelector(".loader").remove()
     };
@@ -119,8 +118,8 @@ const cursor = () => {
                 });
             });
 
-            const blackBox = document.querySelectorAll(".filters-wrapper, .pdf, .audio-player");
-            blackBox.forEach(box => {
+            const darkElements = document.querySelectorAll(".filters-wrapper, .pdf, .audio-player");
+            darkElements.forEach(box => {
                 box.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
                         duration: 0,
@@ -201,7 +200,7 @@ const animateAll = () => {
         scale: 0,
     });
 
-    let loopTl = gsap.timeline({ delay: 12, repeat: -1, repeatDelay: 8 });
+    let loopTl = gsap.timeline({ delay: 2, repeat: -1, repeatDelay: 2 });
     loopTl.to(all, {
         duration: 1,
         autoAlpha: 1,
@@ -217,31 +216,31 @@ const animateAll = () => {
 
 };
 
-const animateName = () => {
-    gsap.to(all, {
-        duration: 1.5,
-        autoAlpha: 0,
-        stagger: 0.2,
-        scale: 0,
-    });
-};
+// const animateName = () => {
+//     gsap.to(all, {
+//         duration: 1.5,
+//         autoAlpha: 0,
+//         stagger: 0.2,
+//         scale: 0,
+//     });
+// };
 
-const reverseAnimateName = () => {
-    gsap.to(all, {
-        duration: 1.5,
-        autoAlpha: 1,
-        stagger: 0.2,
-        scale: 1,
-    });
-};
+// const reverseAnimateName = () => {
+//     gsap.to(all, {
+//         duration: 1.5,
+//         autoAlpha: 1,
+//         stagger: 0.2,
+//         scale: 1,
+//     });
+// };
 
-logo.addEventListener("mouseenter", () => {
-    reverseAnimateName();
-});
+// logo.addEventListener("mouseenter", () => {
+//     reverseAnimateName();
+// });
 
-logo.addEventListener("mouseleave", () => {
-    animateName();
-});
+// logo.addEventListener("mouseleave", () => {
+//     animateName();
+// });
 
 const splitTitle = (element, content) => {
     const eachWord = content.match(/([\w-/]+)/g);
@@ -353,11 +352,11 @@ const horizontalScroll = () => {
 
 const sliderOpener = () => {
     const sliderContainer = document.querySelectorAll(".slider");
-    const blurredElements = document.querySelectorAll(".header, section:not(.slider):not(.page-intro)");
+    const blurredElements = document.querySelectorAll(".header, section:not(.slider):not(.page-intro), .footer");
     sliderContainer.forEach(slider => {
         const sliderWrapper = slider.querySelector(".slider-wrapper");
-        const sliderButton = sliderWrapper.querySelector(".x-button");
-        const sliderContent = sliderWrapper.querySelector(".slider-content");
+        const sliderButton = slider.querySelector(".x-button");
+        const sliderContent = slider.querySelector(".slider-content");
 
         const addClasses = () => {
             slider.classList.add("--display");
@@ -367,6 +366,7 @@ const sliderOpener = () => {
                     element.classList.add("--blur");
                 });
                 document.querySelector(".page-intro").style.width = `calc(100% - ${sliderContent.clientWidth}px)`;
+                document.body.style.overflow = "hidden";
             }, 200);
             setTimeout(() => {
                 sliderButton.classList.add("--opacity");
@@ -376,6 +376,7 @@ const sliderOpener = () => {
         const removeClasses = () => {
             sliderWrapper.classList.remove("--translateX");
             document.querySelector(".page-intro").style.width = "100%";
+            document.body.style.overflow = "auto";
             blurredElements.forEach(element => {
                 element.classList.remove("--blur");
             });
@@ -485,29 +486,31 @@ const handleFiltersBox = () => {
         }, 250);
     };
 
-    openButton.addEventListener("click", () => {
-        addClasses();
-    });
+    if (openButton) {
+        openButton.addEventListener("click", () => {
+            addClasses();
+        });
 
-    closeButton.addEventListener("click", () => {
-        removeClasses();
-    });
+        closeButton.addEventListener("click", () => {
+            removeClasses();
+        });
 
-    deselecter.addEventListener("click", () => {
-        removeClasses();
-    });
+        deselecter.addEventListener("click", () => {
+            removeClasses();
+        });
+    }
 
 };
 
 const handleFilters = () => {
     const filters = document.querySelectorAll(".filter");
     const itemsContainer = document.querySelector(".items-container");
-    const items = document.querySelectorAll(".gallery-item, .accordion");
+    const items = itemsContainer.querySelectorAll(".gallery-item, .accordion");
     const filterClear = document.querySelector(".filter-deselect");
     const counter = document.querySelector(".filter-button-counter");
 
     const applyFilters = (filter) => {
-        const paddingOffset = 160;
+        const paddingOffset = 96;
         const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
         window.scrollTo({
             top: offsetPosition,
@@ -515,10 +518,14 @@ const handleFilters = () => {
         });
         const filterId = filter.id;
 
-        const applyFilter = (item) => {
+        const filterItems = (item) => {
             item.classList.remove("--unfiltered");
             item.classList.add("--filtered");
-            counter.style.display = "block";
+        };
+
+        const unfilterItems = (item) => {
+            item.classList.add("--unfiltered");
+            item.classList.remove("--filtered");
         };
 
         items.forEach(item => {
@@ -527,17 +534,18 @@ const handleFilters = () => {
             const itemProject = item.dataset.project;
             const itemMembers = item.dataset.members;
             if (itemType === filterId) {
-                applyFilter(item);
+                filterItems(item);
             } else if (itemCategory === filterId) {
-                applyFilter(item);
+                filterItems(item);
             } else if (itemProject === filterId) {
-                applyFilter(item);
+                filterItems(item);
             } else if (itemMembers && itemMembers.includes(filter.textContent)) {
-                applyFilter(item);
+                filterItems(item);
             } else {
-                applyFilter(item);
+                unfilterItems(item);
             };
         });
+        counter.style.display = "block";
     };
 
     const removeFilters = () => {
@@ -551,6 +559,9 @@ const handleFilters = () => {
             item.classList.remove("--filtered");
         });
         counter.style.display = "none";
+        window.scrollTo({
+            top: 0,
+        });
     };
 
     filters.forEach(filter => {

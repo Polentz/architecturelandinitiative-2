@@ -2,9 +2,11 @@
     <?php if ($page->depth() > 1) : ?>
         <h2 class="title"><?= $page->title() ?></h2>
     <?php endif ?>
-    <div class="text">
-        <?= $page->intro()->kt() ?>
-    </div>
+    <?php if ($page->intro()->isNotEmpty()) : ?>
+        <div class="text">
+            <?= $page->intro()->kt() ?>
+        </div>
+    <?php endif ?>
     <?php if ($page->blocks()->toBlocks()->count() >= 1) : ?>
         <button id="slider" class="button" type="button">
             <span class="text-label">Read more</span>

@@ -151,26 +151,7 @@ tabs:
             fields:
               filter:
                 type: text
-                label: Filter    
-  categories:  
-    label: Filters collection (NEW)
-    icon: angle-right
-    sections:
-      filtersBuilder:
-        type: fields
-        fields:    
-          filtersCollection:
-            label: "New Filters"
-            type: structure
-            fields:
-              category:
-                type: text
-                label: Category  
-              filter:
-                type: entries
-                label: Filter     
-                field:
-                  type: text  
+                label: Filter
   seo:
     label: Website metadata
     icon: angle-right

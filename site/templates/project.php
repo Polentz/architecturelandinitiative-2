@@ -17,7 +17,11 @@
     </section>
 </main>
 
-<?= snippet('filters') ?>
+<?php snippet('filters', slots: true) ?>
+<?= slot('projectFilters') ?>
+<?php endslot() ?>
+<?php endsnippet() ?>
+
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>
 <?= snippet('foot') ?>

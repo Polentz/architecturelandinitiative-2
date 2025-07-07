@@ -1,7 +1,8 @@
 <?php if ($media->type() == 'image') : ?>
     <figure class="gallery-item image-item" data-type="<?= $media->mediatype()->slug() ?>" data-category="<?= $media->filter()->slug() ?>" data-project="<?= $media->parent()->slug() ?>">
         <img class="image lazy" src="" data-src="<?= $media->resize(1200, null)->url() ?>" alt="<?= $media->alt() ?>" />
-        <?= snippet('caption', ['media' => $media]) ?>
+        <?php snippet('caption', ['media' => $media], slots: true) ?>
+        <?php endsnippet() ?>
     </figure>
 <?php endif ?>
 
@@ -66,23 +67,6 @@
                 </svg>
             </a>
         </div>
-        <figcaption class="gallery-item-caption">
-            <div class="text-label">
-                <?php if ($media->mediatype()->isNotEmpty()): ?>
-                    <p>Media type: <?= $media->mediatype() ?></p>
-                <?php endif ?>
-                <?php if ($media->filter()->isNotEmpty()): ?>
-                    <p>Process stage: <?= $media->filter() ?></p>
-                <?php endif ?>
-                <?php if ($slots->showProject()): ?>
-                    <p>Project: <a href="<?= $media->parent()->url() ?>"><?= $media->parent()->title() ?></a></p>
-                <?php endif ?>
-            </div>
-            <?php if ($media->info()->isNotEmpty()): ?>
-                <div class="caption-text text">
-                    <?= $media->info()->kt() ?>
-                </div>
-            <?php endif ?>
-        </figcaption>
+        <?= snippet('caption', ['media' => $media]) ?>
     </figure>
 <?php endif ?>

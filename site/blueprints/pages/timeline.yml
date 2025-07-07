@@ -43,31 +43,37 @@ columns:
             type: headline
             label: Filter Settings
             numbered: false
-          typeName:
-            label: Filter by    
-            type: text
-            width: 1/2
-            placeholder: Event type 
-            default: "Event type"        
-          types: 
-            type: multiselect
-            label: "Available filters (category: events)"
-            layout: list
+          selectFilters:
+            label: Filter by
+            type: checkboxes
             options:
-              type: query
-              query: site.timelineFilters.toStructure
-              text: "{{ item.filter }}"
-              value: "{{ item.filter }}"
-          filterName:
-            label: Filter by    
-            type: text
-            width: 1/2
-          filters:
-            type: multiselect
-            label: "Available filters (category: projects)"
-            layout: list
-            options:
-              type: query
-              query: site.grandchildren.template("project")
-              text: "{{ page.title }}"
-              value: "{{ page.title }}"
+              typology: Event type
+              project: Related project
+          # typeName:
+          #   label: Filter by    
+          #   type: text
+          #   width: 1/2
+          #   placeholder: Event type 
+          #   default: "Event type"        
+          # types: 
+          #   type: multiselect
+          #   label: "Available filters (category: events)"
+          #   layout: list
+          #   options:
+          #     type: query
+          #     query: site.timelineFilters.toStructure
+          #     text: "{{ item.filter }}"
+          #     value: "{{ item.filter }}"
+          # filterName:
+          #   label: Filter by    
+          #   type: text
+          #   width: 1/2
+          # filters:
+          #   type: multiselect
+          #   label: "Available filters (category: projects)"
+          #   layout: list
+          #   options:
+          #     type: query
+          #     query: site.grandchildren.template("project")
+          #     text: "{{ page.title }}"
+          #     value: "{{ page.title }}"

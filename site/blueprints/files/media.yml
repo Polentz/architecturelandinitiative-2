@@ -44,7 +44,7 @@ columns:
           tools:
             width: 1/2
             type: multiselect
-            label: Related Tools  
+            label: Related tools
             layout: list
             options:
               type: query

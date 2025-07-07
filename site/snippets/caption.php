@@ -3,11 +3,11 @@
         <?php if ($media->mediatype()->isNotEmpty()): ?>
             <p>Media type: <?= $media->mediatype() ?></p>
         <?php endif ?>
-        <?php if ($media->filter()->isNotEmpty()): ?>
+        <?php if ($page->intendedTemplate()->name() === 'project') : ?>
             <p>Process stage: <?= $media->filter() ?></p>
         <?php endif ?>
-        <?php if ($slots->showProject()): ?>
-            <p>Project: <a href="<?= $media->parent()->url() ?>"><?= $media->parent()->title() ?></a></p>
+        <?php if ($page->intendedTemplate()->name() === 'tool') : ?>
+            <p>Related project: <a href="<?= $media->parent()->url() ?>"><?= $media->parent()->title() ?></a></p>
         <?php endif ?>
     </div>
     <?php if ($media->caption()->isNotEmpty()) : ?>

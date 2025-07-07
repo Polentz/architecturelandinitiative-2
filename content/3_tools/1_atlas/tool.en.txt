@@ -14,6 +14,10 @@ Blocks:
 
 ----
 
+Selectfilters: mediatype, project
+
+----
+
 Typename: Media type
 
 ----

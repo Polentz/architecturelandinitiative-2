@@ -1,14 +1,12 @@
 <footer class="footer">
     <div class="footer-nav">
-        <div class="footer-nav-wrapper">
-            <h1 class="headline">
-                <a class="logo" href="<?= $site->page('home')->url() ?>">
-                    <span class="logo-word-1">Architecture</span>
-                    <span class="logo-word-2">Land</span>
-                    <span class="logo-word-3">INitiative</span>
-                </a>
-            </h1>
-        </div>
+        <h1 class="headline">
+            <a class="logo" href="<?= $site->page('home')->url() ?>">
+                <span class="logo-word-1">Architecture</span>
+                <span class="logo-word-2">Land</span>
+                <span class="logo-word-3">INitiative</span>
+            </a>
+        </h1>
         <div class="footer-nav-wrapper">
             <?php if ($site->toggleLang()->isTrue()) : ?>
                 <ul class="footer-nav-wrapper">

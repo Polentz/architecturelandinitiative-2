@@ -59,29 +59,35 @@ columns:
             type: headline
             label: Filter Settings
             numbered: false
-          typeName:
-            label: Filter by    
-            type: text
-            width: 1/2       
-          types: 
-            type: multiselect
-            label: "Available filters (category: media)" 
-            layout: list
+          selectFilters:
+            label: Filter by
+            type: checkboxes
             options:
-              type: query
-              query: site.mediaFilters.toStructure
-              text: "{{ item.filter }}"
-              value: "{{ item.filter }}"
-          filterName:
-            label: Filter by    
-            type: text
-            width: 1/2
-          filters:
-            type: multiselect
-            label: "Available filters (category: projects)"
-            layout: list
-            options:
-              type: query
-              query: site.grandchildren.template("project")
-              text: "{{ page.title }}"
-              value: "{{ page.title }}"
+              mediatype: Media type
+              project: Reletaed projects
+          # typeName:
+          #   label: Filter by    
+          #   type: text
+          #   width: 1/2       
+          # types: 
+          #   type: multiselect
+          #   label: "Available filters (category: media)" 
+          #   layout: list
+          #   options:
+          #     type: query
+          #     query: site.mediaFilters.toStructure
+          #     text: "{{ item.filter }}"
+          #     value: "{{ item.filter }}"
+          # filterName:
+          #   label: Filter by    
+          #   type: text
+          #   width: 1/2
+          # filters:
+          #   type: multiselect
+          #   label: "Available filters (category: projects)"
+          #   layout: list
+          #   options:
+          #     type: query
+          #     query: site.grandchildren.template("project")
+          #     text: "{{ page.title }}"
+          #     value: "{{ page.title }}"

@@ -84,20 +84,16 @@ columns:
               icon: false
               ratio: 1/1
               cover: true
-          newFiltersHeadline:
+          filtersHeadline:
             type: headline
-            label: Filter Settings (NEW)
-            numbered: false    
+            label: Filter Settings
+            numbered: false
           selectFilters:
             label: Filter by
             type: checkboxes
             options:
               mediatype: Media type
               filter: Process stage
-          # filtersHeadline:
-          #   type: headline
-          #   label: Filter Settings
-          #   numbered: false
           # typeName:
           #   label: Filter by    
           #   type: text

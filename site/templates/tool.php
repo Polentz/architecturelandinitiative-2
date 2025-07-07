@@ -6,14 +6,15 @@
 
     <section class="gallery grid items-container">
         <?php foreach ($allmedia->filterBy('tools', '*=', $page->title()) as $media) : ?>
-            <?php snippet('gallery', ['media' => $media], slots: true) ?>
-            <?php slot('showProject') ?>
-            <?php endslot() ?>
-            <?php endsnippet() ?>
+            <?= snippet('gallery', ['media' => $media]) ?>
         <?php endforeach ?>
     </section>
-    <?= snippet('filters') ?>
 </main>
+
+<?php snippet('filters', slots: true) ?>
+<?= slot('toolFilters') ?>
+<?php endslot() ?>
+<?php endsnippet() ?>
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>

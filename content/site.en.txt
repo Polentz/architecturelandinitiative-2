@@ -73,7 +73,7 @@ Processfilters:
 
 ----
 
-Timelinefilters:
+platformFilters:
 
 - 
   filter: Public Event

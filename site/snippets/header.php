@@ -1,13 +1,9 @@
 <?php
 $current = $site->children()->listed()->findBy('isOpen', true);
-$navigation = $site->children()->listed()->not($current);
+$navigation = $site->children()->listed()->not('home');
 ?>
 
 <header class="header">
-    <div class="header-current">
-        <?= snippet('svg', ['page' => $current]) ?>
-    </div>
-
     <nav class="header-nav">
         <button class="nav-mobile-opener" type="button">
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

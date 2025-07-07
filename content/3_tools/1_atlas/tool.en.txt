@@ -2,15 +2,34 @@ Title: Atlas
 
 ----
 
-Background: - file://wMwcNVCLvP7nzA58
-
-----
-
 Intro: The Atlas as a survey is an interpretive inquiry in and of itself. It presents factual evidence collected on site and in archival materials, and at the same time establishes a common ground for a collective reconfiguration toward the future. To draw is to try meticulously to retain something: to allow it to survive but also to change it. As such, the atlas contains elements of both fact and fiction, and allows new propositions to grow from a reframing of the spatial and historical entanglements. The Atlases are tools to activate and support a trans-scalar understanding: from the territorial to the intimate.  Through making atlases we engage with the transformative role of survey drawing as a way to thread the topographical, architectural, social and historical dimensions of places otherwise. Considering the situated and performative dimensions of atlases is for us a means of engaging in an active revision of the authority accorded to representation and the visual in Western culture.
 
 ----
 
 Textblocks: 
+
+----
+
+Cover:
+
+- file://BU2Tsl2Z1IkuXM61
+- file://0gNktDw25eeNj9T4
+
+----
+
+Gallery:
+
+- file://wMwcNVCLvP7nzA58
+- file://2OnHQI5pr1PP0gKV
+- file://x0x4aMiqiXt6t78w
+- file://UBM8CS76v0c6QNJ8
+- file://HRf5sXtKZ12pXsZP
+- file://TxjxWT4NDvxhALOX
+- file://cEk7YFWtYhHXXmJ3
+
+----
+
+Background: - file://wMwcNVCLvP7nzA58
 
 ----
 

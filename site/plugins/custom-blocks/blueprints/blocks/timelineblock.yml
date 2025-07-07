@@ -39,7 +39,7 @@ fields:
     required: true
     options:
       type: query
-      query: site.timelineFilters.toStructure
+      query: site.platformFilters.toStructure
       text: "{{ item.filter }}"
       value: "{{ item.filter }}"   
   where:

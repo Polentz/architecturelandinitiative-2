@@ -131,7 +131,7 @@ tabs:
               filter:
                 type: text
                 label: Filter
-          timelineFilters:
+          platformFilters:
             label: "Category: events"
             type: structure
             fields:

@@ -4,9 +4,10 @@ use Kirby\Toolkit\Str;
 
 $selectFiltersOptions = $page->blueprint()->field('selectFilters')['options'] ?? [];
 
-$filteredMedia = $allmedia->filterBy('tools', '*=', $page->title());
+// $filteredMedia = $allmedia->filterBy('tools', '*=', $page->title());
+$pageFiles = $page->gallery()->toFiles();
 $parentTitles = [];
-foreach ($filteredMedia as $media) {
+foreach ($pageFiles as $media) {
     $parentTitle = $media->parent()->title()->value();
     $parentTitles[] = $parentTitle;
 };
@@ -57,7 +58,7 @@ $uniqueTitles = array_unique($parentTitles);
                 </div>
                 <?php if ($filter === 'mediatype') : ?>
                     <div class="filter-list text-label">
-                        <?php foreach ($filteredMedia->pluck($filter, ',', true) as $type) : ?>
+                        <?php foreach ($pageFiles->pluck($filter, ',', true) as $type) : ?>
                             <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
                         <?php endforeach ?>
                     </div>
@@ -71,7 +72,7 @@ $uniqueTitles = array_unique($parentTitles);
             <?php endforeach ?>
         <?php endif ?>
 
-        <?php if ($slots->timelineFilters()) : ?>
+        <?php if ($slots->platformFilters()) : ?>
             <?php foreach ($page->selectFilters()->split() as $filter) : ?>
                 <div class="filter-header text">
                     <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>

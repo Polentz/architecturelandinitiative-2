@@ -4,8 +4,14 @@
 <main class="main">
     <?= snippet('intro') ?>
 
+    <section class="cover">
+        <?php foreach ($page->cover()->toFiles() as $media) : ?>
+            <?= snippet('cover', ['media' => $media]) ?>
+        <?php endforeach ?>
+    </section>
+
     <section class="gallery grid items-container">
-        <?php foreach ($allmedia->filterBy('tools', '*=', $page->title()) as $media) : ?>
+        <?php foreach ($page->gallery()->toFiles() as $media) : ?>
             <?= snippet('gallery', ['media' => $media]) ?>
         <?php endforeach ?>
     </section>

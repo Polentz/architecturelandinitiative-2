@@ -1,5 +1,5 @@
 <section class="page-intro">
-    <?php if ($page->depth() > 1) : ?>
+    <?php if ($page->depth() >= 1) : ?>
         <h2 class="title"><?= $page->title() ?></h2>
     <?php endif ?>
     <?php if ($page->intro()->isNotEmpty()) : ?>
@@ -7,7 +7,7 @@
             <?= $page->intro()->kt() ?>
         </div>
     <?php endif ?>
-    <?php if ($page->blocks()->toBlocks()->count() >= 1) : ?>
+    <?php if ($page->textblocks()->toBlocks()->count() >= 1) : ?>
         <button id="slider" class="button" type="button">
             <span class="text-label">Read more</span>
             <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

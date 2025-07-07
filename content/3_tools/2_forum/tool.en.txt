@@ -10,7 +10,7 @@ Intro: The forum is the space-time necessary for any shared initiative. It is th
 
 ----
 
-Blocks: 
+Textblocks: 
 
 ----
 

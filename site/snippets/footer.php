@@ -2,9 +2,9 @@
     <div class="footer-nav">
         <h1 class="headline">
             <a class="logo" href="<?= $site->page('home')->url() ?>">
-                <span class="logo-word-1">Architecture</span>
-                <span class="logo-word-2">Land</span>
-                <span class="logo-word-3">INitiative</span>
+                <span class="logo-word logo-word-1">Architecture</span>
+                <span class="logo-word logo-word-2">Land</span>
+                <span class="logo-word logo-word-3">INitiative</span>
             </a>
         </h1>
         <div class="footer-nav-wrapper">

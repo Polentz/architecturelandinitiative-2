@@ -1,4 +1,4 @@
-<?php if ($page->blocks()->toBlocks()->count() >= 1) : ?>
+<?php if ($page->textblocks()->toBlocks()->count() >= 1) : ?>
     <section id="slider" class="slider">
         <div class="slider-wrapper">
             <button class="ui-button x-button" type="button">
@@ -7,7 +7,7 @@
                 </svg>
             </button>
             <div class="slider-content">
-                <?= $page->blocks()->toBlocks() ?>
+                <?= $page->textblocks()->toBlocks() ?>
             </div>
         </div>
     </section>

@@ -1,7 +1,6 @@
 <?= snippet('head') ?>
 <?= snippet('header') ?>
 
-<!-- PROBLEMA QUI: STESSO NOME PER I BLOCKS DEL TESTO E DELLA TIMELINE -->
 <main class="main">
     <?= snippet('intro') ?>
 

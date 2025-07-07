@@ -6,7 +6,7 @@ Intro: <p>The well-known experimental factory Stahl-&amp;Traumfabrik AG, with it
 
 ----
 
-Blocks: 
+Textblocks: 
 
 ----
 

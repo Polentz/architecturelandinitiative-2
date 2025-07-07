@@ -2,12 +2,7 @@
 <?= snippet('header') ?>
 
 <main class="main">
-    <section class="page-intro">
-        <div class="text">
-            <?= $page->intro()->kt() ?>
-        </div>
-        <?= $page->blocks()->toBlocks() ?>
-    </section>
+    <?= snippet('intro') ?>
 
     <?php if ($page->children()->count() >= 1) : ?>
         <section class="scroll-layout scroll-x">

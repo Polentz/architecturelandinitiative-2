@@ -35,7 +35,7 @@ const loader = () => {
 };
 
 const animatePaths = () => {
-    const buttons = document.querySelectorAll(".header .button, .footer .button");
+    const buttons = document.querySelectorAll(".header .button, .footer .button, .page-intro .button");
     buttons.forEach(button => {
         const paths = button.querySelectorAll("path");
         paths.forEach((path, i) => {

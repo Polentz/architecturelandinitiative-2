@@ -10,7 +10,7 @@ Intro: The Atlas as a survey is an interpretive inquiry in and of itself. It pre
 
 ----
 
-Blocks: 
+Textblocks: 
 
 ----
 

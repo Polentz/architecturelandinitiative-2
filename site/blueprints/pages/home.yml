@@ -15,10 +15,11 @@ sections:
           - email
           - clear
         nodes: false
-      blocks:
-        label: Text
+      textblocks:
+        label: Additional text
         type: blocks
         fieldsets:
+          - sectionblock
           - textblock
       gallery:
         type: files

@@ -23,7 +23,7 @@ columns:
               - clear
             nodes: false
           textblocks:
-            label: Text
+            label: Additional text
             type: blocks
             fieldsets:
               - sectionblock

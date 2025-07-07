@@ -383,6 +383,11 @@ video {
     text-transform: uppercase;
 }
 
+.logo-word {
+    display: inline-flex;
+    gap: .1rem;
+}
+
 .logo-element {
     display: none;
     font-family: var(--header-text-font);

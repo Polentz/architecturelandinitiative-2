@@ -60,31 +60,31 @@ tabs:
                 label: false
                 type: info
                 text: "By activating the button above, the languages switcher will be displayed on the site footer."
-  about:
-    label: About
-    icon: angle-right
-    columns:
-      main:
-        width: 2/3
-        sections:
-          copy:
-            type: fields
-            fields:
-              blocks:
-                label: Text
-                type: blocks
-                fieldsets:
-                  - sliderblock
-                  - textblock
-      sidebar:
-        width: 1/3
-        sections:
-          aboutButtons:
-            type: fields
-            fields:
-              aboutNavLabel:
-                label: Menu label
-                type: text
+  # about:
+  #   label: About
+  #   icon: angle-right
+  #   columns:
+  #     main:
+  #       width: 2/3
+  #       sections:
+  #         copy:
+  #           type: fields
+  #           fields:
+  #             blocks:
+  #               label: Text
+  #               type: blocks
+  #               fieldsets:
+  #                 - sliderblock
+  #                 - textblock
+  #     sidebar:
+  #       width: 1/3
+  #       sections:
+  #         aboutButtons:
+  #           type: fields
+  #           fields:
+  #             aboutNavLabel:
+  #               label: Menu label
+  #               type: text
   contact:
     label: Contact
     icon: angle-right

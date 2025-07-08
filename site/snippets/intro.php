@@ -3,7 +3,7 @@
         <h2 class="title"><?= $page->title() ?></h2>
     <?php endif ?>
     <?php if ($page->intro()->isNotEmpty()) : ?>
-        <div class="text">
+        <div class="<?php if ($slots->aboutPage()) : ?>intro-text<?php else : ?>text<?php endif ?>">
             <?= $page->intro()->kt() ?>
         </div>
     <?php endif ?>

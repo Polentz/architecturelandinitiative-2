@@ -65,6 +65,6 @@
         --main-margin: 1rem;
         --half-margin: 1rem;
         --double-margin: 6rem;
-        --filters-wrapper-width: calc(100vw - var(--half-margin) - var(--half-margin));
+        --filters-wrapper-width: calc(100vw - var(--button-size) - var(--small-margin));
     }
 }

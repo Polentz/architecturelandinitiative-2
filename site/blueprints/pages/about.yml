@@ -30,5 +30,4 @@ sections:
         label: Additional text
         type: blocks
         fieldsets:
-          - sliderblock
           - textblock

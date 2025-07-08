@@ -20,7 +20,6 @@ sections:
         type: blocks
         fieldsets:
           - sliderblock
-          - textblock
   items:
     label: false
     type: pages

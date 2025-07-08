@@ -11,7 +11,7 @@
                     <?php foreach ($page->children()->listed() as $child) : ?>
                         <?php if ($child) : ?>
                             <div class="item scroll-item" <?php if ($cover = $child->background()->toFile()) : ?> style="background-image: url('<?= $cover->url() ?>');" <?php endif ?>>
-                                <h2 class="item-title"><a data-name="<?= $child->title() ?>" href="<?= $child->url() ?>"></a></h2>
+                                <h3 class="item-title"><a data-name="<?= $child->title() ?>" href="<?= $child->url() ?>"></a></h3>
                             </div>
                         <?php endif ?>
                     <?php endforeach ?>

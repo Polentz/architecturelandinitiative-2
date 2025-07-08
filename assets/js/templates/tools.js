@@ -37,6 +37,6 @@ document.querySelectorAll(".item-title a").forEach(title => {
 
 window.addEventListener("load", () => {
     horizontalScroll();
-    animateTitle(110, "none", 0.1);
+    animateTitle(-110, "none", 0.1);
     handleTitleHover();
 });

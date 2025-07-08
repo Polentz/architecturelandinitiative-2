@@ -31,7 +31,6 @@ columns:
             type: blocks
             fieldsets:
               - sliderblock
-              - textblock
           cover:
             type: files
             label: Cover images

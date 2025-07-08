@@ -308,9 +308,9 @@ const handleTitleHover = () => {
 
 const shuffleColors = () => {
     const colors = [
-        ["#4864f9", "#f0eceb"],
-        ["#9fbd58", "#f0eceb"],
-        ["#a867fd", "#f0eceb"],
+        ["#4864f9a0", "#f0eceb"],
+        ["#9fbd58a0", "#f0eceb"],
+        ["#a867fda0", "#f0eceb"],
 
     ];
     const randomColorSet = colors[Math.floor(Math.random() * colors.length)];

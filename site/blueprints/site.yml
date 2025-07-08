@@ -56,10 +56,22 @@ tabs:
                 type: toggle
                 text: Want to display the languages switcher?
                 default: false
-              toggleLangInfo:
-                label: false
-                type: info
-                text: "By activating the button above, the languages switcher will be displayed on the site footer."
+              # toggleLangInfo:
+              #   label: false
+              #   type: info
+              #   text: "By activating the button above, the languages switcher will be displayed on the site footer."
+              selectLanguages:
+                label: Select languages
+                type: multiselect
+                options:
+                  en: English
+                  fr: Français
+                  de: Deutsch
+                multiple: true
+                default: en
+                info: "Select the languages you want to display on the site."
+                when:
+                  toggleLang: true
   # about:
   #   label: About
   #   icon: angle-right
@@ -112,6 +124,16 @@ tabs:
               instagram:
                 label: Instagram
                 type: url
+              instagramIcon:
+                label: Instagram button style
+                type: toggles
+                width: 1/2
+                options:
+                  - value: text
+                    text: Text (Instagram)
+                  - value: icon
+                    text: Icon (IG)
+                default: text
   filters:
     label: Filters collection
     icon: angle-right

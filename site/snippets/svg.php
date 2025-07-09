@@ -8,7 +8,7 @@
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 33L7 7L11.3333 7L11.3333 33L15.6667 33L15.6667 7L20 7L20 33L24.3333 33L24.3333 7L28.6667 7L28.6667 33L33 33L33 7" stroke="#1d1d1b" />
         </svg>
-    <?php elseif ($page->intendedTemplate()->name() === 'timeline') : ?>
+    <?php elseif ($page->intendedTemplate()->name() === 'platform') : ?>
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 8H33" stroke="#1D1D1B" />
             <path d="M7 12H33" stroke="#1D1D1B" />

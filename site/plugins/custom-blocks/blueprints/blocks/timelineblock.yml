@@ -31,18 +31,21 @@ fields:
     label: Event date
     type: text
     width: 1/2
+  where:
+    label: Where
+    type: text
+    width: 1/2
   typology:
-    label: Filter by event type
+    label: Event type
     type: select 
     width: 1/2 
     options:
       type: query
       query: site.platformFilters.toStructure
       text: "{{ item.filter }}"
-      value: "{{ item.filter }}"   
-  where:
-    label: Where
-    type: text
+      value: "{{ item.filter }}" 
+  gap3:
+    type: gap
     width: 1/2
   project:
     label: Related project
@@ -53,22 +56,31 @@ fields:
       query: site.grandchildren.template("project")
       text: "{{ page.title }}"
       value: "{{ page.title }}"
+  gap4:
+    type: gap
+    width: 1/2
+  members:
+    label: Members
+    type: multiselect 
+    width: 1/2 
+    options:
+      type: query
+      query: site.membersFilters.toStructure
+      text: "{{ item.filter }}"
+      value: "{{ item.filter }}" 
   image:
     label: Image
     type: files
-    width: 1/2
+    width: 1/1
     layout: cards
     size: big
     multiple: false 
     uploads:
       template: cover     
-  gap3:
-    type: gap
-    width: 1/2
   imagecaption:
     label: Image caption
     type: text
-    width: 1/2
+    width: 1/1
   body:
     label: Text
     type: writer
@@ -101,4 +113,4 @@ fields:
       - link
       - email
       - clear
-    nodes: false
+    nodes: false 

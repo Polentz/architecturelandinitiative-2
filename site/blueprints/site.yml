@@ -149,35 +149,32 @@ tabs:
         type: fields
         fields:
           mediaFilters:
-            label: "Category: media"
+            label: "Media type"
+            width: 1/2
             type: structure
             fields:
               filter:
                 type: text
                 label: Filter
           processFilters:
-            label: "Category: process stage"
+            label: "Process stage"
+            width: 1/2
             type: structure
             fields:
               filter:
                 type: text
                 label: Filter
           platformFilters:
-            label: "Category: events"
+            label: "Event/Platform type"
+            width: 1/2
             type: structure
             fields:
               filter:
                 type: text
-                label: Filter
-          platformFilters:
-            label: "Category: platform"
-            type: structure
-            fields:
-              filter:
-                type: text
-                label: Filter      
+                label: Filter   
           membersFilters:
-            label: "Category: members"
+            label: "Members"
+            width: 1/2
             type: structure
             fields:
               filter:

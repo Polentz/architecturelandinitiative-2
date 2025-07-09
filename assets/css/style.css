@@ -860,7 +860,7 @@ section.--blur {
     pointer-events: all;
 }
 
-.gallery-item .audio-player {
+.audio-player {
     width: 100%;
     background: var(--black);
     padding: var(--small-margin);
@@ -873,11 +873,6 @@ section.--blur {
     flex-direction: column;
     gap: var(--small-margin);
     padding: var(--small-margin);
-}
-
-.audio-player svg {
-    stroke: var(--white);
-    stroke-width: 1px;
 }
 
 .audio-player-wrapper {
@@ -1012,9 +1007,8 @@ input.seek-slider::-moz-range-thumb {
     opacity: 1;
 }
 
-.gallery-item .pdf {
+.document-wrapper {
     min-width: 200px;
-    min-height: 200px;
     width: 100%;
     background: var(--black);
     color: var(--acc-color);
@@ -1030,11 +1024,6 @@ input.seek-slider::-moz-range-thumb {
     justify-content: space-between;
     gap: var(--inner-margin);
     padding: var(--small-margin);
-}
-
-.gallery-item .pdf .button {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
 }
 
 .gallery-item .caption-text {

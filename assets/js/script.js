@@ -119,7 +119,7 @@ const cursor = () => {
                 });
             });
 
-            const darkElements = document.querySelectorAll(".filters-wrapper, .pdf, .audio-player");
+            const darkElements = document.querySelectorAll(".filters-wrapper, .document-wrapper, .audio-player");
             darkElements.forEach(box => {
                 box.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {

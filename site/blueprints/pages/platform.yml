@@ -44,3 +44,4 @@ columns:
             options:
               typology: Event type
               project: Related project
+              members: Members

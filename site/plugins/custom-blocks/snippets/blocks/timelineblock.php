@@ -1,4 +1,4 @@
-<div class="accordion" data-date="<?= $block->date() ?>" data-type="<?= $block->typology()->slug() ?>" data-category="<?= $block->project()->slug() ?>">
+<div class="accordion" data-date="<?= $block->date() ?>" data-type="<?= $block->typology()->slug() ?>" data-project="<?= $block->project()->slug() ?>" data-members="<?= $block->members() ?>">
     <ul class="accordion-topbar accordion-opener">
         <li class="accordion-topbar-item text-subtext"><?= $block->title() ?></li>
         <li class="accordion-topbar-item text-label"><?= $block->eventdate() ?></li>

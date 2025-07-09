@@ -11,10 +11,6 @@ columns:
       content:
         type: fields
         fields:
-          contentHeadline:
-            type: headline
-            label: "{{page.title}} page"
-            numbered: false
           intro:
             label: Introduction text
             type: writer
@@ -26,6 +22,10 @@ columns:
               - email
               - clear
             nodes: false
+          additionalTextInfo:
+            label: false
+            type: info
+            text: 'The additional text activates the "Read More" button.'
           textblocks:
             label: Text
             type: blocks
@@ -67,16 +67,11 @@ columns:
       filter:
         type: fields
         fields:   
-          previewHeadline:
-            type: headline
-            label: "{{page.parent.title}} list preview" 
-            numbered: false
           background:
             type: files
-            label: Background image
+            label: Background image ({{page.parent.title}} list preview)
             uploads: media
             template: media 
-            # query: site.grandchildren.files.filterBy('template', 'media')
             query: site.grandchildren.files.filterBy('template', 'media').filterBy('tools', '*=', page.title)
             layout: list
             size: small
@@ -86,39 +81,9 @@ columns:
               icon: false
               ratio: 1/1
               cover: true
-          filtersHeadline:
-            type: headline
-            label: Filter Settings
-            numbered: false
           selectFilters:
             label: Filter by
             type: checkboxes
             options:
               mediatype: Media type
               project: Reletaed projects
-          # typeName:
-          #   label: Filter by    
-          #   type: text
-          #   width: 1/2       
-          # types: 
-          #   type: multiselect
-          #   label: "Available filters (category: media)" 
-          #   layout: list
-          #   options:
-          #     type: query
-          #     query: site.mediaFilters.toStructure
-          #     text: "{{ item.filter }}"
-          #     value: "{{ item.filter }}"
-          # filterName:
-          #   label: Filter by    
-          #   type: text
-          #   width: 1/2
-          # filters:
-          #   type: multiselect
-          #   label: "Available filters (category: projects)"
-          #   layout: list
-          #   options:
-          #     type: query
-          #     query: site.grandchildren.template("project")
-          #     text: "{{ page.title }}"
-          #     value: "{{ page.title }}"

@@ -6,11 +6,11 @@ Attachments: - file://IwFv4Qei142w05I6
 
 ----
 
-Togglelang: false
+Togglelang: true
 
 ----
 
-Selectlanguages: en, fr, de
+Selectlanguages: en, de
 
 ----
 

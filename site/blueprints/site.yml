@@ -33,24 +33,31 @@ tabs:
       sidebar:
         width: 1/3
         sections:
+          attachments:
+            label: File attachments     
+            type: files 
+            template: pdf
+            uploads: pdf
+            query: site.files.template("pdf")
+            multiple: true
+            link: false
+            image:
+              icon: true
+              ratio: 4/3
+              back: white
+              cover: true
+          attachmentsInfo:
+            label: false
+            type: fields
+            fields:
+              attachmentsInfoText:
+                label: false
+                type: info
+                text: "The above files can be linked as PDF attachments within the text. Upload all the PDFs you'd like to use throughout the site here."
           features:
             label: false
             type: fields
             fields:
-              attachments:
-                label: File attachments     
-                type: files 
-                template: pdf
-                uploads: pdf
-                query: site.files.template("pdf")
-                multiple: true
-                link: false
-                translate: false
-                image:
-                  icon: true
-                  ratio: 4/3
-                  back: white
-                  cover: true
               toggleLang:
                 label: Languages
                 type: toggle

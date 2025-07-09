@@ -7,10 +7,6 @@ columns:
       content:
         type: fields
         fields:
-          mainHeadline:
-            type: headline
-            label: Content
-            numbered: false
           intro:
             label: Introduction text
             type: writer
@@ -22,6 +18,10 @@ columns:
               - email
               - clear
             nodes: false
+          additionalTextInfo:
+            label: false
+            type: info
+            text: 'The additional text activates the "Read More" button.'
           textblocks:
             label: Additional text
             type: blocks
@@ -38,41 +38,9 @@ columns:
       filter:
         type: fields
         fields:   
-          filtersHeadline:
-            type: headline
-            label: Filter Settings
-            numbered: false
           selectFilters:
             label: Filter by
             type: checkboxes
             options:
               typology: Event type
               project: Related project
-          # typeName:
-          #   label: Filter by    
-          #   type: text
-          #   width: 1/2
-          #   placeholder: Event type 
-          #   default: "Event type"        
-          # types: 
-          #   type: multiselect
-          #   label: "Available filters (category: events)"
-          #   layout: list
-          #   options:
-          #     type: query
-          #     query: site.platformFilters.toStructure
-          #     text: "{{ item.filter }}"
-          #     value: "{{ item.filter }}"
-          # filterName:
-          #   label: Filter by    
-          #   type: text
-          #   width: 1/2
-          # filters:
-          #   type: multiselect
-          #   label: "Available filters (category: projects)"
-          #   layout: list
-          #   options:
-          #     type: query
-          #     query: site.grandchildren.template("project")
-          #     text: "{{ page.title }}"
-          #     value: "{{ page.title }}"

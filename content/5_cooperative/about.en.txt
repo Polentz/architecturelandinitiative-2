@@ -14,4 +14,8 @@ Textblocks: [{"content":{"subtitle":"","copy":"<p>The cooperative operates as a 
 
 ----
 
+Attachments: - file://8h6xr6baqnpleig1
+
+----
+
 Uuid: wlnqgxphqcvs3i1f

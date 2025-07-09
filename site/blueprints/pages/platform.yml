@@ -7,10 +7,6 @@ columns:
       content:
         type: fields
         fields:
-          mainHeadline:
-            type: headline
-            label: Content
-            numbered: false
           intro:
             label: Introduction text
             type: writer
@@ -22,6 +18,10 @@ columns:
               - email
               - clear
             nodes: false
+          additionalTextInfo:
+            label: false
+            type: info
+            text: 'The additional text activates the "Read More" button.'
           textblocks:
             label: Additional text
             type: blocks
@@ -38,10 +38,6 @@ columns:
       filter:
         type: fields
         fields:   
-          filtersHeadline:
-            type: headline
-            label: Filter Settings
-            numbered: false
           selectFilters:
             label: Filter by
             type: checkboxes

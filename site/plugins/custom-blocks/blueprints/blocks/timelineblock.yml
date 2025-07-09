@@ -31,12 +31,10 @@ fields:
     label: Event date
     type: text
     width: 1/2
-    required: true
   typology:
     label: Filter by event type
     type: select 
     width: 1/2 
-    required: true
     options:
       type: query
       query: site.platformFilters.toStructure

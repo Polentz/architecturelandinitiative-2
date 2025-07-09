@@ -91,7 +91,7 @@ const cursor = () => {
                 });
             });
 
-            const anchorTags = document.querySelectorAll("a, .button, .filter, .filter-deselect");
+            const anchorTags = document.querySelectorAll('a, .button, .filter, .filter-deselect, .accordion-topbar-item[data-item="date"], .accordion-topbar-item[data-item="type"], .accordion-topbar-item[data-item="title"]');
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -567,8 +567,8 @@ const handleGallery = () => {
 const accordion = () => {
     const accordion = document.querySelectorAll(".accordion");
     accordion.forEach(item => {
-        const openers = item.querySelectorAll(".accordion-title, .accordion-topbar");
-        const elements = item.querySelectorAll(".accordion-image, .accordion-text");
+        const openers = item.querySelectorAll(".accordion-title .title, .accordion-topbar");
+        const elements = item.querySelectorAll(".accordion-title, .accordion-image, .accordion-text");
         openers.forEach(opener => {
             opener.addEventListener("click", () => {
                 [...accordion].filter(i => i !== item).forEach(i => i.classList.remove("--open"));

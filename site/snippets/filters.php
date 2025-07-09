@@ -40,7 +40,7 @@ $uniqueTitles = array_unique($parentTitles);
     <div class="filters-wrapper">
         <?php if ($slots->projectFilters()) : ?>
             <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-                <div class="filter-header text">
+                <div class="filter-header text-subtext">
                     <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
                 </div>
                 <div class="filter-list text-label">
@@ -53,7 +53,7 @@ $uniqueTitles = array_unique($parentTitles);
 
         <?php if ($slots->toolFilters()) : ?>
             <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-                <div class="filter-header text">
+                <div class="filter-header text-subtext">
                     <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
                 </div>
                 <?php if ($filter === 'mediatype') : ?>
@@ -74,7 +74,7 @@ $uniqueTitles = array_unique($parentTitles);
 
         <?php if ($slots->platformFilters()) : ?>
             <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-                <div class="filter-header text">
+                <div class="filter-header text-subtext">
                     <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
                 </div>
                 <div class="filter-list text-label">

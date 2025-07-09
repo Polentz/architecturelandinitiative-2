@@ -1,7 +1,9 @@
 <div class="text-block">
-    <div class="text-label">
-        <p><?= $block->subtitle() ?></p>
-    </div>
+    <?php if ($block->subtitle()->isNotEmpty()) : ?>
+        <div class="text-label">
+            <p><?= $block->subtitle() ?></p>
+        </div>
+    <?php endif ?>
     <div class="text">
         <?= $block->copy()->kt() ?>
         <?php if ($thumbnail = $block->thumbnail()->toFile()) : ?>

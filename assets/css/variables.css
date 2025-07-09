@@ -1,6 +1,5 @@
 :root {
     --doc-height: 100%;
-    --footer-height: ;
 
     --black: #1d1d1b;
     --white: #ffffff;
@@ -8,33 +7,26 @@
     --acc-color: ;
     --background: #ffffff;
     --shade-color: #f0eceb50;
+
     --body-text-font: "GT America";
     --body-text-size: 1.25rem;
-    --secondary-text-font: "GT Cinetype";
+    --secondary-text-font: "GT America";
     --secondary-text-size: 1rem;
-    --title-font: "GT America";
-    --title-size: calc(1.5rem + 1vw);
+    --intro-text-font: "GT America";
+    --intro-text-size: calc(1.5rem + 1vw);
     --big-title-font: "GT America";
     --big-title-size: calc(1rem + 6.5vw);
-    /* --big-title-size: 6rem; */
     --label-text-font: "Pitch Sans";
     --label-text-size: .9rem;
     --logo-text-font: "GT Cinetype";
     --logo-text-size: .9rem;
-    /* --main-margin: 4rem;
-    --half-margin: 2.5rem;
-    --double-margin: 12rem;
-    --small-margin: 1rem; */
 
     --main-margin: 6rem;
     --half-margin: 3rem;
-    --double-margin: 12rem;
     --inner-margin: 2rem;
     --small-margin: 1rem;
 
-
     --button-size: 2.2rem;
-    /* --filters-wrapper-width: calc(100vw / 3 - var(--inner-margin) - var(--inner-margin) - var(--inner-margin) + 7px); */
     --filters-wrapper-width: calc(100vw / 2 - var(--inner-margin) - var(--main-margin) + 10px);
     --border-black: solid 1px var(--black);
     --border-white: solid 1px var(--white);
@@ -43,28 +35,37 @@
 
 @media screen and (min-width: 1500px) {
     :root {
-        --main-margin: 16rem;
+        --body-text-size: 1.75rem;
+        --secondary-text-size: 1.25rem;
+        --label-text-size: 1rem;
+        --logo-text-size: 1rem;
+        --main-margin: 18rem;
+        --half-margin: 6rem;
+        --inner-margin: 3rem;
+        --small-margin: 1.5rem;
+        --button-size: 2.5rem;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 880px) {
     :root {
-        --secondary-text-size: .8rem;
-        --label-text-size: .8rem;
-        --button-size: 2rem;
-        --main-margin: 2.5rem;
+        --main-margin: 3rem;
         --half-margin: 1.5rem;
-        --double-margin: 8rem;
-        --filters-wrapper-width: calc(100vw / 2);
     }
 }
 
 @media screen and (max-width: 600px) {
     :root {
+        --body-text-size: 1rem;
+        --secondary-text-size: .9rem;
+        --intro-text-size: 1.5rem;
         --big-title-size: 3.5rem;
-        --main-margin: 1rem;
-        --half-margin: 1rem;
-        --double-margin: 6rem;
-        --filters-wrapper-width: calc(100vw - var(--button-size) - var(--small-margin));
+        --label-text-size: .8rem;
+        --main-margin: 1.5rem;
+        --half-margin: .75rem;
+        --inner-margin: 1.5rem;
+        --small-margin: .75rem;
+        --button-size: 2rem;
+        --filters-wrapper-width: 75dvw;
     }
 }

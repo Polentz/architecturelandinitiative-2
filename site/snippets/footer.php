@@ -7,15 +7,13 @@
         </h1>
         <div class="footer-nav-wrapper">
             <?php if ($site->toggleLang()->isTrue()) : ?>
-                <ul class="footer-nav-wrapper">
+                <div class="lang-list">
                     <?php foreach ($site->selectLanguages()->split() as $language) : ?>
-                        <li class="lang-button<?php e($kirby->language() == $language, ' active') ?>">
-                            <a href="<?= $page->url($language) ?>" hreflang="<?php echo $language ?>">
-                                <?= ucfirst($language) ?>
-                            </a>
-                        </li>
+                        <button class="lang-button<?php e($kirby->language() == $language, ' active') ?>" type="button">
+                            <a href="<?= $page->url($language) ?>" hreflang="<?php echo $language ?>"><span class="text-label"><?= ucfirst($language) ?></span></a>
+                        </button>
                     <?php endforeach ?>
-                </ul>
+                </div>
             <?php endif ?>
             <button id="contact-opener" class="button" type="button">
                 <span class="text-label"><?= $site->contactNavLabel() ?></span>

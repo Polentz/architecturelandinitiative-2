@@ -2,10 +2,6 @@ Title: Architecture Land Initiative
 
 ----
 
-Attachments: - file://IwFv4Qei142w05I6
-
-----
-
 Togglelang: true
 
 ----
@@ -26,7 +22,7 @@ Instagram: https://www.instagram.com/architecturelandinitiative/
 
 ----
 
-Instagramicon: icon
+Instagramicon: text
 
 ----
 
@@ -136,6 +132,10 @@ Keywords: architecture, landscape, urbanism, geneva, zurich, cooperative
 ----
 
 Ogimage: 
+
+----
+
+Attachments: - file://IwFv4Qei142w05I6
 
 ----
 

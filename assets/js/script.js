@@ -1,4 +1,5 @@
-gsap.registerPlugin(ScrollTrigger, Flip);
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(SplitText);
 
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
@@ -157,129 +158,42 @@ const cursor = () => {
     handleMediaQuery(mediaQuery);
 };
 
-const split = (domElement) => {
-    let words = domElement.textContent.split(' ');
-    words = words.map(word => {
-        let letters = word.split('');
-        letters = letters.map(letter => `<span class="letter">${letter}</span>`);
-        return letters.join('');
-    });
-    domElement.innerHTML = words.join(' ');
-};
-
-split(document.querySelector(".logo-word-1"));
-split(document.querySelector(".logo-word-2"));
-split(document.querySelector(".logo-word-3"));
-if (document.querySelector(".logo-element")) {
-    split(document.querySelector(".logo-element"));
-};
-
-const architecture = Array.from(document.querySelectorAll(".logo-word-1 .letter"));
-const land = Array.from(document.querySelectorAll(".logo-word-2 .letter"));
-const initiative = Array.from(document.querySelectorAll(".logo-word-3 .letter"));
-const elements = Array.from(document.querySelectorAll(".logo-element .letter"));
-const a = architecture.splice(1, 11);
-const l = land.splice(1, 3);
-const i = initiative.splice(2, 8);
-const all = [a, l, i];
-
-const animateAll = () => {
-    elements.forEach(element => {
-        element.parentElement.style.display = "inline-block";
-    });
-    let tl = gsap.timeline();
-    tl.from(elements, {
-        autoAlpha: 0,
-        stagger: 0.1,
-        scale: 0,
-    });
-    tl.to(all, {
-        duration: 1,
-        autoAlpha: 0,
-        stagger: 0.2,
-        scale: 0,
-    });
-
-    let loopTl = gsap.timeline({ delay: 2, repeat: -1, repeatDelay: 2 });
-    loopTl.to(all, {
-        duration: 1,
-        autoAlpha: 1,
-        stagger: 0.2,
-        scale: 1,
-    });
-    loopTl.to(all, {
-        duration: 1,
-        autoAlpha: 0,
-        stagger: 0.2,
-        scale: 0,
-    });
-
-};
-
-// const animateName = () => {
-//     gsap.to(all, {
-//         duration: 1.5,
-//         autoAlpha: 0,
-//         stagger: 0.2,
-//         scale: 0,
-//     });
-// };
-
-// const reverseAnimateName = () => {
-//     gsap.to(all, {
-//         duration: 1.5,
-//         autoAlpha: 1,
-//         stagger: 0.2,
-//         scale: 1,
-//     });
-// };
-
-// logo.addEventListener("mouseenter", () => {
-//     reverseAnimateName();
-// });
-
-// logo.addEventListener("mouseleave", () => {
-//     animateName();
-// });
-
-const splitTitle = (element, content) => {
-    const eachWord = content.match(/([\w-/]+)/g);
-    eachWord.forEach(word => {
-        let div = document.createElement("div");
-        div.classList.add("word");
-        let text = document.createTextNode(word);
-        div.appendChild(text);
-        element.appendChild(div);
-        split(div);
-    });
-};
-
-const animateTitle = (x, y, stagger) => {
-    document.querySelectorAll(".word").forEach(word => {
-        const letters = word.querySelectorAll(".letter");
-        const labels = gsap.utils.toArray(".item-title-label");
-        let tl = gsap.timeline();
-        tl.to(letters, {
-            autoAlpha: 1,
-            duration: 0.3,
+const logoAnimation = () => {
+    document.fonts.ready.then(() => {
+        let splitLogo = SplitText.create(".logo-word", {
+            type: "words, chars",
+            tag: "span",
+            ignore: ".ignore",
+            charsClass: "letter",
         });
-        tl.from(letters, {
-            duration: 0.3,
-            delay: 0.25,
-            xPercent: x,
-            yPercent: y,
-            stagger: stagger,
+
+        gsap.from(splitLogo.chars, {
+            duration: 1,
+            autoAlpha: 0,
+            scale: 0,
+            stagger: 0.2,
+            repeat: -1,
+            repeatDelay: 2,
+            yoyo: true,
         });
-        tl.to(word, {
-            clipPath: "none",
+    });
+};
+
+const titlesAnimation = (items, xDirection, yDirection) => {
+    document.fonts.ready.then(() => {
+        let splitTitles = SplitText.create(items, {
+            type: "words, chars",
+            tag: "span",
+            charsClass: "letter",
+            wordsClass: "word",
         });
-        labels.forEach(label => {
-            if (label) {
-                tl.to(label, {
-                    opacity: 1,
-                    duration: 0.3,
-                });
-            };
+
+        gsap.from(splitTitles.chars, {
+            duration: 0.5,
+            yPercent: yDirection,
+            xPercent: xDirection,
+            autoAlpha: 0,
+            stagger: 0.05,
         });
     });
 };
@@ -288,7 +202,7 @@ const handleTitleHover = () => {
     const titles = document.querySelectorAll(".item-title a");
     titles.forEach(title => {
         title.addEventListener("mouseenter", () => {
-            const letters = title.querySelectorAll(".word .letter");
+            const letters = title.querySelectorAll(".letter");
             gsap.to(letters, {
                 duration: 0.1,
                 color: "var(--main-color)",
@@ -296,7 +210,7 @@ const handleTitleHover = () => {
             });
         });
         title.addEventListener("mouseleave", () => {
-            const letters = title.querySelectorAll(".word .letter");
+            const letters = title.querySelectorAll(".letter");
             gsap.to(letters, {
                 duration: 0.1,
                 color: "var(--black)",
@@ -948,7 +862,7 @@ window.addEventListener("load", () => {
     footerHeight();
     animatePaths();
     cursor();
-    animateAll();
+    logoAnimation();
     sliderOpener();
     bannerOpener();
     shuffleColors();
@@ -960,4 +874,3 @@ window.addEventListener("resize", () => {
     headerHeight();
     footerHeight();
 });
-

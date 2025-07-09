@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
     lazyloading();
+
     handleFiltersBox();
     handleFilters();
     handleGallery();

@@ -1,10 +1,8 @@
 <footer class="footer">
     <div class="footer-nav">
-        <h1 class="headline">
-            <a class="logo" href="<?= $site->page('home')->url() ?>">
-                <span class="logo-word logo-word-1">Architecture</span>
-                <span class="logo-word logo-word-2">Land</span>
-                <span class="logo-word logo-word-3">INitiative</span>
+        <h1 class="logo">
+            <a class="logo-word" href="<?= $site->page('home')->url() ?>">
+                <span class="ignore">A</span>rchitecture <span class="ignore">L</span>and <span class="ignore">In</span>itiative
             </a>
         </h1>
         <div class="footer-nav-wrapper">

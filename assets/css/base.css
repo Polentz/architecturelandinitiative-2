@@ -3,7 +3,9 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    text-rendering: optimizeLegibility;
+    font-kerning: none;
+    text-rendering: optimizeSpeed;
+    /* text-rendering: optimizeLegibility; */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     scrollbar-width: thin;

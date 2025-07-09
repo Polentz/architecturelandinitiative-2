@@ -309,6 +309,8 @@ video {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
@@ -342,6 +344,8 @@ video {
 }
 
 .logo-word {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     gap: .5rem;
     white-space: nowrap;
@@ -363,7 +367,11 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: var(--half-margin);
     padding-top: var(--small-margin);
@@ -390,7 +398,11 @@ video {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     /* justify-content: flex-end; */
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-column-gap: var(--inner-margin);
+    -moz-column-gap: var(--inner-margin);
     column-gap: var(--inner-margin);
     row-gap: var(--small-margin);
     pointer-events: all;
@@ -417,8 +429,14 @@ video {
 
 .footer-nav {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     padding: var(--small-margin) var(--main-margin);
     background: var(--shade-color);
@@ -437,6 +455,8 @@ video {
     display: -ms-flexbox;
     display: flex;
     gap: var(--inner-margin);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* cursor: pointer; */
 }
@@ -446,6 +466,7 @@ video {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: end;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: var(--small-margin);
 }
@@ -455,6 +476,8 @@ video {
     display: -ms-flexbox;
     display: flex;
     gap: var(--small-margin);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -465,6 +488,8 @@ video {
 }
 
 .banner.--display {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -508,6 +533,8 @@ video {
 
 .slider-wrapper {
     height: var(--doc-height);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow-y: hidden;
     -webkit-transform: translateX(100%);
@@ -590,7 +617,9 @@ video {
 }
 
 .text-block {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr var(--inner-margin) 1fr var(--inner-margin) 1fr var(--inner-margin) 1fr;
     grid-template-columns: repeat(4, 1fr);
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
@@ -599,6 +628,8 @@ video {
 }
 
 .text-block .text {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
     grid-column: 2 / 5;
 }
 
@@ -658,6 +689,8 @@ section.--blur {
     left: 0;
     bottom: 0;
     z-index: 1;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.3)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
     background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
 }
 
@@ -727,6 +760,8 @@ section.--blur {
     left: 0;
     bottom: 0;
     z-index: 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.3)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
     background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
     pointer-events: none;
 }
@@ -779,12 +814,9 @@ section.--blur {
     column-gap: 2vw;
 }
 
-/* .item-title-label {
-    opacity: 0;
-    -webkit-transition: opacity .5s ease;
-    -o-transition: opacity .5s ease;
-    transition: opacity .5s ease;
-} */
+.item-title p {
+    opacity: .25;
+}
 
 .column-direction .item-title .word {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 130%, 0% 130%);
@@ -811,6 +843,8 @@ section.--blur {
     justify-content: start;
     gap: var(--inner-margin);
     padding: 0 var(--main-margin);
+    -webkit-transition: width .5s ease;
+    -o-transition: width .5s ease;
     transition: width .5s ease;
 }
 
@@ -828,6 +862,7 @@ section.--blur {
 
 .cover-item img {
     aspect-ratio: 4 / 3;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -1066,6 +1101,7 @@ input.seek-slider::-moz-range-thumb {
 .gallery-item.--zoom-in .gallery-item-caption {
     position: sticky;
     top: var(--main-margin);
+    cursor: -webkit-zoom-out;
     cursor: zoom-out;
 }
 
@@ -1356,6 +1392,8 @@ input.seek-slider::-moz-range-thumb {
     display: -ms-grid;
     display: grid;
     justify-items: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
     -ms-grid-columns: 1fr var(--small-margin) 1fr var(--small-margin) 1fr var(--small-margin) 1fr var(--small-margin) 1fr;
     grid-template-columns: repeat(5, 1fr);
@@ -1370,6 +1408,8 @@ input.seek-slider::-moz-range-thumb {
 }
 
 .accordion-opener {
+    -webkit-transition: background .2s ease;
+    -o-transition: background .2s ease;
     transition: background .2s ease;
     cursor: pointer;
 }
@@ -1538,6 +1578,7 @@ input.seek-slider::-moz-range-thumb {
     }
 
     .gallery-item.--zoom-in {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1652,7 +1693,12 @@ input.seek-slider::-moz-range-thumb {
     }
 
     .footer-nav-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
     }
 
@@ -1684,6 +1730,7 @@ input.seek-slider::-moz-range-thumb {
     }
 
     .text-block {
+        -ms-grid-columns: 1fr var(--small-margin) 1fr var(--small-margin) 1fr var(--small-margin) 1fr var(--small-margin) 1fr;
         grid-template-columns: repeat(5, 1fr);
         gap: var(--small-margin);
     }
@@ -1693,6 +1740,8 @@ input.seek-slider::-moz-range-thumb {
     }
 
     .text-block .text {
+        -ms-grid-column: 2;
+        -ms-grid-column-span: 4;
         grid-column: 2 / 6;
     }
 

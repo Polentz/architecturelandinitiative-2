@@ -35,14 +35,14 @@
 
 @media screen and (min-width: 1500px) {
     :root {
-        --body-text-size: 1.75rem;
+        --body-text-size: 1.5rem;
         --secondary-text-size: 1.25rem;
         --label-text-size: 1rem;
         --logo-text-size: 1rem;
         --main-margin: 18rem;
         --half-margin: 6rem;
         --inner-margin: 3rem;
-        --small-margin: 1.5rem;
+        --small-margin: 1.25rem;
         --button-size: 2.5rem;
     }
 }
@@ -66,6 +66,6 @@
         --inner-margin: 1.5rem;
         --small-margin: .75rem;
         --button-size: 2rem;
-        --filters-wrapper-width: 75dvw;
+        --filters-wrapper-width: calc(100vw - var(--button-size) - var(--main-margin) * 2 + 2px);
     }
 }

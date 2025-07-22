@@ -267,6 +267,7 @@ const horizontalScroll = () => {
 const sliderOpener = () => {
     const sliderContainer = document.querySelectorAll(".slider");
     const blurredElements = document.querySelectorAll(".header, section:not(.slider):not(.page-intro), .footer");
+    const shrinkElement = document.querySelector(".page-intro");
     sliderContainer.forEach(slider => {
         const sliderWrapper = slider.querySelector(".slider-wrapper");
         const sliderButton = slider.querySelector(".x-button");
@@ -279,8 +280,9 @@ const sliderOpener = () => {
                 blurredElements.forEach(element => {
                     element.classList.add("--blur");
                 });
-                document.querySelector(".page-intro").style.width = `calc(100% - ${sliderContent.clientWidth}px)`;
-                document.body.style.overflow = "hidden";
+                window.scrollTo(0, 0);
+                shrinkElement.style.width = `calc(100% - ${sliderContent.clientWidth}px)`;
+                shrinkElement.classList.add("--shrink");
             }, 200);
             setTimeout(() => {
                 sliderButton.classList.add("--opacity");
@@ -289,8 +291,8 @@ const sliderOpener = () => {
 
         const removeClasses = () => {
             sliderWrapper.classList.remove("--translateX");
-            document.querySelector(".page-intro").style.width = "100%";
-            document.body.style.overflow = "auto";
+            shrinkElement.style.width = "100%";
+            shrinkElement.classList.remove("--shrink");
             blurredElements.forEach(element => {
                 element.classList.remove("--blur");
             });
@@ -311,6 +313,7 @@ const sliderOpener = () => {
                 };
             });
         });
+
         sliderButton.addEventListener("click", () => {
             buttons.forEach(element => {
                 element.classList.remove("--target");
@@ -653,21 +656,25 @@ const sortAccordion = () => {
 const handleMenuOnMobile = () => {
     const banner = document.querySelector(".banner");
     const menuButton = document.querySelector(".nav-mobile-opener");
-    const headerNavEButtons = document.querySelectorAll(".header .button");
+    const headerNavButtons = document.querySelectorAll(".header .button");
     const menuElements = document.querySelectorAll(".contact-block, .header .button");
     const blurredElements = document.querySelectorAll("section:not(.slider)");
+    const openElement = document.querySelector(".filters");
     const handleMediaQuery = (e) => {
         if (e.matches) {
             menuButton.addEventListener("click", () => {
                 menuButton.classList.toggle("--open");
                 footer.classList.toggle("--show");
-                headerNavEButtons.forEach(btn => {
+                headerNavButtons.forEach(btn => {
                     btn.classList.toggle("--show");
                 });
                 banner.classList.toggle("--display");
                 blurredElements.forEach(element => {
                     element.classList.toggle("--blur");
                 });
+                if (openElement) {
+                    openElement.classList.toggle("--hide");
+                };
                 const tl = gsap.timeline();
                 tl.from(menuElements, {
                     duration: 0.5,
@@ -678,17 +685,20 @@ const handleMenuOnMobile = () => {
                     stagger: 0.1,
                 }, "-=75%");
             });
-            headerNavEButtons.forEach(button => {
+            headerNavButtons.forEach(button => {
                 button.addEventListener("click", () => {
                     menuButton.classList.remove("--open");
                     footer.classList.remove("--show");
-                    headerNavEButtons.forEach(btn => {
+                    headerNavButtons.forEach(btn => {
                         btn.classList.remove("--show");
                     });
                     banner.classList.remove("--display");
                     blurredElements.forEach(element => {
                         element.classList.remove("--blur");
                     });
+                    if (openElement) {
+                        openElement.classList.remove("--hide");
+                    };
                 })
             })
         }

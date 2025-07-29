@@ -53,7 +53,7 @@ tabs:
               attachmentsInfoText:
                 label: false
                 type: info
-                text: "The above files can be linked as PDF attachments within the text. Upload all the PDFs you'd like to use throughout the site here."
+                text: "The above files can be linked as PDF attachments within the text. Upload here any PDFs you wish to use throughout the website."
           features:
             label: false
             type: fields
@@ -63,10 +63,6 @@ tabs:
                 type: toggle
                 text: Want to display the languages switcher?
                 default: false
-              # toggleLangInfo:
-              #   label: false
-              #   type: info
-              #   text: "By activating the button above, the languages switcher will be displayed on the site footer."
               selectLanguages:
                 label: Select languages
                 type: multiselect

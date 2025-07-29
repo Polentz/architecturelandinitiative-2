@@ -501,7 +501,7 @@ const handleFilters = () => {
 const handleGallery = () => {
     const galleryItems = document.querySelectorAll(".gallery-item");
     const triggerElements = document.querySelectorAll(".gallery-item img, .gallery-item video");
-    const paddingOffset = 160;
+    const paddingOffset = 96;
 
     const addClasses = (item) => {
         galleryItems.forEach(i => {

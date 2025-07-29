@@ -24,7 +24,7 @@
     --main-margin: 6rem;
     --half-margin: 3rem;
     --inner-margin: 2rem;
-    --small-margin: 1rem;
+    --small-margin: .75rem;
 
     --button-size: 2.2rem;
     --filters-wrapper-width: calc(100vw / 2 - var(--inner-margin) - var(--main-margin) + 10px);
@@ -37,13 +37,13 @@
     :root {
         --body-text-size: 1.5rem;
         --secondary-text-size: 1.25rem;
-        --label-text-size: 1rem;
-        --logo-text-size: 1rem;
+        /* --label-text-size: 1rem;
+        --logo-text-size: 1rem; */
         --main-margin: 18rem;
         --half-margin: 6rem;
         --inner-margin: 3rem;
-        --small-margin: 1.25rem;
-        --button-size: 2.5rem;
+        /* --small-margin: 1rem;
+        --button-size: 2.5rem; */
     }
 }
 

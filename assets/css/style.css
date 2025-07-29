@@ -869,10 +869,13 @@ section.--blur {
     gap: var(--inner-margin);
 }
 
-.cover-item img {
+.cover-item img,
+.cover-item video {
+    max-height: 85vh;
     aspect-ratio: 4 / 3;
     -o-object-fit: cover;
     object-fit: cover;
+    object-position: center;
 }
 
 .gallery-item {

@@ -41,7 +41,7 @@
             </div>
             <?php if ($image = $block->image()->toFile()) : ?>
                 <figure class="accordion-image">
-                    <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
+                    <img src="<?= $image->resize(1200, null)->url() ?>" alt="<?= $image->alt() ?>">
                     <?php if ($block->imagecaption()->isNotEmpty()) : ?>
                         <figcaption class="text-label"><?= $block->imagecaption()->kt() ?></figcaption>
                     <?php endif ?>

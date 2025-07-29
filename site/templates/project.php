@@ -1,11 +1,15 @@
+<?php
+$coverFiles = $page->cover()->toFiles();
+?>
+
 <?= snippet('head') ?>
 <?= snippet('header') ?>
 
 <main class="main">
     <?= snippet('intro') ?>
 
-    <section class="cover">
-        <?php foreach ($page->cover()->toFiles() as $media) : ?>
+    <section class="cover" <?php if ($coverFiles->count() == 1) : ?>style="grid-template-columns: 1fr;" <?php endif ?>>
+        <?php foreach ($coverFiles as $media) : ?>
             <?= snippet('cover', ['media' => $media]) ?>
         <?php endforeach ?>
     </section>

@@ -10,10 +10,7 @@ Textblocks:
 
 ----
 
-Cover:
-
-- file://BU2Tsl2Z1IkuXM61
-- file://nM0o3GtueIU54SbY
+Cover: - file://nM0o3GtueIU54SbY
 
 ----
 

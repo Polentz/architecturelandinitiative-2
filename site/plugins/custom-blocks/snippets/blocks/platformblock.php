@@ -34,7 +34,7 @@
                 <?php if ($image = $block->image()->toFile()) : ?>
                     <li class="accordion-image">
                         <figure class="accordion-image-wrapper">
-                            <img src="<?= $image->url() ?>">
+                            <img src="<?= $image->resize(1200, null)->url() ?>">
                             <figcaption class="text-label"><?= $block->imagecaption()->kt() ?></figcaption>
                         </figure>
                     </li>

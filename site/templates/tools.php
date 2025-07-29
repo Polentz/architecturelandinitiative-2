@@ -9,11 +9,12 @@
             <div class="scroll-container">
                 <div class="scroll-items row-direction">
                     <?php foreach ($page->children()->listed() as $child) : ?>
-                        <?php if ($child) : ?>
-                            <div class="item scroll-item" <?php if ($cover = $child->background()->toFile()) : ?> style="background-image: url('<?= $cover->url() ?>');" <?php endif ?>>
-                                <h3 class="item-title"><a href="<?= $child->url() ?>"><?= $child->title() ?></a></h3>
-                            </div>
-                        <?php endif ?>
+                        <?php $cover = $child->background()->toFile() ?>
+
+                        <div class="item scroll-item<?= $cover ? ' has-background' : '' ?>" <?= $cover ? ' style="background-image: url(\'' . $cover->resize(1600, null)->url() . '\');"' : '' ?>>
+                            <h3 class="item-title"><a href="<?= $child->url() ?>"><?= $child->title() ?></a></h3>
+                        </div>
+
                     <?php endforeach ?>
                 </div>
             </div>

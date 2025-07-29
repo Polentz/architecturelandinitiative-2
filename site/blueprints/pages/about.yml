@@ -27,7 +27,7 @@ sections:
           - clear
         nodes: false 
       textblocks:
-        label: Additional text
+        label: Body text
         type: blocks
         fieldsets:
           - textblock

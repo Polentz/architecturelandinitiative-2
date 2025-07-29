@@ -8,7 +8,7 @@
         <?= $block->copy()->kt() ?>
         <?php if ($thumbnail = $block->thumbnail()->toFile()) : ?>
             <figure class="thumbnail">
-                <img src="<?= $thumbnail->url() ?>" width="100%" />
+                <img src="<?= $thumbnail->resize(1200, null)->url() ?>" width="100%" />
             </figure>
         <?php endif ?>
     </div>

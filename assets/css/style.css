@@ -766,6 +766,10 @@ section.--blur {
     pointer-events: none;
 }
 
+.item.unlisted {
+    filter: grayscale(1);
+}
+
 .column-direction .item {
     width: 100%;
     min-height: 20vw;
@@ -793,6 +797,11 @@ section.--blur {
     border-right: var(--border-black);
 }
 
+.item-title-label {
+    position: relative;
+    z-index: 1;
+}
+
 .item-title {
     position: relative;
     font-family: var(--big-title-font);
@@ -815,7 +824,7 @@ section.--blur {
 }
 
 .item-title p {
-    opacity: .25;
+    opacity: .5;
 }
 
 .item-title .word {

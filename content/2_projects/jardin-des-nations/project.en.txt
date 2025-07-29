@@ -2,7 +2,7 @@ Title: Jardin des Nations
 
 ----
 
-Summary: 
+Intro: 
 
 ----
 
@@ -10,7 +10,23 @@ Textblocks:
 
 ----
 
+Cover: 
+
+----
+
 Gallery: 
+
+----
+
+Background: - file://antiiaqmwmbyarxw
+
+----
+
+Selectfilters: 
+
+----
+
+Summary: 
 
 ----
 

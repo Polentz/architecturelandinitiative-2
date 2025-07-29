@@ -22,7 +22,7 @@ Instagram: https://www.instagram.com/architecturelandinitiative/
 
 ----
 
-Instagramicon: text
+Instagramicon: icon
 
 ----
 

@@ -4,13 +4,17 @@ use Kirby\Toolkit\Str;
 
 $selectFiltersOptions = $page->blueprint()->field('selectFilters')['options'] ?? [];
 
-// $filteredMedia = $allmedia->filterBy('tools', '*=', $page->title());
 $pageFiles = $page->gallery()->toFiles();
+
 $parentTitles = [];
 foreach ($pageFiles as $media) {
-    $parentTitle = $media->parent()->title()->value();
-    $parentTitles[] = $parentTitle;
-};
+    $parent = $media->parent();
+    if ($parent && $parent->intendedTemplate()->name() === 'project') {
+        $parentTitle = $parent->title()->value();
+        $parentTitles[] = $parentTitle;
+    }
+}
+
 $uniqueTitles = array_unique($parentTitles);
 ?>
 

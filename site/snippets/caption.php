@@ -6,7 +6,7 @@
         <?php if ($page->intendedTemplate()->name() === 'project') : ?>
             <p>Process stage: <?= $media->filter() ?></p>
         <?php endif ?>
-        <?php if ($page->intendedTemplate()->name() === 'tool') : ?>
+        <?php if ($page->intendedTemplate()->name() === 'tool' && $media->parent()->intendedTemplate()->name() === 'project') : ?>
             <p>Related project: <a href="<?= $media->parent()->url() ?>"><?= $media->parent()->title() ?></a></p>
         <?php endif ?>
     </div>

@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - Ansichten Umbau, A2 / 1:200, Nov. 21, 2023. ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: Outcome
+
+----
+
+Uuid: b20f2OmCqeMY4Hg2
+
+----
+
+Template: media

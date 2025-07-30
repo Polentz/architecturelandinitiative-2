@@ -1,0 +1,29 @@
+Caption: <p>By Us for Us, Atlas; <em>Housing Co-operatives Internationally,</em> pages 18-21, 2023 ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: Atlas
+
+----
+
+Mediatype: Printed matter
+
+----
+
+Filter: 
+
+----
+
+Uuid: UBM8CS76v0c6QNJ8
+
+----
+
+Template: media

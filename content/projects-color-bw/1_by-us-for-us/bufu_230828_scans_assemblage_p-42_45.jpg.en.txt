@@ -1,0 +1,29 @@
+Caption: <p>By Us for Us, Atlas; <em>Connectivity,</em> pages 42-45, 2023 ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: Atlas
+
+----
+
+Mediatype: Printed matter
+
+----
+
+Filter: 
+
+----
+
+Uuid: TxjxWT4NDvxhALOX
+
+----
+
+Template: media

@@ -18,7 +18,7 @@ sections:
       additionalTextInfo:
             label: false
             type: info
-            text: 'The additional text activates the "Read More" button.'
+            text: 'The additional text below activates the "Read More" button.'
       textblocks:
         label: Additional text
         type: blocks

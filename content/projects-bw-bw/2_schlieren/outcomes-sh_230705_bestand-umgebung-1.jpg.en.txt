@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - Ansichten und Erdgeschoss Umgebung 1, A3 / 1:200, 05. jul. 2023. ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: Outcome
+
+----
+
+Uuid: wjwNzbkkVYRYJXy2
+
+----
+
+Template: media

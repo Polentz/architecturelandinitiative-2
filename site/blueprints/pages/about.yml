@@ -26,7 +26,16 @@ sections:
           - email
           - clear
         nodes: false 
+      additionalTextInfo:
+        label: false
+        type: info
+        text: 'The additional text below activates the "Read More" button.'
       textblocks:
+        label: Additional text
+        type: blocks
+        fieldsets:
+          - sliderblock
+      body:
         label: Body text
         type: blocks
         fieldsets:

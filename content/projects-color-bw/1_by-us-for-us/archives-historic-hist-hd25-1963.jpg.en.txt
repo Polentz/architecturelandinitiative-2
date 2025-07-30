@@ -1,0 +1,29 @@
+Caption: Historic Maps of Hong Kong - Kowloon Peninsula in 1963; Scale: 8 inches to 1 mile (1:7,920); The map depicts the topography of the Kowloon Peninsula as it was in 1963.
+
+----
+
+Alt: 
+
+----
+
+Info: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Map
+
+----
+
+Filter: Archive material
+
+----
+
+Uuid: KmPcgin4QJuHFwM2
+
+----
+
+Template: media

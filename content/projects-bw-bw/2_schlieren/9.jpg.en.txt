@@ -1,0 +1,29 @@
+Caption: <p>Gaswerk der Stadt, Reservoir tower under construction, workers on scaffolding, engineers with surveying equipment, 1898 Turmstrasse 3</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Image
+
+----
+
+Filter: Archive material
+
+----
+
+Uuid: 5On31t1oiFt1ajDB
+
+----
+
+Template: media

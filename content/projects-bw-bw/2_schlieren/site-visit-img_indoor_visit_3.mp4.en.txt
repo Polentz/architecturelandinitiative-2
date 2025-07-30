@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29, indoor, Schlieren, 2023 Video credit: ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Video
+
+----
+
+Filter: Site visit
+
+----
+
+Uuid: xyTq03PCpv5YbXsQ
+
+----
+
+Template: media

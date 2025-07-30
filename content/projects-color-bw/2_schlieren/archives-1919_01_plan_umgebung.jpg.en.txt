@@ -1,0 +1,29 @@
+Caption: <p>Troekenanlage der Stadt Zürich;<em> Plan Für die Umgebungsarbeiten, </em>Schlieren, 8 Jan. 1919, Scale: 1/500 ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Filter: Archive material
+
+----
+
+Uuid: gBZ3sRGXHr5sm1z4
+
+----
+
+Template: media

@@ -49,6 +49,8 @@ Mediafilters:
   filter: Drawing
 - 
   filter: Printed matter
+- 
+  filter: Podcast
 
 ----
 
@@ -120,6 +122,8 @@ Membersfilters:
   filter: Alexa den Hartog
 - 
   filter: Zoé Lefèvre
+- 
+  filter: Giulia Polenta
 
 ----
 

@@ -12,20 +12,20 @@ Textblocks: [{"content":{"subtitle":"","copy":"<p>During the first few months of
 
 Cover:
 
-- file://BU2Tsl2Z1IkuXM61
-- file://nM0o3GtueIU54SbY
-- file://nvg9cvP4cCnR31cY
-- file://tHlMldUiuO4mlWbP
+- file://5JnkWuOQFGb0zxch
+- file://H7ToNGRC92IV0Cao
+- file://t50es3Rkf1gBWv9K
+- file://V9Bv6qXfJ7jFPfPF
 
 ----
 
 Gallery:
 
+- file://5JnkWuOQFGb0zxch
+- file://BU2Tsl2Z1IkuXM61
 - file://H7ToNGRC92IV0Cao
 - file://rGZyGfaGyucxEiAr
-- file://BU2Tsl2Z1IkuXM61
 - file://nvg9cvP4cCnR31cY
-- file://5JnkWuOQFGb0zxch
 - file://WCojEPLIUj5o2DKX
 - file://tHlMldUiuO4mlWbP
 - file://IiNnpsdKJ9ku3wVy

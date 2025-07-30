@@ -1,0 +1,29 @@
+Caption: <p>SH | HOWL, Bernstrasse 29 - Model of the existing building. ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: 
+
+----
+
+Mediatype: Image
+
+----
+
+Filter: 
+
+----
+
+Uuid: L89PMVSfZxPS9IZl
+
+----
+
+Template: media

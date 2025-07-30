@@ -1,0 +1,29 @@
+Caption: <p>By Us for Us, Atlas; <em>Yards and Public Space,</em> pages 26-29, 2023 ©Architecture Land Initiative</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tools: Atlas
+
+----
+
+Mediatype: Printed matter
+
+----
+
+Filter: 
+
+----
+
+Uuid: HRf5sXtKZ12pXsZP
+
+----
+
+Template: media

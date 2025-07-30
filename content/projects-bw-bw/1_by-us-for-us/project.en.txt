@@ -1,0 +1,225 @@
+Title: By Us for Us
+
+----
+
+Intro: <p><em>By Us, For Us</em> is a project aimed at drafting a roadmap toward (re)introducing a ‘third option’ for housing development in Hong Kong through a series of Public Forums. While Hong Kong once had a cooperative housing policy alongside private and public options, the post-colonial political order since the 1997 handover has led to the erasure of existing cooperatives. Moreover, since the periods of social unrest in 2014 and 2019, most grassroots social movements have been restricted. This has made the ‘cooperative’ housing model, which was once considered occidental and predominantly colonial, no longer possible without profound reconsideration.</p>
+
+----
+
+Textblocks: [{"content":{"subtitle":"","copy":"<p>During the first few months of research and the initial <em>By Us, For Us</em> forum, exchanges confirmed the urgent need to address access to adequate housing and the importance and relevance of exploring a ‘third option’ for housing. However, these exchanges also revealed complexity and friction rooted in the colonial history of cooperatives in Hong Kong. A deeper understanding of these tensions and a reframing of possible trajectories in light of colonial issues and relations with China emerged as profoundly necessary for further research. The Toolshed appears to be the ideal framework for collectively raising these questions through archival research, exchanges, and the cross-contamination of architectural and archival methodologies already developed on both sides.</p>","thumbnail":[]},"id":"e2db7f9d-31ab-4b3c-993f-f984ab2e6b67","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Info","copy":"<p>Period:<br>2022-ongoing</p><p>Architecture Land Initiative:<br>Guillaume Othenin-Girard (lead), Kent Mundle (lead), Alexa den Hartog/PO4 architekten, Janice Leung, Léonore Nemec</p><p>With support from:<br>Design Trust</p>","thumbnail":[]},"id":"cbc8221a-5003-446a-9005-43762d3166ac","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"More info","copy":"<p>Period:<br>2022-ongoing</p><p>Architecture Land Initiative:<br>Guillaume Othenin-Girard (lead), Kent Mundle (lead), Alexa den Hartog/PO4 architekten, Janice Leung, Léonore Nemec</p><p>With support from:<br>Design Trust</p>","thumbnail":[]},"id":"cabb67ac-2704-479f-b4e3-f3e8982632bc","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"","copy":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","thumbnail":[]},"id":"54950734-62c0-45ad-b653-383f23dce156","isHidden":false,"type":"sliderblock"}]
+
+----
+
+Cover:
+
+- file://5JnkWuOQFGb0zxch
+- file://H7ToNGRC92IV0Cao
+- file://t50es3Rkf1gBWv9K
+
+----
+
+Gallery:
+
+- file://5JnkWuOQFGb0zxch
+- file://BU2Tsl2Z1IkuXM61
+- file://H7ToNGRC92IV0Cao
+- file://rGZyGfaGyucxEiAr
+- file://nvg9cvP4cCnR31cY
+- file://WCojEPLIUj5o2DKX
+- file://tHlMldUiuO4mlWbP
+- file://IiNnpsdKJ9ku3wVy
+- file://XPoGyP0yRHKao6vQ
+- file://t50es3Rkf1gBWv9K
+- file://0SUEc2wvQouvTROL
+- file://QqtaZ21joMLIc0IH
+- file://V9Bv6qXfJ7jFPfPF
+- file://lrDcsO2lHgnTzrKf
+- file://lO8U7vmo5H2GDra0
+- file://UHNx4WFKj6BJE9h3
+- file://io7MYueq2Mn1S1Bq
+- file://fRteU6Zza2GtiReL
+- file://MnbeqcxEJB952Hui
+- file://yg0N95errLHshdKl
+- file://VRZxKxZ2cqJMJMWK
+- file://iMxAGDQ9kDz362sP
+- file://ZfsBsJu6TDLxOMOB
+- file://ll7gma8FDbwprfsB
+- file://PhmsAVfhsukooAvO
+- file://y430y0Ab05CHkR1c
+- file://V0hWgnEN5N739ETC
+- file://sk9aSq35oRQ8l3j8
+- file://2eBOUh4ZvoHVr6aV
+- file://uzXqj0efwxHvuCkS
+- file://ciVLwau3sO0aeOqT
+- file://aDO6BiNQzZL7cv7Q
+- file://wxd6fQTK6pwTO4zq
+- file://klRaAFKmNGwckiUi
+- file://Os6p50GFHnvS03eH
+- file://Pshr3hjRru6jOaxS
+- file://FCgUvQXcF2KCkXeO
+- file://zbtEzrche4y1xasY
+- file://xa3spP5G0fFmBERD
+- file://GnGdNFC0lZwGZ0G2
+- file://3sBAd2mXiNdd8Xbn
+- file://nM0o3GtueIU54SbY
+- file://JtUeZuFd4cXPvtRp
+- file://vM0vgFbvngDKAWdn
+- file://LqxGFiFrXsgkC5gR
+- file://aXLUPhUmt3kHmdQb
+- file://OzT6RDJmcNktcmkF
+- file://HCW01wLWMem3AEyA
+- file://IHyYNPrblHzt0pme
+- file://zvnX9RWeH7oIMvtZ
+- file://blQWSISRkTe8qRP6
+- file://KgadCVgObkzMAPUD
+- file://gVlZO6sdKa7eZANx
+- file://6VyaPRrwJXGwKHb9
+- file://Ia8FWxjLj6Zdvif1
+- file://w6Uox2KN0yzMH73I
+- file://7vUMuZktMCXf9mYM
+- file://lR1U5Ho6RmZ7otLY
+- file://THtOgYryHDWAnKYj
+- file://acoj8RaxaZ3g2tBY
+- file://LukvMuv04IMmMxqk
+- file://F1szg9SNOUJlJMe5
+- file://OOfv78ZRGRLsWH5u
+- file://A3fwcn1rQvMkuSEW
+- file://UaglZWQCMV1iDS7P
+- file://nFVO5sx0bHlrocCV
+- file://SGA2SBjrS5rN4tEP
+- file://UQOPQCrSzI2PUdoP
+- file://p4Vc3CXWxl6jlD57
+- file://vI6PG0RXG9KOxWQm
+- file://gtoF4WC8CfNVObBQ
+- file://snNayLlkmkspWCzN
+- file://fg42NmDCbct6oV9E
+- file://866ZyDzf0LwoA4LC
+- file://KmPcgin4QJuHFwM2
+- file://wY73TDIZBuwH6icP
+- file://NWplox22JIzYeSOj
+- file://dSR7ZNHsdv79I8Il
+- file://0Hy6RpCiaq8LZBS7
+- file://1xIPBWSTNXxmStII
+- file://uueTBftU04U1zT2y
+- file://WYlbT3zSzJ6iYY32
+- file://WlCslhzawOj2d9ZA
+- file://X6IDak4iTMAXi4nJ
+- file://puIPX6f4qP5AyzFO
+- file://6EYs5CVSEGedG6Ia
+- file://u47htqHJz2KaDBk3
+- file://g5oFOgEvtdxgfFwR
+- file://uX91eOYg4Gh3Fflb
+- file://KmVOP3ISD4j1I1vv
+- file://wMwcNVCLvP7nzA58
+- file://2OnHQI5pr1PP0gKV
+- file://x0x4aMiqiXt6t78w
+- file://UBM8CS76v0c6QNJ8
+- file://cEk7YFWtYhHXXmJ3
+- file://HRf5sXtKZ12pXsZP
+- file://TxjxWT4NDvxhALOX
+- file://YY8Yc4rQ0Ia1jmSi
+- file://jJN7pkgV553L7rW4
+
+----
+
+Background: - file://JtUeZuFd4cXPvtRp
+
+----
+
+Selectfilters: mediatype, filter
+
+----
+
+Typename: Media type
+
+----
+
+Types: Image, Document, Audio
+
+----
+
+Filtername: Process stage
+
+----
+
+Filters: Site visit, Process, Outcome, Archive material
+
+----
+
+Summary:
+
+- 
+  category: Location
+  text: Hong Kong
+- 
+  category: Date
+  text: "2023"
+
+----
+
+Excerpt: 
+
+----
+
+Mediatypes: 
+
+----
+
+Filter:
+
+- 
+  filter: Archive materials, Research, Outcomes
+
+----
+
+Filtersetatitle: Type
+
+----
+
+Filterseta:
+
+- 
+  filter: Image
+- 
+  filter: Audio
+- 
+  filter: Video
+
+----
+
+Filtersetbtitle: Process stage
+
+----
+
+Filtersetb:
+
+- 
+  filter: Archive materials
+- 
+  filter: Research
+- 
+  filter: Outcomes
+
+----
+
+Images:
+
+- file://63ptonOF5BURMLyr
+- file://iJJP135dfu2txM8X
+- file://6Y5eq5J5kOdNyaAH
+- file://YmTAb71yURWCoirx
+- file://3VTUQiv2zwXfShD6
+- file://HPdMQqQ8SPPeQCTJ
+- file://C1dcS7fwmV0NbaIk
+
+----
+
+Audiofiles: - file://hUJ7eIlDLLoPd3mt
+
+----
+
+Videofiles: - file://GGUDwBYS2QlBlJ8I
+
+----
+
+Uuid: WOYRZn9TeLUnZp4x

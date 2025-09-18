@@ -58,13 +58,6 @@ const animatePaths = () => {
 const cursor = () => {
     const handleMediaQuery = (e) => {
         if (!e.matches) {
-            const letters = ["A", "L", "I", "N"];
-            letters.forEach(letter => {
-                const follower = document.createElement("span");
-                follower.classList.add("follower");
-                follower.innerHTML = letter;
-                document.querySelector(".cursor-wrapper").appendChild(follower);
-            });
             const cursor = document.createElement("span");
             cursor.classList.add("cursor");
             document.querySelector(".cursor-wrapper").appendChild(cursor);
@@ -74,20 +67,10 @@ const cursor = () => {
                     xPercent: -50,
                     yPercent: -50,
                 });
-                gsap.set(".follower", {
-                    xPercent: -50,
-                    yPercent: -50,
-                });
                 gsap.to(".cursor", 0, {
                     display: "block",
                     x: e.clientX,
                     y: e.clientY,
-                });
-                gsap.to(".follower", 0.8, {
-                    display: "block",
-                    x: e.clientX,
-                    y: e.clientY,
-                    stagger: 0.1,
                 });
             });
 
@@ -100,9 +83,6 @@ const cursor = () => {
                         opacity: 1,
                         ease: "power1.out",
                     });
-                    gsap.to(".follower", {
-                        scale: 0,
-                    });
                 });
 
                 a.addEventListener("mouseleave", () => {
@@ -113,46 +93,31 @@ const cursor = () => {
                         opacity: 1,
                         ease: "power1.out",
                     });
-                    gsap.to(".follower", {
-                        scale: 1,
-                    });
                 });
             });
 
             const darkElements = document.querySelectorAll(".filters-wrapper, .document-wrapper, .audio-player");
-            darkElements.forEach(box => {
-                box.addEventListener("mouseenter", () => {
+            darkElements.forEach(element => {
+                element.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
                         duration: 0,
                         background: "var(--white)",
                         ease: "none",
                     });
-                    gsap.to(".follower", {
-                        duration: 0,
-                        autoAlpha: 0,
-                        ease: "none",
-                    });
                 });
-                box.addEventListener("mouseleave", () => {
+                element.addEventListener("mouseleave", () => {
                     gsap.to(".cursor", {
                         duration: 0,
                         background: "var(--black)",
                         ease: "none",
                     });
-                    gsap.to(".follower", {
-                        duration: 0,
-                        autoAlpha: 1,
-                        ease: "none",
-                    });
                 });
             });
         } else {
-            const cursors = document.querySelectorAll(".cursor, .follower");
-            cursors.forEach(cursor => {
-                if (cursor) {
-                    cursor.remove();
-                }
-            });
+            const cursor = document.querySelector(".cursor");
+            if (cursor) {
+                cursor.remove();
+            };
         };
     };
     handleMediaQuery(mediaQuery);

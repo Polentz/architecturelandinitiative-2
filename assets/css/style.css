@@ -501,7 +501,7 @@ video {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    background: var(--background);
+    background: var(--main-color);
     -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
     padding: var(--half-margin) var(--main-margin);

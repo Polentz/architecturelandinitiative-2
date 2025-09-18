@@ -3,10 +3,11 @@
 
     --black: #1d1d1b;
     --white: #ffffff;
-    --main-color: ;
-    --acc-color: ;
+
+    --main-color: #ffffffa0;
+    --acc-color: #f0eceb;
     --background: #ffffff;
-    --shade-color: #f0eceb50;
+    --shade-color: #f0eceb93;
 
     --body-text-font: "GT America";
     --body-text-size: 1.25rem;

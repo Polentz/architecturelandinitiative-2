@@ -17,14 +17,13 @@ tabs:
               - projects
               - tools
               - platform      
-              - timeline
               - about
           infos:
             label: false
             type: info
             text: "The pages above are linked to the site header navigation menu."
           oldTemplate:
-            label: "Temporary area: old template (Platform)"
+            label: "Temporary area: old template [Platform]"
             type: pages
             image: false
             max: 1
@@ -133,9 +132,9 @@ tabs:
                 width: 1/2
                 options:
                   - value: text
-                    text: Text (Instagram)
+                    text: Text [Instagram]
                   - value: icon
-                    text: Icon (IG)
+                    text: Abbreviation [IG]
                 default: text
   filters:
     label: Filters collection

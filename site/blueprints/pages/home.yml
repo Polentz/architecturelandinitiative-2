@@ -5,7 +5,7 @@ sections:
     type: fields
     fields:
       intro:
-        label: Introduction text
+        label: Headline text
         type: writer
         marks:
           - bold

@@ -1,8 +1,8 @@
-body {
+/* body {
     background: var(--white);
-}
+} */
 
-.header {
+/* .header {
     padding: 0;
     border-bottom: var(--border-black);
 }
@@ -22,7 +22,7 @@ body {
     background: var(--shade-color);
     -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
-}
+} */
 
 .item.has-background::before {
     content: "";

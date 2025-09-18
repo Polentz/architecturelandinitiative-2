@@ -10,7 +10,12 @@
                 <div class="scroll-items column-direction">
                     <?php foreach ($page->children()->listed() as $child) : ?>
                         <?php $cover = $child->background()->toFile() ?>
-                        <div class="item scroll-item<?= $cover ? ' has-background' : '' ?>" <?= $cover ? ' style="background-image: url(\'' . $cover->resize(1600, null)->url() . '\');"' : '' ?>>
+                        <div class="item scroll-item<?= $cover ? ' has-background' : '' ?>">
+                            <?php if ($cover) : ?>
+                                <div class="item-background">
+                                    <img src="<?= $cover->resize(1600, null)->url() ?>">
+                                </div>
+                            <?php endif ?>
                             <h3 class="item-title"><a href="<?= $child->url() ?>"><?= $child->title() ?></a></h3>
                         </div>
                     <?php endforeach ?>

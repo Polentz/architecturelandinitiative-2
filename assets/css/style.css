@@ -47,8 +47,6 @@ body {
     font-weight: 400;
     line-height: 130%;
     color: var(--black);
-    /* background: var(--background);
-    background-attachment: fixed; */
     background: var(--white);
     overflow-x: hidden;
 }
@@ -397,10 +395,9 @@ video {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* justify-content: flex-end; */
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-column-gap: var(--inner-margin);
     -moz-column-gap: var(--inner-margin);
     column-gap: var(--inner-margin);
@@ -614,6 +611,19 @@ video {
 .text-block .thumbnail,
 .slider-block .thumbnail {
     width: 25%;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+.text-block .thumbnail img,
+.slider-block .thumbnail img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 .text-block {
@@ -763,6 +773,49 @@ section.--blur {
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.3)));
     background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
     pointer-events: none;
+}
+
+.item-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.column-direction .item-background {
+    min-height: 20vw;
+    max-height: 20vw;
+    width: 100%;
+}
+
+.row-direction .item-background {
+    min-width: 20vw;
+    max-width: 20vw;
+    height: calc(100% - var(--footer-height));
+}
+
+.item-background img {
+    position: relative;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.item:hover .item-background {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
 }
 
 .item.unlisted {

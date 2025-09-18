@@ -21,12 +21,12 @@ html {
 
 .k-box[data-theme] {
     --box-color-back: #ffffff;
-    border: solid 1px #4862f985;
-    padding: 1rem;
+    border: solid 1px #4864f9a0;
+    /* padding: 1rem; */
 }
 
 .k-tag {
-    background-color: #4862f985;
+    background-color: #4864f9a0;
     color: initial;
 }
 

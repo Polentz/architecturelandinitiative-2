@@ -1,4 +1,4 @@
-body {
+/* body {
     background: var(--background);
     background-attachment: fixed;
 }
@@ -23,4 +23,4 @@ body {
     background: var(--shade-color);
     -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
-}
+} */

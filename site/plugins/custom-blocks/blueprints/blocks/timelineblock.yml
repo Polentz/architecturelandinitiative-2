@@ -56,9 +56,13 @@ fields:
       query: site.grandchildren.template("project")
       text: "{{ page.title }}"
       value: "{{ page.title }}"
-  gap4:
-    type: gap
+  toggleProject:
+    label: Include project page link?
+    type: toggle
     width: 1/2
+    text:
+        - "No"
+        - "Yes"
   members:
     label: Members
     type: multiselect 

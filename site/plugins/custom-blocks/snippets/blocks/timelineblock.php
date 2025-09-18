@@ -38,6 +38,12 @@
                         <?= $block->info()->kt() ?>
                     </div>
                 <?php endif ?>
+
+                <?php if ($block->toggleProject()->isTrue()) : ?>
+                    <div class="text-subtext">
+                        <p>Learn more about the project: <a href="<?= $block->project()->url() ?>"><?= $block->project() ?></a></p>
+                    </div>
+                <?php endif ?>
             </div>
             <?php if ($image = $block->image()->toFile()) : ?>
                 <figure class="accordion-image">

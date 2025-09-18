@@ -220,23 +220,6 @@ const handleTitleHover = () => {
     });
 };
 
-const shuffleColors = () => {
-    const colors = [
-        ["#4864f9a0", "#f0eceb"],
-        ["#9fbd58a0", "#f0eceb"],
-        ["#a867fda0", "#f0eceb"],
-
-    ];
-    const randomColorSet = colors[Math.floor(Math.random() * colors.length)];
-    const randomDeg = Math.floor(Math.random() * (350 - 10) + 10);
-    const mainColor = document.documentElement;
-    const accentColor = document.documentElement;
-    const mainBackground = document.documentElement;
-    mainColor.style.setProperty("--main-color", `${randomColorSet[0]}`);
-    accentColor.style.setProperty("--acc-color", `${randomColorSet[1]}`);
-    mainBackground.style.setProperty("--background", `linear-gradient(0deg, ${randomColorSet[1]} 0%, ${randomColorSet[1]} 10%, ${randomColorSet[0]} 100%)`);
-};
-
 const horizontalScroll = () => {
     let items = gsap.utils.toArray(".scroll-items");
     let pageWrapper = document.querySelector("main");
@@ -875,7 +858,6 @@ window.addEventListener("load", () => {
     logoAnimation();
     sliderOpener();
     bannerOpener();
-    shuffleColors();
     handleMenuOnMobile();
 });
 

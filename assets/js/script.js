@@ -73,8 +73,8 @@ const cursor = () => {
                     y: e.clientY,
                 });
             });
-
-            const anchorTags = document.querySelectorAll('a, .button, .filter, .filter-deselect, .accordion-topbar-item[data-item="date"], .accordion-topbar-item[data-item="type"], .accordion-topbar-item[data-item="title"]');
+            // .accordion-topbar-item[data-item="date"], .accordion-topbar-item[data-item="type"], .accordion-topbar-item[data-item="title"]
+            const anchorTags = document.querySelectorAll("a, .button, .filter, .filter-deselect");
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -275,7 +275,7 @@ const bannerOpener = () => {
     const banner = document.querySelector(".banner");
     const bannerContent = document.querySelector(".banner-content");
     const bannerButton = banner.querySelector(".x-button");
-    const bodyElements = gsap.utils.toArray(".main, .filters, .slider");
+    const bodyElements = gsap.utils.toArray(".main");
     const bannerelements = gsap.utils.toArray(bannerContent, bannerButton);
 
     const addClasses = () => {
@@ -321,11 +321,38 @@ const bannerOpener = () => {
     });
 };
 
+const showInnerMenu = () => {
+    const targetElement = document.querySelector(".inner-menu");
+    const toTopButton = document.querySelector(".top-button");
+
+    const callback = (entries) => {
+        entries.forEach(entry => {
+            if (entry.boundingClientRect.top <= 0) {
+                targetElement.classList.add("--sticky");
+                header.classList.add("--blur");
+                toTopButton.classList.add("--show");
+            } else if (entry.boundingClientRect.top > 0) {
+                targetElement.classList.remove("--sticky");
+                header.classList.remove("--blur");
+                toTopButton.classList.remove("--show");
+            }
+        });
+    };
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(callback, {
+        root: null, // Use the viewport as the root
+        threshold: 1 // Trigger when any part of the element is visible
+    });
+
+    // Start observing the target element
+    observer.observe(targetElement);
+}
+
 const handleFiltersBox = () => {
     const container = document.querySelector(".filters");
     const openButton = container.querySelector(".filter-button");
     const innerBox = document.querySelector(".filters-wrapper");
-    const innerBoxItems = document.querySelectorAll(".filters-wrapper-column, .filters-wrapper-header, .filters-wrapper-content");
     const closeButton = container.querySelector(".x-button");
     const deselecter = document.querySelector(".filter-deselect");
 
@@ -333,17 +360,11 @@ const handleFiltersBox = () => {
         innerBox.classList.add("--scale-in");
         openButton.classList.add("--scale-out");
         setTimeout(() => {
-            innerBoxItems.forEach(content => {
-                content.classList.add("--opacity");
-            });
             closeButton.classList.add("--opacity");
         }, 500);
     };
 
     const removeClasses = () => {
-        innerBoxItems.forEach(content => {
-            content.classList.remove("--opacity");
-        });
         setTimeout(() => {
             closeButton.classList.remove("--opacity");
             innerBox.classList.remove("--scale-in");
@@ -363,26 +384,33 @@ const handleFiltersBox = () => {
         deselecter.addEventListener("click", () => {
             removeClasses();
         });
-    }
-
+    };
 };
 
-const handleFilters = () => {
+const handleFiltersAndCategories = () => {
     const filters = document.querySelectorAll(".filter");
+    const categories = document.querySelectorAll(".category");
+
     const itemsContainer = document.querySelector(".items-container");
     const items = itemsContainer.querySelectorAll(".gallery-item, .accordion");
+
     const filterClear = document.querySelector(".filter-deselect");
+    const categoryClear = document.querySelector(".category-deselect");
+
     const counter = document.querySelector(".filter-button-counter");
 
-    const applyFilters = (filter) => {
+    let currentFilter = null;
+    let currentCategory = null;
+
+    const scrollToPosition = () => {
         const paddingOffset = 96;
         const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
         window.scrollTo({
-            top: offsetPosition,
-            // behavior: "smooth",
+            top: offsetPosition
         });
-        const filterId = filter.id;
+    };
 
+    const applyFilters = () => {
         const filterItems = (item) => {
             item.classList.remove("--unfiltered");
             item.classList.add("--filtered");
@@ -394,21 +422,167 @@ const handleFilters = () => {
         };
 
         items.forEach(item => {
+            let matchedFilter = false;
+            let matchedCategory = false;
+
+            // --- check filters ---
+            if (currentFilter && currentFilter.id !== "all") {
+                const filterId = currentFilter.id;
+                Object.keys(item.dataset).forEach(key => {
+                    if (
+                        item.dataset[key] === filterId ||
+                        (key === "members" && item.dataset[key].includes(currentFilter.textContent))
+                    ) {
+                        matchedFilter = true;
+                    }
+                });
+            } else {
+                matchedFilter = true; // no filter = all pass
+            };
+
+            // --- check categories ---
+            if (currentCategory && currentCategory.id !== "all") {
+                const categoryId = currentCategory.id;
+                Object.keys(item.dataset).forEach(key => {
+                    if (item.dataset[key] === categoryId) {
+                        matchedCategory = true;
+                    }
+                });
+            } else {
+                matchedCategory = true; // no category = all pass
+            };
+
+            // must satisfy both
+            if (matchedFilter && matchedCategory) {
+                filterItems(item);
+            } else {
+                unfilterItems(item);
+            };
+        });
+
+        // --- disable filters only if a category is selected ---
+        if (currentCategory && currentCategory.id !== "all") {
+            filters.forEach(filter => {
+                if (filter.id === "all") return;
+                const isAvailable = Array.from(items).some(item => {
+                    if (!item.classList.contains("--filtered")) return false;
+                    return Object.keys(item.dataset).some(key =>
+                        item.dataset[key] === filter.id
+                    );
+                });
+                filter.classList.toggle("--disabled", !isAvailable);
+            });
+        } else {
+            filters.forEach(filter => filter.classList.remove("--disabled"));
+        };
+
+        // show/hide counter only when filter is active
+        if (currentFilter && currentFilter.id !== "all") {
+            counter.style.display = "block";
+        } else {
+            counter.style.display = "none";
+        };
+    };
+
+    // --- reset only filters ---
+    const removeFilters = () => {
+        filterClear.classList.remove("--opacity");
+        filterClear.classList.remove("--display");
+
+        filters.forEach(filter => filter.classList.remove("--target"));
+        currentFilter = null;
+
+        applyFilters();
+    };
+
+    // --- reset only categories ---
+    const removeCategories = () => {
+        categories.forEach(c => c.classList.remove("--target"));
+        currentCategory = null;
+
+        // make categoryClear act as "all"
+        categoryClear.classList.add("--target");
+
+        applyFilters();
+    };
+
+    // --- filters group ---
+    filters.forEach(filter => {
+        filter.addEventListener("click", () => {
+            [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
+            filter.classList.add("--target");
+            currentFilter = filter;
+
+            filterClear.classList.add("--display");
+            setTimeout(() => filterClear.classList.add("--opacity"), 100);
+
+            applyFilters();
+            scrollToPosition();
+        });
+    });
+
+    // --- categories group ---
+    categories.forEach(category => {
+        category.addEventListener("click", () => {
+            [...categories].filter(i => i !== category).forEach(i => i.classList.remove("--target"));
+            category.classList.add("--target");
+            currentCategory = category;
+
+            applyFilters();
+            scrollToPosition();
+        });
+    });
+
+    // --- clear only filters ---
+    filterClear.addEventListener("click", () => {
+        removeFilters();
+        scrollToPosition();
+    });
+
+    // --- clear only categories ---
+    categoryClear.addEventListener("click", () => {
+        removeCategories();
+        scrollToPosition();
+    });
+}
+
+const handleFilters = () => {
+    const filters = document.querySelectorAll(".filter");
+    const itemsContainer = document.querySelector(".items-container");
+    const items = itemsContainer.querySelectorAll(".accordion");
+    const filterClear = document.querySelector(".filter-deselect");
+    const counter = document.querySelector(".filter-button-counter");
+
+    const applyFilters = (filter) => {
+        const paddingOffset = 96;
+        const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
+        window.scrollTo({
+            top: offsetPosition
+        });
+        const filterItems = (item) => {
+            item.classList.remove("--unfiltered");
+            item.classList.add("--filtered");
+        };
+
+        const unfilterItems = (item) => {
+            item.classList.add("--unfiltered");
+            item.classList.remove("--filtered");
+        };
+
+        const filterId = filter.id;
+
+        items.forEach(item => {
             const itemType = item.dataset.type;
-            const itemCategory = item.dataset.category;
             const itemProject = item.dataset.project;
             const itemMembers = item.dataset.members;
-            if (itemType === filterId) {
-                filterItems(item);
-            } else if (itemCategory === filterId) {
-                filterItems(item);
-            } else if (itemProject === filterId) {
+            if (itemType === filterId || itemProject === filterId) {
                 filterItems(item);
             } else if (itemMembers && itemMembers.includes(filter.textContent)) {
                 filterItems(item);
             } else {
                 unfilterItems(item);
             };
+
         });
         counter.style.display = "block";
     };
@@ -424,9 +598,6 @@ const handleFilters = () => {
             item.classList.remove("--filtered");
         });
         counter.style.display = "none";
-        window.scrollTo({
-            top: 0,
-        });
     };
 
     filters.forEach(filter => {
@@ -540,8 +711,70 @@ const accordion = () => {
     });
 };
 
+// const sortAccordion = () => {
+//     const sortButtons = document.querySelectorAll('.accordion-topbar-item[data-item]');
+//     const container = document.querySelector(".accordion-list");
+
+//     let currentSort = {
+//         key: null,
+//         ascending: true
+//     };
+
+//     sortButtons.forEach(button => {
+//         button.addEventListener("click", () => {
+//             const sortKey = button.dataset.item;
+//             const svg = button.querySelector("svg");
+
+//             // Check if clicked the same key
+//             const isSameKey = currentSort.key === sortKey;
+
+//             currentSort.key = sortKey;
+//             currentSort.ascending = isSameKey ? !currentSort.ascending : true;
+
+//             // Reset all arrows
+//             sortButtons.forEach(btn => {
+//                 const arrow = btn.querySelector("svg");
+//                 if (arrow) {
+//                     arrow.classList.remove("--asc", "--desc");
+//                 };
+//             });
+
+//             // Set arrow direction
+//             if (svg) {
+//                 svg.classList.add(currentSort.ascending ? "--asc" : "--desc");
+//             };
+
+//             // Sort elements
+//             const items = Array.from(document.querySelectorAll(".accordion"));
+
+//             items.sort((a, b) => {
+//                 let aValue = a.dataset[sortKey] || "";
+//                 let bValue = b.dataset[sortKey] || "";
+
+//                 // Normalize values for string comparisons (case insensitive)
+//                 aValue = sortKey === "type" ? aValue.toLowerCase() : aValue;
+//                 bValue = sortKey === "type" ? bValue.toLowerCase() : bValue;
+
+//                 // If sorting by date, convert to timestamp
+//                 if (sortKey === "date") {
+//                     aValue = new Date(aValue).getTime();
+//                     bValue = new Date(bValue).getTime();
+//                 }
+
+//                 // Perform the sorting based on ascending/descending
+//                 if (aValue < bValue) return currentSort.ascending ? -1 : 1;
+//                 if (aValue > bValue) return currentSort.ascending ? 1 : -1;
+//                 return 0;
+//             });
+
+//             items.forEach(item => container.appendChild(item));
+//         });
+//     });
+// };
+
 const sortAccordion = () => {
-    const sortButtons = document.querySelectorAll('.accordion-topbar-item[data-item]');
+    const sortButtons = document.querySelectorAll(".button.sort[data-item]");
+    const topbarButtons = document.querySelectorAll(".accordion-topbar-item[data-item]");
     const container = document.querySelector(".accordion-list");
 
     let currentSort = {
@@ -551,6 +784,9 @@ const sortAccordion = () => {
 
     sortButtons.forEach(button => {
         button.addEventListener("click", () => {
+            [...sortButtons].filter(i => i !== button).forEach(i => i.classList.remove("--target"));
+            button.classList.add("--target");
+
             const sortKey = button.dataset.item;
             const svg = button.querySelector("svg");
 
@@ -793,21 +1029,11 @@ const audioPlayer = () => {
     });
 };
 
-const handleTopButton = () => {
+const topButtonEvent = () => {
     const target = document.querySelector(".top-button");
-    const scrollThreshold = window.innerHeight / 2;
-    const scrolled = window.scrollY || window.pageYOffset;
-
-    if (document.documentElement.scrollHeight > window.innerHeight && scrolled > scrollThreshold) {
-        target.classList.add("--show");
-    } else {
-        target.classList.remove("--show");
-    };
-
     target.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
-            // behavior: "smooth",
         });
     });
 };

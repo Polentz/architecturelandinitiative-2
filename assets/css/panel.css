@@ -22,7 +22,6 @@ html {
 .k-box[data-theme] {
     --box-color-back: #ffffff;
     border: solid 1px #4864f9a0;
-    /* padding: 1rem; */
 }
 
 .k-tag {

@@ -18,7 +18,7 @@ Mediatype: Video
 
 ----
 
-Filter: Site visit
+Category: Site visit
 
 ----
 

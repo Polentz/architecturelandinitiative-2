@@ -26,6 +26,23 @@ Instagramicon: icon
 
 ----
 
+Categories:
+
+- 
+  filter: Archive material
+- 
+  filter: Research
+- 
+  filter: Event
+- 
+  filter: Outcome
+- 
+  filter: Site visit
+- 
+  filter: Process
+
+----
+
 Mediafilters:
 
 - 
@@ -51,23 +68,6 @@ Mediafilters:
   filter: Printed matter
 - 
   filter: Podcast
-
-----
-
-Processfilters:
-
-- 
-  filter: Archive material
-- 
-  filter: Research
-- 
-  filter: Event
-- 
-  filter: Outcome
-- 
-  filter: Site visit
-- 
-  filter: Process
 
 ----
 
@@ -182,23 +182,6 @@ Allpages:
 - page://E3BspL994sov4yIx
 - page://gyVMlkXCNR3wcn9g
 - page://xMs0zYaAZRjXektt
-
-----
-
-Categories:
-
-- 
-  category: Events type
-- 
-  category: Media type
-- 
-  category: Members
-- 
-  category: Platforms type
-- 
-  category: Process stage
-- 
-  category: Publications type
 
 ----
 

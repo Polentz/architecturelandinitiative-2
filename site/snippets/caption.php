@@ -1,10 +1,16 @@
+<?php
+
+use Kirby\Toolkit\Str;
+
+$parentPage = $media->parent();
+$selectFiltersOptions = $parentPage->blueprint()->field('selectFilters')['options'] ?? [];
+
+?>
+
 <figcaption class="gallery-item-caption">
     <div class="text-label">
-        <?php if ($media->mediatype()->isNotEmpty()): ?>
-            <p>Media type: <?= $media->mediatype() ?></p>
-        <?php endif ?>
-        <?php if ($page->intendedTemplate()->name() === 'project') : ?>
-            <p>Process stage: <?= $media->filter() ?></p>
+        <?php if ($page->intendedTemplate()->name() === 'project' && $media->category()->isNotEmpty()) : ?>
+            <p>Category: <?= $media->category() ?></p>
         <?php endif ?>
         <?php if ($page->intendedTemplate()->name() === 'tool' && $media->parent()->intendedTemplate()->name() === 'project') : ?>
             <p>Related project: <a href="<?= $media->parent()->url() ?>"><?= $media->parent()->title() ?></a></p>

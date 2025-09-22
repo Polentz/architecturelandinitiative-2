@@ -143,6 +143,14 @@ tabs:
       filter:
         type: fields
         fields:
+          categories:
+            label: "Categories"
+            width: 1/1
+            type: structure
+            fields:
+              filter:
+                type: text
+                label: Filter
           mediaFilters:
             label: "Media type"
             width: 1/2
@@ -151,16 +159,8 @@ tabs:
               filter:
                 type: text
                 label: Filter
-          processFilters:
-            label: "Process stage"
-            width: 1/2
-            type: structure
-            fields:
-              filter:
-                type: text
-                label: Filter
           platformFilters:
-            label: "Event/Platform type"
+            label: "Event type"
             width: 1/2
             type: structure
             fields:

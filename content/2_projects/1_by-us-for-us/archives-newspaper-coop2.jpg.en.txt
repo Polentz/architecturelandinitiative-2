@@ -18,7 +18,7 @@ Mediatype: Document
 
 ----
 
-Filter: Archive material
+Category: Archive material
 
 ----
 

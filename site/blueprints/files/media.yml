@@ -41,19 +41,25 @@ columns:
       data:
         type: fields
         fields:
+          category:
+            label: Category
+            type: select 
+            width: 1/1 
+            options:
+              type: query
+              query: site.categories.toStructure
+              text: "{{ item.filter }}"
+              value: "{{ item.filter }}"    
           tools:
             width: 1/2
-            type: multiselect
-            label: Related tools
+            type: select
+            label: Filter by tool
             layout: list
             options:
               type: query
               query: site.grandchildren.template("tool")
               text: "{{ page.title }}"
               value: "{{ page.title }}"
-          gap:
-            width: 1/2
-            type: gap
           mediatype:
             label: Filter by media type
             type: select 
@@ -63,12 +69,3 @@ columns:
               query: site.mediaFilters.toStructure
               text: "{{ item.filter }}"
               value: "{{ item.filter }}"   
-          filter:
-            label: Filter by process stage
-            type: select 
-            width: 1/2 
-            options:
-              type: query
-              query: site.processFilters.toStructure
-              text: "{{ item.filter }}"
-              value: "{{ item.filter }}"    

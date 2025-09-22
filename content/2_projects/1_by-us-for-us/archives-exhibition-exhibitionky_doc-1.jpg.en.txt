@@ -2,11 +2,15 @@ Caption:
 
 ----
 
+Info: 
+
+----
+
 Alt: 
 
 ----
 
-Info: 
+Category: Process
 
 ----
 
@@ -15,10 +19,6 @@ Tools:
 ----
 
 Mediatype: 
-
-----
-
-Filter: 
 
 ----
 

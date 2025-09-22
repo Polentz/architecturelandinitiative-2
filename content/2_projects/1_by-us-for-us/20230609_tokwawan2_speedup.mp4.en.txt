@@ -2,11 +2,15 @@ Caption: Architecture Land Initiative, To Kwa Wan, 2023 ©Sony Devabhaktuni
 
 ----
 
+Info: 
+
+----
+
 Alt: 
 
 ----
 
-Info: 
+Category: Research
 
 ----
 
@@ -15,10 +19,6 @@ Tools:
 ----
 
 Mediatype: Video
-
-----
-
-Filter: 
 
 ----
 

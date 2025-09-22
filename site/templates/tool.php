@@ -14,17 +14,20 @@ $coverFiles = $page->cover()->toFiles();
         <?php endforeach ?>
     </section>
 
+    <section class="inner-menu">
+        <?php snippet('categories') ?>
+        <?php snippet('filters', slots: true) ?>
+        <?= slot('toolFilters') ?>
+        <?php endslot() ?>
+        <?php endsnippet() ?>
+    </section>
+
     <section class="gallery grid items-container">
         <?php foreach ($page->gallery()->toFiles() as $media) : ?>
             <?= snippet('gallery', ['media' => $media]) ?>
         <?php endforeach ?>
     </section>
 </main>
-
-<?php snippet('filters', slots: true) ?>
-<?= slot('toolFilters') ?>
-<?php endslot() ?>
-<?php endsnippet() ?>
 
 <?= snippet('slider') ?>
 <?= snippet('footer') ?>

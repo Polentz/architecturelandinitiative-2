@@ -3,13 +3,9 @@ window.addEventListener("load", () => {
     handleFilters();
     accordion();
     sortAccordion();
-    handleTopButton();
-});
-
-window.addEventListener("resize", () => {
-    handleTopButton();
+    topButtonEvent();
 });
 
 window.addEventListener("scroll", () => {
-    handleTopButton();
+    showInnerMenu();
 });

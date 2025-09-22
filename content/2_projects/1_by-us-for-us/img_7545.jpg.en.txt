@@ -2,23 +2,23 @@ Caption: To Kwa Wan, 103 Maidstone Rd, looking Sud, January 2021, ©Architecture
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
+Alt: 
+
+----
+
+Category: Site visit
+
+----
+
+Tools: Forum
 
 ----
 
 Mediatype: Image
-
-----
-
-Filter: Site visit
 
 ----
 

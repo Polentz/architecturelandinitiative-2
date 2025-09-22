@@ -1,19 +1,26 @@
+<?php
+$dataset = 'data-category="' . $media->category()->slug() . '" ' .
+    'data-type="' . $media->mediatype()->slug() . '" ' .
+    'data-tool="' . $media->tools()->slug() . '" ' .
+    'data-project="' . $media->parent()->slug() . '"';
+?>
+
 <?php if ($media->type() == 'image') : ?>
-    <figure class="gallery-item image-item" data-type="<?= $media->mediatype()->slug() ?>" data-category="<?= $media->filter()->slug() ?>" data-project="<?= $media->parent()->slug() ?>">
+    <figure class="gallery-item image-item" <?= $dataset ?>>
         <img class="image lazy" src="" data-src="<?= $media->resize(1200, null)->url() ?>" alt="<?= $media->alt() ?>" />
         <?= snippet('caption', ['media' => $media]) ?>
     </figure>
 <?php endif ?>
 
 <?php if ($media->type() == 'video') : ?>
-    <figure class="gallery-item video-item" data-type="<?= $media->mediatype()->slug() ?>" data-category="<?= $media->filter()->slug() ?>" data-project="<?= $media->parent()->slug() ?>">
+    <figure class="gallery-item video-item" <?= $dataset ?>>
         <video src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
         <?= snippet('caption', ['media' => $media]) ?>
     </figure>
 <?php endif ?>
 
 <?php if ($media->type() == 'audio') : ?>
-    <figure class="gallery-item audio-item" data-type="<?= $media->mediatype()->slug() ?>" data-category="<?= $media->filter()->slug() ?>" data-project="<?= $media->parent()->slug() ?>">
+    <figure class="gallery-item audio-item" <?= $dataset ?>>
         <div class="audio-player">
             <div class="audio-player-wrapper">
                 <div class="audio-play ui-button">
@@ -54,7 +61,7 @@
 <?php endif ?>
 
 <?php if ($media->type() == 'document') : ?>
-    <figure class="gallery-item document-item" data-type="<?= $media->mediatype()->slug() ?>" data-category="<?= $media->filter()->slug() ?>" data-project="<?= $media->parent()->slug() ?>">
+    <figure class="gallery-item document-item" <?= $dataset ?>>
         <div class="document-wrapper">
             <?php if ($media->caption()->isNotEmpty()) : ?>
                 <?= $media->caption()->kt() ?>

@@ -12,15 +12,15 @@
     --body-text-font: "GT America";
     --body-text-size: 1.25rem;
     --secondary-text-font: "GT America";
-    --secondary-text-size: 1rem;
+    --secondary-text-size: .8rem;
     --intro-text-font: "GT America";
     --intro-text-size: calc(1.5rem + 1vw);
     --big-title-font: "GT America";
     --big-title-size: calc(1rem + 6.5vw);
     --label-text-font: "Pitch Sans";
-    --label-text-size: .9rem;
+    --label-text-size: .8rem;
     --logo-text-font: "GT Cinetype";
-    --logo-text-size: .9rem;
+    --logo-text-size: .8rem;
 
     --main-margin: 6rem;
     --half-margin: 3rem;
@@ -28,7 +28,8 @@
     --small-margin: .75rem;
 
     --button-size: 2.2rem;
-    --filters-wrapper-width: calc(100vw / 2 - var(--inner-margin) - var(--main-margin) + 10px);
+    /* --filters-wrapper-width: calc(100vw / 2 - var(--inner-margin) - var(--main-margin) + 10px); */
+    --filters-wrapper-width: auto;
     --border-black: solid 1px var(--black);
     --border-white: solid 1px var(--white);
     --border-color: solid 1px var(--main-color);
@@ -36,11 +37,11 @@
 
 @media screen and (min-width: 1500px) {
     :root {
-        --body-text-size: 1.5rem;
-        --secondary-text-size: 1.25rem;
+        /* --body-text-size: 1.5rem;
+        --secondary-text-size: 1.25rem; */
         /* --label-text-size: 1rem;
         --logo-text-size: 1rem; */
-        --main-margin: 18rem;
+        --main-margin: 12rem;
         --half-margin: 6rem;
         --inner-margin: 3rem;
         /* --small-margin: 1rem;

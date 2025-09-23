@@ -3,10 +3,8 @@ gsap.registerPlugin(SplitText);
 
 const header = document.querySelector(".header");
 const footer = document.querySelector(".footer");
-const nav = footer.querySelector(".footer-nav");
-const buttons = document.querySelectorAll(".button");
+const footerNav = footer.querySelector(".footer-nav");
 const main = document.querySelector(".main");
-const logo = document.querySelector(".logo");
 const mediaQuery = window.matchMedia("(max-width: 600px)");
 
 const documentHeight = () => {
@@ -232,6 +230,7 @@ const sliderOpener = () => {
     const sliderContainer = document.querySelectorAll(".slider");
     const blurredElements = document.querySelectorAll(".header, section:not(.slider):not(.page-intro), .footer");
     const shrinkElement = document.querySelector(".page-intro");
+    const openButton = document.getElementById("slider-opener");
     sliderContainer.forEach(slider => {
         const sliderWrapper = slider.querySelector(".slider-wrapper");
         const sliderButton = slider.querySelector(".x-button");
@@ -267,12 +266,8 @@ const sliderOpener = () => {
             }, 500);
         };
 
-        buttons.forEach(element => {
-            element.addEventListener("click", () => {
-                if (element.id.includes(slider.id)) {
-                    addClasses();
-                };
-            });
+        openButton.addEventListener("click", () => {
+            addClasses();
         });
 
         sliderButton.addEventListener("click", () => {
@@ -285,11 +280,12 @@ const bannerOpener = () => {
     const banner = document.querySelector(".banner");
     const bannerContent = document.querySelector(".banner-content");
     const bannerButton = banner.querySelector(".x-button");
+    const openButton = document.getElementById("contact-opener");
     const bodyElements = gsap.utils.toArray(".main");
     const bannerelements = gsap.utils.toArray(bannerContent, bannerButton);
 
     const addClasses = () => {
-        nav.classList.add("--hide");
+        footerNav.classList.add("--hide");
         banner.classList.add("--display");
         gsap.set(bannerelements, {
             opacity: 0
@@ -316,16 +312,13 @@ const bannerOpener = () => {
             y: 0,
         });
         banner.classList.remove("--display");
-        nav.classList.remove("--hide");
+        footerNav.classList.remove("--hide");
     };
 
-    buttons.forEach(element => {
-        element.addEventListener("click", () => {
-            if (element.id.includes(banner.id)) {
-                addClasses();
-            };
-        });
+    openButton.addEventListener("click", () => {
+        addClasses();
     });
+
     bannerButton.addEventListener("click", () => {
         removeClasses();
     });

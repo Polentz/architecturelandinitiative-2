@@ -47,15 +47,21 @@ fields:
   gap3:
     type: gap
     width: 1/2
+  # project:
+  #   label: Related project
+  #   type: select
+  #   width: 1/2
+  #   options:
+  #     type: query
+  #     query: site.grandchildren.template("project")
+  #     text: "{{ page.title }}"
+  #     value: "{{ page.title }}"
   project:
     label: Related project
-    type: select
+    type: pages
     width: 1/2
-    options:
-      type: query
-      query: site.grandchildren.template("project")
-      text: "{{ page.title }}"
-      value: "{{ page.title }}"
+    multiple: false
+    query: site.grandchildren.template("project")
   toggleProject:
     label: Include a project page button at the bottom of the description?
     type: toggle

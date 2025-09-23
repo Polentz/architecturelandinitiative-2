@@ -57,7 +57,7 @@ fields:
       text: "{{ page.title }}"
       value: "{{ page.title }}"
   toggleProject:
-    label: Include project page link?
+    label: Include a project page button at the bottom of the description?
     type: toggle
     width: 1/2
     text:

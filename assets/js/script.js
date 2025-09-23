@@ -24,6 +24,14 @@ const footerHeight = () => {
     doc.style.setProperty("--footer-height", `${footer.offsetHeight}px`);
 };
 
+const scrollToPosition = (element) => {
+    const paddingOffset = 128;
+    const offsetPosition = element.getBoundingClientRect().top + window.scrollY - paddingOffset;
+    window.scrollTo({
+        top: offsetPosition
+    });
+};
+
 const loader = () => {
     const removeLoader = () => {
         document.querySelector(".loader").remove()
@@ -392,7 +400,7 @@ const handleFiltersAndCategories = () => {
     const categories = document.querySelectorAll(".category");
 
     const itemsContainer = document.querySelector(".items-container");
-    const items = itemsContainer.querySelectorAll(".gallery-item, .accordion");
+    const items = itemsContainer.querySelectorAll(".gallery-item");
 
     const filterClear = document.querySelector(".filter-deselect");
     const categoryClear = document.querySelector(".category-deselect");
@@ -401,14 +409,6 @@ const handleFiltersAndCategories = () => {
 
     let currentFilter = null;
     let currentCategory = null;
-
-    const scrollToPosition = () => {
-        const paddingOffset = 96;
-        const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
-        window.scrollTo({
-            top: offsetPosition
-        });
-    };
 
     const applyFilters = () => {
         const filterItems = (item) => {
@@ -460,7 +460,16 @@ const handleFiltersAndCategories = () => {
             };
         });
 
-        // --- disable filters only if a category is selected ---
+        // show/hide counter only when filter is active
+        if (currentFilter && currentFilter.id !== "all") {
+            counter.style.display = "block";
+        } else {
+            counter.style.display = "none";
+        };
+    };
+
+    // --- disable filters only if a category is selected ---
+    const disableFilters = () => {
         if (currentCategory && currentCategory.id !== "all") {
             filters.forEach(filter => {
                 if (filter.id === "all") return;
@@ -474,13 +483,6 @@ const handleFiltersAndCategories = () => {
             });
         } else {
             filters.forEach(filter => filter.classList.remove("--disabled"));
-        };
-
-        // show/hide counter only when filter is active
-        if (currentFilter && currentFilter.id !== "all") {
-            counter.style.display = "block";
-        } else {
-            counter.style.display = "none";
         };
     };
 
@@ -517,7 +519,7 @@ const handleFiltersAndCategories = () => {
             setTimeout(() => filterClear.classList.add("--opacity"), 100);
 
             applyFilters();
-            scrollToPosition();
+            scrollToPosition(itemsContainer);
         });
     });
 
@@ -529,20 +531,21 @@ const handleFiltersAndCategories = () => {
             currentCategory = category;
 
             applyFilters();
-            scrollToPosition();
+            disableFilters();
+            scrollToPosition(itemsContainer);
         });
     });
 
     // --- clear only filters ---
     filterClear.addEventListener("click", () => {
         removeFilters();
-        scrollToPosition();
+        scrollToPosition(itemsContainer);
     });
 
     // --- clear only categories ---
     categoryClear.addEventListener("click", () => {
         removeCategories();
-        scrollToPosition();
+        scrollToPosition(itemsContainer);
     });
 }
 
@@ -554,11 +557,6 @@ const handleFilters = () => {
     const counter = document.querySelector(".filter-button-counter");
 
     const applyFilters = (filter) => {
-        const paddingOffset = 96;
-        const offsetPosition = itemsContainer.getBoundingClientRect().top + window.scrollY - paddingOffset;
-        window.scrollTo({
-            top: offsetPosition
-        });
         const filterItems = (item) => {
             item.classList.remove("--unfiltered");
             item.classList.add("--filtered");
@@ -575,14 +573,11 @@ const handleFilters = () => {
             const itemType = item.dataset.type;
             const itemProject = item.dataset.project;
             const itemMembers = item.dataset.members;
-            if (itemType === filterId || itemProject === filterId) {
-                filterItems(item);
-            } else if (itemMembers && itemMembers.includes(filter.textContent)) {
+            if (itemType === filterId || itemProject === filterId || (itemMembers && itemMembers.includes(filter.textContent))) {
                 filterItems(item);
             } else {
                 unfilterItems(item);
             };
-
         });
         counter.style.display = "block";
     };
@@ -609,18 +604,20 @@ const handleFilters = () => {
                 filterClear.classList.add("--opacity");
             }, 100);
             applyFilters(filter);
+            scrollToPosition(itemsContainer);
         });
     });
 
     filterClear.addEventListener("click", () => {
         removeFilters();
+        scrollToPosition(itemsContainer);
     });
 };
 
 const handleGallery = () => {
     const galleryItems = document.querySelectorAll(".gallery-item");
     const triggerElements = document.querySelectorAll(".gallery-item img, .gallery-item video");
-    const paddingOffset = 96;
+
 
     const addClasses = (item) => {
         galleryItems.forEach(i => {
@@ -631,11 +628,6 @@ const handleGallery = () => {
                 i.classList.remove("--opacity");
                 i.classList.add("--zoom-in");
             };
-        });
-        const offsetPosition = item.getBoundingClientRect().top + window.scrollY - paddingOffset;
-        window.scrollTo({
-            top: offsetPosition,
-            // behavior: "smooth",
         });
         const video = item.querySelector("video");
         if (video) video.controls = true;
@@ -659,14 +651,15 @@ const handleGallery = () => {
         el.addEventListener("click", event => event.stopPropagation());
     });
 
-    triggerElements.forEach(item => {
-        item.addEventListener("click", () => {
-            const itemParent = item.parentNode;
+    triggerElements.forEach(el => {
+        el.addEventListener("click", () => {
+            const itemParent = el.parentNode;
             const isOpen = itemParent.classList.contains("--zoom-in");
             if (isOpen) {
                 removeClasses(itemParent);
             } else {
                 addClasses(itemParent);
+                scrollToPosition(itemParent);
             };
         });
     });
@@ -695,17 +688,11 @@ const accordion = () => {
             opener.addEventListener("click", () => {
                 [...accordion].filter(i => i !== item).forEach(i => i.classList.remove("--open"));
                 item.classList.toggle("--open");
-                const paddingOffset = 128;
-                const itemPosition = item.getBoundingClientRect().top;
-                const offsetPosition = itemPosition + window.scrollY - paddingOffset;
-                window.scrollTo({
-                    top: offsetPosition,
-                    // behavior: "smooth",
-                });
                 gsap.from(elements, {
                     duration: 0.5,
                     opacity: 0,
                 });
+                scrollToPosition(item);
             });
         });
     });
@@ -774,8 +761,8 @@ const accordion = () => {
 
 const sortAccordion = () => {
     const sortButtons = document.querySelectorAll(".button.sort[data-item]");
-    const topbarButtons = document.querySelectorAll(".accordion-topbar-item[data-item]");
-    const container = document.querySelector(".accordion-list");
+    const accordionContainer = document.querySelector(".accordion-list");
+    const itemsContainer = document.querySelector(".items-container");
 
     let currentSort = {
         key: null,
@@ -832,7 +819,8 @@ const sortAccordion = () => {
                 return 0;
             });
 
-            items.forEach(item => container.appendChild(item));
+            items.forEach(item => accordionContainer.appendChild(item));
+            scrollToPosition(itemsContainer);
         });
     });
 };

@@ -14,7 +14,7 @@ $dataset = 'data-category="' . $media->category()->slug() . '" ' .
 
 <?php if ($media->type() == 'video') : ?>
     <figure class="gallery-item video-item" <?= $dataset ?>>
-        <video src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
+        <video class="video lazy" src="" data-src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
         <?= snippet('caption', ['media' => $media]) ?>
     </figure>
 <?php endif ?>
@@ -54,7 +54,7 @@ $dataset = 'data-category="' . $media->category()->slug() . '" ' .
                     <input type="range" class="seek-slider" max="100" value="0">
                 </div>
             </div>
-            <audio src="<?= $media->url() ?>" controlslist="noplaybackrate nodownload" preload="metadata" type="audio"></audio>
+            <audio class="audio lazy" src="" data-src="<?= $media->url() ?>" controlslist="noplaybackrate nodownload" preload="metadata" type="audio"></audio>
         </div>
         <?= snippet('caption', ['media' => $media]) ?>
     </figure>

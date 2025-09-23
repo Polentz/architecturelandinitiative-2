@@ -117,7 +117,6 @@ Gallery:
 - file://HRf5sXtKZ12pXsZP
 - file://TxjxWT4NDvxhALOX
 - file://YY8Yc4rQ0Ia1jmSi
-- file://jJN7pkgV553L7rW4
 
 ----
 

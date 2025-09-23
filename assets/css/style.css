@@ -4,6 +4,7 @@
     font-family: "GT Cinetype";
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url("../fonts/GT-Cinetype-Regular.woff2") format("woff2"),
         url("../fonts/GT-Cinetype-Regular.woff") format("woff");
 }
@@ -12,6 +13,7 @@
     font-family: "GT America";
     font-style: normal;
     font-weight: 300;
+    ont-display: swap;
     src: url("../fonts/GT-America-Standard-Light.woff2") format("woff2"),
         url("../fonts/GT-America-Standard-Light.woff") format("woff");
 }
@@ -28,6 +30,7 @@
     font-family: "Pitch Sans";
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
     src: url("../fonts/pitch-sans-medium.woff2") format("woff2");
 }
 
@@ -149,17 +152,10 @@ video {
     gap: var(--small-margin);
 }
 
-.text-list {
-    font-family: var(--label-text-font);
-    font-size: var(--label-text-size);
-    line-height: 130%;
-}
-
 .text a,
 .text-label a,
 .text-subtext a,
 .text-caption a,
-.text-list a,
 .contact-block a {
     position: relative;
 }
@@ -168,7 +164,6 @@ video {
 .text-label a::before,
 .text-subtext a::before,
 .text-caption a::before,
-.text-list a::before,
 .contact-block a::before {
     content: "";
     position: absolute;
@@ -305,16 +300,16 @@ video {
 
 .button.sort svg.--asc {
     display: inline-block;
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .button.sort svg.--desc {
     display: inline-block;
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .button span {
@@ -718,7 +713,7 @@ video {
     gap: var(--inner-margin);
 }
 
-.text-block .text {
+.text-block .text-subtext {
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-column: 2 / 5;
@@ -1588,7 +1583,7 @@ input.seek-slider::-moz-range-thumb {
     text-align: center;
 }
 
-.accordion-topbar-item:first-of-type {
+/* .accordion-topbar-item:first-of-type {
     -ms-grid-column-align: start;
     justify-self: start;
     text-align: start;
@@ -1598,7 +1593,7 @@ input.seek-slider::-moz-range-thumb {
     -ms-grid-column-align: end;
     justify-self: end;
     text-align: end;
-}
+} */
 
 /* .accordion-topbar-item[data-item="date"],
 .accordion-topbar-item[data-item="type"],

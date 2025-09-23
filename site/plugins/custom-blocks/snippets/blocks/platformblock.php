@@ -1,3 +1,5 @@
+<?php $related = $block->project()->toPage(); ?>
+
 <div class="accordion" data-type="<?= $block->typology()->slug() ?>" data-members="<?= $block->members() ?>">
     <div class="accordion-wrapper">
         <ul class="accordion-topbar">
@@ -16,7 +18,7 @@
             <ul class="accordion-items">
                 <li class="accordion-text">
                     <?php if ($block->credits()->isNotEmpty()) : ?>
-                        <div class="accordion-text-block text-list">
+                        <div class="accordion-text-block text-caption">
                             <?= $block->credits()->kt() ?>
                         </div>
                     <?php endif ?>

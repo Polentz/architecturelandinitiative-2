@@ -4,7 +4,7 @@
             <p><?= $block->subtitle() ?></p>
         </div>
     <?php endif ?>
-    <div class="text">
+    <div class="text-subtext">
         <?= $block->copy()->kt() ?>
         <?php if ($thumbnail = $block->thumbnail()->toFile()) : ?>
             <figure class="thumbnail">

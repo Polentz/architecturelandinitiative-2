@@ -1,6 +1,6 @@
 <div class="accordion" data-title="<?= $block->title() ?>" data-date="<?= $block->date() ?>" data-type="<?= $block->typology()->slug() ?>" data-project="<?= $block->project()->slug() ?>" data-members="<?= $block->members() ?>">
     <ul class="accordion-topbar accordion-opener">
-        <li class="accordion-topbar-item text-subtext"><?= $block->title() ?></li>
+        <li class="accordion-topbar-item text-label"><?= $block->title() ?></li>
         <li class="accordion-topbar-item text-label"><?= $block->eventdate() ?></li>
         <li class="accordion-topbar-item text-label"><?= $block->typology() ?></li>
         <?php if ($block->where()->isNotEmpty()) : ?>
@@ -40,9 +40,9 @@
                 <?php endif ?>
 
                 <?php if ($block->toggleProject()->isTrue()) : ?>
-                    <div class="text-subtext">
-                        <p>Learn more about the project: <a href="<?= $block->project()->url() ?>"><?= $block->project() ?></a></p>
-                    </div>
+                    <a href="projects/<?= $block->project()->slug() ?>" class="button " type="button">
+                        <span class="text-label"><?= $block->project() ?></span>
+                    </a>
                 <?php endif ?>
             </div>
             <?php if ($image = $block->image()->toFile()) : ?>

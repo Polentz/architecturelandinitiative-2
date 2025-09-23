@@ -23,7 +23,7 @@ $selectFiltersOptions = $parentPage->blueprint()->field('selectFilters')['option
         </div>
     <?php endif ?>
     <?php if ($media->info()->isNotEmpty()): ?>
-        <div class="caption-text text">
+        <div class="caption-text text-subtext">
             <?= $media->info()->kt() ?>
         </div>
     <?php endif ?>

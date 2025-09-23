@@ -1,5 +1,3 @@
-<?php $related = $block->project()->toPage(); ?>
-
 <div class="accordion" data-type="<?= $block->typology()->slug() ?>" data-members="<?= $block->members() ?>">
     <div class="accordion-wrapper">
         <ul class="accordion-topbar">

@@ -28,7 +28,15 @@ const scrollToPosition = (element) => {
     const paddingOffset = 128;
     const offsetPosition = element.getBoundingClientRect().top + window.scrollY - paddingOffset;
     window.scrollTo({
-        top: offsetPosition
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+};
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
 };
 
@@ -236,9 +244,9 @@ const sliderOpener = () => {
                 blurredElements.forEach(element => {
                     element.classList.add("--blur");
                 });
-                window.scrollTo(0, 0);
                 shrinkElement.style.width = `calc(100% - ${sliderContent.clientWidth}px)`;
                 shrinkElement.classList.add("--shrink");
+                scrollToTop();
             }, 200);
             setTimeout(() => {
                 sliderButton.classList.add("--opacity");
@@ -263,17 +271,11 @@ const sliderOpener = () => {
             element.addEventListener("click", () => {
                 if (element.id.includes(slider.id)) {
                     addClasses();
-                    setTimeout(() => {
-                        element.classList.add("--target");
-                    }, 200);
                 };
             });
         });
 
         sliderButton.addEventListener("click", () => {
-            buttons.forEach(element => {
-                element.classList.remove("--target");
-            });
             removeClasses();
         });
     });
@@ -673,7 +675,8 @@ const handleGallery = () => {
 
                 itemParent.classList.remove("--zoom-in");
                 triggerElements.forEach(i => i.classList.remove("--clicked"));
-            }
+                scrollToPosition(itemParent);
+            };
         });
         main.style.cursor = "none";
     });
@@ -1020,9 +1023,7 @@ const audioPlayer = () => {
 const topButtonEvent = () => {
     const target = document.querySelector(".top-button");
     target.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-        });
+        scrollToTop();
     });
 };
 

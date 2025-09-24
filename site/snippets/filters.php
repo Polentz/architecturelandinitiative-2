@@ -2,20 +2,25 @@
 
 use Kirby\Toolkit\Str;
 
+$pageFiles = $page->gallery()->toFiles();
+$pageBlocks = $page->blocks()->toBlocks();
 $selectFiltersOptions = $page->blueprint()->field('selectFilters')['options'] ?? [];
 
-$pageFiles = $page->gallery()->toFiles();
-
-$parentTitles = [];
-foreach ($pageFiles as $file) {
-    $parent = $file->parent();
-    if ($parent && $parent->intendedTemplate()->name() === 'project') {
-        $parentTitle = $parent->title()->value();
-        $parentTitles[] = $parentTitle;
+function getRelatedArray($collection, string $fieldName): array
+{
+    $related = [];
+    foreach ($collection as $file) {
+        if ($file->{$fieldName}()->isEmpty()) {
+            continue;
+        }
+        $relatedPage = $file->{$fieldName}()->toPage();
+        if ($relatedPage) {
+            $related[$relatedPage->id()] = $relatedPage;
+        }
     }
-};
+    return array_values($related);
+}
 
-$uniqueTitles = array_unique($parentTitles);
 ?>
 
 <div class="filters">
@@ -42,52 +47,56 @@ $uniqueTitles = array_unique($parentTitles);
     </div>
 
     <div class="filters-wrapper">
-        <?php if ($slots->projectFilters()) : ?>
-            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-                <div class="filter-header text-label">
-                    <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
-                </div>
+        <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+            <div class="filter-header text-subtext">
+                <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
+            </div>
+            <!-- project template -->
+            <?php if ($slots->projectFilters()) : ?>
                 <ul class="filter-list text-label">
-                    <?php foreach ($page->gallery()->toFiles()->pluck($filter, ',', true) as $type) : ?>
-                        <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
-                    <?php endforeach ?>
-                </ul>
-            <?php endforeach ?>
-        <?php endif ?>
-
-        <?php if ($slots->toolFilters()) : ?>
-            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-                <div class="filter-header text-label">
-                    <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
-                </div>
-                <?php if ($filter === 'mediatype') : ?>
-                    <ul class="filter-list text-label">
+                    <?php if ($filter === 'mediatype') : ?>
                         <?php foreach ($pageFiles->pluck($filter, ',', true) as $type) : ?>
                             <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
                         <?php endforeach ?>
-                    </ul>
-                <?php elseif ($filter === 'project') : ?>
-                    <ul class="filter-list text-label">
-                        <?php foreach ($uniqueTitles as $title): ?>
-                            <li id="<?= Str::slug($title) ?>" class="filter"><?= $title ?></li>
+                    <?php elseif ($filter === 'tool') : ?>
+                        <?php $relatedPages = getRelatedArray($pageFiles, 'tool'); ?>
+                        <?php foreach ($relatedPages as $related) : ?>
+                            <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
                         <?php endforeach ?>
-                    </ul>
-                <?php endif ?>
-            <?php endforeach ?>
-        <?php endif ?>
-
-        <?php if ($slots->platformFilters()) : ?>
-            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
-                <div class="filter-header text-label">
-                    <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
-                </div>
-                <div class="filter-list text-label">
-                    <?php foreach ($page->blocks()->toBlocks()->pluck($filter, ',', true) as $type) : ?>
-                        <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
-                    <?php endforeach ?>
-                </div>
-            <?php endforeach ?>
-        <?php endif ?>
+                    <?php endif ?>
+                </ul>
+            <?php endif ?>
+            <!-- tool template -->
+            <?php if ($slots->toolFilters()) : ?>
+                <ul class="filter-list text-label">
+                    <?php if ($filter === 'mediatype') : ?>
+                        <?php foreach ($pageFiles->pluck($filter, ',', true) as $type) : ?>
+                            <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php endforeach ?>
+                    <?php elseif ($filter === 'project') : ?>
+                        <?php $relatedPages = getRelatedArray($pageFiles, 'project'); ?>
+                        <?php foreach ($relatedPages as $related) : ?>
+                            <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
+                        <?php endforeach ?>
+                    <?php endif ?>
+                </ul>
+            <?php endif ?>
+            <!-- platform template -->
+            <?php if ($slots->platformFilters()) : ?>
+                <ul class="filter-list text-label">
+                    <?php if ($filter === 'project') : ?>
+                        <?php $relatedPages = getRelatedArray($pageBlocks, 'project'); ?>
+                        <?php foreach ($relatedPages as $related) : ?>
+                            <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
+                        <?php endforeach ?>
+                    <?php else : ?>
+                        <?php foreach ($pageBlocks->pluck($filter, ',', true) as $type) : ?>
+                            <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php endforeach ?>
+                    <?php endif ?>
+                </ul>
+            <?php endif ?>
+        <?php endforeach ?>
 
         <div id="all" class="filter filter-deselect text-label">
             <span>All</span>

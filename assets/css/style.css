@@ -1559,6 +1559,7 @@ input.seek-slider::-moz-range-thumb {
 }
 
 .accordion-labels {
+    text-transform: uppercase;
     border-top: var(--border-black);
     background: var(--shade-color);
     -webkit-backdrop-filter: blur(2rem);

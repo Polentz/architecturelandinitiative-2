@@ -17,7 +17,7 @@ $categories = array_unique($categories);
 <div class="categories">
     <div class="categories-list">
         <button id="all" class="button category category-deselect --target">
-            <span class="text-label">All</span>
+            <span class="text-label"><?= t('all') ?></span>
         </button>
         <?php foreach ($categories as $category) : ?>
             <?php if ($category->isNotEmpty()) : ?>

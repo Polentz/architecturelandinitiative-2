@@ -48,8 +48,9 @@ function getRelatedArray($collection, string $fieldName): array
 
     <div class="filters-wrapper">
         <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+            <?php $label = t('filters.' . $filter, $filter); ?>
             <div class="filter-header text-subtext">
-                <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
+                <p><?= t('filter-by') ?> <?= strtolower($label) ?></p>
             </div>
             <?php if ($slots->projectFilters()) : ?>
                 <ul class="filter-list text-label">
@@ -96,7 +97,7 @@ function getRelatedArray($collection, string $fieldName): array
         <?php endforeach ?>
 
         <div id="all" class="filter filter-deselect text-label">
-            <span>All</span>
+            <span><?= t('all') ?></span>
         </div>
 
         <button class="ui-button x-button" type="button">

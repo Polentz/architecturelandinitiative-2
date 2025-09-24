@@ -2,7 +2,7 @@ Title: Architecture Land Initiative
 
 ----
 
-Togglelang: false
+Togglelang: true
 
 ----
 
@@ -153,5 +153,3 @@ About:
 <p>By bringing together a changing number of contributors with shared values and work ethos, ALIN, as a collective generates projects for the land and the city as architectures of contribution that foster space for life, with an expanded vision of creating and sharing values.</p>
 <p>Our vision is embedded in trans-scalarity, from a temporal and territorial perspectives, with the aim of unveiling human and non-human affordances for a social and ecological transition. Our initiatives and collaborations range from the intimate scale, such as punctual cultural and popular events, to the large scale involving urban and territorial transformations.</p>
 <p>The platform operates as a flexible infrastructure. It consists of a cooperative legal framework, a communication structure enabling collective work, a series of studios, as well as a set of tools and expertise consolidated in practice and made available to all. Its members – both practitioners and researchers – are connected to various research and teaching institutions in Switzerland and internationally (Zurich University, EPFL, Hong Kong University).</p>
-
-----

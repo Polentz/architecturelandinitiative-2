@@ -9,15 +9,16 @@ $selectFiltersOptions = $parentPage->blueprint()->field('selectFilters')['option
     <div class="text-label">
         <?php foreach ($page->selectFilters()->split() as $filter) : ?>
             <?php if ($media->{$filter}()->isNotEmpty()) : ?>
+                <?php $label = t('filters.' . $filter, $filter); ?>
                 <?php if ($filter === 'tool' || $filter === 'project') : ?>
-                    <p><?= $selectFiltersOptions[$filter] ?>: <a href="<?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->url() : '' ?>"><?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->title() : '' ?></a></p>
+                    <p><?= $label ?>: <a href="<?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->url() : '' ?>"><?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->title() : '' ?></a></p>
                 <?php else : ?>
-                    <p><?= $selectFiltersOptions[$filter] ?>: <?= $media->{$filter}() ?></p>
+                    <p><?= $label ?>: <?= $media->{$filter}() ?></p>
                 <?php endif ?>
             <?php endif ?>
         <?php endforeach ?>
         <?php if ($media->category()->isNotEmpty()) : ?>
-            <p>Category: <?= $media->category() ?></p>
+            <p><?= t('filters.category') ?>: <?= $media->category() ?></p>
         <?php endif ?>
     </div>
     <?php if ($media->caption()->isNotEmpty()) : ?>

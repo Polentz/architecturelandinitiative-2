@@ -8,6 +8,8 @@ return [
         'LC_ALL' => 'de_DE'
     ],
     'name' => 'Deutsch',
-    'translations' => [],
+    'translations' => [
+        'filters.tool' => ''
+    ],
     'url' => NULL
 ];

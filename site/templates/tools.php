@@ -22,7 +22,7 @@
                     <?php foreach ($page->children()->unlisted() as $child) : ?>
                         <?php $cover = $child->background()->toFile() ?>
                         <div class="item scroll-item<?= $cover ? ' has-background unlisted' : '' ?>" <?= $cover ? ' style="background-image: url(\'' . $cover->resize(1600, null)->url() . '\');"' : '' ?>>
-                            <span class="item-title-label text-label">What's next:</span>
+                            <span class="item-title-label text-label"><?= t('upcoming') ?></span>
                             <h3 class="item-title">
                                 <p><?= $child->title() ?></p>
                             </h3>

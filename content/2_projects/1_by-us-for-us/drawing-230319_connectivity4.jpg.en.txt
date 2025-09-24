@@ -2,19 +2,11 @@ Caption: Connectivity, By Us For Us: The Future of Housing Co-operatives in Hong
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Drawing
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category:
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Drawing
+
+----
+
 Uuid: g5oFOgEvtdxgfFwR
 
 ----
 
-Template: media
+Template: media-project

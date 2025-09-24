@@ -2,19 +2,11 @@ Caption: To Kwa Wan, 46 Maidstone Rd, January 2021, ©Architecture Land Initiati
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Site visit
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: tHlMldUiuO4mlWbP
 
 ----
 
-Template: media
+Template: media-project

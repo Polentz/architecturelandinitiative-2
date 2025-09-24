@@ -2,19 +2,11 @@ Caption: Proposed Housing Scheme for non-expatriate civil servants on K.I.L 7093
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Plan
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Plan
+
+----
+
 Uuid: KgadCVgObkzMAPUD
 
 ----
 
-Template: media
+Template: media-project

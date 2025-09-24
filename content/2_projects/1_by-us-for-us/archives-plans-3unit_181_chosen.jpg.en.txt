@@ -2,19 +2,11 @@ Caption: Proposed Block of European Houses on K.I.L 8597 - At Hau Pui Long Rd - 
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Plan
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Plan
+
+----
+
 Uuid: THtOgYryHDWAnKYj
 
 ----
 
-Template: media
+Template: media-project

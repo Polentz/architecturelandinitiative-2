@@ -2,19 +2,11 @@ Caption: To Kwa Wan, 10 Hop Yat Rd, January 2021, ©Raffaella Endrizzi photograp
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Site visit
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: klRaAFKmNGwckiUi
 
 ----
 
-Template: media
+Template: media-project

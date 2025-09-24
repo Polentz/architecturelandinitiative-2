@@ -2,19 +2,11 @@ Caption: Town Planning Ordinance, Area No.10 - Ma Tau Kok -  outline zoning plan
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Map
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Map
+
+----
+
 Uuid: 0Hy6RpCiaq8LZBS7
 
 ----
 
-Template: media
+Template: media-project

@@ -1,15 +1,23 @@
-<div class="accordion" data-title="<?= $block->title() ?>" data-date="<?= $block->date() ?>" data-type="<?= $block->typology()->slug() ?>" data-project="<?= $block->project()->slug() ?>" data-members="<?= $block->members() ?>">
+<?php
+
+$relatedProject = $block->project()->toPage();
+$relatedProjectTitle = $relatedProject ? $relatedProject->title() : null;
+$relatedProjectUrl = $relatedProject ? $relatedProject->url() : null;
+
+?>
+
+<div class="accordion" data-title="<?= $block->title() ?>" data-date="<?= $block->date() ?>" data-type="<?= $block->itemtype()->slug() ?>" data-project="<?= $relatedProjectTitle->slug() ?>" data-members="<?= $block->members() ?>">
     <ul class="accordion-topbar accordion-opener">
         <li class="accordion-topbar-item text-label"><?= $block->title() ?></li>
         <li class="accordion-topbar-item text-label"><?= $block->eventdate() ?></li>
-        <li class="accordion-topbar-item text-label"><?= $block->typology() ?></li>
+        <li class="accordion-topbar-item text-label"><?= $block->itemtype() ?></li>
         <?php if ($block->where()->isNotEmpty()) : ?>
             <li class="accordion-topbar-item text-label"><?= $block->where() ?></li>
         <?php else : ?>
             <li class="accordion-topbar-item text-label">-</li>
         <?php endif ?>
         <?php if ($block->project()->isNotEmpty()) : ?>
-            <li class="accordion-topbar-item text-label"><?= $block->project() ?></li>
+            <li class="accordion-topbar-item text-label"><?= $relatedProjectTitle ?></li>
         <?php else : ?>
             <li class="accordion-topbar-item text-label">-</li>
         <?php endif ?>
@@ -40,8 +48,8 @@
                 <?php endif ?>
 
                 <?php if ($block->toggleProject()->isTrue()) : ?>
-                    <a href="projects/<?= $block->project()->slug() ?>" class="button " type="button">
-                        <span class="text-label"><?= $block->project() ?></span>
+                    <a href="<?= $relatedProjectUrl ?>" class="button " type="button">
+                        <span class="text-label"><?= $relatedProjectTitle ?></span>
                     </a>
                 <?php endif ?>
             </div>

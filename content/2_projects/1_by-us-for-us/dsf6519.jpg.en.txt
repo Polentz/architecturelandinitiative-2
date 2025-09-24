@@ -2,19 +2,11 @@ Caption: To Kwa Wan, hair salon January 2021, ©Raffaella Endrizzi photography
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Site visit
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: PhmsAVfhsukooAvO
 
 ----
 
-Template: media
+Template: media-project

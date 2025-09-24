@@ -65,8 +65,6 @@ Gallery:
 - file://vM0vgFbvngDKAWdn
 - file://LqxGFiFrXsgkC5gR
 - file://aXLUPhUmt3kHmdQb
-- file://OzT6RDJmcNktcmkF
-- file://HCW01wLWMem3AEyA
 - file://IHyYNPrblHzt0pme
 - file://zvnX9RWeH7oIMvtZ
 - file://blQWSISRkTe8qRP6
@@ -117,6 +115,8 @@ Gallery:
 - file://HRf5sXtKZ12pXsZP
 - file://TxjxWT4NDvxhALOX
 - file://YY8Yc4rQ0Ia1jmSi
+- file://OzT6RDJmcNktcmkF
+- file://HCW01wLWMem3AEyA
 
 ----
 
@@ -124,7 +124,7 @@ Background: - file://JtUeZuFd4cXPvtRp
 
 ----
 
-Selectfilters: mediatype, tools
+Selectfilters: mediatype, tool
 
 ----
 

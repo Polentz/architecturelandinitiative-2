@@ -2,19 +2,11 @@ Caption: By Us For Us: Forum I, Atlas, 2023 ©Architecture Land Initiative
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: Workshop
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Process
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: LqxGFiFrXsgkC5gR
 
 ----
 
-Template: media
+Template: media-project

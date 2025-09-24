@@ -2,19 +2,11 @@ Caption: Architecture Land Initiative, By Us For Us: Forum I, open discussion, T
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: Forum
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Process
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: 3sBAd2mXiNdd8Xbn
 
 ----
 
-Template: media
+Template: media-project

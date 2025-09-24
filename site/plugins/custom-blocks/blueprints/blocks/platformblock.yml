@@ -24,7 +24,7 @@ fields:
     label: Title
     type: text
     required: true
-  typology:
+  itemtype:
     label: Filter by platform type
     type: select 
     width: 1/2 

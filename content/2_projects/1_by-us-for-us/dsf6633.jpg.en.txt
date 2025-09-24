@@ -2,19 +2,11 @@ Caption: To Kwa Wan, 41-45 Tin Kwong courtyard, January 2021, ©Raffaella Endriz
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Site visit
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: ciVLwau3sO0aeOqT
 
 ----
 
-Template: media
+Template: media-project

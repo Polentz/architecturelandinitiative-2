@@ -1,0 +1,15 @@
+title: Project media
+focus: false
+accept: 
+  extension: jpg, png, jpeg, mp3, mp4, pdf
+  type: image, audio, video, document
+
+extends: layouts/media
+columns:
+  filters:
+    width: 1/2
+    sections:
+      data:
+        type: fields
+        fields:
+          project: false

@@ -8,11 +8,13 @@ $coverFiles = $page->cover()->toFiles();
 <main class="main">
     <?= snippet('intro') ?>
 
-    <section class="cover" <?php if ($coverFiles->count() == 1) : ?>style="grid-template-columns: 1fr;" <?php endif ?>>
-        <?php foreach ($coverFiles as $media) : ?>
-            <?= snippet('cover', ['media' => $media]) ?>
-        <?php endforeach ?>
-    </section>
+    <?php if ($coverFiles->isNotEmpty()) : ?>
+        <section class="cover" <?php if ($coverFiles->count() == 1) : ?>style="grid-template-columns: 1fr;" <?php endif ?>>
+            <?php foreach ($coverFiles as $media) : ?>
+                <?= snippet('cover', ['media' => $media]) ?>
+            <?php endforeach ?>
+        </section>
+    <?php endif ?>
 
     <section class="inner-menu">
         <?php snippet('categories') ?>

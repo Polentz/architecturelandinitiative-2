@@ -2,19 +2,11 @@ Caption: Historic Maps of Hong Kong - Kowloon Peninsula in 1892; Scale: 400ft to
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Map
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Map
+
+----
+
 Uuid: NWplox22JIzYeSOj
 
 ----
 
-Template: media
+Template: media-project

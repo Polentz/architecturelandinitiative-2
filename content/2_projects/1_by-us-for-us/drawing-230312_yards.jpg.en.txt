@@ -2,19 +2,11 @@ Caption: Yards, By Us For Us: The Future of Housing Co-operatives in Hong Kong, 
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Drawing
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category:
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Drawing
+
+----
+
 Uuid: u47htqHJz2KaDBk3
 
 ----
 
-Template: media
+Template: media-project

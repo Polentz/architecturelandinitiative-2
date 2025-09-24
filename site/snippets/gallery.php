@@ -1,8 +1,12 @@
 <?php
-$dataset = 'data-category="' . $media->category()->slug() . '" ' .
+
+use Kirby\Toolkit\Str;
+
+$dataset =
+    'data-category="' . $media->category()->slug() . '" ' .
     'data-type="' . $media->mediatype()->slug() . '" ' .
-    'data-tool="' . $media->tools()->slug() . '" ' .
-    'data-project="' . $media->parent()->slug() . '"';
+    'data-tool="' . ($media->tool()->isNotEmpty() ? Str::slug($media->tool()->toPage()->title()) : '') . '" ' .
+    'data-project="' . ($media->project()->isNotEmpty() ? Str::slug($media->project()->toPage()->title()) : '') . '" ';
 ?>
 
 <?php if ($media->type() == 'image') : ?>

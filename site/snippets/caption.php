@@ -1,7 +1,5 @@
 <?php
 
-use Kirby\Toolkit\Str;
-
 $parentPage = $media->parent();
 $selectFiltersOptions = $parentPage->blueprint()->field('selectFilters')['options'] ?? [];
 
@@ -9,11 +7,17 @@ $selectFiltersOptions = $parentPage->blueprint()->field('selectFilters')['option
 
 <figcaption class="gallery-item-caption">
     <div class="text-label">
-        <?php if ($page->intendedTemplate()->name() === 'project' && $media->category()->isNotEmpty()) : ?>
+        <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+            <?php if ($media->{$filter}()->isNotEmpty()) : ?>
+                <?php if ($filter === 'tool' || $filter === 'project') : ?>
+                    <p><?= $selectFiltersOptions[$filter] ?>: <a href="<?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->url() : '' ?>"><?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->title() : '' ?></a></p>
+                <?php else : ?>
+                    <p><?= $selectFiltersOptions[$filter] ?>: <?= $media->{$filter}() ?></p>
+                <?php endif ?>
+            <?php endif ?>
+        <?php endforeach ?>
+        <?php if ($media->category()->isNotEmpty()) : ?>
             <p>Category: <?= $media->category() ?></p>
-        <?php endif ?>
-        <?php if ($page->intendedTemplate()->name() === 'tool' && $media->parent()->intendedTemplate()->name() === 'project') : ?>
-            <p>Related project: <a href="<?= $media->parent()->url() ?>"><?= $media->parent()->title() ?></a></p>
         <?php endif ?>
     </div>
     <?php if ($media->caption()->isNotEmpty()) : ?>

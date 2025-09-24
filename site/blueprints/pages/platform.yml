@@ -40,8 +40,10 @@ columns:
         fields:   
           selectFilters:
             label: Filter by
-            type: checkboxes
+            type: multiselect
+            layout: list
+            search: false
             options:
-              typology: Event type
+              itemtype: Event type
               project: Related project
               members: Members

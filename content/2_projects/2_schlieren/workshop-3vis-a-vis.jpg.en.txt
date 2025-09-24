@@ -10,7 +10,7 @@ Alt:
 
 ----
 
-Tools: Workshop
+Tool: Workshop
 
 ----
 

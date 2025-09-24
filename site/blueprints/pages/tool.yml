@@ -34,9 +34,9 @@ columns:
           cover:
             type: files
             label: Cover images
-            uploads: media
-            template: media        
-            query: site.grandchildren.files.filterBy('template', 'media').filterBy('tools', '*=', page.title)
+            uploads: cover
+            template: cover        
+            query: page.files.template("cover")    
             layout: cards
             multiple: true
             link: true
@@ -49,9 +49,9 @@ columns:
           gallery:
             type: files
             label: Gallery
-            uploads: media
-            template: media   
-            query: site.grandchildren.files.filterBy('template', 'media').filterBy('tools', '*=', page.title)
+            uploads: media-tool
+            template: media-tool     
+            query: page.files.template("media-tool")    
             layout: cards
             multiple: true
             link: true
@@ -70,9 +70,9 @@ columns:
           background:
             type: files
             label: Background image ({{page.parent.title}} list preview)
-            uploads: media
-            template: media 
-            query: site.grandchildren.files.filterBy('template', 'media').filterBy('tools', '*=', page.title)
+            uploads: cover
+            template: cover 
+            query: page.files.filterBy("type", "image")
             layout: list
             size: small
             multiple: false
@@ -83,7 +83,9 @@ columns:
               cover: true
           selectFilters:
             label: Filter by
-            type: checkboxes
+            type: multiselect
+            layout: list
+            search: false
             options:
               mediatype: Media type
-              project: Reletaed projects
+              project: Reletaed project

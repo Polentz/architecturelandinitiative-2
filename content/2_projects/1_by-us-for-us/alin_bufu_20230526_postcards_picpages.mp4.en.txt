@@ -10,11 +10,11 @@ Alt:
 
 ----
 
-Category: Research
+Category: Outcome
 
 ----
 
-Tools: 
+Tool: 
 
 ----
 
@@ -22,8 +22,12 @@ Mediatype: Video
 
 ----
 
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
 Uuid: HCW01wLWMem3AEyA
 
 ----
 
-Template: media
+Template: media-project

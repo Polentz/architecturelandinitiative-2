@@ -2,19 +2,11 @@ Caption: Documentary Exhibition of Kowloon City Civil Service Co-operative Socie
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Document
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Document
+
+----
+
 Uuid: SGA2SBjrS5rN4tEP
 
 ----
 
-Template: media
+Template: media-project

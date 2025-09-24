@@ -15,11 +15,16 @@ sections:
           - email
           - clear
         nodes: false
+      infos:
+        label: false
+        type: info
+        text: When the homepage loads, a random video from the gallery below will play automatically.
       gallery:
         type: files
         label: Video gallery
         uploads: video
         template: video
+        query: page.files.filterBy("type", "video")
         link: false
         image:
           icon: true

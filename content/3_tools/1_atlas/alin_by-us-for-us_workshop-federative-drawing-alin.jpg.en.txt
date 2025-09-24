@@ -1,13 +1,29 @@
-Uuid: BHpMz4yDRIU0Kjd4
-
-----
-
-Template: media
-
-----
-
 Caption: 
 
 ----
 
-Tools: 
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Category: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: 
+
+----
+
+Uuid: 70at7ahxdryrdkmm
+
+----
+
+Template: media-tool

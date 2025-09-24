@@ -2,19 +2,11 @@ Caption: Historic Maps of Hong Kong - Kowloon Peninsula in 1947; Scale: 8 inches
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Map
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Map
+
+----
+
 Uuid: wY73TDIZBuwH6icP
 
 ----
 
-Template: media
+Template: media-project

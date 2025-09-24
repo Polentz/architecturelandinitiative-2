@@ -10,7 +10,7 @@ Info:
 
 ----
 
-Tools: 
+Tool: 
 
 ----
 
@@ -26,4 +26,4 @@ Uuid: lO8U7vmo5H2GDra0
 
 ----
 
-Template: media
+Template: media-project

@@ -10,28 +10,19 @@ Textblocks:
 
 ----
 
-Cover:
-
-- file://BU2Tsl2Z1IkuXM61
-- file://0gNktDw25eeNj9T4
+Cover: 
 
 ----
 
 Gallery:
 
-- file://x0x4aMiqiXt6t78w
 - file://sjrgsrui5ngsbvrj
-- file://mlp483njwqxwxgoz
-- file://2OnHQI5pr1PP0gKV
-- file://wMwcNVCLvP7nzA58
-- file://UBM8CS76v0c6QNJ8
-- file://HRf5sXtKZ12pXsZP
-- file://TxjxWT4NDvxhALOX
-- file://cEk7YFWtYhHXXmJ3
+- file://70at7ahxdryrdkmm
+- file://ifnvxx8pxzvf9ld0
 
 ----
 
-Background: - file://wMwcNVCLvP7nzA58
+Background: 
 
 ----
 

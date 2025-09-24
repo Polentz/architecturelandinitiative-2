@@ -2,19 +2,11 @@ Caption: By Us For Us: Federative Drawing, 2023, ©Architecture Land Initiative
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Plan
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Outcome
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Plan
+
+----
+
 Uuid: aXLUPhUmt3kHmdQb
 
 ----
 
-Template: media
+Template: media-project

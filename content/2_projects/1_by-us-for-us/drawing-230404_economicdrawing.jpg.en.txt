@@ -2,19 +2,11 @@ Caption: Economic schemes, By Us For Us: The Future of Housing Co-operatives in 
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Drawing
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category:
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Drawing
+
+----
+
 Uuid: uX91eOYg4Gh3Fflb
 
 ----
 
-Template: media
+Template: media-project

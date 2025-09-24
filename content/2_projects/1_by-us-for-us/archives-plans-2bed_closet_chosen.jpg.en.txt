@@ -1,8 +1,4 @@
-Caption: Proposed Erection of Building At the Junction of  Kiangsu St. & Hau Pui Long Rd. on K.I.L 8025 - Kowloon - Scales 1/8˝ = 1´-0˝ ; 8 Apr. 1964
-
-----
-
-Alt: 
+Caption: Proposed Erection of Building At the Junction of  Kiangsu St. &amp; Hau Pui Long Rd. on K.I.L 8025 - Kowloon - Scales 1/8˝ = 1´-0˝ ; 8 Apr. 1964
 
 ----
 
@@ -10,11 +6,7 @@ Info:
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Plan
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Plan
+
+----
+
 Uuid: 7vUMuZktMCXf9mYM
 
 ----
 
-Template: media
+Template: media-project

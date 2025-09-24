@@ -42,5 +42,5 @@ columns:
             label: Filter by
             type: checkboxes
             options:
-              typology: Event type
+              itemtype: Event type
               project: Related project

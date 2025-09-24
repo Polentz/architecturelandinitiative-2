@@ -1,10 +1,10 @@
-<div class="accordion" data-type="<?= $block->typology()->slug() ?>" data-members="<?= $block->members() ?>">
+<div class="accordion" data-type="<?= $block->itemtype()->slug() ?>" data-members="<?= $block->members() ?>">
     <div class="accordion-wrapper">
         <ul class="accordion-topbar">
             <li class="accordion-topbar-title">
                 <h3><?= $block->title() ?></h3>
             </li>
-            <li class="accordion-topbar-item text-label"><?= $type ?> <?= $block->typology() ?></li>
+            <li class="accordion-topbar-item text-label"><?= $type ?> <?= $block->itemtype() ?></li>
             <li class="accordion-topbar-item text-label"><?= $members ?> <?= $block->members() ?></li>
             <?php foreach ($block->topbar()->toStructure() as $item): ?>
                 <?php if ($item->isNotEmpty()) : ?>

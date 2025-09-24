@@ -1,9 +1,3 @@
-title: Media
-focus: false
-accept: 
-  extension: jpg, png, jpeg, mp3, mp4, pdf
-  type: image, audio, video, document
-
 columns:
   main:
     width: 1/2
@@ -50,39 +44,19 @@ columns:
               query: site.categories.toStructure
               text: "{{ item.filter }}"
               value: "{{ item.filter }}"    
-          # tool:
-          #   width: 1/2
-          #   type: select
-          #   label: Related tool
-          #   layout: list
-          #   options:
-          #     type: query
-          #     query: site.grandchildren.template("tool")
-          #     text: "{{ page.title }}"
-          #     value: "{{ page.title }}"
           tool:
             label: Related tool
             type: pages
             width: 1/2
             multiple: false
-            query: site.grandchildren.template("tool")
+            query: site.grandchildren.listed.template("tool")
             image: icon
-          # project:
-          #   width: 1/2
-          #   type: select
-          #   label: Related project
-          #   layout: list
-          #   options:
-          #     type: query
-          #     query: site.grandchildren.template("project")
-          #     text: "{{ page.title }}"
-          #     value: "{{ page.title }}"
           project:
             label: Related project
             type: pages
             width: 1/2
             multiple: false
-            query: site.grandchildren.template("project")
+            query: site.grandchildren.listed.template("project")
             image: icon
           mediatype:
             label: Media type

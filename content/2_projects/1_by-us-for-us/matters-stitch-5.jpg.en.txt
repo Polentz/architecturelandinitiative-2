@@ -2,19 +2,11 @@ Caption: To Kwa Wan, materiality - May 2023, ©Architecture Land Initiative
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category:
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: uueTBftU04U1zT2y
 
 ----
 
-Template: media
+Template: media-project

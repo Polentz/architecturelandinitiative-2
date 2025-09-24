@@ -1,8 +1,8 @@
-Caption: 
+Caption: <p>Lorem ipsum</p>
 
 ----
 
-Info: 
+Info: <p>Lorem ipsum</p>
 
 ----
 
@@ -10,15 +10,19 @@ Alt:
 
 ----
 
-Tools: 
+Category: Archive material
 
 ----
 
-Mediatype: 
+Project: - page://OW9IEQcLZECxmmk8
 
 ----
 
-Category: 
+Mediatype: Drawing
+
+----
+
+Tool: 
 
 ----
 
@@ -26,4 +30,4 @@ Uuid: sjrgsrui5ngsbvrj
 
 ----
 
-Template: media
+Template: media-tool

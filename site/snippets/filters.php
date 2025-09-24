@@ -51,14 +51,13 @@ function getRelatedArray($collection, string $fieldName): array
             <div class="filter-header text-subtext">
                 <p>Filter by <?= strtolower($selectFiltersOptions[$filter] ?? $filter) ?></p>
             </div>
-            <!-- project template -->
             <?php if ($slots->projectFilters()) : ?>
                 <ul class="filter-list text-label">
                     <?php if ($filter === 'mediatype') : ?>
                         <?php foreach ($pageFiles->pluck($filter, ',', true) as $type) : ?>
                             <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
                         <?php endforeach ?>
-                    <?php elseif ($filter === 'tool') : ?>
+                    <?php else : ?>
                         <?php $relatedPages = getRelatedArray($pageFiles, 'tool'); ?>
                         <?php foreach ($relatedPages as $related) : ?>
                             <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
@@ -66,14 +65,13 @@ function getRelatedArray($collection, string $fieldName): array
                     <?php endif ?>
                 </ul>
             <?php endif ?>
-            <!-- tool template -->
             <?php if ($slots->toolFilters()) : ?>
                 <ul class="filter-list text-label">
                     <?php if ($filter === 'mediatype') : ?>
                         <?php foreach ($pageFiles->pluck($filter, ',', true) as $type) : ?>
                             <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
                         <?php endforeach ?>
-                    <?php elseif ($filter === 'project') : ?>
+                    <?php else : ?>
                         <?php $relatedPages = getRelatedArray($pageFiles, 'project'); ?>
                         <?php foreach ($relatedPages as $related) : ?>
                             <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
@@ -81,17 +79,16 @@ function getRelatedArray($collection, string $fieldName): array
                     <?php endif ?>
                 </ul>
             <?php endif ?>
-            <!-- platform template -->
             <?php if ($slots->platformFilters()) : ?>
                 <ul class="filter-list text-label">
-                    <?php if ($filter === 'project') : ?>
+                    <?php if ($filter === 'itemtype' || $filter === 'members') : ?>
+                        <?php foreach ($pageBlocks->pluck($filter, ',', true) as $type) : ?>
+                            <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php endforeach ?>
+                    <?php else : ?>
                         <?php $relatedPages = getRelatedArray($pageBlocks, 'project'); ?>
                         <?php foreach ($relatedPages as $related) : ?>
                             <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
-                        <?php endforeach ?>
-                    <?php else : ?>
-                        <?php foreach ($pageBlocks->pluck($filter, ',', true) as $type) : ?>
-                            <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
                         <?php endforeach ?>
                     <?php endif ?>
                 </ul>

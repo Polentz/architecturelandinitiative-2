@@ -10,7 +10,11 @@ Alt:
 
 ----
 
-Tools: Atlas, Forum
+Category: Site visit
+
+----
+
+Tool: - page://NXrfS7lMkYsthb0T
 
 ----
 
@@ -18,12 +22,8 @@ Mediatype: Image
 
 ----
 
-Category: Site visit
-
-----
-
 Uuid: BU2Tsl2Z1IkuXM61
 
 ----
 
-Template: media
+Template: media-project

@@ -2,19 +2,11 @@ Caption: To Kwa Wan, materials, pipes- Kowloon, May 2023, ©Architecture Land In
 
 ----
 
-Alt: 
-
-----
-
 Info: 
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Image
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category:
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Image
+
+----
+
 Uuid: puIPX6f4qP5AyzFO
 
 ----
 
-Template: media
+Template: media-project

@@ -1,8 +1,4 @@
-Caption: Proposed Block of 10 Flats for civil servant- on K.I.L 8095 - Kiangsu St. & Hau Pui Long Rd - Drawing No A-1 - Scales 1/8˝ = 1´-0˝ ; 13 Aug. 1961
-
-----
-
-Alt: 
+Caption: Proposed Block of 10 Flats for civil servant- on K.I.L 8095 - Kiangsu St. &amp; Hau Pui Long Rd - Drawing No A-1 - Scales 1/8˝ = 1´-0˝ ; 13 Aug. 1961
 
 ----
 
@@ -10,11 +6,7 @@ Info:
 
 ----
 
-Tools: 
-
-----
-
-Mediatype: Plan
+Alt: 
 
 ----
 
@@ -22,8 +14,20 @@ Category: Archive material
 
 ----
 
+Tool: 
+
+----
+
+Project: - page://WOYRZn9TeLUnZp4x
+
+----
+
+Mediatype: Plan
+
+----
+
 Uuid: lR1U5Ho6RmZ7otLY
 
 ----
 
-Template: media
+Template: media-project

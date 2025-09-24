@@ -10,20 +10,20 @@ Alt:
 
 ----
 
-Tools: Atlas
+Category: 
 
 ----
 
-Mediatype: Image
+Project: 
 
 ----
 
-Category: Outcome
+Mediatype: 
 
 ----
 
-Uuid: mlp483njwqxwxgoz
+Uuid: ifnvxx8pxzvf9ld0
 
 ----
 
-Template: media
+Template: media-tool

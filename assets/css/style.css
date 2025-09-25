@@ -1314,7 +1314,6 @@ input.seek-slider::-moz-range-thumb {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: var(--small-margin) var(--main-margin);
     z-index: 999;
     transition: all .2s ease;

@@ -10,7 +10,15 @@ Alt:
 
 ----
 
+Category: 
+
+----
+
 Tool: 
+
+----
+
+Project: 
 
 ----
 
@@ -18,12 +26,8 @@ Mediatype: Image
 
 ----
 
-Category: Outcome
-
-----
-
 Uuid: knofdjFeQbG91s4D
 
 ----
 
-Template: media
+Template: media-project

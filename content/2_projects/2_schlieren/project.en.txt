@@ -81,35 +81,7 @@ Background: - file://h7CLfR6e7n4Im1Fn
 
 ----
 
-Selectfilters: mediatype, filter
-
-----
-
-Typename: Media type
-
-----
-
-Types: Image, Plan, Video, Drawing, Printed matter, Audio
-
-----
-
-Filtername: Process stage
-
-----
-
-Filters: Archive material, Site visit, Outcome
-
-----
-
-Summary:
-
-- 
-  category: Date
-  text: "2022"
-
-----
-
-Excerpt: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique senectus et netus et. Consectetur a erat nam at. Dolor sit amet consectetur adipiscing elit ut aliquam. Amet luctus venenatis lectus magna fringilla urna porttitor. Ornare quam viverra orci sagittis. Sed augue lacus viverra vitae congue. Senectus et netus et malesuada fames ac. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+Selectfilters: mediatype, tool
 
 ----
 

@@ -88,7 +88,7 @@ const cursor = () => {
                 });
             });
             // .accordion-topbar-item[data-item="date"], .accordion-topbar-item[data-item="type"], .accordion-topbar-item[data-item="title"]
-            const anchorTags = document.querySelectorAll("a, .button, .filter, .filter-deselect");
+            const anchorTags = document.querySelectorAll("a, .button, .ui-button, .filter, .filter-deselect");
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -110,7 +110,7 @@ const cursor = () => {
                 });
             });
 
-            const darkElements = document.querySelectorAll(".filters-wrapper, .document-wrapper, .audio-player");
+            const darkElements = document.querySelectorAll(".filters-wrapper, .document-wrapper, .audio-player, .filters .ui-button");
             darkElements.forEach(element => {
                 element.addEventListener("mouseenter", () => {
                     gsap.to(".cursor", {
@@ -353,6 +353,7 @@ const showInnerMenu = () => {
 const handleFiltersBox = () => {
     const container = document.querySelector(".filters");
     const openButton = container.querySelector(".filter-button");
+    if (!openButton) return;
     const innerBox = document.querySelector(".filters-wrapper");
     const closeButton = container.querySelector(".x-button");
     const deselecter = document.querySelector(".filter-deselect");
@@ -373,25 +374,25 @@ const handleFiltersBox = () => {
         }, 250);
     };
 
-    if (openButton) {
-        openButton.addEventListener("click", () => {
-            addClasses();
-        });
+    openButton.addEventListener("click", () => {
+        addClasses();
+    });
 
-        closeButton.addEventListener("click", () => {
-            removeClasses();
-        });
+    closeButton.addEventListener("click", () => {
+        removeClasses();
+    });
 
-        deselecter.addEventListener("click", () => {
-            removeClasses();
-        });
-    };
+    deselecter.addEventListener("click", () => {
+        removeClasses();
+    });
 };
 
 const handleFiltersAndCategories = () => {
+    const filterContainer = document.querySelector(".filters");
+    const innerMenu = document.querySelector(".inner-menu");
+    if (!filterContainer || !innerMenu) return;
     const filters = document.querySelectorAll(".filter");
     const categories = document.querySelectorAll(".category");
-
     const itemsContainer = document.querySelector(".items-container");
     const items = itemsContainer.querySelectorAll(".gallery-item");
 

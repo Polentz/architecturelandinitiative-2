@@ -10,15 +10,15 @@ Alt:
 
 ----
 
-Tool: Atlas
-
-----
-
-Mediatype: 
-
-----
-
 Category: 
+
+----
+
+Tool: - page://twn338wLgc6hHpxd
+
+----
+
+Mediatype: Image
 
 ----
 
@@ -26,4 +26,4 @@ Uuid: 0gNktDw25eeNj9T4
 
 ----
 
-Template: media
+Template: media-project

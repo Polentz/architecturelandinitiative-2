@@ -10,7 +10,15 @@ Alt:
 
 ----
 
+Category: 
+
+----
+
 Tool: 
+
+----
+
+Project: 
 
 ----
 
@@ -18,12 +26,8 @@ Mediatype: Plan
 
 ----
 
-Category: Archive material
-
-----
-
 Uuid: a6YqpFYM5rQkzrON
 
 ----
 
-Template: media
+Template: media-project

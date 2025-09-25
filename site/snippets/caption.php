@@ -1,17 +1,16 @@
-<?php
-
-$parentPage = $media->parent();
-$selectFiltersOptions = $parentPage->blueprint()->field('selectFilters')['options'] ?? [];
-
-?>
-
 <figcaption class="gallery-item-caption">
     <div class="text-label">
         <?php foreach ($page->selectFilters()->split() as $filter) : ?>
             <?php if ($media->{$filter}()->isNotEmpty()) : ?>
                 <?php $label = t('filters.' . $filter, $filter); ?>
-                <?php if ($filter === 'tool' || $filter === 'project') : ?>
-                    <p><?= $label ?>: <a href="<?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->url() : '' ?>"><?= $media->{$filter}()->isNotEmpty() ? $media->{$filter}()->toPage()->title() : '' ?></a></p>
+                <?php if ($filter === 'tool') : ?>
+                    <?php if ($related = $media->tool()->toPage()): ?>
+                        <p><?= $label ?>: <a href="<?= $related->url() ?>"><?= $related->title() ?></a></p>
+                    <?php endif ?>
+                <?php elseif ($filter === 'project') : ?>
+                    <?php if ($related = $media->project()->toPage()): ?>
+                        <p><?= $label ?>: <a href="<?= $related->url() ?>"><?= $related->title() ?></a></p>
+                    <?php endif ?>
                 <?php else : ?>
                     <p><?= $label ?>: <?= $media->{$filter}() ?></p>
                 <?php endif ?>

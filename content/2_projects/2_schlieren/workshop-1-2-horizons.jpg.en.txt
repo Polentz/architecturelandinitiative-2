@@ -6,4 +6,4 @@ Uuid: lO8madERIHzTZF9d
 
 ----
 
-Template: media
+Template: media-project

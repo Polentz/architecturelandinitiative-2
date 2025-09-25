@@ -26,4 +26,4 @@ Uuid: lEl8UzxvpoVrE2nE
 
 ----
 
-Template: media
+Template: media-project

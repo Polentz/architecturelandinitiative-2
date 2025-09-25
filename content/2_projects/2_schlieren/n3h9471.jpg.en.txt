@@ -10,7 +10,15 @@ Alt:
 
 ----
 
+Category: 
+
+----
+
 Tool: 
+
+----
+
+Project: 
 
 ----
 
@@ -18,12 +26,8 @@ Mediatype: Image
 
 ----
 
-Category: Site visit
-
-----
-
 Uuid: W0AjvhCmYqjX5JHd
 
 ----
 
-Template: media
+Template: media-project

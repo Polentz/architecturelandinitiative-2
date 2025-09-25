@@ -1,46 +1,33 @@
 <?php
-
-use Kirby\Toolkit\Str;
-
-$pageFiles = $page->gallery()->toFiles();
-
-function mediaDataset($media): string
-{
-    $dataset = [
-        'data-category' => $media->category()->slug(),
-        'data-type' => $media->mediatype()->slug(),
-        'data-tool' => $media->tool()->isNotEmpty() ? Str::slug($media->tool()->toPage()->title()) : '',
-        'data-project' => $media->project()->isNotEmpty() ? Str::slug($media->project()->toPage()->title()) : ''
-    ];
-
-    $attributes = '';
-    foreach ($dataset as $key => $value) {
-        $attributes .= $key . '="' . esc($value) . '" ';
-    }
-
-    return trim($attributes);
-}
-
+$mediaAttributes = function ($media) {
+    return 'data-category="' . $media->category()->slug() . '" ' .
+        'data-type="' . $media->mediatype()->slug() . '" ' .
+        'data-tool="' . (($related = $media->tool()->toPage()) ? $related->title()->slug() : '') . '" ' .
+        'data-project="' . (($related = $media->project()->toPage()) ? $related->title()->slug() : '') . '"';
+};
 ?>
 
 <section class="gallery grid items-container">
-    <?php foreach ($pageFiles as $media) : ?>
+    <?php foreach ($page->gallery()->toFiles() as $media) : ?>
         <?php if ($media->type() == 'image') : ?>
-            <figure class="gallery-item image-item" <?= mediaDataset($media) ?>>
+            <figure class="gallery-item image-item" <?= $mediaAttributes($media) ?>>
+
                 <img class="image lazy" src="" data-src="<?= $media->resize(1200, null)->url() ?>" alt="<?= $media->alt() ?>" />
                 <?= snippet('caption', ['media' => $media]) ?>
             </figure>
         <?php endif ?>
 
         <?php if ($media->type() == 'video') : ?>
-            <figure class="gallery-item video-item" <?= mediaDataset($media) ?>>
+            <figure class="gallery-item video-item" <?= $mediaAttributes($media) ?>>
+
                 <video class="video" src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
                 <?= snippet('caption', ['media' => $media]) ?>
             </figure>
         <?php endif ?>
 
         <?php if ($media->type() == 'audio') : ?>
-            <figure class="gallery-item audio-item" <?= mediaDataset($media) ?>>
+            <figure class="gallery-item audio-item" <?= $mediaAttributes($media) ?>>
+
                 <div class="audio-player">
                     <div class="audio-player-wrapper">
                         <div class="audio-play ui-button">
@@ -81,7 +68,8 @@ function mediaDataset($media): string
         <?php endif ?>
 
         <?php if ($media->type() == 'document') : ?>
-            <figure class="gallery-item document-item" <?= mediaDataset($media) ?>>
+            <figure class="gallery-item document-item" <?= $mediaAttributes($media) ?>>
+
                 <div class="document-wrapper">
                     <?php if ($media->caption()->isNotEmpty()) : ?>
                         <?= $media->caption()->kt() ?>

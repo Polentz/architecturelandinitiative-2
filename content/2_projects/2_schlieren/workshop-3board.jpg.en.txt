@@ -6,4 +6,4 @@ Uuid: atZDV0k1NI9nZg2e
 
 ----
 
-Template: media
+Template: media-project

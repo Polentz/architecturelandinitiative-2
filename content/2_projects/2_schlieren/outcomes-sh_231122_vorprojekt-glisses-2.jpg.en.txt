@@ -10,7 +10,15 @@ Alt:
 
 ----
 
+Category: 
+
+----
+
 Tool: 
+
+----
+
+Project: 
 
 ----
 
@@ -18,12 +26,8 @@ Mediatype: Plan
 
 ----
 
-Category: Outcome
-
-----
-
 Uuid: YHCqlxWvoI4qR28N
 
 ----
 
-Template: media
+Template: media-project

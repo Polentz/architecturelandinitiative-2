@@ -6,4 +6,4 @@ Uuid: k02zeWeEZIFjH7NS
 
 ----
 
-Template: media
+Template: media-project

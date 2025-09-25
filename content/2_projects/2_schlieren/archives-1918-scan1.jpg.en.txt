@@ -18,11 +18,11 @@ Tool:
 
 ----
 
-Project: 
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Project: 
 
 ----
 

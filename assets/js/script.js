@@ -326,8 +326,8 @@ const bannerOpener = () => {
 
 const showInnerMenu = () => {
     const targetElement = document.querySelector(".inner-menu");
-    const toTopButton = document.querySelector(".top-button");
     if (!targetElement) return;
+    const toTopButton = document.querySelector(".top-button");
     if (!toTopButton) return;
     const callback = (entries) => {
         entries.forEach(entry => {
@@ -352,6 +352,7 @@ const showInnerMenu = () => {
 
 const handleFiltersBox = () => {
     const container = document.querySelector(".filters");
+    if (!container) return;
     const openButton = container.querySelector(".filter-button");
     if (!openButton) return;
     const innerBox = document.querySelector(".filters-wrapper");
@@ -387,15 +388,14 @@ const handleFiltersBox = () => {
     });
 };
 
-const handleFiltersAndCategories = () => {
-    const filterContainer = document.querySelector(".filters");
+const handleFilters = (items) => {
     const innerMenu = document.querySelector(".inner-menu");
-    if (!filterContainer || !innerMenu) return;
+    const filterContainer = document.querySelector(".filters");
+    if (!innerMenu || !filterContainer) return;
     const filters = document.querySelectorAll(".filter");
     const categories = document.querySelectorAll(".category");
     const itemsContainer = document.querySelector(".items-container");
-    const items = itemsContainer.querySelectorAll(".gallery-item");
-
+    if (!itemsContainer) return;
     const filterClear = document.querySelector(".filter-deselect");
     const categoryClear = document.querySelector(".category-deselect");
 
@@ -418,7 +418,6 @@ const handleFiltersAndCategories = () => {
         items.forEach(item => {
             let matchedFilter = false;
             let matchedCategory = false;
-
             // --- check filters ---
             if (currentFilter && currentFilter.id !== "all") {
                 const filterId = currentFilter.id;
@@ -455,9 +454,9 @@ const handleFiltersAndCategories = () => {
         });
 
         // show/hide counter only when filter is active
-        if (currentFilter && currentFilter.id !== "all") {
+        if (counter && currentFilter && currentFilter.id !== "all") {
             counter.style.display = "block";
-        } else {
+        } else if (counter && !currentFilter) {
             counter.style.display = "none";
         };
     };
@@ -503,27 +502,26 @@ const handleFiltersAndCategories = () => {
     };
 
     // --- filters group ---
+    if (!filters) return;
     filters.forEach(filter => {
         filter.addEventListener("click", () => {
             [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
             filter.classList.add("--target");
             currentFilter = filter;
-
             filterClear.classList.add("--display");
             setTimeout(() => filterClear.classList.add("--opacity"), 100);
-
             applyFilters();
             scrollToPosition(itemsContainer);
         });
     });
 
     // --- categories group ---
+    if (!categories) return;
     categories.forEach(category => {
         category.addEventListener("click", () => {
             [...categories].filter(i => i !== category).forEach(i => i.classList.remove("--target"));
             category.classList.add("--target");
             currentCategory = category;
-
             applyFilters();
             disableFilters();
             scrollToPosition(itemsContainer);
@@ -531,82 +529,85 @@ const handleFiltersAndCategories = () => {
     });
 
     // --- clear only filters ---
+    if (!filterClear) return;
     filterClear.addEventListener("click", () => {
         removeFilters();
         scrollToPosition(itemsContainer);
     });
 
     // --- clear only categories ---
+    if (!categoryClear) return;
     categoryClear.addEventListener("click", () => {
         removeCategories();
         scrollToPosition(itemsContainer);
     });
 }
 
-const handleFilters = () => {
-    const filters = document.querySelectorAll(".filter");
-    const itemsContainer = document.querySelector(".items-container");
-    const items = itemsContainer.querySelectorAll(".accordion");
-    const filterClear = document.querySelector(".filter-deselect");
-    const counter = document.querySelector(".filter-button-counter");
+// const handleFilters = () => {
+//     const filters = document.querySelectorAll(".filter");
+//     if (!filters) return;
+//     const itemsContainer = document.querySelector(".items-container");
+//     const items = itemsContainer.querySelectorAll(".accordion");
+//     const filterClear = document.querySelector(".filter-deselect");
+//     const counter = document.querySelector(".filter-button-counter");
 
-    const applyFilters = (filter) => {
-        const filterItems = (item) => {
-            item.classList.remove("--unfiltered");
-            item.classList.add("--filtered");
-        };
+//     const applyFilters = (filter) => {
+//         const filterItems = (item) => {
+//             item.classList.remove("--unfiltered");
+//             item.classList.add("--filtered");
+//         };
 
-        const unfilterItems = (item) => {
-            item.classList.add("--unfiltered");
-            item.classList.remove("--filtered");
-        };
+//         const unfilterItems = (item) => {
+//             item.classList.add("--unfiltered");
+//             item.classList.remove("--filtered");
+//         };
 
-        const filterId = filter.id;
+//         const filterId = filter.id;
 
-        items.forEach(item => {
-            const itemType = item.dataset.type;
-            const itemProject = item.dataset.project;
-            const itemMembers = item.dataset.members;
-            if (itemType === filterId || itemProject === filterId || (itemMembers && itemMembers.includes(filter.textContent))) {
-                filterItems(item);
-            } else {
-                unfilterItems(item);
-            };
-        });
-        counter.style.display = "block";
-    };
+//         items.forEach(item => {
+//             const itemType = item.dataset.type;
+//             const itemProject = item.dataset.project;
+//             const itemMembers = item.dataset.members;
+//             if (itemType === filterId || itemProject === filterId || (itemMembers && itemMembers.includes(filter.textContent))) {
+//                 filterItems(item);
+//             } else {
+//                 unfilterItems(item);
+//             };
+//         });
+//         counter.style.display = "block";
+//     };
 
-    const removeFilters = () => {
-        filterClear.classList.remove("--opacity");
-        filterClear.classList.remove("--display");
-        filters.forEach(filter => {
-            filter.classList.remove("--target");
-        });
-        items.forEach(item => {
-            item.classList.remove("--unfiltered");
-            item.classList.remove("--filtered");
-        });
-        counter.style.display = "none";
-    };
+//     const removeFilters = () => {
+//         filterClear.classList.remove("--opacity");
+//         filterClear.classList.remove("--display");
+//         filters.forEach(filter => {
+//             filter.classList.remove("--target");
+//         });
+//         items.forEach(item => {
+//             item.classList.remove("--unfiltered");
+//             item.classList.remove("--filtered");
+//         });
+//         counter.style.display = "none";
+//     };
 
-    filters.forEach(filter => {
-        filter.addEventListener("click", () => {
-            [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
-            filter.classList.add("--target");
-            filterClear.classList.add("--display");
-            setTimeout(() => {
-                filterClear.classList.add("--opacity");
-            }, 100);
-            applyFilters(filter);
-            scrollToPosition(itemsContainer);
-        });
-    });
+//     filters.forEach(filter => {
+//         filter.addEventListener("click", () => {
+//             [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
+//             filter.classList.add("--target");
+//             filterClear.classList.add("--display");
+//             setTimeout(() => {
+//                 filterClear.classList.add("--opacity");
+//             }, 100);
+//             applyFilters(filter);
+//             scrollToPosition(itemsContainer);
+//         });
+//     });
 
-    filterClear.addEventListener("click", () => {
-        removeFilters();
-        scrollToPosition(itemsContainer);
-    });
-};
+//     filterClear.addEventListener("click", () => {
+//         removeFilters();
+//         scrollToPosition(itemsContainer);
+//     });
+// };
 
 const handleGallery = () => {
     const galleryItems = document.querySelectorAll(".gallery-item");
@@ -1020,8 +1021,9 @@ const audioPlayer = () => {
 };
 
 const topButtonEvent = () => {
-    const target = document.querySelector(".top-button");
-    target.addEventListener("click", () => {
+    const toTopButton = document.querySelector(".top-button");
+    if (!toTopButton) return;
+    toTopButton.addEventListener("click", () => {
         scrollToTop();
     });
 };

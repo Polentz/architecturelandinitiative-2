@@ -1313,8 +1313,8 @@ input.seek-slider::-moz-range-thumb {
     height: fit-content;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: var(--small-margin) var(--main-margin);
     z-index: 999;
     transition: all .2s ease;
@@ -1330,6 +1330,8 @@ input.seek-slider::-moz-range-thumb {
     /* position: fixed;
     bottom: calc(var(--footer-height) + var(--small-margin));
     right: var(--main-margin); */
+    grid-column: 2 / 2;
+    justify-self: end;
     pointer-events: none;
     z-index: 2;
 }
@@ -1525,6 +1527,11 @@ input.seek-slider::-moz-range-thumb {
 .filter.--disabled {
     opacity: 0.4;
     pointer-events: none;
+}
+
+.categories {
+    grid-column: 1 / 2;
+    justify-self: start;
 }
 
 .categories-list,

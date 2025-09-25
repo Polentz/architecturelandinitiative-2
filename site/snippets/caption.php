@@ -21,7 +21,9 @@
         <?php endif ?>
     </div>
     <?php if ($media->caption()->isNotEmpty()) : ?>
-        <hr>
+        <?php if ($media->category()->isNotEmpty() || $page->selectFilters()->isNotEmpty()) : ?>
+            <hr>
+        <?php endif ?>
         <div class="text-label">
             <?= $media->caption()->kt() ?>
         </div>

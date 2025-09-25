@@ -1,6 +1,6 @@
 window.addEventListener("load", () => {
     handleFiltersBox();
-    handleFilters();
+    handleFilters(document.querySelectorAll(".accordion"));
     accordion();
     sortAccordion();
     topButtonEvent();

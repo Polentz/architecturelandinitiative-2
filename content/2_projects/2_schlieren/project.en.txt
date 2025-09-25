@@ -81,7 +81,7 @@ Background: - file://h7CLfR6e7n4Im1Fn
 
 ----
 
-Selectfilters: mediatype, tool
+Selectfilters: mediatype
 
 ----
 

@@ -18,7 +18,7 @@ Gallery:
 
 ----
 
-Background: - file://antiiaqmwmbyarxw
+Background: 
 
 ----
 

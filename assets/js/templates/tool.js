@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     lazyloading();
     handleFiltersBox();
-    handleFiltersAndCategories();
+    handleFilters(document.querySelectorAll(".gallery-item"));
     handleGallery();
     audioPlayer();
     topButtonEvent();

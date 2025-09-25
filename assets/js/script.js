@@ -327,28 +327,26 @@ const bannerOpener = () => {
 const showInnerMenu = () => {
     const targetElement = document.querySelector(".inner-menu");
     const toTopButton = document.querySelector(".top-button");
-
+    if (!targetElement) return;
+    if (!toTopButton) return;
     const callback = (entries) => {
         entries.forEach(entry => {
             if (entry.boundingClientRect.top <= 0) {
                 targetElement.classList.add("--sticky");
+            } else {
+                targetElement.classList.remove("--sticky");
+            };
+            if (entry.boundingClientRect.top <= 32) {
                 header.classList.add("--blur");
                 toTopButton.classList.add("--show");
-            } else if (entry.boundingClientRect.top > 0) {
-                targetElement.classList.remove("--sticky");
+            } else {
                 header.classList.remove("--blur");
                 toTopButton.classList.remove("--show");
-            }
+            };
         });
     };
 
-    // Create an Intersection Observer
-    const observer = new IntersectionObserver(callback, {
-        root: null, // Use the viewport as the root
-        threshold: 1 // Trigger when any part of the element is visible
-    });
-
-    // Start observing the target element
+    const observer = new IntersectionObserver(callback);
     observer.observe(targetElement);
 }
 
@@ -875,21 +873,28 @@ const handleMenuOnMobile = () => {
 };
 
 const lazyloading = () => {
-    let lazyloadMedia;
-    lazyloadMedia = document.querySelectorAll(".lazy");
-    const mediaObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
+    let lazyloadMedia = document.querySelectorAll(".lazy");
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const media = entry.target;
+                media.onload = () => {
+                    media.classList.add("lazy-loaded");
+                };
                 media.src = media.dataset.src;
-                lazyloadContainer = media.parentNode;
-                media.classList.remove("lazy");
-                mediaObserver.unobserve(media);
+                observer.unobserve(media);
             };
         });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+        root: null,
+        rootMargin: "200px 0px"
     });
-    lazyloadMedia.forEach((media) => {
-        mediaObserver.observe(media);
+
+    lazyloadMedia.forEach(media => {
+        observer.observe(media);
     });
 };
 

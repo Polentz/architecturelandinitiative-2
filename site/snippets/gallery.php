@@ -34,7 +34,7 @@ function mediaDataset($media): string
 
         <?php if ($media->type() == 'video') : ?>
             <figure class="gallery-item video-item" <?= mediaDataset($media) ?>>
-                <video class="video lazy" src="" data-src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
+                <video class="video" src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
                 <?= snippet('caption', ['media' => $media]) ?>
             </figure>
         <?php endif ?>

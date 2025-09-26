@@ -3,22 +3,39 @@
 use Kirby\Toolkit\Str;
 
 $pageBlocks = $page->blocks()->toBlocks();
-$selectFiltersOptions = $page->blueprint()->field('selectFilters')['options'] ?? [];
+$selectFilters = $page->selectFilters()->split();
 
-function getRelatedArray($collection, string $fieldName): array
-{
-    $related = [];
-    foreach ($collection as $file) {
-        if ($file->{$fieldName}()->isEmpty()) {
-            continue;
-        }
-        $relatedPage = $file->{$fieldName}()->toPage();
-        if ($relatedPage) {
-            $related[$relatedPage->id()] = $relatedPage;
+$getFilterLabels = function ($collection, string $field, array $structureMap = []): array {
+    $labels = [];
+    foreach ($collection as $item) {
+        if ($item->{$field}()->isEmpty()) continue;
+
+        $values = $item->{$field}()->split();
+
+        foreach ($values as $key) {
+            $label = $key;
+            if (isset($structureMap[$field])) {
+                $structureItem = $structureMap[$field]->findBy('key', $key);
+                if ($structureItem) $label = $structureItem->filter();
+            }
+            $labels[$key] = $label;
         }
     }
-    return array_values($related);
-}
+    asort($labels);
+    return $labels;
+};
+
+$getRelatedArray = function ($collection, string $fieldName): array {
+    $related = [];
+    foreach ($collection as $item) {
+        if ($item->{$fieldName}()->isEmpty()) continue;
+        $pageItem = $item->{$fieldName}()->toPage();
+        if ($pageItem) $related[$pageItem->id()] = $pageItem;
+    }
+    $relatedPages = array_values($related);
+    usort($relatedPages, fn($a, $b) => strcmp($a->title(), $b->title()));
+    return $relatedPages;
+};
 
 ?>
 
@@ -30,7 +47,7 @@ function getRelatedArray($collection, string $fieldName): array
                 <path d="M20 8L30 19.25M20 8L10 19.25M20 8L20 32" stroke="#ffffff" />
             </svg>
         </button>
-        <?php if ($page->selectFilters()->isNotEmpty()) : ?>
+        <?php if (!empty($selectFilters)) : ?>
             <button class="ui-button filter-button" type="button">
                 <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="39" height="39" fill="#1d1d1b" />
@@ -44,55 +61,67 @@ function getRelatedArray($collection, string $fieldName): array
             </button>
         <?php endif ?>
     </div>
-    <?php if ($page->selectFilters()->isNotEmpty()) : ?>
+
+    <?php if (!empty($selectFilters)) : ?>
         <div class="filters-wrapper">
-            <?php foreach ($page->selectFilters()->split() as $filter) : ?>
+
+            <?php foreach ($selectFilters as $filter) : ?>
                 <?php $label = t('filters.' . $filter, $filter); ?>
                 <div class="filter-header text-subtext">
                     <p><?= t('filter-by') ?> <?= strtolower($label) ?></p>
                 </div>
+
+                <!-- Project Filters -->
                 <?php if ($slots->projectFilters()) : ?>
                     <ul class="filter-list text-label">
-                        <?php if ($filter === 'mediatype') : ?>
-                            <?php foreach ($galleryFiles->pluck($filter, ',', true) as $type) : ?>
-                                <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php if (isset($structureMap[$filter])) : ?>
+                            <?php foreach ($getFilterLabels($galleryFiles, $filter, $structureMap) as $key => $label) : ?>
+                                <li id="<?= Str::slug($key) ?>" class="filter"><?= $label ?></li>
                             <?php endforeach ?>
                         <?php else : ?>
-                            <?php $relatedPages = getRelatedArray($galleryFiles, 'tool'); ?>
+                            <?php $relatedPages = $getRelatedArray($galleryFiles, 'tool'); ?>
                             <?php foreach ($relatedPages as $related) : ?>
                                 <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
                             <?php endforeach ?>
                         <?php endif ?>
                     </ul>
                 <?php endif ?>
+
+                <!-- Tool Filters -->
                 <?php if ($slots->toolFilters()) : ?>
                     <ul class="filter-list text-label">
-                        <?php if ($filter === 'mediatype') : ?>
-                            <?php foreach ($galleryFiles->pluck($filter, ',', true) as $type) : ?>
-                                <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php if (isset($structureMap[$filter])) : ?>
+                            <?php foreach ($getFilterLabels($galleryFiles, $filter, $structureMap) as $key => $label) : ?>
+                                <li id="<?= Str::slug($key) ?>" class="filter"><?= $label ?></li>
                             <?php endforeach ?>
                         <?php else : ?>
-                            <?php $relatedPages = getRelatedArray($galleryFiles, 'project'); ?>
+                            <?php $relatedPages = $getRelatedArray($galleryFiles, 'project'); ?>
                             <?php foreach ($relatedPages as $related) : ?>
                                 <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
                             <?php endforeach ?>
                         <?php endif ?>
                     </ul>
                 <?php endif ?>
+
+                <!-- Platform Filters -->
                 <?php if ($slots->platformFilters()) : ?>
                     <ul class="filter-list text-label">
-                        <?php if ($filter === 'itemtype' || $filter === 'members') : ?>
-                            <?php foreach ($pageBlocks->pluck($filter, ',', true) as $type) : ?>
-                                <li id="<?= Str::slug($type) ?>" class="filter"><?= $type ?></li>
+                        <?php if (isset($structureMap[$filter])) : ?>
+                            <?php $labels = $getFilterLabels($pageBlocks, $filter, $structureMap); ?>
+                            <?php foreach ($labels as $key => $label) : ?>
+                                <li <?php if ($filter === 'members') : ?>data-key="<?= $key ?>" <?php else : ?>id="<?= Str::slug($key) ?>" <?php endif ?> class="filter">
+                                    <?= $label ?>
+                                </li>
                             <?php endforeach ?>
                         <?php else : ?>
-                            <?php $relatedPages = getRelatedArray($pageBlocks, 'project'); ?>
+                            <?php $relatedPages = $getRelatedArray($pageBlocks, 'project'); ?>
                             <?php foreach ($relatedPages as $related) : ?>
                                 <li id="<?= Str::slug($related->title()) ?>" class="filter"><?= $related->title() ?></li>
                             <?php endforeach ?>
                         <?php endif ?>
                     </ul>
                 <?php endif ?>
+
             <?php endforeach ?>
 
             <div id="all" class="filter filter-deselect text-label">

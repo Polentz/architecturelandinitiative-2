@@ -1,9 +1,18 @@
 <?php
+
+use Kirby\Toolkit\Str;
+
 $mediaAttributes = function ($media) {
-    return 'data-category="' . $media->category()->slug() . '" ' .
-        'data-type="' . $media->mediatype()->slug() . '" ' .
-        'data-tool="' . (($related = $media->tool()->toPage()) ? $related->title()->slug() : '') . '" ' .
-        'data-project="' . (($related = $media->project()->toPage()) ? $related->title()->slug() : '') . '"';
+    $categoryKey = $media->category()->value() ?? '';
+    $mediatypeKey = $media->mediatype()->value() ?? '';
+
+    $toolSlug    = ($related = $media->tool()->toPage()) ? Str::slug($related->title()) : '';
+    $projectSlug = ($related = $media->project()->toPage()) ? Str::slug($related->title()) : '';
+
+    return 'data-category="' . Str::slug($categoryKey) . '" ' .
+        'data-type="' . Str::slug($mediatypeKey) . '" ' .
+        'data-tool="' . $toolSlug . '" ' .
+        'data-project="' . $projectSlug . '"';
 };
 ?>
 

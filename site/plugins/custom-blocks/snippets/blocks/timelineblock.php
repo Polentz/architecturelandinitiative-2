@@ -1,16 +1,39 @@
 <?php
 
+use Kirby\Toolkit\Str;
+
 $relatedProject = $block->project()->toPage();
 $relatedProjectTitle = $relatedProject ? $relatedProject->title() : null;
 $relatedProjectUrl = $relatedProject ? $relatedProject->url() : null;
 
+
+// Get itemtype key & label
+$itemtypeKey   = $block->itemtype()->value();
+$itemtypeLabel = $itemtypeKey;
+if ($itemtypeKey && isset($structureMap['itemtype'])) {
+    $itemtypeStructure = $structureMap['itemtype']->findBy('key', $itemtypeKey);
+    if ($itemtypeStructure) $itemtypeLabel = $itemtypeStructure->filter();
+}
+
+$blockAttributes = function ($block) {
+    $itemtypeKey = $block->itemtype()->value() ?? '';
+    $membersKey = $block->members() ?? '';
+
+    $projectSlug = ($related = $block->project()->toPage()) ? Str::slug($related->title()) : '';
+
+    return
+        'data-date=="' . $block->date() . '" ' .
+        'data-type="' . Str::slug($itemtypeKey) . '" ' .
+        'data-project="' . $projectSlug . '"' .
+        'data-members="' . ($membersKey ?? '') . '"';
+};
 ?>
 
-<div class="accordion" data-title="<?= $block->title() ?>" data-date="<?= $block->date() ?>" data-type="<?= $block->itemtype()->slug() ?>" data-project="<?= $relatedProjectTitle->slug() ?>" data-members="<?= $block->members() ?>">
+<div class="accordion" <?= $blockAttributes($block) ?>>
     <ul class="accordion-topbar accordion-opener">
         <li class="accordion-topbar-item text-label"><?= $block->title() ?></li>
         <li class="accordion-topbar-item text-label"><?= $block->eventdate() ?></li>
-        <li class="accordion-topbar-item text-label"><?= $block->itemtype() ?></li>
+        <li class="accordion-topbar-item text-label"><?= $itemtypeLabel ?></li>
         <?php if ($block->where()->isNotEmpty()) : ?>
             <li class="accordion-topbar-item text-label"><?= $block->where() ?></li>
         <?php else : ?>

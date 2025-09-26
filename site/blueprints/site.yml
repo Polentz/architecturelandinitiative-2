@@ -145,17 +145,25 @@ tabs:
         fields:
           categories:
             label: "Categories"
-            width: 1/1
+            width: 1/2
             type: structure
+            sortBy: filter asc
             fields:
+              key:                
+                type: text
+                label: Key
               filter:
                 type: text
-                label: Filter
+                label: Filter name
           mediaFilters:
             label: "Media type"
             width: 1/2
             type: structure
+            sortBy: filter asc
             fields:
+              key: 
+                type: slug
+                label: Key
               filter:
                 type: text
                 label: Filter
@@ -163,7 +171,11 @@ tabs:
             label: "Event type"
             width: 1/2
             type: structure
+            sortBy: filter asc
             fields:
+              key:                
+                type: text
+                label: Key
               filter:
                 type: text
                 label: Filter   
@@ -171,10 +183,17 @@ tabs:
             label: "Members"
             width: 1/2
             type: structure
+            sortBy: filter asc
             fields:
+              key:                
+                type: text
+                label: Key
+              key: 
+                type: text
+                label: Key
               filter:
                 type: text
-                label: Filter
+                label: Filter Name
   seo:
     label: Website metadata
     icon: angle-right

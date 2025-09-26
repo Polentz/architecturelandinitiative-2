@@ -29,96 +29,131 @@ Instagramicon: icon
 Categories:
 
 - 
+  key: Archive material
   filter: Archive material
 - 
-  filter: Research
-- 
+  key: Event
   filter: Event
 - 
+  key: Outcome
   filter: Outcome
 - 
-  filter: Site visit
-- 
+  key: Process
   filter: Process
+- 
+  key: Research
+  filter: Research
+- 
+  key: Site visit
+  filter: Site visit
 
 ----
 
 Mediafilters:
 
 - 
-  filter: Image
-- 
-  filter: Map
-- 
-  filter: Plan
-- 
+  key: Audio
   filter: Audio
 - 
-  filter: Video
-- 
+  key: Document
   filter: Document
 - 
+  key: Drawing
   filter: Drawing
 - 
+  key: Image
+  filter: Photo
+- 
+  key: Map
+  filter: Map
+- 
+  key: Plan
+  filter: Plan
+- 
+  key: Podcast
+  filter: Podcast
+- 
+  key: Printed matter
   filter: Printed matter
 - 
-  filter: Podcast
+  key: Video
+  filter: Video
 
 ----
 
 Platformfilters:
 
 - 
-  filter: Exhibition
-- 
-  filter: Exhibition on-line
-- 
-  filter: Grant
-- 
-  filter: Fellowship
-- 
-  filter: Residency
-- 
-  filter: Report
-- 
-  filter: Publication
-- 
+  key: Article
   filter: Article
 - 
-  filter: Exhibition catalogue
-- 
-  filter: Resource
-- 
-  filter: Reading
-- 
+  key: Talk
   filter: Talk
 - 
+  key: Exhibition
+  filter: Exhibition
+- 
+  key: Exhibition catalogue
+  filter: Exhibition catalogue
+- 
+  key: Exhibition on-line
+  filter: Exhibition on-line
+- 
+  key: Fellowship
+  filter: Fellowship
+- 
+  key: Grant
+  filter: Grant
+- 
+  key: Lecture
   filter: Lecture
+- 
+  key: Publication
+  filter: Publication
+- 
+  key: Reading
+  filter: Reading
+- 
+  key: Report
+  filter: Report
+- 
+  key: Residency
+  filter: Residency
+- 
+  key: Resource
+  filter: Resource
 
 ----
 
 Membersfilters:
 
 - 
-  filter: Andreas Schrämli
-- 
-  filter: Aurélie Dupuis
-- 
-  filter: Dieter Dietz
-- 
-  filter: Guillaume Othenin-Girard
-- 
-  filter: Joshua Guiness
-- 
-  filter: Kent Mundle
-- 
-  filter: Léonore Nemec
-- 
+  key: Alexa den Hartog
   filter: Alexa den Hartog
 - 
-  filter: Zoé Lefèvre
+  key: Andreas Schrämli
+  filter: Andreas Schrämli new
 - 
-  filter: Giulia Polenta
+  key: Aurélie Dupuis
+  filter: Aurélie Dupuis
+- 
+  key: Dieter Dietz
+  filter: Dieter Dietz
+- 
+  key: Guillaume Othenin-Girard
+  filter: Guillaume Othenin-Girard
+- 
+  key: Joshua Guiness
+  filter: Joshua Guiness
+- 
+  key: Kent Mundle
+  filter: Kent Mundle
+- 
+  key: Léonore Nemec
+  filter: Léonore Nemec
+- 
+  key: Zoé Lefèvre
+  filter: Zoé Lefèvre
 
 ----
 

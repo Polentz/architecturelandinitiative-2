@@ -215,6 +215,7 @@ button {
 hr {
     border-top: var(--border-black);
     border-bottom: none;
+    margin: .25rem 0;
 }
 
 img::-moz-selection {

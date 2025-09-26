@@ -43,7 +43,7 @@ columns:
               type: query
               query: site.categories.toStructure
               text: "{{ item.filter }}"
-              value: "{{ item.filter }}"    
+              value: "{{ item.key }}"   
           tool:
             label: Related tool
             type: pages
@@ -66,4 +66,4 @@ columns:
               type: query
               query: site.mediaFilters.toStructure
               text: "{{ item.filter }}"
-              value: "{{ item.filter }}"   
+              value: "{{ item.key }}"   

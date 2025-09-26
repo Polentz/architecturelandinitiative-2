@@ -388,160 +388,160 @@ const handleFiltersBox = () => {
     });
 };
 
-const longerHandleFilters = (items) => {
-    const innerMenu = document.querySelector(".inner-menu");
-    const filterContainer = document.querySelector(".filters");
-    if (!innerMenu || !filterContainer) return;
-    const filters = document.querySelectorAll(".filter");
-    const categories = document.querySelectorAll(".category");
-    const itemsContainer = document.querySelector(".items-container");
-    if (!itemsContainer) return;
-    const filterClear = document.querySelector(".filter-deselect");
-    const categoryClear = document.querySelector(".category-deselect");
+// const longerHandleFilters = (items) => {
+//     const innerMenu = document.querySelector(".inner-menu");
+//     const filterContainer = document.querySelector(".filters");
+//     if (!innerMenu || !filterContainer) return;
+//     const filters = document.querySelectorAll(".filter");
+//     const categories = document.querySelectorAll(".category");
+//     const itemsContainer = document.querySelector(".items-container");
+//     if (!itemsContainer) return;
+//     const filterClear = document.querySelector(".filter-deselect");
+//     const categoryClear = document.querySelector(".category-deselect");
 
-    const counter = document.querySelector(".filter-button-counter");
+//     const counter = document.querySelector(".filter-button-counter");
 
-    let currentFilter = null;
-    let currentCategory = null;
+//     let currentFilter = null;
+//     let currentCategory = null;
 
-    const applyFilters = () => {
-        const filterItems = (item) => {
-            item.classList.remove("--unfiltered");
-            item.classList.add("--filtered");
-        };
+//     const applyFilters = () => {
+//         const filterItems = (item) => {
+//             item.classList.remove("--unfiltered");
+//             item.classList.add("--filtered");
+//         };
 
-        const unfilterItems = (item) => {
-            item.classList.add("--unfiltered");
-            item.classList.remove("--filtered");
-        };
+//         const unfilterItems = (item) => {
+//             item.classList.add("--unfiltered");
+//             item.classList.remove("--filtered");
+//         };
 
-        items.forEach(item => {
-            let matchedFilter = false;
-            let matchedCategory = false;
-            // --- check filters ---
-            if (currentFilter && currentFilter.id !== "all") {
-                const filterId = currentFilter.id;
-                Object.keys(item.dataset).forEach(key => {
-                    if (
-                        item.dataset[key] === filterId ||
-                        (key === "members" && item.dataset[key].includes(currentFilter.textContent))
-                    ) {
-                        matchedFilter = true;
-                    }
-                });
-            } else {
-                matchedFilter = true; // no filter = all pass
-            };
+//         items.forEach(item => {
+//             let matchedFilter = false;
+//             let matchedCategory = false;
+//             // --- check filters ---
+//             if (currentFilter && currentFilter.id !== "all") {
+//                 const filterId = currentFilter.id;
+//                 Object.keys(item.dataset).forEach(key => {
+//                     if (
+//                         item.dataset[key] === filterId ||
+//                         (key === "members" && item.dataset[key].includes(currentFilter.dataset.key))
+//                     ) {
+//                         matchedFilter = true;
+//                     }
+//                 });
+//             } else {
+//                 matchedFilter = true; // no filter = all pass
+//             };
 
-            // --- check categories ---
-            if (currentCategory && currentCategory.id !== "all") {
-                const categoryId = currentCategory.id;
-                Object.keys(item.dataset).forEach(key => {
-                    if (item.dataset[key] === categoryId) {
-                        matchedCategory = true;
-                    }
-                });
-            } else {
-                matchedCategory = true; // no category = all pass
-            };
+//             // --- check categories ---
+//             if (currentCategory && currentCategory.id !== "all") {
+//                 const categoryId = currentCategory.id;
+//                 Object.keys(item.dataset).forEach(key => {
+//                     if (item.dataset[key] === categoryId) {
+//                         matchedCategory = true;
+//                     }
+//                 });
+//             } else {
+//                 matchedCategory = true; // no category = all pass
+//             };
 
-            // must satisfy both
-            if (matchedFilter && matchedCategory) {
-                filterItems(item);
-            } else {
-                unfilterItems(item);
-            };
-        });
+//             // must satisfy both
+//             if (matchedFilter && matchedCategory) {
+//                 filterItems(item);
+//             } else {
+//                 unfilterItems(item);
+//             };
+//         });
 
-        // show/hide counter only when filter is active
-        if (counter && currentFilter && currentFilter.id !== "all") {
-            counter.style.display = "block";
-        } else if (counter && !currentFilter) {
-            counter.style.display = "none";
-        };
-    };
+//         // show/hide counter only when filter is active
+//         if (counter && currentFilter && currentFilter.id !== "all") {
+//             counter.style.display = "block";
+//         } else if (counter && !currentFilter) {
+//             counter.style.display = "none";
+//         };
+//     };
 
-    // --- disable filters only if a category is selected ---
-    const disableFilters = () => {
-        if (currentCategory && currentCategory.id !== "all") {
-            filters.forEach(filter => {
-                if (filter.id === "all") return;
-                const isAvailable = Array.from(items).some(item => {
-                    if (!item.classList.contains("--filtered")) return false;
-                    return Object.keys(item.dataset).some(key =>
-                        item.dataset[key] === filter.id
-                    );
-                });
-                filter.classList.toggle("--disabled", !isAvailable);
-            });
-        } else {
-            filters.forEach(filter => filter.classList.remove("--disabled"));
-        };
-    };
+//     // --- disable filters only if a category is selected ---
+//     const disableFilters = () => {
+//         if (currentCategory && currentCategory.id !== "all") {
+//             filters.forEach(filter => {
+//                 if (filter.id === "all") return;
+//                 const isAvailable = Array.from(items).some(item => {
+//                     if (!item.classList.contains("--filtered")) return false;
+//                     return Object.keys(item.dataset).some(key =>
+//                         item.dataset[key] === filter.id
+//                     );
+//                 });
+//                 filter.classList.toggle("--disabled", !isAvailable);
+//             });
+//         } else {
+//             filters.forEach(filter => filter.classList.remove("--disabled"));
+//         };
+//     };
 
-    // --- reset only filters ---
-    const removeFilters = () => {
-        filterClear.classList.remove("--opacity");
-        filterClear.classList.remove("--display");
+//     // --- reset only filters ---
+//     const removeFilters = () => {
+//         filterClear.classList.remove("--opacity");
+//         filterClear.classList.remove("--display");
 
-        filters.forEach(filter => filter.classList.remove("--target"));
-        currentFilter = null;
+//         filters.forEach(filter => filter.classList.remove("--target"));
+//         currentFilter = null;
 
-        applyFilters();
-    };
+//         applyFilters();
+//     };
 
-    // --- reset only categories ---
-    const removeCategories = () => {
-        categories.forEach(c => c.classList.remove("--target"));
-        currentCategory = null;
+//     // --- reset only categories ---
+//     const removeCategories = () => {
+//         categories.forEach(c => c.classList.remove("--target"));
+//         currentCategory = null;
 
-        // make categoryClear act as "all"
-        categoryClear.classList.add("--target");
+//         // make categoryClear act as "all"
+//         categoryClear.classList.add("--target");
 
-        applyFilters();
-    };
+//         applyFilters();
+//     };
 
-    // --- filters group ---
-    if (!filters) return;
-    filters.forEach(filter => {
-        filter.addEventListener("click", () => {
-            [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
-            filter.classList.add("--target");
-            currentFilter = filter;
-            filterClear.classList.add("--display");
-            setTimeout(() => filterClear.classList.add("--opacity"), 100);
-            applyFilters();
-            scrollToPosition(itemsContainer);
-        });
-    });
+//     // --- filters group ---
+//     if (!filters) return;
+//     filters.forEach(filter => {
+//         filter.addEventListener("click", () => {
+//             [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
+//             filter.classList.add("--target");
+//             currentFilter = filter;
+//             filterClear.classList.add("--display");
+//             setTimeout(() => filterClear.classList.add("--opacity"), 100);
+//             applyFilters();
+//             scrollToPosition(itemsContainer);
+//         });
+//     });
 
-    // --- categories group ---
-    if (!categories) return;
-    categories.forEach(category => {
-        category.addEventListener("click", () => {
-            [...categories].filter(i => i !== category).forEach(i => i.classList.remove("--target"));
-            category.classList.add("--target");
-            currentCategory = category;
-            applyFilters();
-            disableFilters();
-            scrollToPosition(itemsContainer);
-        });
-    });
+//     // --- categories group ---
+//     if (!categories) return;
+//     categories.forEach(category => {
+//         category.addEventListener("click", () => {
+//             [...categories].filter(i => i !== category).forEach(i => i.classList.remove("--target"));
+//             category.classList.add("--target");
+//             currentCategory = category;
+//             applyFilters();
+//             disableFilters();
+//             scrollToPosition(itemsContainer);
+//         });
+//     });
 
-    // --- clear only filters ---
-    if (!filterClear) return;
-    filterClear.addEventListener("click", () => {
-        removeFilters();
-        scrollToPosition(itemsContainer);
-    });
+//     // --- clear only filters ---
+//     if (!filterClear) return;
+//     filterClear.addEventListener("click", () => {
+//         removeFilters();
+//         scrollToPosition(itemsContainer);
+//     });
 
-    // --- clear only categories ---
-    if (!categoryClear) return;
-    categoryClear.addEventListener("click", () => {
-        removeCategories();
-        scrollToPosition(itemsContainer);
-    });
-}
+//     // --- clear only categories ---
+//     if (!categoryClear) return;
+//     categoryClear.addEventListener("click", () => {
+//         removeCategories();
+//         scrollToPosition(itemsContainer);
+//     });
+// }
 
 const handleFilters = (items) => {
     const innerMenu = document.querySelector(".inner-menu");
@@ -559,29 +559,57 @@ const handleFilters = (items) => {
     let currentCategory = null;
 
     const applyFilters = () => {
+        const filterIsAll = !currentFilter || currentFilter.id === "all";
+        const categoryIsAll = !currentCategory || currentCategory.id === "all";
+        const filterKey = currentFilter?.dataset?.key ?? null;
+        const filterId = currentFilter?.id ?? null;
+        const categoryId = currentCategory?.id ?? null;
+
         items.forEach(item => {
-            const matchesFilter =
-                !currentFilter || currentFilter.id === "all" ||
-                Object.keys(item.dataset).some(key =>
-                    item.dataset[key] === currentFilter.id ||
-                    (key === "members" && item.dataset[key].includes(currentFilter.textContent))
-                );
+            const dataset = item.dataset;
 
-            const matchesCategory =
-                !currentCategory || currentCategory.id === "all" ||
-                Object.keys(item.dataset).some(key =>
-                    item.dataset[key] === currentCategory.id
-                );
+            let matchesFilter = filterIsAll;
+            if (!matchesFilter) {
+                for (const key in dataset) {
+                    const value = dataset[key];
+                    if (!value) continue;
+                    if (key === "members") continue;
+                    if ((filterId && value === filterId) || (filterKey && value === filterKey)) {
+                        matchesFilter = true;
+                        break;
+                    };
+                };
 
-            item.classList.toggle("--filtered", matchesFilter && matchesCategory);
-            item.classList.toggle("--unfiltered", !(matchesFilter && matchesCategory));
+                if (!matchesFilter && dataset.members) {
+                    const members = dataset.members
+                        .split(",")
+                        .map(name => name.trim())
+                        .filter(Boolean); // remove empty entries
+                    if (filterKey && members.includes(filterKey)) {
+                        matchesFilter = true;
+                    };
+                };
+            };
+
+            let matchesCategory = categoryIsAll;
+            if (!matchesCategory) {
+                for (const key in dataset) {
+                    const value = dataset[key];
+                    if (!value) continue;
+                    if ((categoryId && value === categoryId)) {
+                        matchesCategory = true;
+                        break;
+                    };
+                };
+            };
+
+            const isMatch = matchesFilter && matchesCategory;
+            item.classList.toggle("--filtered", isMatch);
+            item.classList.toggle("--unfiltered", !isMatch);
         });
 
-        // show counter only when a filter (not "all") is active
         if (counter) {
-            counter.style.display = (currentFilter && currentFilter.id !== "all")
-                ? "block"
-                : "none";
+            counter.style.display = (!filterIsAll) ? "block" : "none";
         };
     };
 

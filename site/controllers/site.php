@@ -4,7 +4,6 @@ return function ($page) {
 
     $galleryFiles = $page->gallery()->toFiles();
 
-    // Collect non-empty categories
     $categories = [];
     foreach ($galleryFiles as $file) {
         $category = $file->category();
@@ -12,11 +11,18 @@ return function ($page) {
             $categories[] = $category;
         }
     }
-    // Remove duplicates
     $categories = array_unique($categories);
+
+    $structureMap = [
+        'category'  => site()->categories()->toStructure(),
+        'mediatype' => site()->mediaFilters()->toStructure(),
+        'itemtype'  => site()->platformFilters()->toStructure(),
+        'members'   => site()->membersFilters()->toStructure(),
+    ];
 
     return [
         'galleryFiles' => $galleryFiles,
         'categories' => $categories,
+        'structureMap' => $structureMap
     ];
 };

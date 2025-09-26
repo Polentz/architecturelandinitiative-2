@@ -21,7 +21,7 @@ return [
         'upcoming' => 'What\'s next:',
         'filters.itemtype' => 'Event type',
         'filters.project' => 'Related project',
-        'filters.members' => 'Members',
+        'filters.members' => 'Member',
         'filters.category' => 'Category',
         'filters.tool' => 'Related tool',
         'filters.mediatype' => 'Media type'

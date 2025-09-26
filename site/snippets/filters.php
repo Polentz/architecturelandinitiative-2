@@ -66,7 +66,7 @@ $getRelatedArray = function ($collection, string $fieldName): array {
         <div class="filters-wrapper">
 
             <?php foreach ($selectFilters as $filter) : ?>
-                <?php $label = t('filters.' . $filter, $filter); ?>
+                <?php $label = t('filters.' . $filter); ?>
                 <div class="filter-header text-subtext">
                     <p><?= t('filter-by') ?> <?= strtolower($label) ?></p>
                 </div>

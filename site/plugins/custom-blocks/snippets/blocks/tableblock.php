@@ -22,7 +22,8 @@ $blockAttributes = function ($block) {
     $projectSlug = ($related = $block->project()->toPage()) ? Str::slug($related->title()) : '';
 
     return
-        'data-date=="' . $block->date() . '" ' .
+        'data-date="' . $block->date() . '" ' .
+        'data-title="' . Str::slug($block->title()) . '" ' .
         'data-type="' . Str::slug($itemtypeKey) . '" ' .
         'data-project="' . $projectSlug . '"' .
         'data-members="' . ($membersKey ?? '') . '"';

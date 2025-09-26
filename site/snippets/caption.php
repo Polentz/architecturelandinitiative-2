@@ -28,7 +28,7 @@ $getFilterLabels = function ($media, $filter, $structureMap) {
         <?php foreach ($page->selectFilters()->split() as $filter) : ?>
             <?php if ($media->{$filter}()->isNotEmpty()) : ?>
 
-                <?php $label = t('filters.' . $filter, $filter); ?>
+                <?php $label = t('filters.' . $filter); ?>
 
                 <?php if ($filter === 'tool') : ?>
                     <?php if ($related = $media->tool()->toPage()): ?>

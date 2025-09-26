@@ -63,7 +63,7 @@ panel.plugin("architecturelandinitiative/blocks", {
       </k-writer-input>
       `
     },
-    timelineblock: {
+    tableblock: {
       template: `
         <div class="input-wrapper">
           <k-input class="input-title"

@@ -31,7 +31,7 @@ columns:
             label: Items
             type: blocks
             fieldsets:
-              - timelineblock
+              - tableblock
   sidebar:
     width: 1/3
     sections:

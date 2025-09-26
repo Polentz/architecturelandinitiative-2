@@ -49,7 +49,7 @@ Categories:
 
 ----
 
-Mediafilters:
+Mediatypes:
 
 - 
   key: Audio
@@ -61,11 +61,11 @@ Mediafilters:
   key: Drawing
   filter: Drawing
 - 
-  key: Image
-  filter: Photo
-- 
   key: Map
   filter: Map
+- 
+  key: Image
+  filter: Image
 - 
   key: Plan
   filter: Plan
@@ -78,6 +78,116 @@ Mediafilters:
 - 
   key: Video
   filter: Video
+
+----
+
+Itemtypes:
+
+- 
+  key: Article
+  filter: Article
+- 
+  key: Talk
+  filter: Talk
+- 
+  key: Exhibition
+  filter: Exhibition
+- 
+  key: Exhibition catalogue
+  filter: Exhibition catalogue
+- 
+  key: Exhibition on-line
+  filter: Exhibition on-line
+- 
+  key: Fellowship
+  filter: Fellowship
+- 
+  key: Grant
+  filter: Grant
+- 
+  key: Lecture
+  filter: Lecture
+- 
+  key: Publication
+  filter: Publication
+- 
+  key: Reading
+  filter: Reading
+- 
+  key: Report
+  filter: Report
+- 
+  key: Residency
+  filter: Residency
+- 
+  key: Resource
+  filter: Resource
+
+----
+
+Members:
+
+- 
+  key: Alexa den Hartog
+  filter: Alexa den Hartog
+- 
+  key: Andreas Schrämli
+  filter: Andreas Schrämli new
+- 
+  key: Aurélie Dupuis
+  filter: Aurélie Dupuis
+- 
+  key: Dieter Dietz
+  filter: Dieter Dietz
+- 
+  key: Guillaume Othenin-Girard
+  filter: Guillaume Othenin-Girard
+- 
+  key: Joshua Guiness
+  filter: Joshua Guiness
+- 
+  key: Kent Mundle
+  filter: Kent Mundle
+- 
+  key: Léonore Nemec
+  filter: Léonore Nemec
+- 
+  key: Zoé Lefèvre
+  filter: Zoé Lefèvre
+
+----
+
+Description: Architecture Land Initiative (ALIN) is a cooperative based in Geneva and Zurich. ALIN is a non-profit common-benefit platform
+
+----
+
+Keywords: architecture, landscape, urbanism, geneva, zurich, cooperative
+
+----
+
+Ogimage: 
+
+----
+
+Attachments: - file://IwFv4Qei142w05I6
+
+----
+
+Blocks: [{"content":{"subtitle":"","copy":"<p><em>Architecture Land Initiative</em> (ALIN) is a cooperative based in Geneva and Zürich (Switzerland). ALIN is a non-profit common-benefit platform.</p><p>We believe that architecture, landscape architecture and urbanism must strive for new and inclusive planning processes supporting the transformation and re-construction of our milieus. We seek to address the systemic challenges posed by the current climate crisis, rapid urbanisation and the threat of ecosystem collapse.</p><p>By bringing together a changing number of contributors with shared values and work ethos, ALIN, as a collective generates projects for the land and the city as architectures of contribution that foster space for life, with an expanded vision of creating and sharing values.</p><p>Our vision is embedded in trans-scalarity, from a temporal and territorial perspectives, with the aim of unveiling human and non-human affordances for a social and ecological transition. Our initiatives and collaborations range from the intimate scale, such as punctual cultural and popular events, to the large scale involving urban and territorial transformations.</p><p>The platform operates as a flexible infrastructure. It consists of a cooperative legal framework, a communication structure enabling collective work, a series of studios, as well as a set of tools and expertise consolidated in practice and made available to all. Its members – both practitioners and researchers – are connected to various research and teaching institutions in Switzerland and internationally (Zurich University, EPFL, Hong Kong University).</p><p>Currently led by Andreas Schrämli, Aurélie Dupuis, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec, Alexa den Hartog (PO4), and Zoé Lefèvre.</p>"},"id":"6dce526d-e7f8-42ed-9841-d3bf2ff4ba6a","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Andreas Schräml","copy":"<p>Andreas Schräml (CH, 19??)</p>"},"id":"5a1e1ad7-4b8a-407b-9c16-7d47a711a806","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Aurélie Dupuis","copy":"<p>Aurélie Dupuis (CH, 1989) is an architect, teacher and researcher, currently a doctoral student at the EPF in Lausanne. She is also a founding member of Architecture Land Initiative. Her research, at the intersection of architecture and performance arts and studies, explores the unspoken violence that arises from the limited understandings of the politics of body, movement and co-presence in Western architectural and spatial theory and practices and how this reductive pattern has been integrated into the history of the discipline. She thinks alongside architectural/spatial practices and performance arts as they relate to the collective imagination of alternative futurities. She is based in Geneva (GMT+1).</p>"},"id":"2c2c79e0-d446-46a6-804b-5091ba5e1c9b","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Dieter Dietz","copy":"<p>Dieter Dietz (CH, 1964)</p>","thumbnail":["file://TqHghA2HbhMD77YF"]},"id":"98f75fac-23de-47da-97e1-2f5d8638997c","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Guillaume Othenin-Girard","copy":"<p>Guillaume Othenin-Girard (CH, 1986) is an architect and an assistant professor in the Department of Architecture at the University of Hong Kong. He is also a founding member of Architecture Land Initiative. His teaching research focus on the cross-disciplinary potential between archaeology and architecture. He is currently developing an interpretive planning strategy for Armenia’s Vedi River Valley. Guillaume is interested in how the transformative agency of drawing carries the potential to maximise breadth of participation throughout the stages of planning, designing and building a vision that considers the landscape as a source of heritage in itself. He is based in Hong Kong (GMT+8).</p>","thumbnail":[]},"id":"3c10d2f2-36dc-470b-9b05-54e8ae1227c7","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Joshua Guiness","copy":"<p>Joshua Guiness (DE, 1994) is an architect whose main interests lie in urban transformation processes, spatial strategy, and theory. Educated at the University of the Arts in Berlin as well as ETH in Zurich, he joined Architecture Land Initiative in 2022, working primarily on the refurbishment and extension of a former industrial site in Schlieren on the outskirts of Zurich. Joshua is also a teaching and research assistant at VOLUPTAS, a speculative design studio at&nbsp; ETH Zurich. He is currently interested in modes of expanding architectural and spatial thought to the development of strategies for policy, culture, and society at large. ‍He is based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"a9643611-a212-44d5-9a94-a270df4b5593","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Kent Mundle","copy":"<p>Kent Mundle (CA, 1993) is a designer and lecturer at The University of Hong Kong, where he researches within the Rural Urban Lab, which is an initiative that focuses on researching and developing forms of affordable housing and community infrastructure for rapidly urbanising territories in developing economies. Kent’s work focuses on integrating emerging forms of housing types and emerging financial mechanisms to deliver housing in these areas in a post-welfare state context. As a part of Architecture Land Initiative, Kent is leading an initiative in Hong Kong to reintroduce new forms of cooperative housing. He is based in Hong Kong (GMT+8).&nbsp;</p>","thumbnail":[]},"id":"7213fc7b-f563-4372-b4b8-5dededb8f6c8","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Léonore Nemec","copy":"<p>Léonore Nemec (CH, 1988) is an architect active in collaborative projects with her own office Studio Nemec, Architecture Land Initiative and teaching. She has been working at Herzog and de Meuron and is currently working as a researcher at EPFL. Her interest in architecture and territory planning is primarily in their political and social dimensions. She believes that experimentation in spatial design is essential for a lasting engagement with the changing spaces - material, normative, ideological - of our societies. She is interested in the application of innovative research-based practices to concrete projects, from conception to completion. She is based in Geneva (GMT+1).</p>","thumbnail":[]},"id":"ea5aa503-447c-4f01-9966-abfd9f56ad9b","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Alexa den Hartog","copy":"<p>Alexa den Hartog (PO4) (CH, 1986) studied architecture in Lausanne, in Copenhagen and at the ETH Zurich. After gaining professional experiences in Basel, Zurich and Tokyo, she has been running the architecture firm PO4 seiler + den hartog architekten with her partner Yves Seiler since 2015. Their office is a co-founder of Architecture Land Initiative. Alexa is interested in the duality between the theoretical conception of architecture and its realisation. For her, architecture is a built form of political ideas and must therefore be treated with empathy at its core. Next to her design practice she is involved in teaching and professional organisations. She is based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"32450da3-afd5-4124-b2f7-ca6328318c2e","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Zoé Lefèvre","copy":"<p>Zoé Lefèvre (FR, 1993) is an architect and a member of Architecture Land Initiative. Her interests lie at the intersection of design, art, and politics, where she employs overlooked narratives and methods to explore issues connected to the built environment. In 2022, she gained valuable experience as a teaching assistant at SUPERSTUDIO, a prospective design studio at EPF Lausanne, engaging in interdisciplinary approaches at the intersection of architecture and the performing arts. In 2023, she actively participates in the Performing Landscape project, applying her expertise in cartography and spatial storytelling. She is based in Geneva (GMT+1).</p>","thumbnail":[]},"id":"8e6c9493-bc01-46ac-bc8b-7b4ec3068504","isHidden":false,"type":"sliderblock"}]
+
+----
+
+Aboutnavlabel: Cooperative
+
+----
+
+About:
+
+<p>Architecture Land Initiative (ALIN) is a cooperative based in Geneva and Zürich (Switzerland). ALIN is a non-profit common-benefit platform.</p>
+<p>We believe that architecture, landscape architecture and urbanism must strive for new and inclusive planning processes supporting the transformation and re-construction of our milieus. We seek to address the systemic challenges posed by the current climate crisis, rapid urbanisation and the threat of ecosystem collapse.</p>
+<p>By bringing together a changing number of contributors with shared values and work ethos, ALIN, as a collective generates projects for the land and the city as architectures of contribution that foster space for life, with an expanded vision of creating and sharing values.</p>
+<p>Our vision is embedded in trans-scalarity, from a temporal and territorial perspectives, with the aim of unveiling human and non-human affordances for a social and ecological transition. Our initiatives and collaborations range from the intimate scale, such as punctual cultural and popular events, to the large scale involving urban and territorial transformations.</p>
+<p>The platform operates as a flexible infrastructure. It consists of a cooperative legal framework, a communication structure enabling collective work, a series of studios, as well as a set of tools and expertise consolidated in practice and made available to all. Its members – both practitioners and researchers – are connected to various research and teaching institutions in Switzerland and internationally (Zurich University, EPFL, Hong Kong University).</p>
 
 ----
 
@@ -154,37 +264,3 @@ Membersfilters:
 - 
   key: Zoé Lefèvre
   filter: Zoé Lefèvre
-
-----
-
-Description: Architecture Land Initiative (ALIN) is a cooperative based in Geneva and Zurich. ALIN is a non-profit common-benefit platform
-
-----
-
-Keywords: architecture, landscape, urbanism, geneva, zurich, cooperative
-
-----
-
-Ogimage: 
-
-----
-
-Attachments: - file://IwFv4Qei142w05I6
-
-----
-
-Blocks: [{"content":{"subtitle":"","copy":"<p><em>Architecture Land Initiative</em> (ALIN) is a cooperative based in Geneva and Zürich (Switzerland). ALIN is a non-profit common-benefit platform.</p><p>We believe that architecture, landscape architecture and urbanism must strive for new and inclusive planning processes supporting the transformation and re-construction of our milieus. We seek to address the systemic challenges posed by the current climate crisis, rapid urbanisation and the threat of ecosystem collapse.</p><p>By bringing together a changing number of contributors with shared values and work ethos, ALIN, as a collective generates projects for the land and the city as architectures of contribution that foster space for life, with an expanded vision of creating and sharing values.</p><p>Our vision is embedded in trans-scalarity, from a temporal and territorial perspectives, with the aim of unveiling human and non-human affordances for a social and ecological transition. Our initiatives and collaborations range from the intimate scale, such as punctual cultural and popular events, to the large scale involving urban and territorial transformations.</p><p>The platform operates as a flexible infrastructure. It consists of a cooperative legal framework, a communication structure enabling collective work, a series of studios, as well as a set of tools and expertise consolidated in practice and made available to all. Its members – both practitioners and researchers – are connected to various research and teaching institutions in Switzerland and internationally (Zurich University, EPFL, Hong Kong University).</p><p>Currently led by Andreas Schrämli, Aurélie Dupuis, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec, Alexa den Hartog (PO4), and Zoé Lefèvre.</p>"},"id":"6dce526d-e7f8-42ed-9841-d3bf2ff4ba6a","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Andreas Schräml","copy":"<p>Andreas Schräml (CH, 19??)</p>"},"id":"5a1e1ad7-4b8a-407b-9c16-7d47a711a806","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Aurélie Dupuis","copy":"<p>Aurélie Dupuis (CH, 1989) is an architect, teacher and researcher, currently a doctoral student at the EPF in Lausanne. She is also a founding member of Architecture Land Initiative. Her research, at the intersection of architecture and performance arts and studies, explores the unspoken violence that arises from the limited understandings of the politics of body, movement and co-presence in Western architectural and spatial theory and practices and how this reductive pattern has been integrated into the history of the discipline. She thinks alongside architectural/spatial practices and performance arts as they relate to the collective imagination of alternative futurities. She is based in Geneva (GMT+1).</p>"},"id":"2c2c79e0-d446-46a6-804b-5091ba5e1c9b","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Dieter Dietz","copy":"<p>Dieter Dietz (CH, 1964)</p>","thumbnail":["file://TqHghA2HbhMD77YF"]},"id":"98f75fac-23de-47da-97e1-2f5d8638997c","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Guillaume Othenin-Girard","copy":"<p>Guillaume Othenin-Girard (CH, 1986) is an architect and an assistant professor in the Department of Architecture at the University of Hong Kong. He is also a founding member of Architecture Land Initiative. His teaching research focus on the cross-disciplinary potential between archaeology and architecture. He is currently developing an interpretive planning strategy for Armenia’s Vedi River Valley. Guillaume is interested in how the transformative agency of drawing carries the potential to maximise breadth of participation throughout the stages of planning, designing and building a vision that considers the landscape as a source of heritage in itself. He is based in Hong Kong (GMT+8).</p>","thumbnail":[]},"id":"3c10d2f2-36dc-470b-9b05-54e8ae1227c7","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Joshua Guiness","copy":"<p>Joshua Guiness (DE, 1994) is an architect whose main interests lie in urban transformation processes, spatial strategy, and theory. Educated at the University of the Arts in Berlin as well as ETH in Zurich, he joined Architecture Land Initiative in 2022, working primarily on the refurbishment and extension of a former industrial site in Schlieren on the outskirts of Zurich. Joshua is also a teaching and research assistant at VOLUPTAS, a speculative design studio at&nbsp; ETH Zurich. He is currently interested in modes of expanding architectural and spatial thought to the development of strategies for policy, culture, and society at large. ‍He is based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"a9643611-a212-44d5-9a94-a270df4b5593","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Kent Mundle","copy":"<p>Kent Mundle (CA, 1993) is a designer and lecturer at The University of Hong Kong, where he researches within the Rural Urban Lab, which is an initiative that focuses on researching and developing forms of affordable housing and community infrastructure for rapidly urbanising territories in developing economies. Kent’s work focuses on integrating emerging forms of housing types and emerging financial mechanisms to deliver housing in these areas in a post-welfare state context. As a part of Architecture Land Initiative, Kent is leading an initiative in Hong Kong to reintroduce new forms of cooperative housing. He is based in Hong Kong (GMT+8).&nbsp;</p>","thumbnail":[]},"id":"7213fc7b-f563-4372-b4b8-5dededb8f6c8","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Léonore Nemec","copy":"<p>Léonore Nemec (CH, 1988) is an architect active in collaborative projects with her own office Studio Nemec, Architecture Land Initiative and teaching. She has been working at Herzog and de Meuron and is currently working as a researcher at EPFL. Her interest in architecture and territory planning is primarily in their political and social dimensions. She believes that experimentation in spatial design is essential for a lasting engagement with the changing spaces - material, normative, ideological - of our societies. She is interested in the application of innovative research-based practices to concrete projects, from conception to completion. She is based in Geneva (GMT+1).</p>","thumbnail":[]},"id":"ea5aa503-447c-4f01-9966-abfd9f56ad9b","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Alexa den Hartog","copy":"<p>Alexa den Hartog (PO4) (CH, 1986) studied architecture in Lausanne, in Copenhagen and at the ETH Zurich. After gaining professional experiences in Basel, Zurich and Tokyo, she has been running the architecture firm PO4 seiler + den hartog architekten with her partner Yves Seiler since 2015. Their office is a co-founder of Architecture Land Initiative. Alexa is interested in the duality between the theoretical conception of architecture and its realisation. For her, architecture is a built form of political ideas and must therefore be treated with empathy at its core. Next to her design practice she is involved in teaching and professional organisations. She is based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"32450da3-afd5-4124-b2f7-ca6328318c2e","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Zoé Lefèvre","copy":"<p>Zoé Lefèvre (FR, 1993) is an architect and a member of Architecture Land Initiative. Her interests lie at the intersection of design, art, and politics, where she employs overlooked narratives and methods to explore issues connected to the built environment. In 2022, she gained valuable experience as a teaching assistant at SUPERSTUDIO, a prospective design studio at EPF Lausanne, engaging in interdisciplinary approaches at the intersection of architecture and the performing arts. In 2023, she actively participates in the Performing Landscape project, applying her expertise in cartography and spatial storytelling. She is based in Geneva (GMT+1).</p>","thumbnail":[]},"id":"8e6c9493-bc01-46ac-bc8b-7b4ec3068504","isHidden":false,"type":"sliderblock"}]
-
-----
-
-Aboutnavlabel: Cooperative
-
-----
-
-About:
-
-<p>Architecture Land Initiative (ALIN) is a cooperative based in Geneva and Zürich (Switzerland). ALIN is a non-profit common-benefit platform.</p>
-<p>We believe that architecture, landscape architecture and urbanism must strive for new and inclusive planning processes supporting the transformation and re-construction of our milieus. We seek to address the systemic challenges posed by the current climate crisis, rapid urbanisation and the threat of ecosystem collapse.</p>
-<p>By bringing together a changing number of contributors with shared values and work ethos, ALIN, as a collective generates projects for the land and the city as architectures of contribution that foster space for life, with an expanded vision of creating and sharing values.</p>
-<p>Our vision is embedded in trans-scalarity, from a temporal and territorial perspectives, with the aim of unveiling human and non-human affordances for a social and ecological transition. Our initiatives and collaborations range from the intimate scale, such as punctual cultural and popular events, to the large scale involving urban and territorial transformations.</p>
-<p>The platform operates as a flexible infrastructure. It consists of a cooperative legal framework, a communication structure enabling collective work, a series of studios, as well as a set of tools and expertise consolidated in practice and made available to all. Its members – both practitioners and researchers – are connected to various research and teaching institutions in Switzerland and internationally (Zurich University, EPFL, Hong Kong University).</p>

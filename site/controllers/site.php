@@ -15,9 +15,9 @@ return function ($page) {
 
     $structureMap = [
         'category'  => site()->categories()->toStructure(),
-        'mediatype' => site()->mediaFilters()->toStructure(),
-        'itemtype'  => site()->platformFilters()->toStructure(),
-        'members'   => site()->membersFilters()->toStructure(),
+        'mediatype' => site()->mediatypes()->toStructure(),
+        'itemtype'  => site()->itemtypes()->toStructure(),
+        'members'   => site()->members()->toStructure(),
     ];
 
     return [

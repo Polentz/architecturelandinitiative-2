@@ -70,6 +70,6 @@ columns:
             width: 1/2 
             options:
               type: query
-              query: site.mediaFilters.toStructure
+              query: site.mediatypes.toStructure
               text: "{{ item.filter }}"
               value: "{{ item.filter }}"   

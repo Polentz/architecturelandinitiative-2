@@ -34,7 +34,7 @@
             </div>
         </div>
         <?php snippet('filters', slots: true) ?>
-        <?= slot('platformFilters') ?>
+        <?= slot('itemtypes') ?>
         <?php endslot() ?>
         <?php endsnippet() ?>
     </section>

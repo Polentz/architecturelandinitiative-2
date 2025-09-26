@@ -41,7 +41,7 @@ columns:
             layout: list
             options:
               type: query
-              query: site.platformFilters.toStructure
+              query: site.itemtypes.toStructure
               text: "{{ item.filter }}"
               value: "{{ item.filter }}"
           filterName:
@@ -54,6 +54,6 @@ columns:
             layout: list
             options:
               type: query
-              query: site.membersFilters.toStructure
+              query: site.members.toStructure
               text: "{{ item.filter }}"
               value: "{{ item.filter }}"

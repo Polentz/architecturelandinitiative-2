@@ -31,7 +31,7 @@ fields:
     required: true
     options:
       type: query
-      query: site.platformFilters.toStructure
+      query: site.itemtypes.toStructure
       text: "{{ item.filter }}"
       value: "{{ item.filter }}"  
   members:
@@ -41,7 +41,7 @@ fields:
     min: 1
     options:
       type: query
-      query: site.membersFilters.toStructure
+      query: site.members.toStructure
       text: "{{ item.filter }}"
       value: "{{ item.filter }}" 
   topbar:

@@ -155,7 +155,7 @@ tabs:
               filter:
                 type: text
                 label: Filter name
-          mediaFilters:
+          mediatypes:
             label: "Media type"
             width: 1/2
             type: structure
@@ -167,7 +167,7 @@ tabs:
               filter:
                 type: text
                 label: Filter
-          platformFilters:
+          itemtypes:
             label: "Event type"
             width: 1/2
             type: structure
@@ -179,7 +179,7 @@ tabs:
               filter:
                 type: text
                 label: Filter   
-          membersFilters:
+          members:
             label: "Members"
             width: 1/2
             type: structure

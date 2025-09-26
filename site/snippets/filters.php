@@ -104,7 +104,7 @@ $getRelatedArray = function ($collection, string $fieldName): array {
                 <?php endif ?>
 
                 <!-- Platform Filters -->
-                <?php if ($slots->platformFilters()) : ?>
+                <?php if ($slots->itemtypes()) : ?>
                     <ul class="filter-list text-label">
                         <?php if (isset($structureMap[$filter])) : ?>
                             <?php $labels = $getFilterLabels($pageBlocks, $filter, $structureMap); ?>

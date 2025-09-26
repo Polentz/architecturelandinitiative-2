@@ -41,7 +41,7 @@ fields:
     width: 1/2 
     options:
       type: query
-      query: site.platformFilters.toStructure
+      query: site.itemtypes.toStructure
       text: "{{ item.filter }}"
       value: "{{ item.filter }}" 
   gap3:
@@ -67,7 +67,7 @@ fields:
     width: 1/2 
     options:
       type: query
-      query: site.membersFilters.toStructure
+      query: site.members.toStructure
       text: "{{ item.filter }}"
       value: "{{ item.filter }}" 
   image:

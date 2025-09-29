@@ -56,10 +56,10 @@
         --intro-text-size: 1.5rem;
         --big-title-size: 3.5rem;
         --label-text-size: .8rem;
-        --main-margin: 1.5rem;
+        --main-margin: 1.25rem;
         --half-margin: .75rem;
-        --inner-margin: 1.5rem;
-        --small-margin: .75rem;
+        --inner-margin: 1.25rem;
+        --small-margin: .5rem;
         --button-size: 2rem;
         --filters-wrapper-width: calc(100vw - var(--button-size) - var(--main-margin) * 2 + 2px);
     }

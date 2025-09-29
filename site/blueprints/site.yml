@@ -122,7 +122,7 @@ tabs:
             label: false
             type: info
             text: |
-              When updating an existing filter, always change the 'Filter Name' but keep the 'Key' the same. This way, your website will display the updated 'Filter Name' while keeping the filter properly assigned. If you change the 'Key' instead, every element on your site using that filter will lose it, and you'll need to reapply the filter manually. When creating a new filter, it's easiest to set the 'Key' and 'Filter Name' to match. Just keep in mind that keys must always be unique—no duplicates allowed.
+              When updating an existing filter, always change the 'Filter Name' but keep the 'Key' the same. This way, your website will display the updated 'Filter Name' while keeping the filter properly assigned. If you change the 'Key' instead, every element on your site using that filter will lose it, and you'll need to reapply the filter manually. When creating a new filter, it's easiest to set the 'Key' and 'Filter Name' to match, with the option to change the 'Filter Name' in the future. Just keep in mind that keys must always be unique—no duplicates allowed.
           categories:
             label: "Categories"
             width: 1/2

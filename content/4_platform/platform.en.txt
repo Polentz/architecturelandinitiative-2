@@ -832,7 +832,7 @@ Blocks:
             "subtitle": "",
             "eventdate": "29.11.2024",
             "where": "Hong Kong",
-            "itemtype": "Communication",
+            "itemtype": "Event",
             "project": [
                 "page://WOYRZn9TeLUnZp4x"
             ],

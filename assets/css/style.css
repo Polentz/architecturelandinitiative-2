@@ -716,10 +716,15 @@ video {
 }
 
 .slider-block .text-subtext,
-.text-block .text-subtext {
+.text-block .text-subtext,
+.text-block .text {
     -ms-grid-column: 2;
     -ms-grid-column-span: 3;
     grid-column: 2 / 5;
+}
+
+.slider-block .text {
+    grid-column: 1 / -1;
 }
 
 .text-block .thumbnail,
@@ -1959,12 +1964,10 @@ input.seek-slider::-moz-range-thumb {
     }
 
     .slider-block .text-label,
-    .text-block .text-label {
-        grid-column: 1 / -1;
-    }
-
+    .text-block .text-label,
     .slider-block .text-subtext,
-    .text-block .text-subtext {
+    .text-block .text-subtext,
+    .text-block .text {
         grid-column: 1 / -1;
     }
 

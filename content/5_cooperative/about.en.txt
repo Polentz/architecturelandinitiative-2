@@ -2,11 +2,24 @@ Title: Cooperative
 
 ----
 
-Intro: <p>Architecture Land Initiative is a cooperative. We initiate and carry out political action in the form of projects on landscape, public space and architecture. Currently living and working in Geneva, Zurich and Hong Kong, our members engage in diverse activities across research and design. As a cooperative, we are a common-benefit platform and not profit-oriented.</p><p>We deeply believe in collaborative practices and focus on projects with commons at their core. Acknowledging the urgency of planetary ecological and political crises, we seek to navigate conflicts and contradictions with care towards life. We strive to act towards non-exploitive economies and ecologies by exploring, imagining and supporting alternative forms of coexistence.</p><p>As spatial practitioners aware of the reproduction of normative schemes, we are committed to re-question the foundations of our disciplines, starting with our own interactions and tools. For each project, we assemble a situated, trans-scalar set of instruments with the aim of supporting oblique readings, hybridizations and collective re-articulations of knowledge and visions.</p><p>The cooperative operates as a flexible infrastructure, consisting of a cooperative legal framework, a communication structure for collective work, a series of studios, as well as a set of tools and expertise that we grow collectively. This open structure enables us to create a shared space for continuous experimentation between research and practice.</p><p>Currently led by Andreas Schrämli, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec and PO4 (Alexa den Hartog + Yves Seiler).</p>
+Intro: <p>Architecture Land Initiative is a cooperative. We initiate and carry out political action in the form of projects on landscape, public space and architecture. Currently living and working in Geneva, Zurich and Hong Kong, our members engage in diverse activities across research and design. As a cooperative, we are a common-benefit platform and not profit-oriented.</p><p>We deeply believe in collaborative practices and focus on projects with commons at their core. Acknowledging the urgency of planetary ecological and political crises, we seek to navigate conflicts and contradictions with care towards life. We strive to act towards non-exploitive economies and ecologies by exploring, imagining and supporting alternative forms of coexistence.</p><p>As spatial practitioners aware of the reproduction of normative schemes, we are committed to re-question the foundations of our disciplines, starting with our own interactions and tools. For each project, we assemble a situated, trans-scalar set of instruments with the aim of supporting oblique readings, hybridizations and collective re-articulations of knowledge and visions.</p>
 
 ----
 
-Textblocks: 
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "",
+            "copy": "<p>The cooperative operates as a flexible infrastructure, consisting of a cooperative legal framework, a communication structure for collective work, a series of studios, as well as a set of tools and expertise that we grow collectively. This open structure enables us to create a shared space for continuous experimentation between research and practice.</p><p>Currently led by Andreas Schrämli, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec and PO4 (Alexa den Hartog + Yves Seiler).</p>",
+            "thumbnail": []
+        },
+        "id": "bf737f03-2a5b-4aa5-ae07-f3de59ee8bf7",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
 
 ----
 

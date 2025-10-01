@@ -138,29 +138,61 @@ const cursor = () => {
 };
 
 const logoAnimation = () => {
-    document.fonts.ready.then(() => {
-        let splitLogo = SplitText.create(".logo-word", {
-            type: "words, chars",
-            tag: "span",
-            ignore: ".ignore",
-            charsClass: "letter",
-        });
+    let splitLogo = SplitText.create(".logo-word", {
+        type: "words, chars",
+        tag: "span",
+        ignore: ".ignore",
+        charsClass: "letter",
+    });
 
-        gsap.from(splitLogo.chars, {
-            duration: 1,
-            autoAlpha: 0,
-            scale: 0,
-            stagger: 0.2,
-            repeat: -1,
-            repeatDelay: 2,
-            yoyo: true,
-        });
+    gsap.from(splitLogo.chars, {
+        duration: 1,
+        autoAlpha: 0,
+        scale: 0,
+        stagger: 0.2,
+        repeat: -1,
+        repeatDelay: 2,
+        yoyo: true,
     });
 };
 
-const titlesAnimation = (items, xDirection, yDirection) => {
-    document.fonts.ready.then(() => {
-        let splitTitles = SplitText.create(items, {
+const pageTitleAnimation = () => {
+    const title = document.querySelector(".page-intro .title");
+    if (!title) return;
+    let splitTitles = SplitText.create(title, {
+        type: "words, chars",
+        tag: "span",
+        charsClass: "letter",
+        wordsClass: "word",
+    });
+    gsap.fromTo(
+        splitTitles.chars,
+        {
+            xPercent: 0,
+            yPercent: -100,
+            autoAlpha: 0,
+        },
+        {
+            scrollTrigger: {
+                trigger: title,
+                start: "top 90%",
+                end: "bottom -10%",
+                toggleActions: "play reverse play reverse",
+            },
+            duration: 0.5,
+            xPercent: 0,
+            yPercent: 0,
+            autoAlpha: 1,
+            stagger: 0.05,
+        }
+    );
+};
+
+const titlesAnimation = (xDirection, yDirection) => {
+    const items = document.querySelectorAll(".item-title a, .item-title p");
+
+    items.forEach(item => {
+        let splitTitles = SplitText.create(item, {
             type: "words, chars",
             tag: "span",
             charsClass: "letter",
@@ -168,9 +200,15 @@ const titlesAnimation = (items, xDirection, yDirection) => {
         });
 
         gsap.from(splitTitles.chars, {
+            scrollTrigger: {
+                trigger: item,
+                start: "top 90%",
+                toggleActions: "play none none none",
+                once: true,
+            },
             duration: 0.5,
-            yPercent: yDirection,
             xPercent: xDirection,
+            yPercent: yDirection,
             autoAlpha: 0,
             stagger: 0.05,
         });
@@ -1102,13 +1140,15 @@ const topButtonEvent = () => {
 };
 
 window.addEventListener("load", () => {
-    loader();
     history.scrollRestoration = "manual";
     documentHeight();
     headerHeight();
     footerHeight();
-    animatePaths();
+    loader();
     cursor();
+    lazyloading();
+    pageTitleAnimation();
+    animatePaths();
     logoAnimation();
     sliderOpener();
     bannerOpener();

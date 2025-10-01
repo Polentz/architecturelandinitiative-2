@@ -8,7 +8,7 @@
                 <?= $block->copy()->kt() ?>
                 <?php if ($thumbnail = $block->thumbnail()->toFile()) : ?>
                     <figure class="thumbnail">
-                        <img src="<?= $thumbnail->resize(1200, null)->url() ?>" width="100%" />
+                        <img class="image lazy" src="" data-src="<?= $thumbnail->resize(1200, null)->url() ?>" alt="<?= $thumbnail->alt() ?>" />
                     </figure>
                 <?php endif ?>
             </div>
@@ -19,7 +19,7 @@
                 <?= $block->copy()->kt() ?>
                 <?php if ($thumbnail = $block->thumbnail()->toFile()) : ?>
                     <figure class="thumbnail">
-                        <img src="<?= $thumbnail->resize(1200, null)->url() ?>" width="100%" />
+                        <img class="image lazy" src="" data-src="<?= $thumbnail->resize(1200, null)->url() ?>" alt="<?= $thumbnail->alt() ?>" />
                     </figure>
                 <?php endif ?>
             </div>

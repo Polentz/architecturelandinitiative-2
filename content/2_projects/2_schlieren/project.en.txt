@@ -6,18 +6,55 @@ Intro: <p>The well-known experimental factory Stahl-&amp;Traumfabrik AG, with it
 
 ----
 
-Textblocks: 
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "Phasing",
+            "copy": "<p>The developed project envisions the reuse and activation of the area in several stages:</p><p>To activate the site and ensure its sustainable use, the first step involves the dismantling of structural remnants and contaminated sites from the last few decades. Careful refurbishment and renewal efforts are then set to restore the architectural, functional, and heritage quality of the valuable existing buildings. </p><p>The initial phase of new construction will feature large, multi-story, stacked commercial halls/buildings on the southern part of the site, designed as a flexible, open structure for workshops and small-scale production. Outdoor spaces and access connect the new building with the existing one, creating attractive meeting spaces among individual workshops. The existing building becomes an integral part of a communal ensemble for production, craftsmanship, and innovation.</p><p>The second phase of new construction introduces a high-volume structure on the street side, serving as an urban accent toward the Limmat area. The scale of the overall project engages in a respectful dialogue with the Gaswerk area, the worker houses in the east, and the employee houses in the west, dating back to the 1910s.</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "ced7b529-6ee5-4845-a269-ca3697a3b51e",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Vision",
+            "copy": "<p>By carefully restoring and modernizing the building substance and using largely de-mountable components and renewable materials, the project contributes to an alternative and sustainable way of designing and building. This goal is to be achieved through a synergy of local resources and innovative new technologies, along with expertise in craftsmanship and hybrid production techniques already available on site.</p><p>The social element of production, oriented toward communal values in production and management, forms a central aspect of the collaborative project. Together, the valuable existing substance of the old drying plant, as well as the newly constructed halls, will support an alternative social economic and production model.</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "8823b983-2c1e-48da-b0cd-db93c4fe3583",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Info",
+            "copy": "<p>Period:<br>2020-ongoing</p><p>Team:<br>Stahl-&amp;Traumfabrik AG: Ste Wyler, Andi Schrämli, Nicola Bettazza, Verena Jehle<br>Pfeffermint AG: Britta Hagen, Simon Renggli</p><p>Architecture Land Initiative:<br>Alexa den Hartog/PO4 architekten (lead), Joshua Guiness, Guillaume Othenin-Girard, Léonore Nemec, Dieter Dietz, Zoé Lefèvre, Aurèle Pulfer, Julia Martignoni/PO4 architekten</p><p>With:<br>Dominik Bachmann<br>Gartenmann Engineering AG (Emanuele Chollet, Chris Olma) <br>Dr. Neven Kostic gmbh <br>Rebobau AG (Andreas Wirth)</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "b90b375a-9f73-4545-bb63-54399cd41113",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
 
 ----
 
-Cover: - file://xyTq03PCpv5YbXsQ
+Cover:
+
+- file://h7CLfR6e7n4Im1Fn
+- file://L89PMVSfZxPS9IZl
 
 ----
 
 Gallery:
 
-- file://0gNktDw25eeNj9T4
-- file://UkqG9xQAzww11Pac
 - file://a6YqpFYM5rQkzrON
 - file://MtOxbGJOMatICLfx
 - file://QiDJpkPbkMeosdad
@@ -29,14 +66,12 @@ Gallery:
 - file://ttmSxN4Gb1wZmTJd
 - file://YjRU1WTPoNUzWyvS
 - file://0vAgoHCI1uuwb1kz
-- file://h7CLfR6e7n4Im1Fn
 - file://7cBiqM5T8DZjZi2Z
 - file://Y5pqlORST2Ys9CWp
 - file://tHFvsoJYivladyeE
 - file://jx84URuv669QRsoH
 - file://P7lmvGxnGkwkj2xN
 - file://lEl8UzxvpoVrE2nE
-- file://L89PMVSfZxPS9IZl
 - file://wjwNzbkkVYRYJXy2
 - file://wNHdKu9DowLmBQSD
 - file://Wjk2jAhYUXLdf2u2
@@ -56,8 +91,9 @@ Gallery:
 - file://W0AjvhCmYqjX5JHd
 - file://Y2wSbIeMHDT1iiJ0
 - file://iSRBJJRvmDT8UYBM
+- file://UkqG9xQAzww11Pac
+- file://0gNktDw25eeNj9T4
 - file://8HDTNjJaL15CV9Rq
-- file://Vwpcbh9I2es04daI
 - file://aHIGKKMHduny1S2L
 - file://k02zeWeEZIFjH7NS
 - file://6SigbN1ryJzPdcYM
@@ -71,9 +107,31 @@ Gallery:
 - file://Wy2rFYJOpd2BtseL
 - file://UZ73LmlKAUAd3BTB
 - file://5On31t1oiFt1ajDB
-- file://HE2YkCSjhqpkFLtG
-- file://8mN6xzhzvvXR9mT2
-- file://vPuget4Q6f9hkeQs
+- file://o1kGjpxm9M3McA8W
+- file://vhSIYD11OmZXq9D5
+- file://40VxDZfa7gDGxLZq
+- file://jdv0V8u1m12BHZan
+- file://KFR2BAPfAvuySuAQ
+- file://3vN1wYrqIUBbg8LU
+- file://fjlXVfIsefqQ89I3
+- file://5t7Lpc8GjK3SuMzt
+- file://XMAW8FUGmLMv9SGj
+- file://isPFLK7ZRsQmP4wn
+- file://MdVbSIVWWwAMf1P2
+- file://yEU1tQae5fK5nZ9N
+- file://sTcJC0jstyYHfa1Y
+- file://SznrNfpnd6kTOMw0
+- file://LgBa9Wvk96VV4Dmi
+- file://3SMFXIq2y8gFwT9r
+- file://zLxES507yt0PhSKf
+- file://M78PSK2y899O7qMR
+- file://QATuClF3QH7r2JFp
+- file://IYu13oahZWlNbLwW
+- file://bkwLymyq1s1b4LL6
+- file://iX9ZSTI6EV2RT4bj
+- file://98Un1OWsEHxZ5wVg
+- file://enGF9F4afb29E5dA
+- file://ueGjr1pOZXKPqYbP
 
 ----
 
@@ -81,7 +139,7 @@ Background: - file://h7CLfR6e7n4Im1Fn
 
 ----
 
-Selectfilters: 
+Selectfilters: mediatype, tool
 
 ----
 

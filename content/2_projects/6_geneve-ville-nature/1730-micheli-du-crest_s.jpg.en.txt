@@ -1,0 +1,29 @@
+Caption: <p><em>Geneva Civitas, </em>Map of Geneva and its surroundings, Jacques-Barthélemy Micheli du Crest, orientation Northeast, Geneva, circa 1730, Scale approx. 1:15 000<br>© 2021 | Bibliothèque de Genève | Centre d'iconographie | CIG | Public Domain Mark</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: 695eoNe3V1vHBU1H
+
+----
+
+Template: media-project

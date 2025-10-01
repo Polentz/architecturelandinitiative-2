@@ -1,4 +1,4 @@
-Caption: Proposed Block of Flats on K.I.L 1716 &amp; - K.I.L 1752 - SEC.B&amp;R.P At N° 298-312; Front Elevation - Ma Tau Wei Rd. Kowloon; Drawing No J25/A10/60; Scales 1/8˝ = 1´-0˝ ; 29 Jul. 1961
+Caption: <p>Proposed Block of Flats on K.I.L 1716 &amp; - K.I.L 1752 - SEC.B&amp;R.P At N° 298-312; Front Elevation - Ma Tau Wei Rd.  Kowloon, Hong Kong, July 1961<br>© 2018 | Buildings Department | Hong Kong</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: Archive material
-
-----
-
 Tool: 
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Category: Archive material
 
 ----
 

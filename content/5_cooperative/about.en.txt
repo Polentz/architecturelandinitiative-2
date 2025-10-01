@@ -2,24 +2,127 @@ Title: Cooperative
 
 ----
 
-Intro: 
+Intro: <p>Architecture Land Initiative is a cooperative. We initiate and carry out political action in the form of projects on landscape, public space and architecture. Currently living and working in Geneva, Zurich and Hong Kong, our members engage in diverse activities across research and design. As a cooperative, we are a common-benefit platform and not profit-oriented.</p><p>We deeply believe in collaborative practices and focus on projects with commons at their core. Acknowledging the urgency of planetary ecological and political crises, we seek to navigate conflicts and contradictions with care towards life. We strive to act towards non-exploitive economies and ecologies by exploring, imagining and supporting alternative forms of coexistence.</p><p>As spatial practitioners aware of the reproduction of normative schemes, we are committed to re-question the foundations of our disciplines, starting with our own interactions and tools. For each project, we assemble a situated, trans-scalar set of instruments with the aim of supporting oblique readings, hybridizations and collective re-articulations of knowledge and visions.</p><p>The cooperative operates as a flexible infrastructure, consisting of a cooperative legal framework, a communication structure for collective work, a series of studios, as well as a set of tools and expertise that we grow collectively. This open structure enables us to create a shared space for continuous experimentation between research and practice.</p><p>Currently led by Andreas Schrämli, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec and PO4 (Alexa den Hartog + Yves Seiler).</p>
 
 ----
 
-Text: <p>Architecture Land Initiative is a cooperative. We initiate and carry out political action in the form of projects on landscape, public space and architecture. Currently living and working in Geneva, Zurich and Hong Kong, our members engage in diverse activities across research and design. As a cooperative, we are a common-benefit platform and not profit-oriented.</p><p>We deeply believe in collaborative practices and focus on projects with commons at their core. Acknowledging the urgency of planetary ecological and political crises, we seek to navigate conflicts and contradictions with care towards life. We strive to act towards non-exploitive economies and ecologies by exploring, imagining and supporting alternative forms of coexistence.</p><p>As spatial practitioners aware of the reproduction of normative schemes, we are committed to re-question the foundations of our disciplines, starting with our own interactions and tools. For each project, we assemble a situated, trans-scalar set of instruments with the aim of supporting oblique readings, hybridizations and collective re-articulations of knowledge and visions.</p>
+Textblocks: 
 
 ----
 
-Textblocks: [{"content":{"subtitle":"","copy":"<p>The cooperative operates as a flexible infrastructure, consisting of a cooperative legal framework, a communication structure for collective work, a series of studios, as well as a set of tools and expertise that we grow collectively. This open structure enables us to create a shared space for continuous experimentation between research and practice.</p><p>Currently led by Andreas Schrämli, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec and PO4 (Alexa den Hartog + Yves Seiler).</p>","thumbnail":[]},"id":"ba2f91de-e8f7-4ea7-b1b8-997bf53361e3","isHidden":false,"type":"sliderblock"}]
+Body:
+
+[
+    {
+        "content": {
+            "subtitle": "Andreas Schrämli",
+            "copy": "<p>Andreas Schrämli (CH, 1958) is a practitioner and a visionary. As a trained carpenter and set designer for various films, he combines his practical knowledge and experience to find creative solutions. He co-founded the <a href=\"https://stahlundtraum.ch/\" title=\"Stahl- &amp; Traumfabrik \">Stahl- &amp; Traumfabrik AG</a> in Schlieren, which he envisions as a think- and experiment factory in which carpenters, metalworkers, architects and makers work on individual projects and interdisciplinary collaborations. Spanning from execution to financial aspects, he works on concepts that are supported by many. As a founding member of Architecture Land Initiative, he embraces hands-on responsibility and commits himself to a high degree of transparency. He is based in Zurich (GMT+1).</p>",
+            "thumbnail": []
+        },
+        "id": "705b5c54-820e-415f-9bc3-2309266e6933",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Dieter Dietz",
+            "copy": "<p>Dieter Dietz (CH, 1964) is an architect, educator, and researcher, presently heading the architecture section at EPF Lausanne. As a founding member of Architecture Land Initiative and <a href=\"https://www.epfl.ch/labs/alice/index-fr-html/about/team/dieter-dietz/\" target=\"_blank\" title=\"ALICE Dieter\">director</a> of the <a href=\"https://www.epfl.ch/labs/alice/\" target=\"_blank\" title=\"ALICE laboratory\">ALICE laboratory</a> at EPFL, Dieter envisions architectural practice as a collective action and architecture as a transformative tool for spatial, societal, and political change. Recognizing the essential nature of knowledge transfer among the realms of practice, research, and expertise, he views projects as key instruments in this exchange. Dieter believes that the mission of architecture and urbanism is to evolve as transformative disciplines within the crucial ecological transition for life on Earth. He is based in Zurich (GMT+1).</p>",
+            "thumbnail": []
+        },
+        "id": "7d4a2faa-a47a-4b58-a60b-29093bcf5d76",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Guillaume Othenin-Girard",
+            "copy": "<p>Guillaume Othenin-Girard (CH, 1986) is an architect and an <a href=\"https://www.arch.hku.hk/staff/arch/othenin-girard-guillaume-l/\" target=\"_blank\" title=\"HKU Guillaume\">assistant professor</a> in the Department of Architecture at the University of Hong Kong. He is also a founding member of Architecture Land Initiative. His teaching research focuses on the cross-disciplinary potential between archaeology and architecture. He is currently developing an interpretive planning strategy for Armenia’s Vedi River Valley. Guillaume is interested in how the transformative agency of drawing carries the potential to maximise breadth of participation throughout the stages of planning, designing and building a vision that considers the landscape as a source of heritage in itself. He is based in Hong Kong (GMT+8).</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "3c10d2f2-36dc-470b-9b05-54e8ae1227c7",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Joshua Guiness",
+            "copy": "<p>Joshua Guiness (DE, 1994) is an architect whose main interests lie in urban transformation processes, spatial strategy, and theory. Educated at the University of the Arts in Berlin as well as ETH in Zurich, he joined Architecture Land Initiative in 2022, working primarily on the refurbishment and extension of a former industrial site in Schlieren on the outskirts of Zurich. Joshua is also a teaching and research assistant at <a href=\"https://voluptas.arch.ethz.ch/info/\" target=\"_blank\" title=\"Voluptas info\">VOLUPTAS</a>, a speculative design studio at&nbsp;ETH Zurich. He is currently interested in modes of expanding architectural and spatial thought to the development of strategies for policy, culture, and society at large. ‍He is based in Zurich (GMT+1).</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "a9643611-a212-44d5-9a94-a270df4b5593",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Kent Mundle",
+            "copy": "<p>Kent Mundle (CA, 1993) is a designer and <a href=\"https://www.arch.hku.hk/staff/arch/mundle-kent/\" target=\"_blank\" title=\"HKU Kent\">lecturer</a> in the Department of Architecture at The University of Hong Kong. There, he researches within the <a href=\"https://www.arch.hku.hk/researchcentre/rural-urban-framework/\" target=\"_blank\" title=\"Rural Urban Lab\">Rural Urban Lab</a>, which is an initiative that focuses on researching and developing forms of affordable housing and community infrastructure for rapidly urbanising territories in developing economies. Kent’s work focuses on integrating emerging forms of housing types and emerging financial mechanisms to deliver housing in these areas in a post-welfare state context. As a part of Architecture Land Initiative, Kent is leading an initiative in Hong Kong to reintroduce new forms of cooperative housing. He is based in Hong Kong (GMT+8).&nbsp;</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "7213fc7b-f563-4372-b4b8-5dededb8f6c8",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Léonore Nemec",
+            "copy": "<p>Léonore Nemec (CH, 1988) is an architect active in collaborative projects with her own office Studio Nemec and Architecture Land Initiative. Before that she has been working at Herzog and de Meuron and as a <a href=\"https://www.epfl.ch/labs/alice/leonore-nemec/\" target=\"_blank\" title=\"ALICE Léonore\">research assistant</a> at EPFL. Her interest in architecture and territory planning is primarily in their political and social dimensions. She believes that experimentation in spatial design is essential for a lasting engagement with the changing spaces - material, normative, ideological - of our societies. She is interested in the application of innovative research-based practices to concrete projects, from conception to completion. She is based in Geneva (GMT+1).</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "ea5aa503-447c-4f01-9966-abfd9f56ad9b",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "PO4 seiler + den hartog architekten",
+            "copy": "<p><a href=\"https://www.po4.ch/\" target=\"_blank\">PO4 seiler + den hartog&nbsp;architekten</a> was founded by Yves Seiler (CH, 1984) and Alexa den Hartog (CH, 1986) in 2015. They are founding members of the Architecture Land Initiative and are actively involved in teaching and <a href=\"https://frau.sia.ch/zuerich\" target=\"_blank\">professional organizations</a>. Since then they have worked on a wide scope of projects, from art to architecture, with a holistic approach encompassing abstract concepts, concrete materiality, craftsmanship, and the integration of analogue and digital methods. For them, architecture is a built form of political ideas and must therefore be treated with empathy at its core. They are based in Zurich (GMT+1).</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "32450da3-afd5-4124-b2f7-ca6328318c2e",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Former members",
+            "copy": "<p>Aurélie Dupuis, Zoé Lefèvre, Roman Karrer, Agathe Mignon, Darío Negueruela del Castillo, Aurèle Pulfer. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "9322b68a-0771-43d8-a69c-b1ca3612abb7",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Past collaborators",
+            "copy": "<p>Julien Heil, Janice Leung, Hibiki Masaki, Manon Pinget.</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "6be2928b-321b-4dbc-8dab-8a35b3aefdae",
+        "isHidden": false,
+        "type": "textblock"
+    },
+    {
+        "content": {
+            "subtitle": "Website",
+            "copy": "<p><a href=\"https://www.iampolenta.com/\" target=\"_blank\">Giulia Polenta</a></p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "603d8c31-56be-4dec-8644-20524a2a100a",
+        "isHidden": false,
+        "type": "textblock"
+    }
+]
 
 ----
 
-Body: [{"content":{"subtitle":"","copy":"<p>The cooperative operates as a flexible infrastructure, consisting of a cooperative legal framework, a communication structure for collective work, a series of studios, as well as a set of tools and expertise that we grow collectively. This open structure enables us to create a shared space for continuous experimentation between research and practice.</p><p>Currently led by Andreas Schrämli, Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle, Léonore Nemec and PO4 (Alexa den Hartog + Yves Seiler).</p>","thumbnail":[]},"id":"e1d585b0-b4fd-4ac3-b4aa-28bd2a8bff41","isHidden":true,"type":"textblock"},{"content":{"subtitle":"Andreas Schrämli","copy":"<p>Andreas Schrämli (CH, 1958) is a practitioner and a visionary. As a trained carpenter and set designer for various films, he combines his practical knowledge and experience to find creative solutions. He co-founded the <a href=\"https://stahlundtraum.ch/\" title=\"Stahl- &amp; Traumfabrik \">Stahl- &amp; Traumfabrik AG</a> in Schlieren, which he envisions as a think- and experiment factory in which carpenters, metalworkers, architects and makers work on individual projects and interdisciplinary collaborations. Spanning from execution to financial aspects, he works on concepts that are supported by many. As a founding member of Architecture Land Initiative, he embraces hands-on responsibility and commits himself to a high degree of transparency. He is based in Zurich (GMT+1).</p>","thumbnail":["file://TqHghA2HbhMD77YF"]},"id":"58e2c31b-e66c-4864-810f-97a21ed3b600","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Dieter Dietz","copy":"<p>Dieter Dietz (CH, 1964) is an architect, educator, and researcher, presently heading the architecture section at EPF Lausanne. As a founding member of Architecture Land Initiative and <a href=\"https://www.epfl.ch/labs/alice/index-fr-html/about/team/dieter-dietz/\" target=\"_blank\" title=\"ALICE Dieter\">director</a> of the <a href=\"https://www.epfl.ch/labs/alice/\" target=\"_blank\" title=\"ALICE laboratory\">ALICE laboratory</a> at EPFL, Dieter envisions architectural practice as a collective action and architecture as a transformative tool for spatial, societal, and political change. Recognizing the essential nature of knowledge transfer among the realms of practice, research, and expertise, he views projects as key instruments in this exchange. Dieter believes that the mission of architecture and urbanism is to evolve as transformative disciplines within the crucial ecological transition for life on Earth. He is based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"d89fce6b-5f21-4166-ab30-62f0309e16aa","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Guillaume Othenin-Girard","copy":"<p>Guillaume Othenin-Girard (CH, 1986) is an architect and an <a href=\"https://www.arch.hku.hk/staff/arch/othenin-girard-guillaume-l/\" target=\"_blank\" title=\"HKU Guillaume\">assistant professor</a> in the Department of Architecture at the University of Hong Kong. He is also a founding member of Architecture Land Initiative. His teaching research focuses on the cross-disciplinary potential between archaeology and architecture. He is currently developing an interpretive planning strategy for Armenia’s Vedi River Valley. Guillaume is interested in how the transformative agency of drawing carries the potential to maximise breadth of participation throughout the stages of planning, designing and building a vision that considers the landscape as a source of heritage in itself. He is based in Hong Kong (GMT+8).</p>","thumbnail":[]},"id":"9c82e59b-8990-4cca-b40a-9117ab972dc6","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Joshua Guiness","copy":"<p>Joshua Guiness (DE, 1994) is an architect whose main interests lie in urban transformation processes, spatial strategy, and theory. Educated at the University of the Arts in Berlin as well as ETH in Zurich, he joined Architecture Land Initiative in 2022, working primarily on the refurbishment and extension of a former industrial site in Schlieren on the outskirts of Zurich. Joshua is also a teaching and research assistant at <a href=\"https://voluptas.arch.ethz.ch/info/\" target=\"_blank\" title=\"Voluptas info\">VOLUPTAS</a>, a speculative design studio at&nbsp;ETH Zurich. He is currently interested in modes of expanding architectural and spatial thought to the development of strategies for policy, culture, and society at large. ‍He is based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"29188edb-510b-4281-908c-6d242311f068","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Kent Mundle","copy":"<p>Kent Mundle (CA, 1993) is a designer and <a href=\"https://www.arch.hku.hk/staff/arch/mundle-kent/\" target=\"_blank\" title=\"HKU Kent\">lecturer</a> in the Department of Architecture at The University of Hong Kong. There, he researches within the <a href=\"https://www.arch.hku.hk/researchcentre/rural-urban-framework/\" target=\"_blank\" title=\"Rural Urban Lab\">Rural Urban Lab</a>, which is an initiative that focuses on researching and developing forms of affordable housing and community infrastructure for rapidly urbanising territories in developing economies. Kent’s work focuses on integrating emerging forms of housing types and emerging financial mechanisms to deliver housing in these areas in a post-welfare state context. As a part of Architecture Land Initiative, Kent is leading an initiative in Hong Kong to reintroduce new forms of cooperative housing. He is based in Hong Kong (GMT+8).&nbsp;</p>","thumbnail":["file://TqHghA2HbhMD77YF"]},"id":"3c43b464-81d8-4b58-bdbe-63e78dd9feba","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Léonore Nemec","copy":"<p>Léonore Nemec (CH, 1988) is an architect active in collaborative projects with her own office Studio Nemec and Architecture Land Initiative. Before that she has been working at Herzog and de Meuron and as a <a href=\"https://www.epfl.ch/labs/alice/leonore-nemec/\" target=\"_blank\" title=\"ALICE Léonore\">research assistant</a> at EPFL. Her interest in architecture and territory planning is primarily in their political and social dimensions. She believes that experimentation in spatial design is essential for a lasting engagement with the changing spaces - material, normative, ideological - of our societies. She is interested in the application of innovative research-based practices to concrete projects, from conception to completion. She is based in Geneva (GMT+1).</p>","thumbnail":[]},"id":"fbf5431c-ac8a-4e5d-b2e1-91379ba9a802","isHidden":false,"type":"textblock"},{"content":{"subtitle":"PO4 seiler + den hartog architekten","copy":"<p><a href=\"https://www.po4.ch/\" target=\"_blank\">PO4 seiler + den hartog&nbsp;architekten</a> was founded by Yves Seiler (CH, 1984) and Alexa den Hartog (CH, 1986) in 2015. They are founding members of the Architecture Land Initiative and are actively involved in teaching and <a href=\"https://frau.sia.ch/zuerich\" target=\"_blank\">professional organizations</a>. Since then they have worked on a wide scope of projects, from art to architecture, with a holistic approach encompassing abstract concepts, concrete materiality, craftsmanship, and the integration of analogue and digital methods. For them, architecture is a built form of political ideas and must therefore be treated with empathy at its core. They are based in Zurich (GMT+1).</p>","thumbnail":[]},"id":"a7191e09-bb1c-41d9-a442-1073343a2d44","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Former members","copy":"<p>Aurélie Dupuis, Zoé Lefèvre, Roman Karrer, Agathe Mignon, Darío Negueruela del Castillo, Aurèle Pulfer.</p>","thumbnail":[]},"id":"0aa72fcc-9531-45f1-a408-a5ca6727dc40","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Past collaborators","copy":"<p>Julien Heil, Janice Leung, Hibiki Masaki, Manon Pinget.</p>","thumbnail":[]},"id":"6c80d5fc-c8cd-4827-91b9-c9bbb4af0ac3","isHidden":false,"type":"textblock"},{"content":{"subtitle":"Website","copy":"<p><a href=\"https://www.iampolenta.com/\" target=\"_blank\">Giulia Polenta</a></p>","thumbnail":[]},"id":"9364a46a-cbdb-4a89-a9d0-cc7f46de16c8","isHidden":false,"type":"textblock"}]
-
-----
-
-Attachments: - file://8h6xr6baqnpleig1
-
-----
-
-Uuid: wlnqgxphqcvs3i1f
+Uuid: dsrxiu67q0axoo6l

@@ -1,0 +1,29 @@
+Caption: <p>Piece by El Conde de Torrefiel, Hangelsberg, Shared Landscapes, August 2023<br>© 2023 | Camille Blake | Berlin</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Event
+
+----
+
+Uuid: g6BDTyMAOKDKYH5k
+
+----
+
+Template: media-project

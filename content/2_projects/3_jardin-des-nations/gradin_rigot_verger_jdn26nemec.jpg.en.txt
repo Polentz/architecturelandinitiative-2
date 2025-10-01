@@ -1,0 +1,29 @@
+Caption: <p>Orchard plantation at Rigot Park, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Geneva, December 2022<br>© 2022 | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Making
+
+----
+
+Uuid: l1xIGtYvwCayxpOa
+
+----
+
+Template: media-project

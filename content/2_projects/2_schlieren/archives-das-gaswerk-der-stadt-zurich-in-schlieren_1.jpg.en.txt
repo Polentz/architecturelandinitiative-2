@@ -1,4 +1,4 @@
-Caption: <p>Troekenanlage der Stadt Zürich;<em> Plan Für die Umgebungsarbeiten, </em>Schlieren, 8 Jan. 1919, Scale: 1/500 ©Architecture Land Initiative</p>
+Caption: <p><em>Gaswerk der Stadt Zürich in Schlieren</em>,<em> </em>site plan, Schlieren, 1909 (1995), Scale: 1/2500<br>© 2021 | Archivplan Gemeinde Schlieren | Schlieren</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
 Tool: 
 
 ----
 
-Project: 
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Category: Archive material
 
 ----
 

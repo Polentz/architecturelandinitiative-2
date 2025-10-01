@@ -1,4 +1,4 @@
-Caption: <p>SH | HOWL, Bernstrasse 29 - Ansichten und Erdgeschoss Umgebung 4, A3 / 1:200, 05. jul. 2023. ©Architecture Land Initiative</p>
+Caption: <p>Elevations and ground floor of the Gaswerk, Schlieren Howl, Architecture Land Initiative, July 2023, Scale: 1:200<br>© 2023 | Architecture Land Initiative | Zurich</p>
 
 ----
 
@@ -14,7 +14,7 @@ Tool:
 
 ----
 
-Mediatype: Image
+Mediatype: Plan
 
 ----
 

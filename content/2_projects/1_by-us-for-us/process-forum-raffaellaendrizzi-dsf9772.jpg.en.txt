@@ -1,4 +1,4 @@
-Caption: 
+Caption: <p>Cattle Depot, 63 Ma Tau Kok Rd., Ma Tau Kok, Hong Kong, June 2023<br>© 2023 | Raffaella Endrizzi | Hong Kong</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: Process
-
-----
-
 Tool: 
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Mediatype: Image
 
 ----
 
-Mediatype: Image
+Category: Process
 
 ----
 

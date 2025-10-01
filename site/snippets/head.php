@@ -30,8 +30,7 @@
     <?php if ($site->ogimage()->isNotEmpty()) : ?>
         <meta name="twitter:image:alt" content="<?= $site->ogimage()->toFile()->alt() ?>">
     <?php endif ?>
-    <!-- <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"> -->
-    <meta name="robots" content="noindex,nofollow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <?= css([
         'assets/css/variables.css',
         'assets/css/base.css',

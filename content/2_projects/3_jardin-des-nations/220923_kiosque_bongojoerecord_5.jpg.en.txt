@@ -1,0 +1,29 @@
+Caption: <p>Three nights of music, with Bongo Joe Records and Canal 54, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Kiosk of the Nations, Geneva, September 2022<br>© 2022 | Julien Heil | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Event
+
+----
+
+Uuid: Rh0hPquRyuw15fRC
+
+----
+
+Template: media-project

@@ -22,6 +22,7 @@ sections:
       textblocks:
         label: Additional text
         type: blocks
+        pretty: true
         fieldsets:
           - sliderblock
   items:

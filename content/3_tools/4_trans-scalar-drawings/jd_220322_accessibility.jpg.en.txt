@@ -1,0 +1,29 @@
+Caption: <p>Accessibility map, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Geneva, March 2021<br>© 2021 | SITG data | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Project: - page://KwOoKqmtI5tBXt6G
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Research
+
+----
+
+Uuid: iqYiSdPgaZX5n5Id
+
+----
+
+Template: media-tool

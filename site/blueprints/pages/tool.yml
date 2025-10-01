@@ -29,14 +29,15 @@ columns:
           textblocks:
             label: Text
             type: blocks
+            pretty: true
             fieldsets:
               - sliderblock
           cover:
             type: files
             label: Cover images
-            uploads: cover
-            template: cover        
-            query: page.files.template("cover")    
+            uploads: media-tool
+            template: media-tool        
+            query: page.files
             layout: cards
             multiple: true
             link: true
@@ -51,7 +52,7 @@ columns:
             label: Gallery
             uploads: media-tool
             template: media-tool     
-            query: page.files.template("media-tool")    
+            query: page.files
             layout: cards
             multiple: true
             link: true
@@ -70,9 +71,9 @@ columns:
           background:
             type: files
             label: Background image ({{page.parent.title}} list preview)
-            uploads: cover
-            template: cover 
-            query: page.files.filterBy("type", "image")
+            uploads: media-tool
+            template: media-tool 
+            query: page.files
             layout: list
             size: small
             multiple: false

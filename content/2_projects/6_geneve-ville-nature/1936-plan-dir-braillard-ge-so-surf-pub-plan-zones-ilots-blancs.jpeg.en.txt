@@ -1,0 +1,29 @@
+Caption: <p>1936 - Braillard-Bodmer: Plan of the Zones of the Canton of Geneva, Maurice Braillard, Albert Bodmer, Geneva, 1936<br>© 2003 | Université de Genève | Centre de Recherche sur la Rénovation urbaine (CRR) | Institut d'architecture de l'Université de Genève (IAUC)</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: dcda6SmGdjFuBZDm
+
+----
+
+Template: media-project

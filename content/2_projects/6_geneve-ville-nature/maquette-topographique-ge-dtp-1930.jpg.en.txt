@@ -1,0 +1,29 @@
+Caption: <p>The Plain of the Arve, Topographical Model, Geneva, 1930<br>© 2021 | Département des Travaux Publics Genève (DTP)</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: 1pnMexw8uBgkAlhP
+
+----
+
+Template: media-project

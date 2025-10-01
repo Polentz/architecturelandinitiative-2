@@ -1,0 +1,86 @@
+Title: Shared Landscapes
+
+----
+
+Intro: <p>Performing arts institutions with shared ecological and social concerns have come together to experiment and reflect on land art, to de-urbanize and decentralize their institutions and practices, to broaden audiences, to stimulate resistant artistic works and formats, and to open up new avenues for international cooperation. </p>
+
+----
+
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "Context",
+            "copy": "<p>Curators Stefan Kaegi and Caroline Barneaud have conceived an artistic project in which institutions, artists, scientists, the public and residents are collectively invited to address the landscape around cities: Shared Landscapes. Between 2023 and 2024, these shared landscapes are to be created in Switzerland, France, Germany, Austria, Italy, Portugal, Slovenia and Spain with local teams. They take the form of full days of theater in the landscape, to discover seven performances for meadows and forests.</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "56f79e82-f4ea-4a46-b68c-81f21123a39e",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Project",
+            "copy": "<p>For the project of Shared Landscapes, Architecture Land Initiative collaborates with the various cultural institutions to produce the maps that accompany the theatrical experience in the landscape. The maps depict a territory in which human and more-than-human dynamics are rearticulated and through walking and theatrical events. In the drawings, the geology, hydrology and tree structures of the sites resonate with the collective journeys proposed by Shared Landscapes. They are intended as an experience of disorientation and re-orientation. They accompany the Shared Landscapes experience, inviting participants to make these days an opportunity to connect with the territory in a different way, and to become attentive to otherwise invisible aspects. As objects, the maps are created in collaboration with Swiss graphic design and art direction studio Ami.</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "6dde5cd8-8521-4044-8d76-90194f6955de",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Info",
+            "copy": "<p>Period:<br>2023-2024</p><p>Architecture Land Initiative:<br>Zoé Lefèvre (lead)</p><p>Graphic collaboration:<br>Ami (Graphic design studio, Geneva)</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "b45c6472-0353-43d3-9cf2-434938727eb2",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
+
+----
+
+Cover: 
+
+----
+
+Gallery:
+
+- file://ZfygIrQgWK5slwtx
+- file://q09h1z8BDvFlRB7u
+- file://uP0AsRUILicu3HwK
+- file://wD7rCTUq2Ng76Ffj
+- file://jEXHBzrmELv5Rpun
+- file://CJlUvxeyxKgBMV7R
+- file://MS2abppB2oQxHznb
+- file://PD8GVF612q5WNgX9
+- file://aGCD8IBcgCGLGA3U
+- file://ojwWDyAMudIlD40N
+- file://KC4RyNmfNhaOLCFk
+- file://HYqFL0h3m3FwvQYB
+- file://7T2f6YFrGTIN5HSS
+- file://g6BDTyMAOKDKYH5k
+- file://hDIdwd8xOpxPuyMJ
+- file://awwjffMNwPRT3dQp
+- file://EONt6J96Sos7ZNdq
+- file://xPMChboxtquAu6ly
+- file://KQQaCu5XOrg3gz2j
+- file://RhC0YEchIY3GBBy4
+
+----
+
+Background: - file://7T2f6YFrGTIN5HSS
+
+----
+
+Selectfilters: mediatype, tool
+
+----
+
+Uuid: TJCn9GpAXkRTAdnc

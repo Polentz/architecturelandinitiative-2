@@ -1,0 +1,29 @@
+Caption: <p>Jonction covered market, Revision of the Municipal Master Plan City of Geneva, Planning Test Study, Architecture Land Initiative, Geneva, February 2022<br>© 2022 | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: EV6As50CD3JeOXEs
+
+----
+
+Template: media-project

@@ -1,0 +1,29 @@
+Caption: <p>Arve banks, Revision of the Municipal Master Plan City of Geneva, Planning Test Study, Architecture Land Initiative, Geneva, April 2022<br>© 2022 | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: tYw83YbPqsrewZXu
+
+----
+
+Template: media-project

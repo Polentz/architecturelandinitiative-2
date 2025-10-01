@@ -1,0 +1,29 @@
+Caption: <p>Excerpt from the New York Times on the mobilizations following the Sandoz disaster , 1986<br>© 1986 | New York Times</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: e4tDFyMvb7fskE42
+
+----
+
+Template: media-project

@@ -1,0 +1,29 @@
+Caption: <p>Piece by Stefan Kaegi, Hangelsberg, Shared Landscapes, August 2023<br>© 2023 | Camille Blake | Berlin</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Event
+
+----
+
+Uuid: aGCD8IBcgCGLGA3U
+
+----
+
+Template: media-project

@@ -1,5 +1,0 @@
-Uuid: TqHghA2HbhMD77YF
-
-----
-
-Template: thumbnail

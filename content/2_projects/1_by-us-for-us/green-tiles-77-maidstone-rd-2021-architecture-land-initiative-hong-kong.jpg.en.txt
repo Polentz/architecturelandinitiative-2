@@ -1,0 +1,29 @@
+Caption: <p>Green tiles 77 Maidstone Rd, To Kwa Wan, Hong Kong, January 2021 <br>© 2021 | Architecture Land Initiative | Hong Kong</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: 5JnkWuOQFGb0zxch
+
+----
+
+Template: media-project

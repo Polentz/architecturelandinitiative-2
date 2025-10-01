@@ -1,0 +1,38 @@
+Title: Trans-scalar drawings
+
+----
+
+Intro: Trans-scalar drawings bring together radically disparate types of data. As federative drawings, they are constructed and used collectively throughout projects to question the ways in which territories are described, managed, narrated, policed, symbolized, organized, divided, or shared. Today, more than ever, the type of data collected, whether or not it is open to public access, and the ways in which it is used to determine strategies for urban transformation, are profoundly political. The drawings seek to bring to light the invisibilities linked to dominant imaginations, maps, and data on the territory and to reframe the act of drawing as a shared effort towards common spatialities.
+
+----
+
+Textblocks: 
+
+----
+
+Cover: - file://rvw2mj5djqywzuyg
+
+----
+
+Gallery:
+
+- file://RaRh22RbxFehBanB
+- file://ByKWvEG70cTie3Cp
+- file://gzHnBrnL2s1B4x95
+- file://l7gWsVPUYBgXZ9cj
+- file://iqYiSdPgaZX5n5Id
+- file://XmNBFnj7JVfwsoC4
+- file://aXLUPhUmt3kHmdQb
+- file://OHh0s9Jo7zoNjYd1
+
+----
+
+Background: - file://rvw2mj5djqywzuyg
+
+----
+
+Selectfilters: mediatype, project
+
+----
+
+Uuid: MGR8fVEtLHSJLXRl

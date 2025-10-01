@@ -25,11 +25,13 @@ columns:
           textblocks:
             label: Additional text
             type: blocks
+            pretty: true
             fieldsets:
               - sliderblock
           blocks:
             label: Items
             type: blocks
+            pretty: true
             fieldsets:
               - tableblock
   sidebar:

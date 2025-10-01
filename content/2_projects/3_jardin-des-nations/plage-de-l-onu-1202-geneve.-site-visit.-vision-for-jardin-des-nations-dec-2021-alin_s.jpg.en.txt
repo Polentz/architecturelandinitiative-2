@@ -1,0 +1,29 @@
+Caption: <p>UN Port Restaurant &amp; Beach club, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Geneva, December 2021<br>© 2021 | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: 71vNYNZFEAzEGBSf
+
+----
+
+Template: media-project

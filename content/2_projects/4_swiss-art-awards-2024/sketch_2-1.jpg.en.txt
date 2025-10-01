@@ -1,0 +1,29 @@
+Caption: <p>Drawing of the model, Architecture Land Initiative, Zurich, May 2024<br>© 2024 | Architecture Land Initiative | Zurich</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Drawing
+
+----
+
+Category: Process
+
+----
+
+Uuid: 9LQFmPfu0WV8YKky
+
+----
+
+Template: media-project

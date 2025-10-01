@@ -19,6 +19,7 @@ columns:
           blocks:
             label: Items
             type: blocks
+            pretty: true
             fieldsets:
               - platformblock
   sidebar:

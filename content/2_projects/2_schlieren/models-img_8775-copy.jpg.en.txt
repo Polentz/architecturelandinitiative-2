@@ -1,4 +1,4 @@
-Caption: <p>SH | HOWL, Bernstrasse 29 - Arbeitsmodell Tragstruktur in 1:100, Winter 2022. ©Architecture Land Initiative</p>
+Caption: <p>Working model supporting structure, Schlieren Howl, Architecture Land Initiative, December 2022, Scale: 1:100<br>© 2023 | Architecture Land Initiative | Zurich</p>
 
 ----
 
@@ -18,7 +18,7 @@ Mediatype: Image
 
 ----
 
-Category: 
+Category: Research
 
 ----
 

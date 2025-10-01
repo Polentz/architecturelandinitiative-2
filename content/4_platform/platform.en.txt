@@ -2,7 +2,7 @@ Title: Platform
 
 ----
 
-Intro: The platform/practice is a space for learning by doing, where we conduct experiments to shape new initiatives and help develop new models for architectural practice. The platform/practice allows us to define relevant areas of focus, reveal opportunities for action, test informed hypotheses, and share original learning. In doing so, we aim to grow new networks for collaboration and scale the resonance of our work.
+Intro: <p>The platform/practice is a space for learning by doing, where we conduct experiments to shape new initiatives and help develop new models for architectural practice. The platform/practice allows us to define relevant areas of focus, reveal opportunities for action, test informed hypotheses, and share original learning. In doing so, we aim to grow new networks for collaboration and scale the resonance of our work.</p>
 
 ----
 
@@ -10,51 +10,899 @@ Textblocks:
 
 ----
 
-Blocks: [{"content":{"date":"2026-05-03","title":"Shared Landscapes","subtitle":"Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)","eventdate":"03.05.2026 - 12.05.2026","where":"St. Pölten (AUT)","itemtype":"Exhibition","project":["page://WOYRZn9TeLUnZp4x"],"toggleproject":"true","members":"Joshua Guiness, Kent Mundle","image":["file://tSygXQB5jxu3TDxD"],"imagecaption":"photo © 2023 | Chloé Cohen | Lausanne","body":"<p>From May 3 to 12, 2024, Shared Landscapes will be staged as part of the TangenteSt.Pölten Festival for Contemporary Culture! </p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of St. Pölten among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country. </p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>","credits":"<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>","info":"<p><a href=\"https://www.tangente-st-poelten.at/en\" target=\"_blank\">Tangente St. Pölten</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"},"id":"19659d2d-3bb8-44e0-9c20-7e3f04b92037","isHidden":false,"type":"tableblock"},{"content":{"date":"2024-05-03","title":"Shared Landscapes","subtitle":"Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)","eventdate":"03.05.2024 - 12.05.2024","where":"St. Pölten (AUT)","itemtype":"Publication","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://tSygXQB5jxu3TDxD"],"imagecaption":"photo © 2023 | Chloé Cohen | Lausanne","body":"<p>From May 3 to 12, 2024, Shared Landscapes will be staged as part of the TangenteSt.Pölten Festival for Contemporary Culture! </p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of St. Pölten among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country. </p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>","credits":"<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>","info":"<p><a href=\"https://www.tangente-st-poelten.at/en\" target=\"_blank\">Tangente St. Pölten</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"},"id":"f3b0f663-7974-4df5-8af4-8d611d5581d0","isHidden":false,"type":"tableblock"},{"content":{"date":"2024-06-01","title":"Shared Landscapes","subtitle":"Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)","eventdate":"June 2024","where":"Milan (IT)","itemtype":"Fellowship","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://MpW7xt3w1CimlAT6"],"imagecaption":"","body":"<p>In June 2024, Shared Landscapes will be staged in Milano in collaboration with Zona K! </p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Milano among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country. </p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>","credits":"<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p><p>photo © 2023 | Camille Blake | Berlin</p>","info":"<p><a href=\"https://www.zonak.it/en/paesaggi-condivisi/\" target=\"_blank\">Zona K</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"},"id":"9e4274ce-c13b-49da-af64-17eb38fb1eb7","isHidden":false,"type":"tableblock"},{"content":{"date":"2024-07-14","title":"Shared Landscapes","subtitle":"Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)","eventdate":"29.06.2024 - 14.07.2024","where":"Lisbon (PRT)","itemtype":"Residency","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://FUoyk3WCmli1tCAj"],"imagecaption":"","body":"<p>From June 29 to July 14, 2024, Shared Landscapes will be staged in Lisbon in collaboration with Culturgest!</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Lisbon among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>","credits":"<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p><p>photo © 2023 | Camille Blake | Berlin</p>","info":"<p><a href=\"https://www.culturgest.pt/pt/\" title=\"Culturgest\">Culturgest</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"},"id":"21cce2ff-4f2e-4ab5-baf9-1199a8e4525b","isHidden":false,"type":"tableblock"},{"content":{"date":"2024-07-01","title":"Shared Landscapes","subtitle":"Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)","eventdate":"July 2024","where":"Ljubljana (SVN)","itemtype":"Exhibition on-line","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://L67VVvaFEdFQ0qOU"],"imagecaption":"","body":"<p>In July 2024, Shared Landscapes will be staged in Ljubljana in collaboration with International festival Mladi Levi!</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Ljubljana among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>","credits":"<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p><p>photo © 2023 | Camille Blake | Berlin</p>","info":"<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"},"id":"98fc3e95-822e-4d9e-9865-e5c559731e73","isHidden":false,"type":"tableblock"},{"content":{"date":"2024-10-01","title":"Shared Landscapes","subtitle":"Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)","eventdate":"October 2024","where":"Girona (ESP)","itemtype":"Publication","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://c2DdfGxtMXGLJw7x"],"imagecaption":"","body":"<p>In October 2024, Shared Landscapes will be staged in Girona in collaboration with the Temporada Alta festival!</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Girona among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>","credits":"<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p><p>photo © 2023 | Chloé Cohen | Lausanne</p>","info":"<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"},"id":"79799670-f042-4a55-9647-37454d937e90","isHidden":false,"type":"tableblock"},{"content":{"date":"2022-09-16","title":"BSA-Tagung 2022 / Journée FAS 2022","subtitle":"Vision pour le Jardin des Nations","eventdate":"16.09.2022","where":"Luzern (CH)","itemtype":"Talk","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://BC3RUfOIFWD1a2rf"],"imagecaption":"","body":"<p>On September 16, the Swiss Federation of Architects (BSA-FAS) organized the FAS 2022 Day on the theme of experimental planning. Aurélie and Léonore had the opportunity to present our reflections on this topic based on the experimental approach we carried out in the Jardin des Nations neighborhood in Geneva. The various Swiss and European case studies presented during the day allowed for a collective exchange on the contribution of such approaches to the transformation of cities and the questions they raise for the future of planning as a whole.</p>","credits":"<p>Aurélie Dupuis and Léonore Nemec, Architecture Land Initiative with Florent Agat, Office of Urban Planning, State of Geneva</p><p> Photo © 2023 | Priska Ketterer | Luzern</p>","info":"<p><a href=\"https://youtu.be/egc57VqVvwI\" title=\"Aurélie Dupuis &amp; Léonore Nemec, Architektinnen / architectes\">Presentation</a></p>"},"id":"f454d752-5a54-4619-a455-6ac7b76a7de5","isHidden":false,"type":"tableblock"},{"content":{"date":"2021-07-04","title":"Degree Show 2021","subtitle":" The University of Hong Kong Department of Architecture","eventdate":"04.06.2021 - 04.07.2021","where":"Hong Kong (HK)","itemtype":"Exhibition","project":["page://TJCn9GpAXkRTAdnc"],"toggleproject":"false","members":"","image":["file://YTmtBxCFQy1J0yyh"],"imagecaption":"","body":"<p>HABITATIONAL SEEDS IN HONG KONG’S ODD LOTS</p><p>Student work from the studio taught by Dieter, Alexa and Kent at Hong Kong University is on show for a month! </p><p>The studio began by creating a linear tomographic cut through a portion of Hong Kong Island, extending without constraints towards the Earth's center or the skies. This forensic drawing served as our site, where each point was envisioned as a potential for expansion into a small universe. Immersed in this section, our focus was on identifying and studying emerging residual \"odd lots\" within and in immediate proximity to the sectional cut, drawing inspiration from Gordon Matta-Clark. Within these discovered spaces, we sowed the initial seeds of habitation, intending to cultivate collective housing typologies.</p><p></p>","credits":"<p>Visiting Professors: Dieter Dietz, Alexa den Hartog with Kent Mundle (assistant), Spring Studio 2021</p><p>poster © 2022  | Hong Kong University</p>","info":"<p><a href=\"https://miro.com/app/board/uXjVOHk9rZs=/\" title=\"Habitational, Seeds in Hong Kong’s Odd Lots\">Miro Board</a></p>"},"id":"342a8e52-42c9-4209-8f54-3686898d7b56","isHidden":false,"type":"tableblock"}]
+Blocks:
+
+[
+    {
+        "content": {
+            "date": "2024-05-03",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "03.05.2024 - 12.05.2024",
+            "where": "St. Pölten (AUT)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://tSygXQB5jxu3TDxD"
+            ],
+            "imagecaption": "© 2023 | Chloé Cohen | Lausanne",
+            "body": "<p>From May 3 to 12, 2024, Shared Landscapes will be staged as part of the TangenteSt.Pölten Festival for Contemporary Culture! </p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of St. Pölten among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country. </p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://www.tangente-st-poelten.at/en\" target=\"_blank\">Tangente St. Pölten</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "19659d2d-3bb8-44e0-9c20-7e3f04b92037",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-06-16",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "08.06.2024 - 16.06.2024",
+            "where": "Milan (IT)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://MpW7xt3w1CimlAT6"
+            ],
+            "imagecaption": "© 2023 | Camille Blake | Berlin",
+            "body": "<p>In June 2024, Shared Landscapes will be staged in Milano in collaboration with Zona K! </p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Milano among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country. </p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://www.zonak.it/en/paesaggi-condivisi/\" target=\"_blank\">Zona K</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "9e4274ce-c13b-49da-af64-17eb38fb1eb7",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-07-14",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "29.06.2024 - 14.07.2024",
+            "where": "Lisbon (PRT)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://FUoyk3WCmli1tCAj"
+            ],
+            "imagecaption": "© 2023 | Camille Blake | Berlin",
+            "body": "<p>From June 29 to July 14, 2024, Shared Landscapes will be staged in Lisbon in collaboration with Culturgest!</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Lisbon among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://www.culturgest.pt/pt/\" title=\"Culturgest\">Culturgest</a><br><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "21cce2ff-4f2e-4ab5-baf9-1199a8e4525b",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-08-22",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "22.08.2024 - 25.08.2024",
+            "where": "Ljubljana (SVN)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://L67VVvaFEdFQ0qOU"
+            ],
+            "imagecaption": "© 2023 | Camille Blake | Berlin",
+            "body": "<p>In August 2024, Shared Landscapes will be staged in Ljubljana in collaboration with International festival Mladi Levi!</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Ljubljana among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "98fc3e95-822e-4d9e-9865-e5c559731e73",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-10-05",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "05.10.2024 - 13.10.2024",
+            "where": "Girona (ESP)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://c2DdfGxtMXGLJw7x"
+            ],
+            "imagecaption": "© 2023 | Chloé Cohen | Lausanne",
+            "body": "<p>In October 2024, Shared Landscapes will be staged in Girona in collaboration with the Temporada Alta festival!</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Girona among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "79799670-f042-4a55-9647-37454d937e90",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-09-16",
+            "title": "BSA-Tagung 2022 / Journée FAS 2022",
+            "subtitle": "Vision pour le Jardin des Nations",
+            "eventdate": "16.09.2022",
+            "where": "Luzern (CH)",
+            "itemtype": "Talk",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://BC3RUfOIFWD1a2rf"
+            ],
+            "imagecaption": "© 2023 | Priska Ketterer | Luzern",
+            "body": "<p>The Swiss Federation of Architects (BSA-FAS) organized the FAS 2022 Day on the theme of experimental planning. Aurélie and Léonore had the opportunity to present our reflections on this topic based on the experimental approach we carried out in the Jardin des Nations neighborhood in Geneva. The various Swiss and European case studies presented during the day allowed for a collective exchange on the contribution of such approaches to the transformation of cities and the questions they raise for the future of planning as a whole.</p>",
+            "credits": "<p>Aurélie Dupuis and Léonore Nemec, Architecture Land Initiative with Florent Agat, Office of Urban Planning, State of Geneva</p>",
+            "info": "<p><a href=\"https://youtu.be/egc57VqVvwI\" title=\"Aurélie Dupuis &amp; Léonore Nemec, Architektinnen / architectes\">Presentation</a></p>"
+        },
+        "id": "f454d752-5a54-4619-a455-6ac7b76a7de5",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2021-07-04",
+            "title": "Degree Show 2021",
+            "subtitle": " The University of Hong Kong Department of Architecture",
+            "eventdate": "04.06.2021 - 04.07.2021",
+            "where": "Hong Kong (HK)",
+            "itemtype": "Teaching Review",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://YTmtBxCFQy1J0yyh"
+            ],
+            "imagecaption": "© 2022  | Hong Kong University",
+            "body": "<p>HABITATIONAL SEEDS IN HONG KONG’S ODD LOTS</p><p>Student work from the studio taught by Dieter, Alexa and Kent at Hong Kong University is on show for a month! </p><p>The studio began by creating a linear tomographic cut through a portion of Hong Kong Island, extending without constraints towards the Earth's center or the skies. This forensic drawing served as our site, where each point was envisioned as a potential for expansion into a small universe. Immersed in this section, our focus was on identifying and studying emerging residual \"odd lots\" within and in immediate proximity to the sectional cut, drawing inspiration from Gordon Matta-Clark. Within these discovered spaces, we sowed the initial seeds of habitation, intending to cultivate collective housing typologies.</p><p></p>",
+            "credits": "<p>Visiting Professors: Dieter Dietz, Alexa den Hartog with Kent Mundle (assistant), Spring Studio 2021</p>",
+            "info": "<p><a href=\"https://miro.com/app/board/uXjVOHk9rZs=/\" title=\"Habitational, Seeds in Hong Kong’s Odd Lots\">Miro Board</a></p>"
+        },
+        "id": "342a8e52-42c9-4209-8f54-3686898d7b56",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-05-30",
+            "title": "Studio Baumann EPFL",
+            "subtitle": "Final Reviews Spring Semester 2023",
+            "eventdate": "30.05.2023",
+            "where": "Lausanne (CH)",
+            "itemtype": "Teaching Review",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://BJj6h6YNWz4U0a1Q"
+            ],
+            "imagecaption": "© 2023  | Studio Baumann",
+            "body": "<p>Aurélie had the great pleasure of taking part in the Studio Baumann 2023 final reviews at EPFL!</p><p>The jury had the opportunity to engage in discussions based on the multiscalar landscape proposals for Geneva's Vernier district developed by the students. The proposals simultaneously addressed landscape continuities, tree typologies, planting strategies, and the qualification of spatialities and cohabitation. </p>",
+            "credits": "<p>The creation of dynamic, living open spaces based on the iterative ecology between human beings and their environment guides the approach of the landscape project. Studio Baumann's semester teaching focused on the metaphor of <em>ramification</em>, envisaged as a tool for composing and qualifying a space through the nature of its void and the thickness of its vegetation cover.</p>",
+            "info": ""
+        },
+        "id": "9db5d5c4-7a4a-4989-918b-e5be76eaa393",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-12-19",
+            "title": "Midis Archi HEAD",
+            "subtitle": "Kirll Ass et Léonore Nemec",
+            "eventdate": "19.12.2022",
+            "where": "Geneva (CH)",
+            "itemtype": "Talk",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://uGiRaZofFhkdwBZg"
+            ],
+            "imagecaption": "© 2022  | Léonore Nemec",
+            "body": "<p>Léonore was invited to present her work as part of the <em>Midis Archi</em> program organized by HEAD's Interior Architecture Department. Her presentation was organized around the idea of <em>active uncertainty</em> as a condition and posture for the practice of architecture today. As part of this approach, she shared various projects carried out with Studio Nemec and Architecture Land Initiative. </p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.youtube.com/watch?v=xEWeQ8DMQKQ\" title=\"presentation\">presentation</a></p>"
+        },
+        "id": "f02bfb74-0668-45a4-b8ad-d10960104754",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-09-18",
+            "title": "Drawing in Architecture ",
+            "subtitle": "Education and Research",
+            "eventdate": "18.09.2023",
+            "where": "—",
+            "itemtype": "Publication",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://858tkjd6qOtGP1hT"
+            ],
+            "imagecaption": "© 2023  | Park Books",
+            "body": "<p>We are thrilled to have had the opportunity to contribute to the exceptional book, \"Drawing in Architecture Education and Research,\" alongside numerous talented architects and researchers. In their contributions, Aurélie and Guillaume both delve into the ways in which drawing contributes to the ecologies of practice in which they are actively engaged.</p>",
+            "credits": "<p><em>Drawing in Architecture Education and Research</em> assembles contributions to the 2021 edition of the <em>Lucerne Talks</em>, the biennial Symposium on Pedagogy in Architecture at HSLU’s School of Engineering and Architecture in Lucerne. The book explores the potential of drawing as a universal tool for communication and understanding among different societies, language groups, and professional communities. It considers drawing in its dual function as an object and a method for theory and practice in architecture, and features strategies for a future transdisciplinary language of drawing that enables narrations and representations of new spatial concepts.</p>",
+            "info": "<p><a href=\"https://www.park-books.com/en/product/drawing-in-architecture-education-and-research/1411\" title=\"Park Books\">Park Books</a></p>"
+        },
+        "id": "50fe09fd-3c85-4f50-a78c-13358604a200",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-06-10",
+            "title": "BUFU Forum I",
+            "subtitle": "",
+            "eventdate": "10.06.2023",
+            "where": "Honk Kong (HK)",
+            "itemtype": "Forum",
+            "project": [
+                "page://WOYRZn9TeLUnZp4x"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://uORolzGfLgEtO21M"
+            ],
+            "imagecaption": "© 2023 | Raffaella Endrizzi ",
+            "body": "<p>We are pleased to announce the successful conclusion of the first phase of 'By Us, For Us,' which culminated in the hosting of Forum 1 in the heart of Cattle Depot in To Kwa Wan. Thank you to all the participants—stakeholders, experts, colleagues, and friends—for their commitment and trust in this initiative. We are looking forward to the next stage of the research, 'Forum II' on governance and ordinances, which is likely to be held in Spring 2024. Stay tuned!</p>",
+            "credits": "<p><em>By Us, For Us</em> is a project aimed at drafting a roadmap toward (re)introducing a ‘third option’ for housing development in Hong Kong through a series of Public Forums.</p>",
+            "info": ""
+        },
+        "id": "9b8baf2f-1d09-4f5f-94b6-3d7de5bcada0",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-10-06",
+            "title": "Silence, on surélève",
+            "subtitle": "Tracés October 2023",
+            "eventdate": "06.10.2023",
+            "where": "—",
+            "itemtype": "Publication",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://6KzXyZ1wbJ7PDD6e"
+            ],
+            "imagecaption": "© 2023 | Tracés",
+            "body": "<p>Léonore contributes to the October issue of Tracés! Her contribution, entitled \"Silence, on surélève\", focuses on a renovation project in Geneva carried out by Jaccaud &amp; associés.</p><p>\"Building the city on the city, without fuss: despite the effort and patience involved, once the scaffolding has been removed, this elevation operation by Jaccaud &amp; Associés is virtually imperceptible from the street.\"</p>",
+            "credits": "<p>To tackle the housing crisis without systematic demolition, why not elevate the whole of Switzerland? A brilliant idea, but one that comes up against technical, architectural and, above all, regulatory difficulties. In October 2023, Tracés presents some twenty projects, from Meyrin to St. Gallen: 400 homes created without touching the ground.</p>",
+            "info": "<p><a href=\"https://www.espazium.ch/fr/traces-surelever-la-suisse-2023-octobre\" title=\"Tracés\">Tracés</a> </p>"
+        },
+        "id": "06e2f30e-a4ab-46c4-85ff-049063dd9a5f",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2021-02-05",
+            "title": "Jardin des Nations Forum 1",
+            "subtitle": "Meta-themes",
+            "eventdate": "05.02.2021",
+            "where": "Geneva (CH)",
+            "itemtype": "Forum",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://8xTJ5hoTjdwqi4zY"
+            ],
+            "imagecaption": "© 2021 | Architecture Land Initiative",
+            "body": "<p>The first forum 'Meta-themes' is open to actors across the Jardin des Nations!</p><p>It aims to collectively exchange around four meta-themes in order to explore current and latent imaginaries in connection with three territorial figures constitutive of the district's geographic and spatial conditions. These structured exchanges are an opportunity to mobilize everyone's affects around emerging collective questions that are both specific and open-ended.</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.ge.ch/document/28618/annexe/0\" title=\"Documentation Forum 1\">Documentation Forum 1</a></p>"
+        },
+        "id": "bdd20d74-086f-47e4-9a43-a809ce57cb6e",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2021-03-12",
+            "title": "Jardin des Nations Forum 2",
+            "subtitle": "Mise en espace",
+            "eventdate": "12.03.2021",
+            "where": "Geneva (CH)",
+            "itemtype": "Forum",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://iFFJAwW4Rfql6y5F"
+            ],
+            "imagecaption": "© 2021 | Architecture Land Initiative",
+            "body": "<p>The second forum 'Mise en espace' is open to actors across the Jardin des Nations!</p><p>The aim of Forum 2 is to share the ideas generated by the study and Forum 1, and to enable the various participants to appropriate and contribute to them. The morning is devoted to walks through the Jardin, enabling the participants to talk about the part of the territory they know best, and to listen to other nearby people and stories of places. In the afternoon, four digital spaces are made available. Each space contains documents that contribute to a new imaginary for the Jardin. </p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.ge.ch/document/28618/annexe/1\" title=\"Documentation Forum 2\">Documentation Forum 2</a></p>"
+        },
+        "id": "5564d562-7f87-4417-88d8-e1f330118cae",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2021-05-07",
+            "title": "Jardin des Nations Forum 3",
+            "subtitle": "Visions",
+            "eventdate": "07.05.2021",
+            "where": "Geneva (CH)",
+            "itemtype": "Forum",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://n2H6sd6uG8JEmA53"
+            ],
+            "imagecaption": "© 2021 | Architecture Land Initiative",
+            "body": "<p>The third forum 'Visions' is open to actors across the Jardin des Nations!</p><p>The Forum aims to share three complementary visions and build on them through exchange. Following on from Forum 2, which focused on the imaginaries of the territory, Forum 3 aims to set out territorial strategies and enable the various participants to appropriate and contribute to them. Strategies take shape both through territorial re-orientations and through a series of possible short-term actions and synergies, developed collectively. </p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.ge.ch/document/28618/annexe/2\" title=\"Documentation Forum 3\">Documentation Forum 3</a></p>"
+        },
+        "id": "b8049489-dbba-4173-942b-684ded771a86",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2021-07-09",
+            "title": "Jardin des Nations Forum 4",
+            "subtitle": "Proto-projets",
+            "eventdate": "09.07.2021",
+            "where": "Geneva (CH)",
+            "itemtype": "Forum",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://LI3jvU915Moy5SSs"
+            ],
+            "imagecaption": "© 2021 | Architecture Land Initiative",
+            "body": "<p>The fourth forum 'Proto-projets' is open to actors across the Jardin des Nations!</p><p>The aim of Forum 4 is to set in motion three proto-projects arising from the strategies outlined during the Forum 3. In the morning, workshops are held in key locations related to the three proto-projects. In the afternoon, all participants meet at the International Museum of the Red Cross for an immobile journey depicting the Jardin des Nations through history and time. The day concludes with a summary of the workshops and an open discussion of possible implementations of the proto-projects discussed and elaborated in the first part of the day. </p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.ge.ch/document/28618/annexe/3\" title=\"Documentation Forum 4\">Documentation Forum 4</a></p>"
+        },
+        "id": "f766f239-22a9-4e37-b8ac-9c77a6b3518a",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-06-20",
+            "title": "Le dessin comme pensée transversale",
+            "subtitle": "Tracés June 2022",
+            "eventdate": "20.06.2022",
+            "where": "—",
+            "itemtype": "Publication",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://0lLlwiOebR5qYbdp"
+            ],
+            "imagecaption": "© 2023 | Collections Drawing Matter",
+            "body": "<p>Guillaume contributes to the June issue of Tracés! He offers a book review of Matthew Wells' <em>Survey: Architecture Iconographies</em>. For Guillaume, the book is about exposing the power of drawing as transversal thinking. </p><p>\"<em>Survey</em> highlights the figure of the architect/witness as a participating subject. The work reveals the need to immerse oneself in a given time and place in order to build a point of view and a thought capable of empathy.\"</p>",
+            "credits": "<p>In June 2022, Tracés takes up the question of architectural drawing in an issue entitled <em>Le dessin comme praxis - du relevé à l'esquisse</em> (Drawing as praxis - from survey to sketch). </p>",
+            "info": "<p><a href=\"https://www.espazium.ch/fr/actualites/le-dessin-comme-pensee-transversale\" title=\"Tracés\">Tracés</a></p>"
+        },
+        "id": "75aafa08-9c55-4405-9ecb-0f259752c738",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-06-18",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "14.05.2023 - 18.06.2023",
+            "where": "Lausanne (CH)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://THhdMuvgbtQoEYTx"
+            ],
+            "imagecaption": "© 2023 | Chloé Cohen | Lausanne",
+            "body": "<p>In June 2023, Shared Landscapes will be staged in Chalet-à-Gobet in collaboration with Théâtre de Vidy !</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Lausanne among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "62a13e83-a262-42a4-83d3-cddd7c6ba593",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-07-31",
+            "title": "Shared Landscapes",
+            "subtitle": "Caroline Barneaud / Stefan Kaegi (Rimini Protokoll)",
+            "eventdate": "07.07.2023 - 16.07.2023",
+            "where": "Avignon (FR)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://bpjOS77e2qO9QHfO"
+            ],
+            "imagecaption": "© 2023 | Architecture Land Initiative",
+            "body": "<p>In July 2023, Shared Landscapes will be staged in Pujaut in collaboration with Festival d'Avignon !</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Avignon among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "fd2a55ce-b155-4494-b0ad-d9ebf5113fcc",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-09-10",
+            "title": "Shared Landscapes",
+            "subtitle": "",
+            "eventdate": "19.08.2023 - 10.09.2023",
+            "where": "Berlin (DE)",
+            "itemtype": "Performance",
+            "project": [
+                "page://TJCn9GpAXkRTAdnc"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://c1x3ot4vDiMdGe0g"
+            ],
+            "imagecaption": "© 2023 | Camille Blake | Berlin",
+            "body": "<p>In September 2023, Shared Landscapes will be staged in Hangelsberg in collaboration with Berliner Festispiele !</p><p>Caroline Barneaud, curator, and Stefan Kaegi, theatre director (Rimini Protokoll), invite the audience to leave the theatre and spend a whole day in nature on the outskirts of Berlin among trees, meadows, human, and non-human inhabitants. In the open air, a new kind of community emerges at the intersection of city and country.</p><p>Architecture Land Initiative is contributing to the show by producing the maps that accompany the theatrical journey through the landscape.</p>",
+            "credits": "<p><em>Shared Landscapes</em> is part of the project <em>Performing Landscape</em>, a collaboration between cultural institutions, artists, and scientists, who that develop a reflection on the notions of art, landscape, and territory. They draw a visible and invisble map of the different places they visit and through the prism of arts and sciences they unveil the spaces they share.</p>",
+            "info": "<p><a href=\"https://performinglandscape.eu/Events\" target=\"_blank\">Performing Landscape</a></p>"
+        },
+        "id": "0a566d90-cb45-4fb7-82f9-584f7dfb4a0e",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-06-18",
+            "title": "Explore Festival",
+            "subtitle": "Traversée du lac",
+            "eventdate": "18.06.2022",
+            "where": "Geneva (CH)",
+            "itemtype": "Public Event",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://LHThhMt1pHYPE2pj"
+            ],
+            "imagecaption": "© 2023 | Explore",
+            "body": "<p>Architecture Land Initiative joins forces with Festival Explore to experiment with a new way of crossing the lake! </p><p>This new connection prefigures the soft and qualitative mobility solutions proposed in the mobility strategy developed as part of the vision for the Jardin des Nations. The right shore, which is currently highly privatized and lacking in public spaces, is gradually being reconnected to the Geneva area on several levels. </p>",
+            "credits": "<p>EXPLORE is a citizen's festival, a place for encounters, experimentation, discovery and cultural and participatory exchange to build the city of tomorrow. Exhibitions, concerts, debates, conferences, workshops, themed walks, festive evenings for all, with one aim: to unite and engage together in the ecological transition, here and now.</p>",
+            "info": "<p><a href=\"https://exploregeneve.ch/editions-precedentes/explore-juin-2022/\" title=\"Explore\">Explore</a></p>"
+        },
+        "id": "5f062cc2-1ef0-48b7-9c15-05f6a099c7bd",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-12-20",
+            "title": "Superstudio Latent Futures",
+            "subtitle": "Final Exhibition",
+            "eventdate": "20.12.2022",
+            "where": "Lausanne (CH)",
+            "itemtype": "",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [],
+            "imagecaption": "",
+            "body": "",
+            "credits": "",
+            "info": "<p><a href=\"https://memento.epfl.ch/event/final-presentation-superstudio/\" title=\"EPFL Event\">EPFL event</a></p>"
+        },
+        "id": "0e795a5a-0295-45cf-acfb-78dac773ba92",
+        "isHidden": true,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-10-23",
+            "title": "Music Evenings Place des Nations",
+            "subtitle": "Jardin des Nations - Quartier-Paysage",
+            "eventdate": "13.09.2023 - 23.10.2023",
+            "where": "Geneva (CH)",
+            "itemtype": "Public Event",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://jAacZCtizzxMIrHb"
+            ],
+            "imagecaption": "© 2022 | Architecture Land Initiative",
+            "body": "<p>Three musical evenings are organized at the Kiosque des Nations on September 15, 22 and 29 from 6pm to midnight. Bongo Joe and Canal54 join forces with Architecture Land Initiative for a series of events at the Kiosque on Place des Nations! On the last three Thursdays of September, the Kiosque will vibrate to the rhythm of a rich and varied program and a refreshment bar set up for the occasion. A great way to end the day or start the evening in a new venue in the heart of the Nations district!</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://nationsquartierpaysage.ch\" title=\"Evénements Quartier-Paysage\">Événements Quartier-Paysage</a></p>"
+        },
+        "id": "130bafad-d07d-4596-abb7-08a564203329",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-04-08",
+            "title": "Forum Culture",
+            "subtitle": "",
+            "eventdate": "08.04.2022",
+            "where": "Geneva (CH)",
+            "itemtype": "",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [],
+            "imagecaption": "",
+            "body": "",
+            "credits": "",
+            "info": ""
+        },
+        "id": "d644854d-768c-4f6c-bdb4-4a59638b7248",
+        "isHidden": true,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-02-17",
+            "title": "A day in Sitterwerk",
+            "subtitle": "Architecture Land Initiative Winter retreat ",
+            "eventdate": "17.02.2024",
+            "where": "St. Gallen (CH)",
+            "itemtype": "Workshop",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://erP8FJXUVksqtXwN"
+            ],
+            "imagecaption": "© 2024 | Architecture Land Initiative",
+            "body": "<p>This weekend, we had the privilege of spending a day at the incredible Sitterwerk Foundation in the Sitter Valley near St. Gallen, where we benefited from its research facilities and materials. We spent the day working in contact with the Art Library and the Material Archive to conduct our own research.</p><p>Our time there proved to be incredibly inspiring, and we extend our heartfelt gratitude to the Sitterwerk Foundation for their warm hospitality and for graciously opening their doors to us. A special thanks to Felix Lehner for his generous and amazing tour. We hope to return soon!</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.sitterwerk.ch\" title=\"Stiftung Sitterwerk\">Stiftung Sitterwerk</a></p>"
+        },
+        "id": "0dbdab6a-4d47-4a68-98b8-713b9447423d",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-06-10",
+            "title": "Swiss Art Awards 2024",
+            "subtitle": "Finalists Architecture Category",
+            "eventdate": "10.06.2024",
+            "where": "Basel (CH)",
+            "itemtype": "Award",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://ylKQnhh3jBPQyN1n"
+            ],
+            "imagecaption": "© 2024 | Swiss Art Awards",
+            "body": "<p>Architecture Lan Initiative is among the finalists in the 'architecture' category for the Swiss Art Awards 2024!</p><p>In this year’s exhibition, 55 positions in the fields of art, architecture and critique, publishing, exhibition will be presented in June 2024 in the context of the international fair Art Basel. </p><p>Award ceremony on Monday, June 10, 2024 in Hall 1.1. Save the date!</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://swissartawards.ch/swiss-art-awards/\" title=\"Swiss Art Awards\">Swiss Art Awards</a></p>"
+        },
+        "id": "de81657e-3e84-400e-8583-3bc3fec2e87a",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-03-13",
+            "title": "Behaviorology ETHZ ",
+            "subtitle": "Studio Reviews Spring Semester 2024",
+            "eventdate": "13.03.2024",
+            "where": "Zurich (CH)",
+            "itemtype": "Teaching Review",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://rB0VJJueReBfHOu2"
+            ],
+            "imagecaption": "© 2024 | Chair of Architectural Behaviorology",
+            "body": "<p>Aurélie and Dieter are pleased to join the Chair of Architectural Behaviorology for the Spring 2024 semester Studio <em>Public Space Behaviorology</em> intermediary reviews!</p><p>The studio is focusing in and around the Waldlabor forest in Zürich. It involves analysis of human and non-human relationships, as well as experimentation, design, on-site construction and observation.&nbsp;&nbsp;</p>",
+            "credits": "<p>What defines a good public space? To answer this question, the studio uses the methods of Architectural Behaviorology and builds upon previous research in public spaces. Through the observation of spaces in and around the forest it aims to identify the natural, typological and human actors at play, as well as the rules of interplay between those. It explores the tool of drawing both as a way of representing gathered data and a means for design.</p>",
+            "info": "<p><a href=\"https://kaijima.arch.ethz.ch/?filter=1&amp;category_name=design-studio\" title=\"Chair of Architectural Behaviorology\">Chair of Architectural Behaviorology</a></p>"
+        },
+        "id": "74e01212-b6ca-40c3-a3d0-317529f4f445",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-03-21",
+            "title": "Head Houses and Volcanoes",
+            "subtitle": "Conference",
+            "eventdate": "21.03.2024",
+            "where": "Venice (IT)",
+            "itemtype": "Talk",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://0Ae04peK3oLFYUqM"
+            ],
+            "imagecaption": "© 2024 | Università Iuav di Venezia",
+            "body": "<p> Guillaume will give a conference as part of the IUAV lecture series in Venice. It will be an opportunity to share his current research into the disciplinary potential between archeology and architecture. The lecture will include an overview of ongoing progress in the development of an interpretation planning strategy for the Vedi River Valley in Armenia, which includes the collaborative design of an archeological field laboratory.</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www5.iuav.it/homepage/index.htm\" title=\"IUAV\">Università IUAV di Venezia</a></p>"
+        },
+        "id": "70d96f8b-a002-45f9-afde-eff5ea8efec6",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-04-11",
+            "title": "Design Trust 2024 January Cycle Grant",
+            "subtitle": "By Us, For Us: Hong Kong Co-operatives, Future-proof Narratives Goals",
+            "eventdate": "11.04.2024",
+            "where": "Hong Kong (HK)",
+            "itemtype": "Grant",
+            "project": [
+                "page://WOYRZn9TeLUnZp4x"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://rfPJGTykrOaSm9RF"
+            ],
+            "imagecaption": "© 2023 | Architecture Land Initiative",
+            "body": "<p>Architecture Land Initiative has been awarded a second Design Trust grant! With this grant for our project \"By Us, For Us: Hong Kong Co-operatives, Future-proof Narratives Goals,\" we will be able to expand on the first stage of our research on Civil Servant Building Societies (CBS) as an alternative housing model.</p><p>There was a period in Hong Kong when the public had a stake in the formation of the urban settlement in the model of CBS, extending from the apartment to the yard, street front, block, and collective neighborhood. The project looks both to this past and to the future. It unfolds as two public forums, a publication, and an international exhibition, which together aim to chart a roadmap towards pilot proto-projects involving diverse stakeholders and communities.</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://designtrust.hk/newsletter/new-grants-cycle-with-2024-theme-archiving-futures-design-trust-2024-january-cycle-grant-recipients/\" title=\"Design Trust\">Design Trust</a></p>"
+        },
+        "id": "1b8f6da4-9e32-43bc-84cd-6aee22699ea9",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-05-22",
+            "title": "Public defense PhD",
+            "subtitle": "Architectural Rehearsal. Choreopolitical ecologies within a scripted world",
+            "eventdate": "22.05.2024",
+            "where": "Lausanne (CH)",
+            "itemtype": "Public Event",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://eqn7LEPnqhiShljl"
+            ],
+            "imagecaption": "© 2024 | Aurélie Dupuis",
+            "body": "<p>On May 22, 2024 Aurélie will hold the public defense of her doctoral thesis entitled \"Architectural Rehearsal. Choreopolitical ecologies within a scripted world.\" The event will take place at EPFL at 6pm in room RLC G1 350. Everyone is invited! </p>",
+            "credits": "<p>In her research, Aurélie studied relational, and more-than-human forms of mobilization as “choreopolitical ecologies,” understood as co-articulations of worldings and habitats away from policed conformity. She examined how these minor ecologies challenge the deeply linear, depoliticized and disembodied understandings of imagination, spatial practice, and climate action that continue to structure western architectural practice and theory until today.</p>",
+            "info": "<p><a href=\"https://epfl.zoom.us/j/63884828685\" title=\"zoom link\">zoom link</a></p>"
+        },
+        "id": "022b3389-8640-4a66-aa47-044f2528e629",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-05-29",
+            "title": "Behaviorology ETHZ",
+            "subtitle": "Final Reviews Spring Semester 2024",
+            "eventdate": "29.05.2024",
+            "where": "Zurich (CH)",
+            "itemtype": "Teaching Review",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://390fGlkGfOJ5NDxL"
+            ],
+            "imagecaption": "© 2024 | Chair of Architectural Behaviorology",
+            "body": "<p>Aurélie is pleased to join the Chair of Architectural Behaviorology for the Spring 2024 semester Studio <em>Public Space Behaviorology</em> final reviews!</p><p>The studio is focusing in and around the Waldlabor forest in Zürich. It involves analysis of human and non-human relationships, as well as experimentation, design, on-site construction and observation.&nbsp;&nbsp;</p>",
+            "credits": "<p>What defines a good public space? To answer this question, the studio uses the methods of Architectural Behaviorology and builds upon previous research in public spaces. Through the observation of spaces in and around the forest it aims to identify the natural, typological and human actors at play, as well as the rules of interplay between those. It explores the tool of drawing both as a way of representing gathered data and a means for design.</p>",
+            "info": "<p><a href=\"https://kaijima.arch.ethz.ch/?filter=1&amp;category_name=design-studio\" title=\"Chair of Architectural Behaviorology\">Chair of Architectural Behaviorology</a></p>"
+        },
+        "id": "fa032f7e-f38b-490b-a2e4-b92144c8c81a",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2023-12-11",
+            "title": "Body Sensors ",
+            "subtitle": "and Potential Cartography ",
+            "eventdate": "11.12.2023 - 15.12.2023 ",
+            "where": "Paris (FR)",
+            "itemtype": "Workshop",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://GxW2QqbSWDWnvkRd"
+            ],
+            "imagecaption": "© 2024 | Léonore Nemec",
+            "body": "<p>Léonore is taking part in a week's residency at the Théâtre National de Chaillot, focusing on the question of body-sensors and potential cartographies. Notions relating to the trace, such as notation, inscription, transcription and translation, will be explored through on-site exploratory work and exchanges with architects, dancers, performers, choreographers, composers, researchers and scenographers. Interveners: Frédérique Aït-Touati, Alexandra Arènes, Marie-Sarah Adenis, Esther Denis, Madeleine Fournier, Axelle Grégoire, Laurent Longuevergne, Olivier Normand, Estelle Zhong Mengual, Alvise Sinivia.</p>",
+            "credits": "",
+            "info": ""
+        },
+        "id": "bde6fc9e-d9db-4e5a-b308-7c1b0082fbeb",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-02-05",
+            "title": "Documentary Film as Tool ",
+            "subtitle": "",
+            "eventdate": "05.02.2024 - 09.02.2024",
+            "where": "Paris (CH)",
+            "itemtype": "Workshop",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://5RagRKSuseVPOoCa"
+            ],
+            "imagecaption": "© 2012 | Lucien Castaing-Taylor and Véréna Paravel ",
+            "body": "<p>Léonore is taking part in a week-long residency focusing on documentary film as tool for raising social and political issues. The week will include active practices, exchanges and discussions with Lucien Castain Taylor and Verena Paravel, Joana Hadjithomas and Khalil Joreige, Jean-Michel Frodon, Cathy Bouvard and Clément Postec, as well as participants in the 2024 young filmmakers workshop at the Ateliers Médicis in Clichy-sous-Bois.</p>",
+            "credits": "",
+            "info": ""
+        },
+        "id": "71709338-029e-4c81-9ce6-0a93c840e1ce",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-03-11",
+            "title": "Assembling Assemblies",
+            "subtitle": "",
+            "eventdate": "11.03.2024 - 15.03.2024",
+            "where": "Paris (FR)",
+            "itemtype": "Workshop",
+            "project": [],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://BuXWp0hK9C5mfv0l"
+            ],
+            "imagecaption": "© 2024 | Léonore Nemec",
+            "body": "<p>Léonore is taking part in a week-long residency on the theme of <em>Assembling assemblies </em>at the Centre National de la Danse and the Cromot studio in Paris. Questions of assemblies, political arts and ways of making collective will be addressed by experimenting with space through the body and by sharing diverse practices such as dramaturgy, geochemistry, choreography and philosophy. </p>",
+            "credits": "<p>Interveners: Frédérique Aït-Touati, Marion Boudier, Duncan Evennou, Madeleine Fournier, Jérôme Gaillardet, Camille Louis, Olivier Normand, Loïc Touzet.</p>",
+            "info": ""
+        },
+        "id": "eae9d2e5-e9d5-4453-b9b5-46ceb65b8133",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2024-11-29",
+            "title": "Formal Apology",
+            "subtitle": "",
+            "eventdate": "29.11.2024",
+            "where": "Hong Kong",
+            "itemtype": "Communication",
+            "project": [
+                "page://WOYRZn9TeLUnZp4x"
+            ],
+            "toggleproject": "false",
+            "members": "",
+            "image": [
+                "file://V3fC3mEudrJxbCzV"
+            ],
+            "imagecaption": "",
+            "body": "<p>Architecture Land Initiative (ALIN) would like to issue a formal apology to two artists, Jess Lau Ching and Lam Kin Choi, for having had their work appear on our website without their knowledge or agreement, and without proper crediting. </p><p>The work of these artists appeared within a section of our website on the project \"By Us, For Us\", in which we include an archival collection of images from the process of the project which also serves as a set of references for the context of the project. Much of these images are not the formal output of ALIN itself, in which case the images are properly credited, though in the case of these artists we neglected to include proper credits. For this we are terribly sorry to them for any damages it may have caused their work, and upon notice have immediately removed their images. </p><p>We in no way intended to represent their work as our own and fully acknowledge our neglect. The neglect happened in a non-verified workflow between our web lead and the project team. We are committed to enacting a set of better publishing practices within our cooperative society to ensure that such an incident would not happen again. </p><p>We hope that the affected artists can accept our apology. </p>",
+            "credits": "",
+            "info": ""
+        },
+        "id": "3e39390c-4e13-4792-b168-fcd0910340f4",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-10-23",
+            "title": "Jardin des Nations - Quartier-Paysage",
+            "subtitle": "Museum Ariana",
+            "eventdate": "05.10.2022-23.10.2022",
+            "where": "Geneva (CH)",
+            "itemtype": "Exhibition",
+            "project": [
+                "page://KwOoKqmtI5tBXt6G"
+            ],
+            "toggleproject": "false",
+            "members": "Aurélie Dupuis, Dieter Dietz, Léonore Nemec, Zoé Lefèvre",
+            "image": [
+                "file://HL1odJJ5oHqrSdgX"
+            ],
+            "imagecaption": "© 2022 | Julien Heil",
+            "body": "<p>The Jardin des Nations, a space between city and nature, is a laboratory for ecological transition. Its sustainable development is a challenge for the City of Geneva, as well as for the Canton and surrounding municipalities. After two years of research and reflection, the project is taking on a new dimension this October, with a series of ephemeral activities taking place in the area. The Musée Ariana will be one of the central venues for this event, with an exhibition in the lobby of eight large-scale cartographic panels created by Architecture Land Initiative and connected talks and discussions.</p>",
+            "credits": "",
+            "info": "<p><a href=\"https://www.musee-ariana.ch/expositions/quartier-paysage\" title=\"Museum Ariana\">Museum Ariana</a></p>"
+        },
+        "id": "5c075275-7b17-4bf6-b6b1-c2e9e4a4124f",
+        "isHidden": false,
+        "type": "tableblock"
+    },
+    {
+        "content": {
+            "date": "2022-01-31",
+            "title": "Ecologies of Drawing: In Situ",
+            "subtitle": "",
+            "eventdate": "01.2022",
+            "where": "",
+            "itemtype": "Exhibition on-line",
+            "project": [],
+            "toggleproject": "false",
+            "members": "Aurélie Dupuis",
+            "image": [
+                "file://P3KoTnpg2Z2BesoV"
+            ],
+            "imagecaption": "",
+            "body": "<p>Ecologies takes on the layering inherent in navigating diverse ways of being, and in our examinations of systems that may be simultaneously independent and intertwined. By its very nature, drawing, as a discipline, an action, and a mode of inquiry, negotiates such complex systems and lays bare relationships by rendering visible thought, body, and sentiment of the drawing artist and the material, concept, and context with(in) which they are engaged. By marking our understandings of and relationships to, with, and within our environments, drawing becomes an ecological practice and presence onto itself, an action that sites and situates, an act of holistic connection and rapport.&nbsp;When considered as a network of eco-meditations, the drawings exhibited both perform and illustrate drawing’s capacity to question, challenge, and engage, to embody experience and inspire contemplation.</p>",
+            "credits": "",
+            "info": ""
+        },
+        "id": "56e72eef-1c2d-4fd1-bae8-eca054608919",
+        "isHidden": false,
+        "type": "tableblock"
+    }
+]
 
 ----
 
-Selectfilters: itemtype, project, members
-
-----
-
-Typename: Event type
-
-----
-
-Types: Performance, Talk, Teaching Review
-
-----
-
-Filtername: Project
-
-----
-
-Filters: Shared Landscapes, Jardin des Nations
-
-----
-
-Projects: Schlieren, Shared Landscapes, By Us for Us
-
-----
-
-Filtersetatitle: 
-
-----
-
-Filterseta: 
-
-----
-
-Filtersetbtitle: 
-
-----
-
-Filtersetb: 
-
-----
-
-Text: 
+Selectfilters: itemtype, project
 
 ----
 

@@ -1,4 +1,4 @@
-Caption: To Kwa Wan, By Us For Us: Postcards, May 2023, ©Raffaella Endrizzi photography
+Caption: <p>By Us For Us: Postcards, To Kwa Wan, Hong Kong, May 2023 <br>© 2023 | Architecture Land Initiative | Hong Kong</p>
 
 ----
 
@@ -10,10 +10,6 @@ Alt:
 
 ----
 
-Category: Outcome
-
-----
-
 Tool: 
 
 ----
@@ -22,7 +18,7 @@ Mediatype: Video
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Category: Process
 
 ----
 

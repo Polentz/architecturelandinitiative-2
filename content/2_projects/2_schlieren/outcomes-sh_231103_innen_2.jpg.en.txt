@@ -1,4 +1,4 @@
-Caption: <p>SH | HOWL, Bernstrasse 29 - Interior rendering of the new construction; ©Architecture Land Initiative</p>
+Caption: <p>Interior rendering of the new building, Schlieren Howl, Architecture Land Initiative, August 2023<br>© 2023 | Architecture Land Initiative | Zurich</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
 Tool: 
 
 ----
 
-Project: 
+Mediatype: Image
 
 ----
 
-Mediatype: Image
+Category: Outcome
 
 ----
 

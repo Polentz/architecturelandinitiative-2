@@ -1,0 +1,29 @@
+Caption: <p><em>Lac Léman</em>, Bathymetric map of Lake Geneva, Switzerland, 1889, Scale : 1/50 000<br>© 1889 | Ministère des Travaux Publics | Paris</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: yi7HfLZ34EN5EShm
+
+----
+
+Template: media-project

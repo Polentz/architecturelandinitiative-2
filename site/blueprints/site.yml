@@ -35,6 +35,7 @@ tabs:
           attachments:
             label: File attachments     
             type: files 
+            batch: true
             template: pdf
             uploads: pdf
             query: site.files.template("pdf")
@@ -87,6 +88,7 @@ tabs:
               contactblocks:
                 label: Contact items
                 type: blocks
+                pretty: true
                 fieldsets:
                   - contactblock
       sidebar:
@@ -142,7 +144,7 @@ tabs:
             sortBy: filter asc
             fields:
               key: 
-                type: slug
+                type: text
                 label: Key (unique–do not change)
               filter:
                 type: text

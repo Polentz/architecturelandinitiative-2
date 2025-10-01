@@ -1,4 +1,4 @@
-Caption: <p>Gaswerk der Stadt Zürich; <em>Gemeinde Schlieren</em>, Längenprofil<em> </em>Schlieren, 27 Jun. 1918, Scale: 1/1000 ©Archivplan Gemeinde Schlieren</p>
+Caption: <p><em>Gaswerk der Stadt Zürich</em>, site plan, Schlieren, June 1918, Scale: 1/1000 <br>© 2021 | Archivplan Gemeinde Schlieren | Schlieren</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
 Tool: 
 
 ----
 
-Project: 
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Category: Archive material
 
 ----
 

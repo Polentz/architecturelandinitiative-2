@@ -1,0 +1,38 @@
+Title: Atlases
+
+----
+
+Intro: Atlases, as surveys, are an interpretive inquiry in themselves. They present collected on-site and archival materials while simultaneously establishing a common ground for a collective reconfiguration toward the future. As such, atlases allows new propositions to grow from a reframing of spatial and historical entanglements. Through the making of atlases, we engage with the transformative role of survey drawing as a way to thread the topographical, architectural, social, and historical dimensions of places otherwise. Considering the situated and performative dimensions of atlases is, for us, a means of actively revising the authority accorded to representation and the visual in Western culture.
+
+----
+
+Textblocks: 
+
+----
+
+Cover: - file://ogfs4iqdap7buxrv
+
+----
+
+Gallery:
+
+- file://BHpMz4yDRIU0Kjd4
+- file://x0x4aMiqiXt6t78w
+- file://UBM8CS76v0c6QNJ8
+- file://cEk7YFWtYhHXXmJ3
+- file://HRf5sXtKZ12pXsZP
+- file://TxjxWT4NDvxhALOX
+- file://LqxGFiFrXsgkC5gR
+- file://FCgUvQXcF2KCkXeO
+
+----
+
+Background: - file://ogfs4iqdap7buxrv
+
+----
+
+Selectfilters: mediatype, project
+
+----
+
+Uuid: NXrfS7lMkYsthb0T

@@ -1,4 +1,4 @@
-Caption: Alley, By Us For Us: The Future of Housing Co-operatives in Hong Kong, 2023, ©Architecture Land Initiative
+Caption: <p><em>Alley</em>, By Us For Us: Forum I, The Future of Housing Co-operatives, To Kwa Wan, Hong Kong, 2023 <br>© 2023 | Architecture Land Initiative | Hong Kong</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
 Tool: 
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Mediatype: Drawing
 
 ----
 
-Mediatype: Drawing
+Category: 
 
 ----
 

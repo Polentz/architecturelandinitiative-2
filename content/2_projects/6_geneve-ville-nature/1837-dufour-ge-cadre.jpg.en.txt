@@ -1,0 +1,29 @@
+Caption: <p>Dufour Map 1842, Topographic Map of the Canton of Geneva surveyed by order of the government in the years 1837 and 1838, Geneva, 1842, Scale approx. 1:25 000<br>© 2021 | Bibliothèque de Genève | Centre d'iconographie | CIG | Public Domain Mark</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: 7E4ZTEGelkxqMvmU
+
+----
+
+Template: media-project

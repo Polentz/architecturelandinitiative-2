@@ -77,9 +77,9 @@ panel.plugin("architecturelandinitiative/blocks", {
             @input="update({ eventdate: $event })">
           </k-input>
           <k-input 
-            v-bind="field('typology')"
-            :value="content.typology"
-            @input="update({ typology: $event })">
+            v-bind="field('itemtype')"
+            :value="content.itemtype"
+            @input="update({ itemtype: $event })">
           </k-input>
         </div>
       `

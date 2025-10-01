@@ -1,0 +1,104 @@
+Title: Geneve Ville/Nature
+
+----
+
+Intro: <p>In 2022, the City of Geneva began the process of revising its main development strategy, adopted in 2009, to place the ecological transition and the need to reduce the municipality's carbon footprint at the heart of its concerns. The paradigm shifts that have characterized the last decade made this revision an opportunity to radically transform urban planning strategies and the ways in which such strategic frameworks are formulated. </p>
+
+----
+
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "Context",
+            "copy": "<p>This is why the City of Geneva launched an initial prospective planning study, in order to open up the questions and reframe the issues at stake before embarking on the construction of a new communal master planning concept. Architecture Land Initiative was one of four teams selected to open up new avenues of work. More specifically, the team's focus was on the future relationship between city and nature : How can we overcome the antithesis between the production of the city and the production of new nature, and imagine a project for new coexistence and adaptation to climate change? How can we use the transformation of the city to address these issues? How can we take advantage of the reuse/recycling/densification of the city to enhance biodiversity and adapt the city to climate change? What are the risks associated with climate change in Geneva, and how can we respond?</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "67fb8905-9699-429a-b660-87f8abe4ddac",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Project",
+            "copy": "<p>In this research, the Arve River becomes the structuring element in the reorientation of the relationship between city and nature. The territorial condition it has shaped over the centuries, with its plateaus, meanders, affluents and ecosystems, constitutes the primary substance for rethinking these relationships. The Arve River as a living organism offers numerous opportunities for assembling built/non-built forms, human/non-human dynamics, and all the forms of life that make up the city. By inverting our understanding of the river's presence in the city, not as an addition but as an antecedent and fundamental element, the city's articulations are revisited in terms of the cohabitation of the living. The boundaries that persistently organize our lifestyles and structure our spaces into mono-functional zones are questioned through three spatializations along the Arve: at La Jonction, Les Vernets and Le Bout-du-Monde. In all three cases, the planned renovation of major sports and logistics infrastructures becomes a lever for transforming spatialities and relationships with the non-human. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "f162f32b-009e-475b-b8a6-950dc1f1ae0b",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Infos",
+            "copy": "<p>Period:<br>2022</p><p>Architecture Land Initiative:<br>Dieter Dietz, Aurélie Dupuis, Léonore Nemec (lead), Zoé Lefèvre, Alexa den Hartog</p><p>External experts:<br>Géraldine Pflieger (Geneva University),<strong> </strong>Camille Frechou (EPFL), Adam Szymczyk (independant curator), Claude Fischer (HEPIA)</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "e8dab060-6e1c-444e-a330-a67cc8fc6173",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
+
+----
+
+Cover: 
+
+----
+
+Gallery:
+
+- file://695eoNe3V1vHBU1H
+- file://tl4GNhDUGbzGz9MV
+- file://7E4ZTEGelkxqMvmU
+- file://2RMeMhTAZWC2zbjY
+- file://okR0ZSxJZM3q6EDs
+- file://dcda6SmGdjFuBZDm
+- file://h9UGEvCJwCdIMgMQ
+- file://R8yyQE6yx7axT0La
+- file://SWkrEiAtBJ6fiAok
+- file://1pnMexw8uBgkAlhP
+- file://ELOMoGnyiVgeEoLA
+- file://FicKGQcCyOAQR75X
+- file://2cCFCfyeXFGNErfy
+- file://2D7K18xQNJCGR5MH
+- file://SJhB471uW8k5SOYi
+- file://sNgPg7qa3B847g9S
+- file://jUAeXqiE4urFNue6
+- file://WnUgEwo6bMCGU1cw
+- file://KQKccRqehia3PC8u
+- file://IOXm4nPwGXAcsh3O
+- file://svr5wGl46Fwax7b1
+- file://nFYNgCFOD23VUIUn
+- file://iqCmpWnQaoRMKAa8
+- file://xjLOxYjlNvqNwjp6
+- file://OnvfOR93oEsdnVNO
+- file://5LffEnPV2tMMMq8k
+- file://COtLsbl1bGsaW78e
+- file://tBkV6bEybDB7NIKP
+- file://Ro2m7SZFckGfUCsw
+- file://uhauOOLcH2K2sHRL
+- file://LmHNpXvDX3H3TPpK
+- file://YCS1xGu4tdkOWqRv
+- file://G6DfpdLqmokcG5aP
+- file://nEAlNlwQI16tor4X
+- file://EV6As50CD3JeOXEs
+- file://tYw83YbPqsrewZXu
+- file://owksykjbLdJ2HYMB
+- file://w83zAG7zizBNvcUz
+
+----
+
+Background: - file://EylODU1pguUxnExA
+
+----
+
+Selectfilters: mediatype, tool
+
+----
+
+Uuid: yZVLm92q24OoR6XN

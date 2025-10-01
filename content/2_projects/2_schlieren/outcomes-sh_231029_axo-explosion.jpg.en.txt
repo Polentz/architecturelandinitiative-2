@@ -1,4 +1,4 @@
-Caption: <p>SH | HOWL, Bernstrasse 29 - A communal area for small businesses. ©Architecture Land Initiative</p>
+Caption: <p>Organisational axonometric drawing, Schlieren Howl, Architecture Land Initiative, September 2023, Scale: 1:200<br>© 2023 | Architecture Land Initiative | Zurich</p>
 
 ----
 
@@ -18,7 +18,7 @@ Mediatype: Plan
 
 ----
 
-Category: 
+Category: Outcome
 
 ----
 

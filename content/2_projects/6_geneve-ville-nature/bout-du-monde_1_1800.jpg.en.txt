@@ -1,0 +1,29 @@
+Caption: <p>Le Bout-du-monde, City-Nature Relationship, Revision of the Municipal Master Plan City of Geneva, Planning Test Study, Architecture Land Initiative, Geneva, 2022<br>© 2022 | SITG data | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Plan
+
+----
+
+Category: Outcome
+
+----
+
+Uuid: xjLOxYjlNvqNwjp6
+
+----
+
+Template: media-project

@@ -1,0 +1,29 @@
+Caption: <p>Greenhouses of the Swiss Embassy in Brazil, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Geneva, December 2022<br>© 2022 | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: ZamtrvuDe0OClHVb
+
+----
+
+Template: media-project

@@ -2,32 +2,47 @@ Title: By Us for Us
 
 ----
 
-Intro: <p><em>By Us, For Us</em> is a project aimed at drafting a roadmap toward (re)introducing a ‘third option’ for housing development in Hong Kong through a series of Public Forums. While Hong Kong once had a cooperative housing policy alongside private and public options, the post-colonial political order since the 1997 handover has led to the erasure of existing cooperatives. Moreover, since the periods of social unrest in 2014 and 2019, most grassroots social movements have been restricted. This has made the ‘cooperative’ housing model, which was once considered occidental and predominantly colonial, no longer possible without profound reconsideration.</p>
+Intro: <p><em>By Us, For Us</em> is a project aimed at drafting a roadmap toward (re)introducing a ‘third option’ for housing development in Hong Kong through a series of Public Forums. While Hong Kong once had a cooperative housing policy alongside private and public options, the post-colonial political order since the 1997 handover has led to the erasure of existing cooperatives. Moreover, since the periods of social unrest in 2014 and 2019, most grassroots social movements have been restricted. This has made the ‘cooperative’ housing model, which was once considered occidental and predominantly colonial, no longer possible without profound reconsideration.</p><p>During the first few months of research and the initial <em>By Us, For Us</em> forum, exchanges confirmed the urgent need to address access to adequate housing and the importance and relevance of exploring a ‘third option’ for housing. However, these exchanges also revealed complexity and friction rooted in the colonial history of cooperatives in Hong Kong. A deeper understanding of these tensions and a reframing of possible trajectories in light of colonial issues and relations with China emerged as profoundly necessary for further research. We are currently developing ways of raising these questions through archival research, exchanges, and the cross-contamination of architectural and archival methodologies.</p>
 
 ----
 
-Textblocks: [{"content":{"subtitle":"","copy":"<p>During the first few months of research and the initial <em>By Us, For Us</em> forum, exchanges confirmed the urgent need to address access to adequate housing and the importance and relevance of exploring a ‘third option’ for housing. However, these exchanges also revealed complexity and friction rooted in the colonial history of cooperatives in Hong Kong. A deeper understanding of these tensions and a reframing of possible trajectories in light of colonial issues and relations with China emerged as profoundly necessary for further research. The Toolshed appears to be the ideal framework for collectively raising these questions through archival research, exchanges, and the cross-contamination of architectural and archival methodologies already developed on both sides.</p>","thumbnail":[]},"id":"e2db7f9d-31ab-4b3c-993f-f984ab2e6b67","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"Info","copy":"<p>Period:<br>2022-ongoing</p><p>Architecture Land Initiative:<br>Guillaume Othenin-Girard (lead), Kent Mundle (lead), Alexa den Hartog/PO4 architekten, Janice Leung, Léonore Nemec</p><p>With support from:<br>Design Trust</p>","thumbnail":[]},"id":"cbc8221a-5003-446a-9005-43762d3166ac","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"More info","copy":"<p>Period:<br>2022-ongoing</p><p>Architecture Land Initiative:<br>Guillaume Othenin-Girard (lead), Kent Mundle (lead), Alexa den Hartog/PO4 architekten, Janice Leung, Léonore Nemec</p><p>With support from:<br>Design Trust</p>","thumbnail":[]},"id":"cabb67ac-2704-479f-b4e3-f3e8982632bc","isHidden":false,"type":"sliderblock"},{"content":{"subtitle":"","copy":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>","thumbnail":[]},"id":"54950734-62c0-45ad-b653-383f23dce156","isHidden":false,"type":"sliderblock"}]
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "Info",
+            "copy": "<p>Period:<br>2022-ongoing</p><p>Architecture Land Initiative:<br>Guillaume Othenin-Girard (lead), Kent Mundle (lead), Alexa den Hartog/PO4 architekten, Janice Leung, Léonore Nemec</p><p>With support from:<br>Design Trust</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "abe01a0b-e403-4cf0-b7f3-7d86405b6b46",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
 
 ----
 
 Cover:
 
-- file://tzcnd8useemmhe3f
-- file://jyfm8pzy81tqccav
-- file://trflpwebx1uawgri
-- file://d1cafmckyydidcak
+- file://5JnkWuOQFGb0zxch
+- file://fRteU6Zza2GtiReL
 
 ----
 
 Gallery:
 
-- file://BU2Tsl2Z1IkuXM61
+- file://LapuUQuD25DGfniS
 - file://rGZyGfaGyucxEiAr
+- file://BU2Tsl2Z1IkuXM61
 - file://nvg9cvP4cCnR31cY
+- file://5JnkWuOQFGb0zxch
 - file://WCojEPLIUj5o2DKX
 - file://tHlMldUiuO4mlWbP
 - file://IiNnpsdKJ9ku3wVy
 - file://XPoGyP0yRHKao6vQ
+- file://H7ToNGRC92IV0Cao
 - file://t50es3Rkf1gBWv9K
 - file://0SUEc2wvQouvTROL
 - file://QqtaZ21joMLIc0IH
@@ -60,11 +75,12 @@ Gallery:
 - file://xa3spP5G0fFmBERD
 - file://GnGdNFC0lZwGZ0G2
 - file://3sBAd2mXiNdd8Xbn
-- file://nM0o3GtueIU54SbY
 - file://JtUeZuFd4cXPvtRp
-- file://vM0vgFbvngDKAWdn
 - file://LqxGFiFrXsgkC5gR
+- file://vM0vgFbvngDKAWdn
 - file://aXLUPhUmt3kHmdQb
+- file://OzT6RDJmcNktcmkF
+- file://HCW01wLWMem3AEyA
 - file://IHyYNPrblHzt0pme
 - file://zvnX9RWeH7oIMvtZ
 - file://blQWSISRkTe8qRP6
@@ -85,12 +101,6 @@ Gallery:
 - file://nFVO5sx0bHlrocCV
 - file://SGA2SBjrS5rN4tEP
 - file://UQOPQCrSzI2PUdoP
-- file://p4Vc3CXWxl6jlD57
-- file://vI6PG0RXG9KOxWQm
-- file://gtoF4WC8CfNVObBQ
-- file://snNayLlkmkspWCzN
-- file://fg42NmDCbct6oV9E
-- file://866ZyDzf0LwoA4LC
 - file://KmPcgin4QJuHFwM2
 - file://wY73TDIZBuwH6icP
 - file://NWplox22JIzYeSOj
@@ -100,7 +110,8 @@ Gallery:
 - file://uueTBftU04U1zT2y
 - file://WYlbT3zSzJ6iYY32
 - file://WlCslhzawOj2d9ZA
-- file://OzT6RDJmcNktcmkF
+- file://X6IDak4iTMAXi4nJ
+- file://puIPX6f4qP5AyzFO
 - file://6EYs5CVSEGedG6Ia
 - file://u47htqHJz2KaDBk3
 - file://g5oFOgEvtdxgfFwR
@@ -113,9 +124,7 @@ Gallery:
 - file://cEk7YFWtYhHXXmJ3
 - file://HRf5sXtKZ12pXsZP
 - file://TxjxWT4NDvxhALOX
-- file://puIPX6f4qP5AyzFO
-- file://X6IDak4iTMAXi4nJ
-- file://HCW01wLWMem3AEyA
+- file://mcsjjt5g6khjqvg8
 
 ----
 

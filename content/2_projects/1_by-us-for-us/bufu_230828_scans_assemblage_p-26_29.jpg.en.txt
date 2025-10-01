@@ -1,4 +1,4 @@
-Caption: <p>By Us for Us, Atlas; <em>Yards and Public Space,</em> pages 26-29, 2023 ©Architecture Land Initiative</p>
+Caption: <p>By Us For Us: Forum I, Atlas, <em>Yards and Public Space,</em> pages 26-29, Architecture Land Initiative, To Kwa Wan, Hong Kong, June 2023<br>© 2023 | Architecture Land Initiative | Hong Kong</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
-Tool: 
-
-----
-
-Project: - page://WOYRZn9TeLUnZp4x
+Tool: - page://NXrfS7lMkYsthb0T
 
 ----
 
 Mediatype: Printed matter
+
+----
+
+Category: Outcome
 
 ----
 

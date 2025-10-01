@@ -1,0 +1,36 @@
+Title: Meta-themes
+
+----
+
+Intro: Meta-themes are specific words we introduce into collective processes. They are lenses through which to begin questioning dominant imaginaries and establish a common vocabulary with a multiplicity of actors. These themes provide an alternative framing for forum discussions. They also guide our own archival research and cartographic endeavors. Meta-themes cut across disciplines, established categories, and the forces at play, defusing oppositions and rallying energies around alternative trajectories, without these being formulated in a fixed way. These themes highlight the ideologies attached to the vocabularies of spatial and architectural design. They allow us to gradually shift processes towards the establishment of a decentred vocabulary attentive to minor forms of expression and claims.
+
+----
+
+Textblocks: 
+
+----
+
+Cover: - file://q1esj2rid6gh1kig
+
+----
+
+Gallery:
+
+- file://6SigbN1ryJzPdcYM
+- file://bYWKF715zmrt9y2y
+- file://lO8madERIHzTZF9d
+- file://2u1ywqoOnIYFa4N7
+- file://HLCFjitoAAPd4ISm
+- file://k02zeWeEZIFjH7NS
+
+----
+
+Background: - file://q1esj2rid6gh1kig
+
+----
+
+Selectfilters: mediatype, project
+
+----
+
+Uuid: o3XmrXVYNBSR94Y6

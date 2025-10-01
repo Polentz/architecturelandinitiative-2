@@ -1,4 +1,4 @@
-Caption: <p>By Us for Us, Atlas; <em>Development model 1954</em>, pages 10-13, 2023 ©Architecture Land Initiative</p>
+Caption: <p>By Us For Us: Forum I, Atlas, <em>Development model 1954</em>, pages 10-13, Architecture Land Initiative, To Kwa Wan, Hong Kong, June 2023<br>© 2023 | Architecture Land Initiative | Hong Kong</p>
 
 ----
 
@@ -10,15 +10,11 @@ Alt:
 
 ----
 
-Category: 
+Tool: - page://NXrfS7lMkYsthb0Tcome
 
 ----
 
-Tool: 
-
-----
-
-Project: - page://WOYRZn9TeLUnZp4x
+Tool: - page://NXrfS7lMkYsthb0T
 
 ----
 

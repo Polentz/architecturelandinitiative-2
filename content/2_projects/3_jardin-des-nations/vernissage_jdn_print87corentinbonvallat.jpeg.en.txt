@@ -1,0 +1,29 @@
+Caption: <p>Walk during the exhibition opening, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Conservatory and Botanical garden, Geneva, September 2022<br>© 2022 | Corentin Bonvallat | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Event
+
+----
+
+Uuid: gCmYmm4WVNhbDGfT
+
+----
+
+Template: media-project

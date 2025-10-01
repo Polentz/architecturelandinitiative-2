@@ -1,0 +1,29 @@
+Caption: <p>Hair salon, 133 Maidstone Rd., To Kwa Wan, Hong Kong, January 2021 <br>© 2021 | Janice Leung | Hong Kong</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: BU2Tsl2Z1IkuXM61
+
+----
+
+Template: media-project

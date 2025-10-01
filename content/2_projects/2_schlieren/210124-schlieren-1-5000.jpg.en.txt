@@ -1,0 +1,29 @@
+Caption: <p>Territorial scale, Schlieren Howl, Architecture Land Initiative, January 2021, Scale: 1:5000<br>© 2021 | Architecture Land Initiative | Zurich</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Research
+
+----
+
+Uuid: iX9ZSTI6EV2RT4bj
+
+----
+
+Template: media-project

@@ -1,0 +1,29 @@
+Caption: <p>Lake crossing during the exhibition opening, Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Quai Gustave Ador, Geneva, September 2022<br>© 2022 | Corentin Bonvallat | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Event
+
+----
+
+Uuid: tT2cJgsiIhHjwrRS
+
+----
+
+Template: media-project

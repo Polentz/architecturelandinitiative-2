@@ -1,0 +1,29 @@
+Caption: <p><em>Lisière, </em>Miro board Pre-Forum,<em> </em>Vision Jardin des Nations,<em> </em>Architecture Land Initiative, Geneva, February 2021<br>© 2021 | Architecture Land Initiative | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Forum
+
+----
+
+Uuid: yxBPPjmSINMkT1Ij
+
+----
+
+Template: media-project

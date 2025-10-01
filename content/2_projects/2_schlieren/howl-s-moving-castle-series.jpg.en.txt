@@ -1,4 +1,4 @@
-Caption: <p>Howl's Moving Castle Series, OVA, Hayao Miyazaki, and the association with Studio Ghibli</p>
+Caption: <p><em>Howl's Moving Castle Series</em>, Hayao Miyazaki, 2004<br>© 2004 | Hayao Miyazaki | Studio Ghibli </p>
 
 ----
 
@@ -14,11 +14,11 @@ Tool:
 
 ----
 
-Mediatype: Drawing
+Mediatype: Reference
 
 ----
 
-Category: 
+Category: Research
 
 ----
 

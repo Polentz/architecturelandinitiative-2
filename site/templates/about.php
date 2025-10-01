@@ -2,10 +2,7 @@
 <?= snippet('header') ?>
 
 <main class="main">
-    <?php snippet('intro', slots: true) ?>
-    <?= slot('aboutPage') ?>
-    <?php endslot() ?>
-    <?php endsnippet() ?>
+    <?= snippet('intro') ?>
     <section class="page-text">
         <?php if ($page->body()->toBlocks()->count() >= 1) : ?>
             <?= $page->body()->toBlocks() ?>

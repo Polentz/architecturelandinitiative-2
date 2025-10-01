@@ -5,17 +5,6 @@ sections:
     type: fields
     fields:
       intro:
-        label: Headline text
-        type: writer
-        marks:
-          - bold
-          - italic
-          - underline
-          - link
-          - email
-          - clear
-        nodes: false
-      text:
         label: Introduction text
         type: writer
         marks:
@@ -33,10 +22,12 @@ sections:
       textblocks:
         label: Additional text
         type: blocks
+        pretty: true
         fieldsets:
           - sliderblock
       body:
         label: Body text
         type: blocks
+        pretty: true
         fieldsets:
           - textblock

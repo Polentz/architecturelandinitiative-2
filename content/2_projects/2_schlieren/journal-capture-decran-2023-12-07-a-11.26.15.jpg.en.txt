@@ -1,8 +1,8 @@
-Caption: <p>Broschüre November 2023: Printing process at ROPRESS print for SH | HOWL, Bernstrasse 29, in partnership with Stahl-&amp; Traumfabrik and Pfeffermint AG. Photo ©Dominik Bachmann; © Architecture Land Initiative</p>
+Caption: <p>Printing session November 2023, Schlieren Howl, Architecture Land Initiative with Stahl-&amp; Traumfabrik and Pfeffermint AG, November 2023<br>© 2023 | Dominik Bachmann | Schlieren</p>
 
 ----
 
-Info: 
+Info: <p>Printing process at ROPRESS print</p>
 
 ----
 
@@ -18,7 +18,7 @@ Mediatype: Image
 
 ----
 
-Category: 
+Category: Outcome
 
 ----
 

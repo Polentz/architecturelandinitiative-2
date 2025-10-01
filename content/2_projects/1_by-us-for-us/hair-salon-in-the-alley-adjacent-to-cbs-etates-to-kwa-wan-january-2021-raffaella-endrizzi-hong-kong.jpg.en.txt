@@ -1,0 +1,29 @@
+Caption: <p>Hair salon in the alley adjacent to CBS Etates, To Kwa Wan, Hong Kong, January 2021<br>© 2021 | Raffaella Endrizzi | Hong Kong</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: ll7gma8FDbwprfsB
+
+----
+
+Template: media-project

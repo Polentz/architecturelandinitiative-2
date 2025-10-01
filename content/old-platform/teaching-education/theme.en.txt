@@ -2,4 +2,28 @@ Title: Teaching / Education
 
 ----
 
+Intro: 
+
+----
+
+Blocks: [{"content":{"date":"2021-12-31","title":"Habitational Seeds in Hong Kong Odd Lots","itemtype":"Teaching","members":"Dieter Dietz, Alexa den Hartog, Kent Mundle","topbar":[],"image":[],"imagecaption":"","credits":"","info":"","body":""},"id":"bad82ca3-9066-4f6c-b12f-799321d9950b","isHidden":false,"type":"platformblock"},{"content":{"date":"2021-12-31","title":"Federative Housing","itemtype":"Teaching","members":"Guillaume Othenin-Girard","topbar":[],"image":[],"imagecaption":"","credits":"","info":"","body":""},"id":"17200b0f-83dc-46ff-b821-3f2e967da9e8","isHidden":false,"type":"platformblock"},{"content":{"date":"2022-12-31","title":"Superstudio - Studio Heat","itemtype":"Teaching","members":"Zoé Lefèvre","topbar":[],"image":[],"imagecaption":"","credits":"","info":"","body":""},"id":"f8f919c8-9be1-489b-963c-46612aab624a","isHidden":false,"type":"platformblock"},{"content":{"date":"2021-12-31","title":"La Traversée de Paris","itemtype":"Teaching","members":"Guillaume Othenin-Girard","topbar":[],"image":[],"imagecaption":"","credits":"","info":"","body":""},"id":"55a486a8-beef-4152-a7b8-f5a4acbc2e61","isHidden":false,"type":"platformblock"}]
+
+----
+
+Typename: platform type
+
+----
+
+Types: Teaching
+
+----
+
+Filtername: members
+
+----
+
+Filters: Zoé Lefèvre, Alexa den Hartog, Kent Mundle, Guillaume Othenin-Girard, Dieter Dietz
+
+----
+
 Uuid: lOcoPnmhDQQWtGwY

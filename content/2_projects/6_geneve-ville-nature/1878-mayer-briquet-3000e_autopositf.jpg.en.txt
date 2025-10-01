@@ -1,0 +1,29 @@
+Caption: <p>Plan of Geneva, its suburbs, and Carouge, Jean Rodolphe Mayer, Geneva, 1878, Scale: 1:3000<br>© 2021 | Bibliothèque de Genève | Centre d’iconographie | CIG | Public Domain Mark</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: 2RMeMhTAZWC2zbjY
+
+----
+
+Template: media-project

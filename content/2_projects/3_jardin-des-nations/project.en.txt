@@ -2,47 +2,184 @@ Title: Jardin des Nations
 
 ----
 
-Intro: 
+Intro: <p>The territory of the Jardin des Nations, host to the international Geneva, is an important urban planning issue for Geneva. In recent years, the territory has been segmented for a variety of reasons, and the spatial experience offered today to both international activities and Geneva's residents is marked by this fragmentation.</p>
 
 ----
 
-Textblocks: 
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "Context",
+            "copy": "<p>A number of paradigm shifts since the last masterplan was drawn up confirm the urgent need to place new objectives, new actors and new imaginations at the heart of the development process for this district, so as to better address the current ecological and social issues. Faced with these issues, the various planning authorities involved felt the need to build a new basis for dialogue and consensus, and to equip themselves with an innovative vision to react and guide their future decisions. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "cc5576e1-b63c-43bf-8597-ff3f9a322415",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Process",
+            "copy": "<p>Between 2021 and 2022, Architecture Land Initiative designed a process of co-construction of the vision involving more than two hundred participants. The process was first of all a way of bringing into dialogue the State of Geneva, the City of Geneva, the communes of Grand-Saconnex and Pregny-Chambésy, and the DFAE (Swiss Mission). In the course of the process, many additional players were called upon as questions and opportunities arose. In this way, state and communes services, as well as international and non-governmental organizations, various institutions and participants from the area and from Geneva were gradually involved in shaping the vision. In 2021, five public Forums allowed for exchanges, walks, collective listening and imagining. In 2022, several public events have extended the opportunity to exchange. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "c5c314b5-9474-4a50-a39c-aef8a79f039a",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Vision",
+            "copy": "<p>The proposed vision is set in the broader context of a Greater Geneva and its transition. It takes into account and echoes the concerns, strengths and proposals arising from recent initiatives such as the Cantonal Climate Plan, the Energy Master Plan 2020-2030, the Geneva Biodiversity Strategy 2030 and the multimodal strategy for Geneva Mobility 2030. It contributes to the impetus and thinking needed for a transition in ways of living that favors as many people as possible, and is synonymous with a radically different and more sustainable relationship with the living than the one we maintain today. It addresses these questions through the territory of the Jardin des Nations, its specificities, materialities, relationships and potentials, while identifying much more global interdependencies that also inform the vision and help to define the contours of an inclusive <em>Quartier-Paysage</em> in the making.</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "a9bc4a7b-6c6e-4e20-841f-2990402b8aff",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Implementation",
+            "copy": "<p>The vision proposes 4 inter-related strategies:</p><p>1. Potentials to activate: a strategy based on a trans-disciplinary analysis identifying and localizing potentials and specific places for development, built and unbuilt: biodiverse, social, cultural and economical.<br>2. Threads and grids: a strategy that enhances the qualities of the Jardin des Nations area in terms of vegetation and midlands. It will reinforce the density, connectivity and quality of the green, blue, brown and black infrastructures - allowing them to grow in intensity and become significant for the quality of the public space.<br>3. Road continuities: a strategy that intensifies and supports active multimodal mobility. Existing road networks are to be transformed in order to favor public and soft mobility. In addition, the strategy includes the 'voie bleue', with new boat lines transforming the lake into an ideal setting for active multimodal mobility.<br>4. Thresholds and porosities: a strategy that enables a comprehensive approach to safety in the area. A proactive approach seeks agreement on concepts and solutions upstream of projects, before planning processes begin, to avoid one-sided safety considerations.</p><p>The vision includes a catalog of actions to be undertaken, from the immediate to the long-term. This catalog lists a series of site-specific potentials and programs that are synergistic and coherent with the overall strategies, the cursors. These cursors suggest experimental implementations, called proto-projects, which are defined by their ability to initiate collective mobilizations for change in the district. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "1b5a641f-0db1-488e-bbea-0854e3020ff6",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Info",
+            "copy": "<p>Period:<br>2020-2022</p><p>Architecture Land Initiative:<br>Dieter Dietz (lead), Aurélie Dupuis (lead), Léonore Nemec (lead), Julien Heil, Zoé Lefèvre, Hibiki Masaki, Manon Pinget</p><p>External experts:<br>Thomas Hug (urbanista.ch), Bruno Marchand (EPFL), Sébastien Marot (EPFL), Martina Voser (mavo Landschaften), Yves Pedrazzini (EPFL)</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "3df4f5f4-a0e4-4104-84f5-eb741af49214",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
 
 ----
 
-Cover: 
+Cover: - file://12NsBCcFfJrm3GVX
 
 ----
 
-Gallery: 
+Gallery:
+
+- file://X123CKIzHiXTNhXF
+- file://YGDSRbGermrqvPaM
+- file://En7Gvv0j98IasJks
+- file://XogPVVNQBDo3cE9L
+- file://690mEw6D1492sx4p
+- file://l1xIGtYvwCayxpOa
+- file://hPWMpPt5COWVoqgP
+- file://7kp50tO16Eyr3yjy
+- file://GmQvGZ53rLbuirFz
+- file://x03UdsSyQaCIR0SG
+- file://j8NZSwh3EhUKFfNP
+- file://taDmYNqEky7kmmmb
+- file://5Tg7Iq9RordFGaT0
+- file://0blEZrmyqG9i28Jm
+- file://71vNYNZFEAzEGBSf
+- file://8YbIPjOPK3n8m8a5
+- file://rVz3shM6b2K5IGTQ
+- file://ZamtrvuDe0OClHVb
+- file://Fh7ilfO4d3dcpQGJ
+- file://ySnn7aO4oBO0P5sk
+- file://b3eW0vqRp6QHR9sS
+- file://eSVLaC27C1NBjuzv
+- file://OHh0s9Jo7zoNjYd1
+- file://lDpHALzd8E5Wqpa9
+- file://iqYiSdPgaZX5n5Id
+- file://MybKYUCyTGmJU3kN
+- file://HPSN7Wdwto5N4hlR
+- file://XadYhWKzJ7BI65oi
+- file://ilyN3k10R6DpPgmu
+- file://Rh0hPquRyuw15fRC
+- file://ReBPv23XORiFpbBD
+- file://MQzdnEw3vjtMmPAp
+- file://DQuicjun5fYecVE2
+- file://d5bk0sWPaKhkcdvy
+- file://MO5bhETYH5nTLN04
+- file://TFJO2EClvlYPAJGH
+- file://WUau6yNpD3n18DTV
+- file://tT2cJgsiIhHjwrRS
+- file://XFZgrdUWknpB3hiW
+- file://gCmYmm4WVNhbDGfT
+- file://OgGqIx3F9Jb5iFJZ
+- file://eRU4e662HxqCxK5H
+- file://rdAcQ72aZ07Dkh9d
+- file://zEll61naZrieHQlT
+- file://PnGgSI7vLkYnokX3
+- file://Q3UMU6HKpMeVV4AI
+- file://DJWYPPlxrOpIYo7u
+- file://RaRh22RbxFehBanB
+- file://1PQnD0Z5zt0i37Bo
+- file://yxBPPjmSINMkT1Ij
+- file://bXflHPs7sHKMNwEV
+- file://WuD9zndeaAyyivwp
+- file://wBiUVsVWKcURjy1y
+- file://UnCP7wS6X9pLBERd
+- file://yi7HfLZ34EN5EShm
+- file://PIpueNEfOMRubBaU
+- file://YvJwKgL3z4pIIeVS
+- file://FLfxRjFCBnzoFSlU
+- file://1JDrEjXm1YMMHgXh
+- file://SYTfQY8E7NKDReh9
+- file://fUOYKuiDbaG0DycJ
+- file://u8yKggG5bZbWQyrM
+- file://fl0Q6CSMDSZYEZij
+- file://ixiiHjAvFzzx5YT9
+- file://ZfwZ6fvXKLQERwp4
+- file://oPHwtew5bN3bVq0k
+- file://Zmn7rppCHsr9yEr5
+- file://PpkBiVVNoPefoq4X
+- file://F4IW6PhwMnze2jVU
+- file://Ea10K44NBitCKKaw
+- file://zwzSU6hN6cgHrd7A
+- file://GtIweYkgafswkVEY
+- file://F4aduHp62hB0ZAqy
+- file://LbZp9nsUOozz2WIS
+- file://akDIvuJYDDVFAbaI
+- file://cK8f4TgVDMO7Rv9J
+- file://TQAFxpan6msyqsMH
+- file://jHTAY07Pix2vM7bo
+- file://QjmRhBaPVNQxiigZ
+- file://L2EO6S5DEtQ2Jhnj
+- file://P9UBriABQ7vTBQwU
+- file://QYp815vDqGDATTXg
+- file://a3xJtPL3HTVnZGgI
+- file://ByKWvEG70cTie3Cp
+- file://l7gWsVPUYBgXZ9cj
+- file://gzHnBrnL2s1B4x95
+- file://XmNBFnj7JVfwsoC4
+- file://XRLW1Y0flRg0kbfs
+- file://lnoAHKqupH3kTLXW
+- file://fkn4mId32ERIXCoW
+- file://fSt0d9d75kX1o685
+- file://QAugwxMK6e1AAnsE
+- file://VT4sBsEXI0fMYKyr
+- file://GshB2SDgbuBYuBtf
+- file://kzNXPklLVRv53lJD
+- file://idtjxrm2muCH7Zs1
+- file://cJuWcGU0ro26Rmtf
+- file://ZMXGMneywpy5e7IY
 
 ----
 
-Background: 
+Background: - file://En7Gvv0j98IasJks
 
 ----
 
-Selectfilters: 
-
-----
-
-Summary: 
-
-----
-
-Typename: Media type
-
-----
-
-Types: 
-
-----
-
-Filtername: Process stage
-
-----
-
-Filters: 
+Selectfilters: mediatype, tool
 
 ----
 

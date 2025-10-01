@@ -1,0 +1,29 @@
+Caption: <p>Mayer's Cantonal Atlas, Communal Sheet No. 02 Plainpalais, Geneva, 1828, Scale: 1:15 000<br>© 2021 | Bibliothèque de Genève | Centre d'iconographie | CIG | Public Domain Mark</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Archive material
+
+----
+
+Uuid: tl4GNhDUGbzGz9MV
+
+----
+
+Template: media-project

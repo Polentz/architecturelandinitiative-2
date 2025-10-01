@@ -1,4 +1,4 @@
-Caption: Hong Kong Housing Society; Hau Pui Loon Estate on K.I.L 9078, Kowloon, Elevations; Drawing No A-12B; Job No 235/60; Scales 1/16˝ = 1´-0˝ ; 1 Sep. 1964
+Caption: <p>Hong Kong Housing Society; Hau Pui Loon Estate on K.I.L 9078, Kowloon, Hong Kong, September 1964<br>© 2018 | Buildings Department | Hong Kong</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: Archive material
-
-----
-
 Tool: 
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Category: Archive material
 
 ----
 

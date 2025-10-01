@@ -1,0 +1,29 @@
+Caption: <p>Hair salon, 133 Maidstone Rd., To Kwa Wan, Hong Kong, January 2021<br>© 2021 | Raffaella Endrizzi | Hong Kong</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: PhmsAVfhsukooAvO
+
+----
+
+Template: media-project

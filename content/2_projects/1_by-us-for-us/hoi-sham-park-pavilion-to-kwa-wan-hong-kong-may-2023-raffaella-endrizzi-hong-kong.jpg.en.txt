@@ -1,0 +1,29 @@
+Caption: <p>Hoi Sham Park, Pavilion, To Kwa Wan, Hong Kong, May 2023<br>© 2023 | Raffaella Endrizzi | Hong Kong</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Site visit
+
+----
+
+Uuid: yg0N95errLHshdKl
+
+----
+
+Template: media-project

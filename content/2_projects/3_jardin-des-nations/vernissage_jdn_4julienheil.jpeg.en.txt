@@ -1,0 +1,29 @@
+Caption: <p>Exhibition opening at Museum Ariana, Vision Jardin des Nations,<em> </em>Architecture Land Initiative with Alex Hanimann and Nadine Schütz, Geneva, September 2022. <br>© 2022 | Julien Heil | Geneva</p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
+
+----
+
+Category: Event
+
+----
+
+Uuid: WUau6yNpD3n18DTV
+
+----
+
+Template: media-project

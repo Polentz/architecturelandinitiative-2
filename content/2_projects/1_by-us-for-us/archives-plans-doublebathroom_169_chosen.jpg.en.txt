@@ -1,4 +1,4 @@
-Caption: Proposed 4 Houses on K.I.L 8572 - At Hau Pui Long Rd. - Kowloon - Scales 1/8˝ = 1´-0˝ ; 17 Sept. 1964
+Caption: <p>Proposed 4 Houses on K.I.L 8572 - At Hau Pui Long Rd, Kowloon, Hong Kong, September 1964<br>© 2018 | Buildings Department | Hong Kong</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: Archive material
-
-----
-
 Tool: 
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Category: Archive material
 
 ----
 

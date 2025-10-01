@@ -1,5 +1,0 @@
-Uuid: qXBtskoyC0qeGlbR
-
-----
-
-Template: video

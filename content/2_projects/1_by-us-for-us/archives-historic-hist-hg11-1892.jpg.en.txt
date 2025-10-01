@@ -1,8 +1,8 @@
-Caption: Historic Maps of Hong Kong - Kowloon Peninsula in 1892; Scale: 400ft to 1 inch; Map signed by the Director of Public Works, 25 April 1892, Francis A Cooper; ©Public Records Office
+Caption: <p>Historic Maps of Hong Kong, Kowloon Peninsula, 1892, To Kwa Wan, Hong Kong <br>© 2023 | Public Records Office | Hong Kong</p>
 
 ----
 
-Info: 
+Info: <p>Map signed by the Director of Public Works, Scale: 400ft to 1 inch</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: Archive material
-
-----
-
 Tool: 
 
 ----
 
-Project: - page://WOYRZn9TeLUnZp4x
+Mediatype: Map
 
 ----
 
-Mediatype: Map
+Category: Archive material
 
 ----
 

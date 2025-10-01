@@ -1,0 +1,105 @@
+Title: Swiss Art Awards
+
+----
+
+Intro: <p>The Swiss Art Competition, held annually since 1899, is the world’s oldest art award. The accompanying Swiss Art Awards exhibition, which is organised by the Swiss Federal Office of Culture in Basel, offers an insight into current art and architecture in Switzerland and is a valuable reference for art professionals and art lovers. </p>
+
+----
+
+Textblocks:
+
+[
+    {
+        "content": {
+            "subtitle": "Context",
+            "copy": "<p>The exhibition runs for a week alongside the international Art Basel show. In the architecture category, five candidates are nominated each year on the basis of a dossier. They each propose an architectural intervention in the form of a model, which is exhibited at the Swiss Art Awards exhibition. The winner goes on to build their full-scale intervention the following year. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "7b97cd40-3e1a-4aa9-872e-d5691c863e99",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Vision",
+            "copy": "<p>With our architectural intervention, we propose to situate the Swiss Art Awards event within the current period of socio-ecological fragmentation. The project consists in a seven-day journey on the Rhine, a fragile territorial body whose living systems transcend national borders, linking disparate localities and milieus. At the same time, visual, sonic and performative transmission devices echo the journey and its evolving landscape within the Basel Messe itself. Acting as a spine of central Europe – from its source in Switzerland to its delta in the North Sea – the Rhine links multiple territories as a structuring social and economic axis. But, throughout its history, the river has also served both as a register for ecological violence and as a catalyst for new environmental narratives and mobilizations. Today, beyond being Europe's busiest river for transport, the river works as a register for slow violence, a gradual process of destruction dispersed across time and space unfolding beyond the threshold of human perception. Building on these qualities, 'Carrier Bag' enacts a vision for socio-ecological repair from Basel to the territories beyond, sensing and transmitting the entanglement of diverse life forms along the Rhine. </p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "2249c9e0-ca23-414f-9727-7c9d06f98d6c",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Intervention",
+            "copy": "<p>Echoing a Requiem for the Rhine played during the 1986 protest march in response to the Schweizerhalle environmental disaster, the journey will be conducted by a platform – made by mounting re-used container bases on a freight ship – that operates as a stage, resonance body, recording device, and sound transmitter, with the aim to collect, record, and compose a new musical score for the river. The score will live on beyond this seven-day journey in projecting a more desirable future for the territory. While the Carrier bag moves, its panoramic view from the space of the river and the sound score will be transmitted into the Messe. The elements in the Messe consist of a projector, a speaker platform, and a large curtain to receive a projection of the journey and events. Through these spatial devices and the vibrant and pulsating registers they call up, the sensitive experience of the territories crossed, the collective experience and the specific ecological attentions its creates permeate the inner landscape of the Messe.&nbsp;</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "109c4d56-1eaa-4f0a-b679-5fc972c24b65",
+        "isHidden": false,
+        "type": "sliderblock"
+    },
+    {
+        "content": {
+            "subtitle": "Info",
+            "copy": "<p>Period:<br>2024</p><p>Architecture Land Initiative:<br>Andreas Schrämli,&nbsp;Aurélie Dupuis,&nbsp;Dieter Dietz, Guillaume Othenin-Girard, Joshua Guiness, Kent Mundle,&nbsp;Léonore Nemec, PO4,&nbsp;Zoé Lefèvre</p><p>Competition result:<br>finalists</p>",
+            "thumbnail": [],
+            "title": ""
+        },
+        "id": "87f81c4f-53c2-4c10-a649-ab26a22097e0",
+        "isHidden": false,
+        "type": "sliderblock"
+    }
+]
+
+----
+
+Cover:
+
+- file://8hnz8Whfu3Bwkz6p
+- file://9LQFmPfu0WV8YKky
+
+----
+
+Gallery:
+
+- file://QngYnkjuhkVgdoUT
+- file://GVsjUF931zkjsPIr
+- file://P6fliBtGkgXaygVD
+- file://StGk6ci64KSxIAXj
+- file://zlgsj4Ehm1ZraEsy
+- file://ZXdFgrDmPpn0bj2m
+- file://zwJied8RcSHoM3VR
+- file://Ye743dOxXytCzusM
+- file://3zRUnCHM4NKVTK60
+- file://iqYlK0G2an32Pqbm
+- file://J4ipYiMV3ruiWKAg
+- file://LJKDUofL54Tvkkw9
+- file://cx9UaXGODUEawNDC
+- file://T0eoM8aghhvfuYqJ
+- file://e4tDFyMvb7fskE42
+- file://WYdWcg7S1vlOvA6z
+- file://B2DpeQyRplX3VumF
+- file://DxaXUPPDzxhN7CvS
+- file://Ko1MZAWJT9F39llw
+- file://XAV1Hvq8s8Do4Tfp
+- file://kJhpDVA5xa5twFn7
+- file://lgn0kTfSVzVUhBry
+- file://IME11U6HCTIvQzcU
+- file://I4kho23R3vW7Fkzc
+- file://pTVRYV5DmTUH2wy1
+
+----
+
+Background: - file://PTu8cKIusMb73PER
+
+----
+
+Selectfilters: mediatype, tool
+
+----
+
+Uuid: ZhoqpfMFV05o31R9

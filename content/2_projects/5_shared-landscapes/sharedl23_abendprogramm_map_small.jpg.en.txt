@@ -1,0 +1,29 @@
+Caption: <p><em>Shared Landscapes in Hangelsberg</em>, map for the participants to the event, Shared Landscapes, Architecture Land Initiative, 2023 <br>© 2023 | Architecture Land Initiative </p>
+
+----
+
+Info: 
+
+----
+
+Alt: 
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Map
+
+----
+
+Category: Outcome
+
+----
+
+Uuid: ZfygIrQgWK5slwtx
+
+----
+
+Template: media-project

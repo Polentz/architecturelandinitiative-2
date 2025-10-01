@@ -1,4 +1,4 @@
-Caption: <p>sh<em>ws</em>7<em>soil</em>matters_workingspace.png</p><p>SH | HOWL, Bernstrasse 29, Workshop Soil Matters Miro Board, Jul. 11, 2023, Schlieren, 2021 ©Architecture Land Initiative</p>
+Caption: <p><em>Soil Matters</em>, Miro Workshop<em>, </em>Schlieren Howl, Architecture Land Initiative, July 2023<br>© 2023 | Architecture Land Initiative | Zurich</p>
 
 ----
 
@@ -10,15 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
 Tool: 
 
 ----
 
 Mediatype: 
+
+----
+
+Category: Process
 
 ----
 

@@ -1,4 +1,4 @@
-Caption: <p>SH | HOWL, Bernstrasse 29 - Grundriss 3.OG, A2 / 1:200, Nov. 21, 2023. ©Architecture Land Initiative</p>
+Caption: <p>Floor plan 3rd floor, Schlieren Howl, Architecture Land Initiative, November 2023, Scale: 1:200<br>© 2023 | Architecture Land Initiative | Zurich</p>
 
 ----
 
@@ -10,19 +10,15 @@ Alt:
 
 ----
 
-Category: 
-
-----
-
 Tool: 
 
 ----
 
-Project: 
+Mediatype: Plan
 
 ----
 
-Mediatype: Plan
+Category: Outcome
 
 ----
 

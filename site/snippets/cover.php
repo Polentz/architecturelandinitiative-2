@@ -7,7 +7,7 @@ $coverFiles = $page->cover()->toFiles();
         <?php foreach ($coverFiles as $media) : ?>
             <?php if ($media->type() == 'image') : ?>
                 <figure class="cover-item image-item">
-                    <img class="image lazy" src="" data-src="<?= $media->resize(1800, null)->url() ?>" alt="<?= $media->alt() ?>" />
+                    <img src="<?= $media->resize(1800, null)->url() ?>" alt="<?= $media->alt() ?>" />
                     <figcaption class="cover-item-caption text-label">
                         <?= $media->caption()->kt() ?>
                     </figcaption>

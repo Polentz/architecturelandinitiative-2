@@ -2,7 +2,23 @@ Caption:
 
 ----
 
+Info: 
+
+----
+
 Alt: 
+
+----
+
+Category: Site visit
+
+----
+
+Tool: 
+
+----
+
+Mediatype: Image
 
 ----
 

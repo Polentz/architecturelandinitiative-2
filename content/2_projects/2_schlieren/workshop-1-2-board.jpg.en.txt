@@ -18,7 +18,7 @@ Tool: - page://o3XmrXVYNBSR94Y6
 
 ----
 
-Mediatype: 
+Mediatype: Image
 
 ----
 

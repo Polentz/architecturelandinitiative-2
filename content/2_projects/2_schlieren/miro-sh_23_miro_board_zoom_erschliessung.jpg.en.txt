@@ -10,15 +10,15 @@ Alt:
 
 ----
 
+Category: Process
+
+----
+
 Tool: 
 
 ----
 
 Mediatype: Image
-
-----
-
-Category: Process
 
 ----
 

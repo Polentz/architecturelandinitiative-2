@@ -6,7 +6,7 @@ Intro: <p>Architecture Land Initiative brings together design, research, and str
 
 ----
 
-Gallery:
+Gallery: - file://na0q1ngjosswfhrg
 
 ----
 

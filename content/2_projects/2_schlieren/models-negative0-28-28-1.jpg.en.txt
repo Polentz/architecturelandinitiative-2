@@ -10,15 +10,15 @@ Alt:
 
 ----
 
+Category: Research
+
+----
+
 Tool: 
 
 ----
 
 Mediatype: Image
-
-----
-
-Category: 
 
 ----
 

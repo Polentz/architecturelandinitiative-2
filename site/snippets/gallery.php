@@ -20,7 +20,6 @@ $mediaAttributes = function ($media) {
     <?php foreach ($page->gallery()->toFiles() as $media) : ?>
         <?php if ($media->type() == 'image') : ?>
             <figure class="gallery-item image-item" <?= $mediaAttributes($media) ?>>
-
                 <img class="image lazy" src="" data-src="<?= $media->resize(1200, null)->url() ?>" alt="<?= $media->alt() ?>" />
                 <?= snippet('caption', ['media' => $media]) ?>
             </figure>

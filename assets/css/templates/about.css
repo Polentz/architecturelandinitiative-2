@@ -1,3 +1,7 @@
 :root {
     --main-color: #feffb8;
 }
+
+.text-block .thumbnail {
+    border-radius: 50%;
+}

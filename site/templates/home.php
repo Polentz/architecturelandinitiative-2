@@ -3,7 +3,7 @@
 
 <main class="main">
     <section class="page-intro">
-        <div class="intro-text">
+        <div class="text-headline">
             <?= $page->intro()->kt() ?>
         </div>
     </section>

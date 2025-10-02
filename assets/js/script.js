@@ -23,7 +23,7 @@ const footerHeight = () => {
 };
 
 const scrollToPosition = (element) => {
-    const paddingOffset = 128;
+    const paddingOffset = 90;
     const offsetPosition = element.getBoundingClientRect().top + window.scrollY - paddingOffset;
     window.scrollTo({
         top: offsetPosition,
@@ -87,7 +87,6 @@ const cursor = () => {
                     y: e.clientY,
                 });
             });
-            // .accordion-topbar-item[data-item="date"], .accordion-topbar-item[data-item="type"], .accordion-topbar-item[data-item="title"]
             const anchorTags = document.querySelectorAll("a, .button, .ui-button, .filter, .filter-deselect");
             anchorTags.forEach(a => {
                 a.addEventListener("mouseenter", () => {
@@ -259,7 +258,7 @@ const horizontalScroll = () => {
                 pin: pageWrapper,
                 scrub: true,
                 invalidateOnRefresh: true,
-            },
+            }
         });
     });
 };
@@ -386,7 +385,7 @@ const showInnerMenu = () => {
 
     const observer = new IntersectionObserver(callback);
     observer.observe(targetElement);
-}
+};
 
 const handleFiltersBox = () => {
     const container = document.querySelector(".filters");
@@ -425,161 +424,6 @@ const handleFiltersBox = () => {
         removeClasses();
     });
 };
-
-// const longerHandleFilters = (items) => {
-//     const innerMenu = document.querySelector(".inner-menu");
-//     const filterContainer = document.querySelector(".filters");
-//     if (!innerMenu || !filterContainer) return;
-//     const filters = document.querySelectorAll(".filter");
-//     const categories = document.querySelectorAll(".category");
-//     const itemsContainer = document.querySelector(".items-container");
-//     if (!itemsContainer) return;
-//     const filterClear = document.querySelector(".filter-deselect");
-//     const categoryClear = document.querySelector(".category-deselect");
-
-//     const counter = document.querySelector(".filter-button-counter");
-
-//     let currentFilter = null;
-//     let currentCategory = null;
-
-//     const applyFilters = () => {
-//         const filterItems = (item) => {
-//             item.classList.remove("--unfiltered");
-//             item.classList.add("--filtered");
-//         };
-
-//         const unfilterItems = (item) => {
-//             item.classList.add("--unfiltered");
-//             item.classList.remove("--filtered");
-//         };
-
-//         items.forEach(item => {
-//             let matchedFilter = false;
-//             let matchedCategory = false;
-//             // --- check filters ---
-//             if (currentFilter && currentFilter.id !== "all") {
-//                 const filterId = currentFilter.id;
-//                 Object.keys(item.dataset).forEach(key => {
-//                     if (
-//                         item.dataset[key] === filterId ||
-//                         (key === "members" && item.dataset[key].includes(currentFilter.dataset.key))
-//                     ) {
-//                         matchedFilter = true;
-//                     }
-//                 });
-//             } else {
-//                 matchedFilter = true; // no filter = all pass
-//             };
-
-//             // --- check categories ---
-//             if (currentCategory && currentCategory.id !== "all") {
-//                 const categoryId = currentCategory.id;
-//                 Object.keys(item.dataset).forEach(key => {
-//                     if (item.dataset[key] === categoryId) {
-//                         matchedCategory = true;
-//                     }
-//                 });
-//             } else {
-//                 matchedCategory = true; // no category = all pass
-//             };
-
-//             // must satisfy both
-//             if (matchedFilter && matchedCategory) {
-//                 filterItems(item);
-//             } else {
-//                 unfilterItems(item);
-//             };
-//         });
-
-//         // show/hide counter only when filter is active
-//         if (counter && currentFilter && currentFilter.id !== "all") {
-//             counter.style.display = "block";
-//         } else if (counter && !currentFilter) {
-//             counter.style.display = "none";
-//         };
-//     };
-
-//     // --- disable filters only if a category is selected ---
-//     const disableFilters = () => {
-//         if (currentCategory && currentCategory.id !== "all") {
-//             filters.forEach(filter => {
-//                 if (filter.id === "all") return;
-//                 const isAvailable = Array.from(items).some(item => {
-//                     if (!item.classList.contains("--filtered")) return false;
-//                     return Object.keys(item.dataset).some(key =>
-//                         item.dataset[key] === filter.id
-//                     );
-//                 });
-//                 filter.classList.toggle("--disabled", !isAvailable);
-//             });
-//         } else {
-//             filters.forEach(filter => filter.classList.remove("--disabled"));
-//         };
-//     };
-
-//     // --- reset only filters ---
-//     const removeFilters = () => {
-//         filterClear.classList.remove("--opacity");
-//         filterClear.classList.remove("--display");
-
-//         filters.forEach(filter => filter.classList.remove("--target"));
-//         currentFilter = null;
-
-//         applyFilters();
-//     };
-
-//     // --- reset only categories ---
-//     const removeCategories = () => {
-//         categories.forEach(c => c.classList.remove("--target"));
-//         currentCategory = null;
-
-//         // make categoryClear act as "all"
-//         categoryClear.classList.add("--target");
-
-//         applyFilters();
-//     };
-
-//     // --- filters group ---
-//     if (!filters) return;
-//     filters.forEach(filter => {
-//         filter.addEventListener("click", () => {
-//             [...filters].filter(i => i !== filter).forEach(i => i.classList.remove("--target"));
-//             filter.classList.add("--target");
-//             currentFilter = filter;
-//             filterClear.classList.add("--display");
-//             setTimeout(() => filterClear.classList.add("--opacity"), 100);
-//             applyFilters();
-//             scrollToPosition(itemsContainer);
-//         });
-//     });
-
-//     // --- categories group ---
-//     if (!categories) return;
-//     categories.forEach(category => {
-//         category.addEventListener("click", () => {
-//             [...categories].filter(i => i !== category).forEach(i => i.classList.remove("--target"));
-//             category.classList.add("--target");
-//             currentCategory = category;
-//             applyFilters();
-//             disableFilters();
-//             scrollToPosition(itemsContainer);
-//         });
-//     });
-
-//     // --- clear only filters ---
-//     if (!filterClear) return;
-//     filterClear.addEventListener("click", () => {
-//         removeFilters();
-//         scrollToPosition(itemsContainer);
-//     });
-
-//     // --- clear only categories ---
-//     if (!categoryClear) return;
-//     categoryClear.addEventListener("click", () => {
-//         removeCategories();
-//         scrollToPosition(itemsContainer);
-//     });
-// }
 
 const handleFilters = (items) => {
     const innerMenu = document.querySelector(".inner-menu");
@@ -724,7 +568,6 @@ const handleGallery = () => {
     const galleryItems = document.querySelectorAll(".gallery-item");
     const triggerElements = document.querySelectorAll(".gallery-item img, .gallery-item video");
 
-
     const addClasses = (item) => {
         galleryItems.forEach(i => {
             if (i !== item) {
@@ -739,7 +582,7 @@ const handleGallery = () => {
         if (video) video.controls = true;
 
         main.style.cursor = "zoom-out";
-    }
+    };
 
     const removeClasses = (item) => {
         galleryItems.forEach(i => {
@@ -751,7 +594,7 @@ const handleGallery = () => {
         if (video) video.controls = false;
 
         main.style.cursor = "none";
-    }
+    };
 
     triggerElements.forEach(el => {
         el.addEventListener("click", event => event.stopPropagation());
@@ -805,67 +648,6 @@ const accordion = () => {
     });
 };
 
-// const sortAccordion = () => {
-//     const sortButtons = document.querySelectorAll('.accordion-topbar-item[data-item]');
-//     const container = document.querySelector(".accordion-list");
-
-//     let currentSort = {
-//         key: null,
-//         ascending: true
-//     };
-
-//     sortButtons.forEach(button => {
-//         button.addEventListener("click", () => {
-//             const sortKey = button.dataset.item;
-//             const svg = button.querySelector("svg");
-
-//             // Check if clicked the same key
-//             const isSameKey = currentSort.key === sortKey;
-
-//             currentSort.key = sortKey;
-//             currentSort.ascending = isSameKey ? !currentSort.ascending : true;
-
-//             // Reset all arrows
-//             sortButtons.forEach(btn => {
-//                 const arrow = btn.querySelector("svg");
-//                 if (arrow) {
-//                     arrow.classList.remove("--asc", "--desc");
-//                 };
-//             });
-
-//             // Set arrow direction
-//             if (svg) {
-//                 svg.classList.add(currentSort.ascending ? "--asc" : "--desc");
-//             };
-
-//             // Sort elements
-//             const items = Array.from(document.querySelectorAll(".accordion"));
-
-//             items.sort((a, b) => {
-//                 let aValue = a.dataset[sortKey] || "";
-//                 let bValue = b.dataset[sortKey] || "";
-
-//                 // Normalize values for string comparisons (case insensitive)
-//                 aValue = sortKey === "type" ? aValue.toLowerCase() : aValue;
-//                 bValue = sortKey === "type" ? bValue.toLowerCase() : bValue;
-
-//                 // If sorting by date, convert to timestamp
-//                 if (sortKey === "date") {
-//                     aValue = new Date(aValue).getTime();
-//                     bValue = new Date(bValue).getTime();
-//                 }
-
-//                 // Perform the sorting based on ascending/descending
-//                 if (aValue < bValue) return currentSort.ascending ? -1 : 1;
-//                 if (aValue > bValue) return currentSort.ascending ? 1 : -1;
-//                 return 0;
-//             });
-
-//             items.forEach(item => container.appendChild(item));
-//         });
-//     });
-// };
-
 const sortAccordion = () => {
     const sortButtons = document.querySelectorAll(".button.sort[data-item]");
     const accordionContainer = document.querySelector(".accordion-list");
@@ -884,13 +666,11 @@ const sortAccordion = () => {
             const sortKey = button.dataset.item;
             const svg = button.querySelector("svg");
 
-            // Check if clicked the same key
             const isSameKey = currentSort.key === sortKey;
 
             currentSort.key = sortKey;
             currentSort.ascending = isSameKey ? !currentSort.ascending : true;
 
-            // Reset all arrows
             sortButtons.forEach(btn => {
                 const arrow = btn.querySelector("svg");
                 if (arrow) {
@@ -898,12 +678,10 @@ const sortAccordion = () => {
                 };
             });
 
-            // Set arrow direction
             if (svg) {
                 svg.classList.add(currentSort.ascending ? "--asc" : "--desc");
             };
 
-            // Sort elements
             const items = Array.from(document.querySelectorAll(".accordion"));
 
             items.sort((a, b) => {
@@ -918,7 +696,7 @@ const sortAccordion = () => {
                 if (sortKey === "date") {
                     aValue = new Date(aValue).getTime();
                     bValue = new Date(bValue).getTime();
-                }
+                };
 
                 // Perform the sorting based on ascending/descending
                 if (aValue < bValue) return currentSort.ascending ? -1 : 1;
@@ -964,6 +742,7 @@ const handleMenuOnMobile = () => {
                     stagger: 0.1,
                 }, "-=75%");
             });
+
             headerNavButtons.forEach(button => {
                 button.addEventListener("click", () => {
                     menuButton.classList.remove("--open");
@@ -978,9 +757,9 @@ const handleMenuOnMobile = () => {
                     if (openElement) {
                         openElement.classList.remove("--hide");
                     };
-                })
-            })
-        }
+                });
+            });
+        };
     };
     handleMediaQuery(mediaQuery);
 };
@@ -1049,7 +828,7 @@ const audioPlayer = () => {
 
                     volumeContainer.addEventListener("click", () => {
                         controlVolume();
-                    })
+                    });
 
                     const controlVolume = () => {
                         if (audio.volume > 0) {
@@ -1060,8 +839,8 @@ const audioPlayer = () => {
                             audio.volume = 1;
                             volumeIcon.classList.remove("toggle-volume");
                             muteIcon.classList.remove("toggle-volume");
-                        }
-                    }
+                        };
+                    };
 
                     const stopAudio = () => {
                         audio.pause();
@@ -1105,7 +884,7 @@ const audioPlayer = () => {
                     if (audio.readyState > 0) {
                         displayDuration();
                         setSliderMax();
-                    }
+                    };
 
                     audio.addEventListener("playing", () => {
                         displayDuration();
@@ -1123,7 +902,7 @@ const audioPlayer = () => {
                         audio.currentTime = seekSlider.value;
                         if (!audio.paused) {
                             requestAnimationFrame(whilePlaying);
-                        }
+                        };
                     });
                 };
             };

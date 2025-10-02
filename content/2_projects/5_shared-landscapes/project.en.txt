@@ -18,7 +18,7 @@ Textblocks:
         },
         "id": "56f79e82-f4ea-4a46-b68c-81f21123a39e",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -29,7 +29,7 @@ Textblocks:
         },
         "id": "6dde5cd8-8521-4044-8d76-90194f6955de",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -40,7 +40,7 @@ Textblocks:
         },
         "id": "b45c6472-0353-43d3-9cf2-434938727eb2",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     }
 ]
 

@@ -18,7 +18,7 @@ Textblocks:
         },
         "id": "7b97cd40-3e1a-4aa9-872e-d5691c863e99",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -29,7 +29,7 @@ Textblocks:
         },
         "id": "2249c9e0-ca23-414f-9727-7c9d06f98d6c",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -40,7 +40,7 @@ Textblocks:
         },
         "id": "109c4d56-1eaa-4f0a-b679-5fc972c24b65",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -51,7 +51,7 @@ Textblocks:
         },
         "id": "87f81c4f-53c2-4c10-a649-ab26a22097e0",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     }
 ]
 

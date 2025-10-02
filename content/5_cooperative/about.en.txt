@@ -17,7 +17,7 @@ Textblocks:
         },
         "id": "bf737f03-2a5b-4aa5-ae07-f3de59ee8bf7",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     }
 ]
 

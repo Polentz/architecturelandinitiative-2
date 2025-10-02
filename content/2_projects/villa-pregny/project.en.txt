@@ -6,7 +6,7 @@ Intro:
 
 ----
 
-Textblocks: [{"content":{"title":"","subtitle":"Project","copy":"<p>xxx</p>"},"id":"d386f753-1d2d-4f18-bb06-a7eec71a86f9","isHidden":false,"type":"sliderblock"},{"content":{"title":"","subtitle":"Info","copy":"<p>Period:<br>2022</p><p>Architecture Land Initiative:<br>Léonore Nemec (lead), Dieter Dietz, Zoé Lefèvre</p>"},"id":"d0c8a961-121e-47a4-9df8-b21873bd7a17","isHidden":false,"type":"sliderblock"}]
+Textblocks: [{"content":{"title":"","subtitle":"Project","copy":"<p>xxx</p>"},"id":"d386f753-1d2d-4f18-bb06-a7eec71a86f9","isHidden":false,"type":"textblock"},{"content":{"title":"","subtitle":"Info","copy":"<p>Period:<br>2022</p><p>Architecture Land Initiative:<br>Léonore Nemec (lead), Dieter Dietz, Zoé Lefèvre</p>"},"id":"d0c8a961-121e-47a4-9df8-b21873bd7a17","isHidden":false,"type":"textblock"}]
 
 ----
 

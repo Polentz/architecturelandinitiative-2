@@ -27,7 +27,7 @@ columns:
             type: blocks
             pretty: true
             fieldsets:
-              - sliderblock
+              - textblock
           blocks:
             label: Items
             type: blocks

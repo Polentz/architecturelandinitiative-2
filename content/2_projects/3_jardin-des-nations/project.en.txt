@@ -18,7 +18,7 @@ Textblocks:
         },
         "id": "cc5576e1-b63c-43bf-8597-ff3f9a322415",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -29,7 +29,7 @@ Textblocks:
         },
         "id": "c5c314b5-9474-4a50-a39c-aef8a79f039a",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -40,7 +40,7 @@ Textblocks:
         },
         "id": "a9bc4a7b-6c6e-4e20-841f-2990402b8aff",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -51,7 +51,7 @@ Textblocks:
         },
         "id": "1b5a641f-0db1-488e-bbea-0854e3020ff6",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     },
     {
         "content": {
@@ -62,7 +62,7 @@ Textblocks:
         },
         "id": "3df4f5f4-a0e4-4104-84f5-eb741af49214",
         "isHidden": false,
-        "type": "sliderblock"
+        "type": "textblock"
     }
 ]
 

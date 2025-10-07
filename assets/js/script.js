@@ -157,40 +157,6 @@ const logoAnimation = () => {
     });
 };
 
-const pageTitleAnimation = () => {
-    document.fonts.ready.then(() => {
-        const title = document.querySelector(".page-intro .title");
-        if (!title) return;
-        let splitTitles = SplitText.create(title, {
-            type: "words, chars",
-            tag: "span",
-            charsClass: "letter",
-            wordsClass: "word",
-        });
-        gsap.fromTo(
-            splitTitles.chars,
-            {
-                xPercent: 0,
-                yPercent: -100,
-                autoAlpha: 0,
-            },
-            {
-                scrollTrigger: {
-                    trigger: title,
-                    start: "top 90%",
-                    end: "bottom -10%",
-                    toggleActions: "play reverse play reverse",
-                },
-                duration: 0.5,
-                xPercent: 0,
-                yPercent: 0,
-                autoAlpha: 1,
-                stagger: 0.05,
-            }
-        );
-    });
-};
-
 const titlesAnimation = (xDirection, yDirection) => {
     document.fonts.ready.then(() => {
         const items = document.querySelectorAll(".item-title a, .item-title p");
@@ -931,7 +897,6 @@ window.addEventListener("load", () => {
     loader();
     cursor();
     lazyloading();
-    pageTitleAnimation();
     animatePaths();
     logoAnimation();
     sliderOpener();

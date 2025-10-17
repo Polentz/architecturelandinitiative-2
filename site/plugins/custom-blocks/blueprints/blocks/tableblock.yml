@@ -52,6 +52,7 @@ fields:
     type: pages
     width: 1/2
     multiple: false
+    link: false
     query: site.grandchildren.listed.template("project")
     image: icon
   toggleProject:

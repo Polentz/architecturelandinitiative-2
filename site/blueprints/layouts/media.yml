@@ -49,6 +49,7 @@ columns:
             type: pages
             width: 1/2
             multiple: false
+            link: false
             query: site.grandchildren.listed.template("tool")
             image: icon
           project:
@@ -56,6 +57,7 @@ columns:
             type: pages
             width: 1/2
             multiple: false
+            link: false
             query: site.grandchildren.listed.template("project")
             image: icon
           mediatype:

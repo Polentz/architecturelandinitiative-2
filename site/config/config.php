@@ -6,5 +6,5 @@ return [
     'smartypants' => true,
     'panel' => [
         'css' => 'assets/css/panel.css'
-    ],
+    ]
 ];

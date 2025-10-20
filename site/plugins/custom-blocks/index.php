@@ -1,4 +1,7 @@
 <?php
+
+use Kirby\Cms\App as Kirby;
+
 Kirby::plugin('architecturelandinitiative/blocks', [
   'blueprints' => [
     'blocks/textblock' => __DIR__ . '/blueprints/blocks/textblock.yml',

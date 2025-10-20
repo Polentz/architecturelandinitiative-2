@@ -64,32 +64,32 @@ Instagramicon: text
 Categories:
 
 - 
-  key: Archive material
-  filter: Archive material
-- 
-  key: Event
-  filter: Event
-- 
-  key: Forum
-  filter: Forum
-- 
-  key: Making
-  filter: Making
-- 
   key: Outcome
   filter: Outcome
 - 
   key: Process
   filter: Process
 - 
-  key: Public Walk
-  filter: Public Walk
+  key: Making
+  filter: Making
+- 
+  key: Site visit
+  filter: Site visit
 - 
   key: Research
   filter: Research
 - 
-  key: Site visit
-  filter: Site visit
+  key: Archive material
+  filter: Archive material
+- 
+  key: Event
+  filter: Event
+- 
+  key: Public Walk
+  filter: Public Walk
+- 
+  key: Forum
+  filter: Forum
 
 ----
 

@@ -50,8 +50,36 @@ body {
     font-weight: 400;
     line-height: 130%;
     color: var(--black);
-    background: var(--white);
+    background: var(--background);
+    background-attachment: fixed;
     overflow-x: hidden;
+}
+
+.color-switcher {
+    position: absolute;
+    top: var(--small-margin);
+    left: var(--small-margin);
+    background: var(--white);
+    border: var(--border-black);
+    color: var(--black);
+    padding: var(--small-margin);
+    z-index: 99999;
+    display: flex;
+    gap: var(--small-margin);
+    cursor: default;
+}
+
+.color-switcher-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--small-margin);
+}
+
+.color-switcher-button {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+    color: var(--black);
 }
 
 img,
@@ -799,9 +827,9 @@ section.--blur {
     left: 0;
     bottom: 0;
     z-index: 1;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2)));
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
 }
 
 .scroll-layout {
@@ -865,9 +893,10 @@ section.--blur {
     left: 0;
     bottom: 0;
     z-index: 0;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0.2)));
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    transition: background .5s ease;
     pointer-events: none;
 }
 
@@ -903,8 +932,8 @@ section.--blur {
     left: 0;
     overflow: hidden;
     z-index: -1;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+    -webkit-filter: var(--filter);
+    filter: var(--filter);
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease;
@@ -949,6 +978,12 @@ section.--blur {
 .item:hover .item-background {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
+}
+
+.item.has-background:hover::before {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 
 .item-title-label {

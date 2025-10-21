@@ -1,4 +1,10 @@
-<a href="<?= $page->url() ?>" class="button <?= e($page->isOpen(), '--current') ?>" type="button">
+<?php
+
+use Kirby\Toolkit\Str;
+
+?>
+
+<a href="<?= $page->url() ?>" class="button <?= Str::slug($page->template()->name()) ?> <?= e($page->isOpen(), '--current') ?>" type="button">
     <span class="text-label"><?= $page->title() ?></span>
     <?php if ($page->intendedTemplate()->name() === 'projects') : ?>
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,10 +27,6 @@
     <?php elseif ($page->intendedTemplate()->name() === 'about') : ?>
         <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M20 7.5C26.9036 7.5 32.5 13.0964 32.5 20C32.5 26.9036 26.9036 32.5 20 32.5C13.0964 32.5 7.5 26.9036 7.5 20C7.5 13.0964 13.0964 7.5 20 7.5Z" stroke="#1D1D1B" />
-        </svg>
-    <?php elseif ($page->intendedTemplate()->name() === 'home') : ?>
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32.5 7.5V32.5H7.5V7.5H32.5Z" stroke="#1D1D1B" />
         </svg>
     <?php endif ?>
 </a>

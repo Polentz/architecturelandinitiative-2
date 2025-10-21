@@ -907,6 +907,23 @@ const topButtonEvent = () => {
     });
 };
 
+const colorSwitcher = () => {
+    const radioButtons = document.querySelectorAll('input[name="color-mode"]');
+    const doc = document.documentElement;
+    const button = document.querySelector(".color-switcher-button");
+    const dialog = document.querySelector(".color-switcher");
+
+    radioButtons.forEach(radioButton => {
+        radioButton.addEventListener('change', function () {
+            doc.setAttribute('color-mode', this.value);
+        });
+    });
+
+    button.addEventListener("click", () => {
+        dialog.style.display = "none";
+    });
+};
+
 window.addEventListener("load", () => {
     history.scrollRestoration = "manual";
     documentHeight();
@@ -920,6 +937,7 @@ window.addEventListener("load", () => {
     sliderOpener();
     bannerOpener();
     handleMenuOnMobile();
+    colorSwitcher();
 });
 
 window.addEventListener("resize", () => {

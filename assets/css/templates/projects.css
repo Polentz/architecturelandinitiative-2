@@ -1,3 +1,8 @@
 :root {
     --main-color: #92a1fc;
 }
+
+[color-mode="color"] {
+    --main-color: #5b72f7;
+    --background: linear-gradient(0deg, var(--acc-color) 0%, var(--acc-color) 5%, var(--main-color) 100%);
+}

@@ -53,16 +53,12 @@ $getFilterLabels = function ($media, $filter, $structureMap) {
             <?php if ($categoryLabel || $page->selectFilters()->isNotEmpty()) : ?>
                 <hr>
             <?php endif ?>
-            <div class="text-label">
-                <?= $media->caption()->kt() ?>
-            </div>
+            <?= $media->caption()->kt() ?>
         <?php endif ?>
-
-        <?php if ($media->info()->isNotEmpty()): ?>
-            <div class="caption-text text-subtext">
-                <?= $media->info()->kt() ?>
-            </div>
-        <?php endif ?>
-
     </div>
+    <?php if ($media->info()->isNotEmpty()): ?>
+        <div class="caption-text text-subtext">
+            <?= $media->info()->kt() ?>
+        </div>
+    <?php endif ?>
 </figcaption>

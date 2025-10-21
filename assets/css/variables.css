@@ -32,6 +32,17 @@
     --border-black: solid 1px var(--black);
     --border-white: solid 1px var(--white);
     --border-color: solid 1px var(--main-color);
+
+    --filter: grayscale(1);
+}
+
+[color-mode="white"] {
+    --background: #ffffff;
+    --filter: none;
+}
+
+[color-mode="color"] {
+    --filter: none;
 }
 
 @media screen and (min-width: 1500px) {

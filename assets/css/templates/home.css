@@ -1,0 +1,29 @@
+:root {
+    --about-color: #ffffffa0;
+    --platform-color: #ffffffa0;
+    --projects-color: #ffffffa0;
+    --tools-color: #ffffffa0;
+}
+
+[color-mode="color"] {
+    --about-color: #feff8a;
+    --platform-color: #b077fc;
+    --projects-color: #5b72f7;
+    --tools-color: #b5d271;
+}
+
+.button.about:hover {
+    background: var(--about-color);
+}
+
+.button.platform:hover {
+    background: var(--platform-color);
+}
+
+.button.projects:hover {
+    background: var(--projects-color);
+}
+
+.button.tools:hover {
+    background: var(--tools-color);
+}

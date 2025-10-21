@@ -129,7 +129,7 @@ tabs:
             label: false
             type: info
             text: |
-              You can order categories. Other filters are automatically ordered alphabetically.
+              Categories can be sorted and assigned a custom order. Other filters are automatically sorted alphabetically.
           categories:
             label: "Categories"
             width: 1/2

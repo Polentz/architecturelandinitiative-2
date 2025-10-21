@@ -6,4 +6,12 @@ Intro: Architecture Land Initiative brings together design, research, and strate
 
 ----
 
+Textblocks: 
+
+----
+
+Togglecategories: true
+
+----
+
 Uuid: E3BspL994sov4yIx

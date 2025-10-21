@@ -5,28 +5,28 @@
     <?= snippet('intro') ?>
 
     <section class="inner-menu">
-        <div class="sortable">
-            <div class="sortable-list">
+        <div class="sortby">
+            <div class="sortby-list">
                 <button class="button sort --disabled">
                     <span class="text-label"><?= t('sort-by') ?></span>
                 </button>
 
                 <button class="button sort --target" data-item="date">
-                    <span class="text-label"><?= t('topbar.date') ?></span>
+                    <span class="text-label"><?= t('sort-by.date') ?></span>
                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1L7 9L1 1" />
                     </svg>
                 </button>
 
                 <button class="button sort" data-item="title">
-                    <span class="text-label"><?= t('topbar.title') ?></span>
+                    <span class="text-label"><?= t('sort-by.title') ?></span>
                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1L7 9L1 1" />
                     </svg>
                 </button>
 
                 <button class="button sort" data-item="type">
-                    <span class="text-label"><?= t('topbar.type') ?></span>
+                    <span class="text-label"><?= t('sort-by.type') ?></span>
                     <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M13 1L7 9L1 1" />
                     </svg>
@@ -42,19 +42,19 @@
     <section class="list-layout items-container">
         <ul class="accordion-topbar accordion-labels">
             <li class="accordion-topbar-item text-label">
-                <span><?= t('topbar.title') ?></span>
+                <span><?= t('sort-by.title') ?></span>
             </li>
             <li class="accordion-topbar-item text-label">
-                <span><?= t('topbar.date') ?></span>
+                <span><?= t('sort-by.date') ?></span>
             </li>
             <li class="accordion-topbar-item text-label">
-                <span><?= t('topbar.type') ?></span>
+                <span><?= t('sort-by.type') ?></span>
             </li>
             <li class="accordion-topbar-item text-label">
-                <span><?= t('topbar.where') ?></span>
+                <span><?= t('sort-by.where') ?></span>
             </li>
             <li class="accordion-topbar-item text-label">
-                <span><?= t('topbar.project') ?></span>
+                <span><?= t('sort-by.project') ?></span>
             </li>
         </ul>
         <div class="accordion-list">

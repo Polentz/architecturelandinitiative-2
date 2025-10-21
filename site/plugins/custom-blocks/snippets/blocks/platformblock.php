@@ -1,4 +1,4 @@
-<div class="accordion" data-type="<?= $block->itemtype()->slug() ?>" data-members="<?= $block->members() ?>">
+<div class="accordion sortable" data-type="<?= $block->itemtype()->slug() ?>" data-members="<?= $block->members() ?>">
     <div class="accordion-wrapper">
         <ul class="accordion-topbar">
             <li class="accordion-topbar-title">

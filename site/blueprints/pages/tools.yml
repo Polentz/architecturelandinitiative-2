@@ -1,35 +1,49 @@
 title: Column-grid layout [ex. Tools Page]
 
-sections:
-  content:
-    type: fields
-    fields:
-      intro:
-        label: Introduction text
-        type: writer
-        marks:
-          - bold
-          - italic
-          - underline
-          - link
-          - email
-          - clear
-        nodes: false
-      additionalTextInfo:
-            label: false
-            type: info
-            text: 'The additional text below activates the "Read More" button.'
-      textblocks:
-        label: Additional text
-        type: blocks
-        pretty: true
-        fieldsets:
-          - textblock
-  items:
-    label: Tools
-    type: pages
-    layout: list
-    info: false
-    template:
-      - tool
-    image: false
+columns:
+  main:
+    width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          intro:
+            label: Introduction text
+            type: writer
+            marks:
+              - bold
+              - italic
+              - underline
+              - link
+              - email
+              - clear
+            nodes: false
+          additionalTextInfo:
+                label: false
+                type: info
+                text: 'The additional text below activates the "Read More" button.'
+          textblocks:
+            label: Additional text
+            type: blocks
+            pretty: true
+            fieldsets:
+              - textblock
+      items:
+        label: Tools
+        type: pages
+        layout: list
+        info: false
+        template:
+          - tool
+        image: false
+  sidebar:
+    width: 1/3
+    sections:
+      features:
+        type: fields
+        fields:
+          toggleCategories:
+            label: Categories
+            type: toggle
+            text: Want to display the category buttons?
+            default: false

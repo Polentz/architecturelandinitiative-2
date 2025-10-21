@@ -933,12 +933,14 @@ section.--blur {
 }
 
 .column-direction .item-background img {
+    width: 100%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .row-direction .item-background img {
+    height: 100%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
@@ -1530,7 +1532,7 @@ input.seek-slider::-moz-range-thumb {
 }
 
 .categories-list,
-.sortable-list {
+.sortby-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

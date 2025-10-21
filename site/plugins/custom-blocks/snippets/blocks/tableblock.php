@@ -30,7 +30,7 @@ $blockAttributes = function ($block) {
 };
 ?>
 
-<div class="accordion" <?= $blockAttributes($block) ?>>
+<div class="accordion sortable" <?= $blockAttributes($block) ?>>
     <ul class="accordion-topbar accordion-opener">
         <li class="accordion-topbar-item text-label"><?= $block->title() ?></li>
         <li class="accordion-topbar-item text-label"><?= $block->eventdate() ?></li>

@@ -181,6 +181,19 @@ const titlesAnimation = (xDirection, yDirection) => {
                 autoAlpha: 0,
                 stagger: 0.05,
             });
+
+            const buttons = document.querySelectorAll(".button.sort[data-item]");
+            buttons.forEach(btn => {
+                if (btn) {
+                    btn.addEventListener("click", () => {
+                        gsap.fromTo(
+                            splitTitles.chars,
+                            { xPercent: xDirection, yPercent: yDirection, autoAlpha: 0 },
+                            { xPercent: 0, yPercent: 0, autoAlpha: 1, stagger: 0, duration: 0 }
+                        );
+                    });
+                };
+            });
         });
     });
 };
@@ -329,6 +342,12 @@ const bannerOpener = () => {
 
     bannerButton.addEventListener("click", () => {
         removeClasses();
+    });
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY == 0) {
+            removeClasses();
+        };
     });
 };
 
@@ -619,10 +638,9 @@ const accordion = () => {
     });
 };
 
-const sortAccordion = () => {
+const sortElements = (container, scrollContainer) => {
     const sortButtons = document.querySelectorAll(".button.sort[data-item]");
-    const accordionContainer = document.querySelector(".accordion-list");
-    const itemsContainer = document.querySelector(".items-container");
+    const items = Array.from(document.querySelectorAll(".sortable"));
 
     let currentSort = {
         key: null,
@@ -649,19 +667,15 @@ const sortAccordion = () => {
                 };
             });
 
-            if (svg) {
+            if (sortKey === "num") {
+                svg.classList.add(currentSort.ascending ? "--desc" : "--asc");
+            } else {
                 svg.classList.add(currentSort.ascending ? "--asc" : "--desc");
-            };
-
-            const items = Array.from(document.querySelectorAll(".accordion"));
+            }
 
             items.sort((a, b) => {
                 let aValue = a.dataset[sortKey] || "";
                 let bValue = b.dataset[sortKey] || "";
-
-                // Normalize values for string comparisons (case insensitive)
-                aValue = sortKey === "type" ? aValue.toLowerCase() : aValue;
-                bValue = sortKey === "type" ? bValue.toLowerCase() : bValue;
 
                 // If sorting by date, convert to timestamp
                 if (sortKey === "date") {
@@ -670,13 +684,17 @@ const sortAccordion = () => {
                 };
 
                 // Perform the sorting based on ascending/descending
+                if (aValue < bValue && sortKey === "num") return currentSort.ascending ? 1 : -1;
+                if (aValue > bValue && sortKey === "num") return currentSort.ascending ? -1 : 1;
                 if (aValue < bValue) return currentSort.ascending ? -1 : 1;
                 if (aValue > bValue) return currentSort.ascending ? 1 : -1;
                 return 0;
             });
 
-            items.forEach(item => accordionContainer.appendChild(item));
-            scrollToPosition(itemsContainer);
+            items.forEach(item => container.appendChild(item));
+            if (scrollContainer) {
+                scrollToPosition(scrollContainer);
+            };
         });
     });
 };

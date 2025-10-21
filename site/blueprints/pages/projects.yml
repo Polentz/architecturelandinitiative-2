@@ -45,5 +45,5 @@ columns:
           toggleCategories:
             label: Categories
             type: toggle
-            text: Want to display the category buttons?
+            text: 'Want to display the "Sort by" buttons?'
             default: false

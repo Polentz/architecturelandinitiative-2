@@ -69,10 +69,18 @@ body {
     cursor: default;
 }
 
+.color-switcher.hide {
+    background: transparent;
+}
+
 .color-switcher-wrapper {
     display: flex;
     align-items: center;
     gap: var(--small-margin);
+}
+
+.color-switcher-wrapper.hide {
+    display: none;
 }
 
 .color-switcher-button {

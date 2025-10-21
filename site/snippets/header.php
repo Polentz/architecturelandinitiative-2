@@ -30,5 +30,5 @@ $navigation = $site->children()->listed()->not('home');
         <input type="radio" name="color-mode" id="color-mode-color" value="color">
         <label for="color-mode-color">Colored background</label>
     </div>
-    <button class="color-switcher-button" aria-label="Close">X</button>
+    <button class="color-switcher-button" aria-label="Close">x</button>
 </div>

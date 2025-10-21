@@ -911,16 +911,34 @@ const colorSwitcher = () => {
     const radioButtons = document.querySelectorAll('input[name="color-mode"]');
     const doc = document.documentElement;
     const button = document.querySelector(".color-switcher-button");
-    const dialog = document.querySelector(".color-switcher");
+    const container = document.querySelector(".color-switcher");
+    const dialog = document.querySelectorAll(".color-switcher-wrapper");
+
+    const savedMode = localStorage.getItem('color-mode');
+    if (savedMode) {
+        doc.setAttribute('color-mode', savedMode);
+        const savedRadio = document.querySelector(`input[name="color-mode"][value="${savedMode}"]`);
+        if (savedRadio) savedRadio.checked = true;
+    };
 
     radioButtons.forEach(radioButton => {
         radioButton.addEventListener('change', function () {
-            doc.setAttribute('color-mode', this.value);
+            const selectedMode = this.value;
+            doc.setAttribute('color-mode', selectedMode);
+            localStorage.setItem('color-mode', selectedMode);
         });
     });
 
     button.addEventListener("click", () => {
-        dialog.style.display = "none";
+        dialog.forEach(element => {
+            element.classList.toggle("hide");
+            container.classList.toggle("hide");
+            if (button.textContent.trim() === "x") {
+                button.textContent = "+";
+            } else {
+                button.textContent = "x";
+            }
+        });
     });
 };
 

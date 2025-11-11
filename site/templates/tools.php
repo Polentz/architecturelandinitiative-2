@@ -38,21 +38,19 @@
                 <div class="scroll-items row-direction">
                     <?php foreach ($page->children()->listed() as $child) : ?>
                         <?php $cover = $child->background()->toFile() ?>
-                        <div class="item scroll-item<?= $cover ? ' has-background' : '' ?> sortable" data-title="<?= $child->title()->slug() ?>" data-num="<?= $child->num() ?>">
+                        <a href="<?= $child->url() ?>" class="item scroll-item<?= $cover ? ' has-background' : '' ?> sortable" data-title="<?= $child->title()->slug() ?>" data-num="<?= $child->num() ?>">
                             <?php if ($cover) : ?>
                                 <div class="item-background">
                                     <img class="image lazy" src="" data-src="<?= $cover->resize(1600, null)->url() ?>" alt="<?= $cover->alt() ?>">
                                 </div>
                             <?php endif ?>
-                            <h3 class="item-title"><a href="<?= $child->url() ?>"><?= $child->title() ?></a></h3>
-                        </div>
+                            <h3 class="item-title"><?= $child->title() ?></h3>
+                        </a>
                     <?php endforeach ?>
                     <?php foreach ($page->children()->unlisted() as $child) : ?>
                         <div class="item scroll-item sortable" data-title="<?= $child->title()->slug() ?>" data-num="99999">
                             <span class="item-title-label text-label"><?= t('upcoming') ?></span>
-                            <h3 class="item-title">
-                                <p><?= $child->title() ?></p>
-                            </h3>
+                            <h3 class="item-title upcoming"><?= $child->title() ?></h3>
                         </div>
                     <?php endforeach ?>
                 </div>

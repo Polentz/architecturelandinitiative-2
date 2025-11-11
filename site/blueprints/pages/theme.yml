@@ -1,5 +1,14 @@
 title: Platform Page
 
+options:
+  delete: false
+  duplicate: false
+  changeTitle: false
+  changeStatus: false
+  changeSlug: false
+  move: false
+  sort: false
+  preview: false
 
 columns:
   main:

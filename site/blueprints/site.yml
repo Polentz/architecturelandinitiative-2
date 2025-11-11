@@ -124,15 +124,12 @@ tabs:
             label: false
             type: info
             text: |
-              When updating an existing filter, always change the 'Filter Name' but keep the 'Key' the same. This way, your website will display the updated 'Filter Name' while keeping the filter properly assigned. If you change the 'Key' instead, every element on your site using that filter will lose it, and you'll need to reapply the filter manually. When creating a new filter, it's easiest to set the 'Key' and 'Filter Name' to match, with the option to change the 'Filter Name' in the future. Just keep in mind that keys must always be unique—no duplicates allowed.
-          categoriesInfos:
-            label: false
-            type: info
-            text: |
-              Categories can be sorted and assigned a custom order. Other filters are automatically sorted alphabetically.
+              Tips: When updating an existing filter, always change the 'Filter Name' but keep the 'Key' the same. This way, your website will display the updated 'Filter Name' while keeping the filter properly assigned. If you change the 'Key' instead, every element on your site using that filter will lose it, and you'll need to reapply the filter manually. When creating a new filter, it's easiest to set the 'Key' and 'Filter Name' to match, with the option to change the 'Filter Name' in the future. Just keep in mind that keys must always be unique—no duplicates allowed.
           categories:
             label: "Categories"
             width: 1/2
+            help: |
+              You can sort categories by applying a custom order: drag and drop items to set your preferred order.
             type: structure
             fields:
               key:                
@@ -146,6 +143,8 @@ tabs:
             width: 1/2
             type: structure
             sortBy: filter asc
+            help: |
+              Media types are automatically arranged in alphabetical order.
             fields:
               key: 
                 type: text
@@ -158,6 +157,8 @@ tabs:
             width: 1/2
             type: structure
             sortBy: filter asc
+            help: |
+              Event types are automatically arranged in alphabetical order.
             fields:
               key:                
                 type: text
@@ -170,6 +171,8 @@ tabs:
             width: 1/2
             type: structure
             sortBy: filter asc
+            help: |
+              Members are automatically arranged in alphabetical order.
             fields:
               key: 
                 type: text

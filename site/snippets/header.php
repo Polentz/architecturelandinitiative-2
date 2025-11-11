@@ -16,19 +16,3 @@ $navigation = $site->children()->listed()->not('home');
         <?php endforeach ?>
     </nav>
 </header>
-
-<div class="color-switcher text-label">
-    <div class="color-switcher-wrapper">
-        <input type="radio" name="color-mode" id="color-mode-bw" value="bw" checked>
-        <label for="color-mode-bw">All black and white</label>
-    </div>
-    <div class="color-switcher-wrapper">
-        <input type="radio" name="color-mode" id="color-mode-white" value="white">
-        <label for="color-mode-white">White background</label>
-    </div>
-    <div class="color-switcher-wrapper">
-        <input type="radio" name="color-mode" id="color-mode-color" value="color">
-        <label for="color-mode-color">Colored background</label>
-    </div>
-    <button class="color-switcher-button" aria-label="Close">x</button>
-</div>

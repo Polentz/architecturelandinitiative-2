@@ -18,10 +18,12 @@
         url("../fonts/GT-America-Standard-Light.woff") format("woff");
 }
 
+/* this font is not in use: delete also the file */
 @font-face {
     font-family: "GT America";
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url("../fonts/GT-America-Standard-Regular.woff2") format("woff2"),
         url("../fonts/GT-America-Standard-Regular.woff") format("woff");
 }
@@ -55,44 +57,23 @@ body {
     overflow-x: hidden;
 }
 
-.color-switcher {
-    position: absolute;
-    top: var(--small-margin);
-    left: var(--small-margin);
-    background: var(--white);
-    border: var(--border-black);
-    color: var(--black);
-    padding: var(--small-margin);
-    z-index: 99999;
-    display: flex;
-    gap: var(--small-margin);
-    cursor: default;
-}
-
-.color-switcher.hide {
-    background: transparent;
-}
-
-.color-switcher-wrapper {
-    display: flex;
-    align-items: center;
-    gap: var(--small-margin);
-}
-
-.color-switcher-wrapper.hide {
-    display: none;
-}
-
-.color-switcher-button {
-    position: absolute;
-    top: 0px;
-    right: -20px;
-    color: var(--black);
-}
-
 img,
 video {
     width: 100%;
+}
+
+.thumbnail,
+.accordion-image,
+.image-item {
+    filter: var(--filter);
+    transition: filter .35s ease;
+}
+
+.thumbnail:hover,
+.accordion-image:hover,
+.image-item:hover,
+.image-item.--zoom-in {
+    filter: none;
 }
 
 .loader {
@@ -101,7 +82,7 @@ video {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #1d1d1b;
+    background: var(--black);
     z-index: 999;
 }
 
@@ -139,7 +120,7 @@ video {
 .title {
     font-family: var(--big-title-font);
     font-size: var(--big-title-size);
-    font-weight: 200;
+    font-weight: 300;
     line-height: 80%;
 }
 
@@ -835,9 +816,8 @@ section.--blur {
     left: 0;
     bottom: 0;
     z-index: 1;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    background: var(--white);
+    opacity: .4;
 }
 
 .scroll-layout {
@@ -901,11 +881,10 @@ section.--blur {
     left: 0;
     bottom: 0;
     z-index: 0;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4)));
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
-    transition: background .5s ease;
+    background: var(--white);
+    opacity: .4;
     pointer-events: none;
+    transition: opacity .35s ease;
 }
 
 .item.unlisted {
@@ -942,9 +921,7 @@ section.--blur {
     z-index: -1;
     -webkit-filter: var(--filter);
     filter: var(--filter);
-    -webkit-transition: .5s ease;
-    -o-transition: .5s ease;
-    transition: .5s ease;
+    transition: filter .35s ease;
 }
 
 .column-direction .item-background {
@@ -960,7 +937,7 @@ section.--blur {
 }
 
 .item-background img {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     -o-object-position: center;
@@ -978,20 +955,15 @@ section.--blur {
 
 .row-direction .item-background img {
     height: 100%;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
 }
 
 .item:hover .item-background {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+    -webkit-filter: none;
+    filter: none;
 }
 
 .item.has-background:hover::before {
-    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1)));
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    opacity: .1;
 }
 
 .item-title-label {
@@ -1003,13 +975,9 @@ section.--blur {
     position: relative;
     font-family: var(--big-title-font);
     font-size: var(--big-title-size);
-    font-weight: 200;
+    font-weight: 300;
     line-height: 100%;
     z-index: 1;
-}
-
-.item-title a,
-.item-title p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1020,8 +988,12 @@ section.--blur {
     column-gap: 2vw;
 }
 
-.item-title p {
+.item-title.upcoming {
     opacity: .5;
+}
+
+.item:has(> .item-title.upcoming) {
+    pointer-events: none;
 }
 
 .item-title .word {

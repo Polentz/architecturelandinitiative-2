@@ -159,7 +159,7 @@ const logoAnimation = () => {
 
 const titlesAnimation = (xDirection, yDirection) => {
     document.fonts.ready.then(() => {
-        const items = document.querySelectorAll(".item-title a, .item-title p");
+        const items = document.querySelectorAll(".item-title");
         items.forEach(item => {
             let splitTitles = SplitText.create(item, {
                 type: "words, chars",
@@ -199,7 +199,7 @@ const titlesAnimation = (xDirection, yDirection) => {
 };
 
 const handleTitleHover = () => {
-    const titles = document.querySelectorAll(".item-title a");
+    const titles = document.querySelectorAll(".item");
     titles.forEach(title => {
         title.addEventListener("mouseenter", () => {
             const letters = title.querySelectorAll(".letter");
@@ -760,10 +760,8 @@ const lazyloading = () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const media = entry.target;
-                media.onload = () => {
-                    media.classList.add("lazy-loaded");
-                };
                 media.src = media.dataset.src;
+                media.classList.add("lazy-loaded");
                 observer.unobserve(media);
             };
         });
@@ -907,43 +905,7 @@ const topButtonEvent = () => {
     });
 };
 
-const colorSwitcher = () => {
-    const radioButtons = document.querySelectorAll('input[name="color-mode"]');
-    const doc = document.documentElement;
-    const button = document.querySelector(".color-switcher-button");
-    const container = document.querySelector(".color-switcher");
-    const dialog = document.querySelectorAll(".color-switcher-wrapper");
-
-    const savedMode = localStorage.getItem('color-mode');
-    if (savedMode) {
-        doc.setAttribute('color-mode', savedMode);
-        const savedRadio = document.querySelector(`input[name="color-mode"][value="${savedMode}"]`);
-        if (savedRadio) savedRadio.checked = true;
-    };
-
-    radioButtons.forEach(radioButton => {
-        radioButton.addEventListener('change', function () {
-            const selectedMode = this.value;
-            doc.setAttribute('color-mode', selectedMode);
-            localStorage.setItem('color-mode', selectedMode);
-        });
-    });
-
-    button.addEventListener("click", () => {
-        dialog.forEach(element => {
-            element.classList.toggle("hide");
-            container.classList.toggle("hide");
-            if (button.textContent.trim() === "x") {
-                button.textContent = "+";
-            } else {
-                button.textContent = "x";
-            }
-        });
-    });
-};
-
 window.addEventListener("load", () => {
-    history.scrollRestoration = "manual";
     documentHeight();
     headerHeight();
     footerHeight();
@@ -955,7 +917,6 @@ window.addEventListener("load", () => {
     sliderOpener();
     bannerOpener();
     handleMenuOnMobile();
-    colorSwitcher();
 });
 
 window.addEventListener("resize", () => {

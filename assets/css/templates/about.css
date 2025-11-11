@@ -1,12 +1,8 @@
 :root {
-    --main-color: #feffb8;
+    --main-color: #feff8a;
+    --background: linear-gradient(0deg, var(--acc-color) 0%, var(--acc-color) 5%, var(--main-color) 100%);
 }
 
 .text-block .thumbnail {
     border-radius: 50%;
-}
-
-[color-mode="color"] {
-    --main-color: #feff8a;
-    --background: linear-gradient(0deg, var(--acc-color) 0%, var(--acc-color) 5%, var(--main-color) 100%);
 }

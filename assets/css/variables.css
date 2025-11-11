@@ -4,16 +4,15 @@
     --black: #1d1d1b;
     --white: #ffffff;
 
-    --main-color: #ffffffa0;
     --acc-color: #f0eceb;
     --background: #ffffff;
     --shade-color: #f0eceb93;
 
-    --body-text-font: "GT America";
+    --body-text-font: "GT Cinetype";
     --body-text-size: 1.25rem;
-    --secondary-text-font: "GT America";
+    --secondary-text-font: "GT Cinetype";
     --secondary-text-size: 1rem;
-    --text-headline-font: "GT America";
+    --text-headline-font: "GT Cinetype";
     --text-headline-size: calc(1.5rem + 1vw);
     --big-title-font: "GT America";
     --big-title-size: calc(1rem + 6.5vw);
@@ -34,15 +33,6 @@
     --border-color: solid 1px var(--main-color);
 
     --filter: grayscale(1);
-}
-
-[color-mode="white"] {
-    --background: #ffffff;
-    --filter: none;
-}
-
-[color-mode="color"] {
-    --filter: none;
 }
 
 @media screen and (min-width: 1500px) {

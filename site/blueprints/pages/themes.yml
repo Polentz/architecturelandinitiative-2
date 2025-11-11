@@ -1,5 +1,17 @@
 title: Platform
 
+options:
+  delete: false
+  duplicate: false
+  changeTitle: false
+  changeStatus: false
+  changeSlug: false
+  move: false
+  sort: false
+  preview: false
+  update: false
+
+
 sections:
   content:
     type: fields

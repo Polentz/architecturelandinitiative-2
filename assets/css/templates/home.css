@@ -1,11 +1,5 @@
 :root {
-    --about-color: #ffffffa0;
-    --platform-color: #ffffffa0;
-    --projects-color: #ffffffa0;
-    --tools-color: #ffffffa0;
-}
-
-[color-mode="color"] {
+    --main-color: #ffffff;
     --about-color: #feff8a;
     --platform-color: #b077fc;
     --projects-color: #5b72f7;

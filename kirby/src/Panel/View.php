@@ -266,6 +266,7 @@ class View
 				],
 				'debug'       => $kirby->option('debug', false),
 				'kirbytext'   => $kirby->option('panel.kirbytext', true),
+				'theme'       => $kirby->option('panel.theme', 'system'),
 				'translation' => $kirby->option('panel.language', 'en'),
 				'upload'      => Upload::chunkSize(),
 			],
@@ -315,6 +316,11 @@ class View
 	{
 		// handle redirects
 		if ($data instanceof Redirect) {
+			// if the redirect is a refresh, return a refresh response
+			if ($data->refresh() !== false) {
+				return Response::refresh($data->location(), $data->code(), $data->refresh());
+			}
+
 			return Response::redirect($data->location(), $data->code());
 		}
 

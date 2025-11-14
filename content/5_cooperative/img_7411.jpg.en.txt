@@ -1,5 +1,0 @@
-Uuid: wmjc4hzenh4qztum
-
-----
-
-Template: thumbnail

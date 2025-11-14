@@ -18,16 +18,6 @@
         url("../fonts/GT-America-Standard-Light.woff") format("woff");
 }
 
-/* this font is not in use: delete also the file */
-@font-face {
-    font-family: "GT America";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("../fonts/GT-America-Standard-Regular.woff2") format("woff2"),
-        url("../fonts/GT-America-Standard-Regular.woff") format("woff");
-}
-
 @font-face {
     font-family: "Pitch Sans";
     font-style: normal;

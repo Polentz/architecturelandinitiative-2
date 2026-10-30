@@ -753,6 +753,7 @@ const handleMenuOnMobile = () => {
     handleMediaQuery(mediaQuery);
 };
 
+// Not in use //
 const lazyloading = () => {
     let lazyloadMedia = document.querySelectorAll(".lazy");
 
@@ -905,18 +906,22 @@ const topButtonEvent = () => {
     });
 };
 
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     documentHeight();
     headerHeight();
     footerHeight();
-    loader();
     cursor();
-    lazyloading();
     animatePaths();
     logoAnimation();
     sliderOpener();
     bannerOpener();
     handleMenuOnMobile();
+
+    document.fonts.ready.then(() => {
+        headerHeight();
+        footerHeight();
+        loader();
+    });
 });
 
 window.addEventListener("resize", () => {

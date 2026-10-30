@@ -50,6 +50,7 @@ body {
 img,
 video {
     width: 100%;
+    height: auto;
 }
 
 .thumbnail,
@@ -938,12 +939,14 @@ section.--blur {
 
 .column-direction .item-background img {
     width: 100%;
+    height: auto;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 .row-direction .item-background img {
+    width: auto;
     height: 100%;
 }
 

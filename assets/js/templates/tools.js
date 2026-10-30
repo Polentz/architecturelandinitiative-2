@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     titlesAnimation(-100, 0);
     handleTitleHover();
     horizontalScroll();

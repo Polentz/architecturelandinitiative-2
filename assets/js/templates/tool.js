@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+document.addEventListener("DOMContentLoaded", () => {
     handleFiltersBox();
     handleFilters(document.querySelectorAll(".gallery-item"));
     handleGallery();

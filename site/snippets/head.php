@@ -37,6 +37,14 @@
         'assets/css/style.css',
         '@auto',
     ]) ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/Flip.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js" defer></script>
+    <?= js([
+        'assets/js/script.js',
+        '@auto',
+    ], ['defer' => true]) ?>
 </head>
 
 <body>

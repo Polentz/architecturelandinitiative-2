@@ -94,6 +94,20 @@ video {
     filter: blur(0);
 }
 
+.lazy-image {
+    image-rendering: auto;
+    transition: filter .4s ease;
+}
+
+.lazy-image:not(.--loaded) {
+    filter: blur(12px);
+    clip-path: inset(0);
+}
+
+html:not(.js) .lazy-image {
+    display: none;
+}
+
 .cursor {
     position: fixed;
     top: 0;

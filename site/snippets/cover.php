@@ -22,7 +22,7 @@ $coverFiles = $page->cover()->toFiles();
 
             <?php if ($media->type() == 'video') : ?>
                 <figure class="cover-item video-item">
-                    <video class="video" src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload" disablePictureInPicture type="video"></video>
+                    <video class="video lazy-video" src="<?= $media->url() ?>" preload="none" muted loop playsinline controlslist="noplaybackrate nodownload" disablePictureInPicture></video>
                     <figcaption class="cover-item-caption text-label">
                         <?= $media->caption()->kt() ?>
                     </figcaption>

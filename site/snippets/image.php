@@ -1,4 +1,6 @@
 <?php
+use Kirby\Filesystem\F;
+
 /**
  * Responsive image snippet.
  *
@@ -28,7 +30,36 @@ try {
     $src    = $media->url();
     $srcset = null;
 }
+
+// Lazy images start with a tiny blurred preview embedded in the page, so the
+// space is never empty while scrolling. script.js swaps in the real image once
+// it is fully downloaded and decoded (no half-painted images).
+$placeholder = null;
+if ($loading === 'lazy' && $srcset) {
+    try {
+        $tiny = $media->thumb(['width' => 32, 'quality' => 60]);
+        if ($tiny->exists() === false) {
+            $tiny->save();
+        }
+        $placeholder = 'data:' . $tiny->mime() . ';base64,' . base64_encode(F::read($tiny->root()));
+    } catch (\Throwable $e) {
+        $placeholder = null;
+    }
+}
 ?>
+<?php if ($placeholder): ?>
+<img
+    class="<?= trim($class . ' lazy-image') ?>"
+    src="<?= $placeholder ?>"
+    data-src="<?= $src ?>"
+    data-srcset="<?= $srcset ?>"
+    sizes="<?= $sizes ?>"<?php if ($width && $height): ?>
+    width="<?= $width ?>"
+    height="<?= $height ?>"<?php endif ?>
+    alt="<?= $media->alt() ?>"
+    decoding="async" />
+<noscript><img class="<?= $class ?>" src="<?= $src ?>" srcset="<?= $srcset ?>" sizes="<?= $sizes ?>"<?php if ($width && $height): ?> width="<?= $width ?>" height="<?= $height ?>"<?php endif ?> alt="<?= $media->alt() ?>" loading="lazy" /></noscript>
+<?php else: ?>
 <img
     class="<?= $class ?>"
     src="<?= $src ?>"<?php if ($srcset): ?>
@@ -38,3 +69,4 @@ try {
     height="<?= $height ?>"<?php endif ?>
     alt="<?= $media->alt() ?>"
     loading="<?= $loading ?>"<?php if ($loading === 'eager'): ?> fetchpriority="high"<?php endif ?> />
+<?php endif ?>

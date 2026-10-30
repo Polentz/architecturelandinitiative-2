@@ -898,6 +898,90 @@ const audioPlayer = () => {
     });
 };
 
+const lazyImages = () => {
+    const images = document.querySelectorAll(".lazy-image:not(.--loaded)");
+    if (!images.length) return;
+
+    const load = img => {
+        const loader = new Image();
+        loader.sizes = img.sizes;
+        if (img.dataset.srcset) loader.srcset = img.dataset.srcset;
+        loader.src = img.dataset.src;
+
+        const swap = () => {
+            if (img.dataset.srcset) img.srcset = img.dataset.srcset;
+            img.src = img.dataset.src;
+            img.classList.add("--loaded");
+        };
+        loader.decode().then(swap, swap);
+    };
+
+    if (!("IntersectionObserver" in window)) {
+        images.forEach(load);
+        return;
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            observer.unobserve(entry.target);
+            load(entry.target);
+        });
+    }, { rootMargin: "150% 50%" });
+
+    images.forEach(img => observer.observe(img));
+};
+
+const prefetchLinks = () => {
+    const done = new Set();
+    const prefetch = link => {
+        const url = link.href;
+        if (!url || done.has(url)) return;
+        if (link.origin !== location.origin) return;
+        if (link.pathname === location.pathname) return;
+        if (link.hash && link.pathname === location.pathname) return;
+        if (link.target === "_blank" || link.hasAttribute("download")) return;
+        if (url.includes("/panel")) return;
+        const conn = navigator.connection;
+        if (conn && (conn.saveData || /2g/.test(conn.effectiveType))) return;
+        done.add(url);
+        const el = document.createElement("link");
+        el.rel = "prefetch";
+        el.href = url;
+        document.head.appendChild(el);
+    };
+
+    let timer;
+    const start = event => {
+        const link = event.target.closest && event.target.closest("a[href]");
+        if (!link) return;
+        clearTimeout(timer);
+        timer = setTimeout(() => prefetch(link), event.type === "touchstart" ? 0 : 65);
+    };
+    document.addEventListener("mouseover", start);
+    document.addEventListener("touchstart", start, { passive: true });
+    document.addEventListener("mouseout", () => clearTimeout(timer));
+};
+
+// Videos only download and play while they're on screen
+const lazyVideos = () => {
+    const videos = document.querySelectorAll(".lazy-video");
+    if (!videos.length) return;
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+                video.play().catch(() => { });
+            } else if (!video.paused) {
+                video.pause();
+            };
+        });
+    }, { rootMargin: "200px 0px" });
+
+    videos.forEach(video => observer.observe(video));
+};
+
 const topButtonEvent = () => {
     const toTopButton = document.querySelector(".top-button");
     if (!toTopButton) return;
@@ -916,6 +1000,9 @@ document.addEventListener("DOMContentLoaded", () => {
     sliderOpener();
     bannerOpener();
     handleMenuOnMobile();
+    lazyVideos();
+    lazyImages();
+    prefetchLinks();
 
     document.fonts.ready.then(() => {
         headerHeight();

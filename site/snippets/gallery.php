@@ -31,8 +31,8 @@ $mediaAttributes = function ($media) {
 
         <?php if ($media->type() == 'video'): ?>
             <figure class="gallery-item video-item" <?= $mediaAttributes($media) ?>>
-                <video class="video" src="<?= $media->url() ?>" autoplay muted loop controlslist="noplaybackrate nodownload"
-                    disablePictureInPicture type="video" loading="lazy"></video>
+                <video class="video lazy-video" src="<?= $media->url() ?>" preload="none" muted loop playsinline
+                    controlslist="noplaybackrate nodownload" disablePictureInPicture></video>
                 <?= snippet('caption', ['media' => $media]) ?>
             </figure>
         <?php endif ?>
